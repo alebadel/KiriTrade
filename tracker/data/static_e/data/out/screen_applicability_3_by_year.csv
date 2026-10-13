@@ -1,0 +1,271 @@
+country,side,year,own_source,own_usd_m,mirror_usd_m,mirror_excl_88_89_usd_m,own_excl_88_89_usd_m,ratio
+Comoros,exp,2017,annual,38.7,79.2,7.4,0.0,2.05
+Comoros,exp,2018,annual,46.0,95.8,7.4,0.0,2.08
+Comoros,exp,2019,annual,48.3,55.5,9.8,0.0,1.15
+Comoros,exp,2020,annual,20.5,45.2,18.3,0.0,2.21
+Comoros,exp,2021,annual,31.3,42.3,14.1,3.0,1.35
+Comoros,exp,2022,annual,48.4,51.0,18.5,6.3,1.05
+Comoros,exp,2023,annual,28.4,80.4,21.8,0.1,2.83
+Comoros,exp,2024,,,37.3,12.9,,
+Comoros,exp,2025,annual,31.2,64.9,4.3,0.1,2.08
+Comoros,imp,2017,annual,240.0,381.7,4.9,0.0,1.59
+Comoros,imp,2018,annual,208.5,382.5,2.2,0.1,1.83
+Comoros,imp,2019,annual,203.2,321.1,2.1,0.0,1.58
+Comoros,imp,2020,annual,229.4,282.3,2.6,0.1,1.23
+Comoros,imp,2021,annual,326.2,358.4,1.3,0.1,1.1
+Comoros,imp,2022,annual,228.6,360.3,0.5,0.1,1.58
+Comoros,imp,2023,annual,273.1,467.5,0.1,0.0,1.71
+Comoros,imp,2024,,,369.3,12.1,,
+Comoros,imp,2025,annual,311.7,384.5,14.6,0.2,1.23
+Fiji,exp,2017,annual,906.1,803.5,2.3,13.3,0.89
+Fiji,exp,2018,annual,846.6,728.0,1.5,16.8,0.86
+Fiji,exp,2019,annual,817.3,748.1,1.5,18.9,0.92
+Fiji,exp,2020,annual,724.9,673.8,0.8,30.4,0.93
+Fiji,exp,2021,annual,752.9,768.2,6.1,21.5,1.02
+Fiji,exp,2022,annual,886.6,842.7,1.6,13.5,0.95
+Fiji,exp,2023,annual,861.7,819.7,0.8,11.8,0.95
+Fiji,exp,2024,annual,887.5,773.8,1.0,26.8,0.87
+Fiji,exp,2025,annual,876.1,710.2,50.0,30.4,0.81
+Fiji,imp,2017,annual,2337.3,2022.5,63.8,68.4,0.87
+Fiji,imp,2018,annual,2556.3,2323.5,154.6,172.2,0.91
+Fiji,imp,2019,annual,2254.2,2087.2,384.5,525.9,0.93
+Fiji,imp,2020,annual,1690.8,1454.8,19.0,39.4,0.86
+Fiji,imp,2021,annual,1941.8,1896.6,143.5,173.3,0.98
+Fiji,imp,2022,annual,2947.6,2661.9,55.0,49.3,0.9
+Fiji,imp,2023,annual,3046.8,2700.9,47.4,51.3,0.89
+Fiji,imp,2024,annual,3026.1,2551.3,147.9,112.7,0.84
+Fiji,imp,2025,annual,3117.0,2710.8,121.2,93.8,0.87
+Kiribati,exp,2017,annual,14.3,155.9,0.5,0.9,10.89
+Kiribati,exp,2018,annual,8.2,116.8,0.0,0.0,14.3
+Kiribati,exp,2019,,,119.3,4.8,,
+Kiribati,exp,2020,annual,9.2,106.7,0.0,0.1,11.6
+Kiribati,exp,2021,annual,8.4,93.1,11.6,0.0,11.04
+Kiribati,exp,2022,,,116.8,10.5,,
+Kiribati,exp,2023,monthly x12/7,3.3,90.6,0.0,0.0,27.14
+Kiribati,exp,2024,monthly x12/10,5.0,109.0,7.7,0.0,21.73
+Kiribati,exp,2025,monthly x12/10,14.5,95.1,0.1,0.0,6.58
+Kiribati,imp,2017,annual,106.3,122.3,6.1,1.6,1.15
+Kiribati,imp,2018,annual,102.2,103.8,2.3,0.5,1.02
+Kiribati,imp,2019,,,100.9,3.9,,
+Kiribati,imp,2020,annual,107.7,102.2,40.8,1.2,0.95
+Kiribati,imp,2021,annual,173.2,144.2,22.1,0.6,0.83
+Kiribati,imp,2022,,,145.9,54.3,,
+Kiribati,imp,2023,monthly x12/7,185.8,150.1,26.1,0.3,0.81
+Kiribati,imp,2024,monthly x12/10,3974.4,170.0,20.0,2.2,0.04
+Kiribati,imp,2025,monthly x12/10,245.8,156.2,115.6,1.0,0.64
+Maldives,exp,2017,annual,199.3,430.3,3.6,0.0,2.16
+Maldives,exp,2018,annual,181.4,361.4,3.3,0.3,1.99
+Maldives,exp,2019,annual,158.0,277.6,0.8,0.0,1.76
+Maldives,exp,2020,annual,162.8,212.2,10.7,0.0,1.3
+Maldives,exp,2021,annual,151.3,271.7,0.9,0.0,1.8
+Maldives,exp,2022,annual,158.4,356.2,439.8,0.0,2.25
+Maldives,exp,2023,annual,162.1,325.6,58.4,0.0,2.01
+Maldives,exp,2024,annual,91.6,204.9,79.3,0.8,2.24
+Maldives,exp,2025,annual,144.5,234.8,148.0,0.0,1.62
+Maldives,imp,2017,annual,2268.0,1684.0,592.0,91.6,0.74
+Maldives,imp,2018,annual,2833.8,1947.7,52.6,127.2,0.69
+Maldives,imp,2019,annual,2727.2,2268.9,83.1,159.9,0.83
+Maldives,imp,2020,annual,1806.0,1391.9,56.6,32.0,0.77
+Maldives,imp,2021,annual,2501.8,2388.9,64.2,71.8,0.95
+Maldives,imp,2022,annual,3368.1,3812.1,211.0,154.6,1.13
+Maldives,imp,2023,annual,3337.8,3582.5,485.4,151.2,1.07
+Maldives,imp,2024,annual,3417.4,2450.3,476.2,217.0,0.72
+Maldives,imp,2025,annual,3472.7,2461.1,138.1,145.0,0.71
+Micronesia (FS),exp,2017,,,96.8,0.0,,
+Micronesia (FS),exp,2018,,,125.5,0.4,,
+Micronesia (FS),exp,2019,,,169.4,0.1,,
+Micronesia (FS),exp,2020,,,151.3,0.5,,
+Micronesia (FS),exp,2021,,,205.2,0.5,,
+Micronesia (FS),exp,2022,,,213.1,0.3,,
+Micronesia (FS),exp,2023,,,191.7,0.5,,
+Micronesia (FS),exp,2024,,,340.8,0.5,,
+Micronesia (FS),exp,2025,,,203.4,0.3,,
+Micronesia (FS),imp,2017,,,168.1,41.5,,
+Micronesia (FS),imp,2018,,,130.4,1.5,,
+Micronesia (FS),imp,2019,,,126.0,4.1,,
+Micronesia (FS),imp,2020,,,140.4,1.8,,
+Micronesia (FS),imp,2021,,,130.1,2.1,,
+Micronesia (FS),imp,2022,,,149.4,10.1,,
+Micronesia (FS),imp,2023,,,177.6,2.1,,
+Micronesia (FS),imp,2024,,,165.5,3.8,,
+Micronesia (FS),imp,2025,,,152.2,18.8,,
+Nauru,exp,2017,,,28.8,0.0,,
+Nauru,exp,2018,,,20.9,0.0,,
+Nauru,exp,2019,,,43.1,0.1,,
+Nauru,exp,2020,,,134.3,0.0,,
+Nauru,exp,2021,,,215.6,0.8,,
+Nauru,exp,2022,,,226.3,0.5,,
+Nauru,exp,2023,,,225.8,0.0,,
+Nauru,exp,2024,,,214.7,0.7,,
+Nauru,exp,2025,,,169.4,0.8,,
+Nauru,imp,2017,,,47.2,0.6,,
+Nauru,imp,2018,,,124.9,0.1,,
+Nauru,imp,2019,,,92.3,2.1,,
+Nauru,imp,2020,,,113.9,2.2,,
+Nauru,imp,2021,,,100.1,9.1,,
+Nauru,imp,2022,,,72.7,8.3,,
+Nauru,imp,2023,,,65.0,6.9,,
+Nauru,imp,2024,,,59.2,5.7,,
+Nauru,imp,2025,,,67.9,49.6,,
+Palau,exp,2017,annual,3.9,24.0,2.0,0.0,6.15
+Palau,exp,2018,annual,7.4,26.6,4.6,0.4,3.57
+Palau,exp,2019,,,23.5,0.7,,
+Palau,exp,2020,,,6.4,9.0,,
+Palau,exp,2021,,,4.2,1.6,,
+Palau,exp,2022,,,4.7,3.6,,
+Palau,exp,2023,,,2.8,3.5,,
+Palau,exp,2024,,,3.8,17.3,,
+Palau,exp,2025,,,46.1,6.9,,
+Palau,imp,2017,annual,156.1,93.4,17.3,1.5,0.6
+Palau,imp,2018,annual,152.9,103.4,6.5,1.5,0.68
+Palau,imp,2019,,,108.7,2.4,,
+Palau,imp,2020,,,89.4,7.3,,
+Palau,imp,2021,,,119.9,5.5,,
+Palau,imp,2022,,,147.3,35.5,,
+Palau,imp,2023,,,157.5,54.6,,
+Palau,imp,2024,,,159.5,43.2,,
+Palau,imp,2025,,,239.3,81.8,,
+Papua New Guinea,exp,2017,,,10621.7,6.5,,
+Papua New Guinea,exp,2018,,,11187.0,12.6,,
+Papua New Guinea,exp,2019,annual,10172.9,11779.1,18.7,23.4,1.16
+Papua New Guinea,exp,2020,annual,10326.1,10014.5,9.9,40.9,0.97
+Papua New Guinea,exp,2021,annual,9577.6,11972.9,11.8,72.9,1.25
+Papua New Guinea,exp,2022,annual,10917.2,16856.9,10.3,11.7,1.54
+Papua New Guinea,exp,2023,annual,9909.3,13587.3,10.3,24.7,1.37
+Papua New Guinea,exp,2024,,,13833.2,53.6,,
+Papua New Guinea,exp,2025,,,15040.3,4.3,,
+Papua New Guinea,imp,2017,,,4307.1,125.0,,
+Papua New Guinea,imp,2018,,,4413.8,82.2,,
+Papua New Guinea,imp,2019,annual,4871.8,4195.3,76.3,94.7,0.86
+Papua New Guinea,imp,2020,annual,4032.3,3901.4,39.7,54.8,0.97
+Papua New Guinea,imp,2021,annual,4438.2,4213.9,49.7,60.4,0.95
+Papua New Guinea,imp,2022,annual,5685.1,5498.2,83.7,129.6,0.97
+Papua New Guinea,imp,2023,annual,5908.0,5470.9,115.8,264.9,0.93
+Papua New Guinea,imp,2024,,,5492.9,90.3,,
+Papua New Guinea,imp,2025,,,6016.1,265.6,,
+Samoa,exp,2017,annual,44.4,40.9,0.0,0.0,0.92
+Samoa,exp,2018,annual,46.0,35.9,0.8,0.0,0.78
+Samoa,exp,2019,annual,49.2,38.9,0.8,0.0,0.79
+Samoa,exp,2020,,,49.5,0.0,,
+Samoa,exp,2021,annual,28.6,43.4,0.0,0.2,1.52
+Samoa,exp,2022,annual,43.2,55.6,0.0,0.0,1.29
+Samoa,exp,2023,annual,42.9,46.9,2.5,0.0,1.09
+Samoa,exp,2024,annual,41.9,41.4,0.0,0.0,0.99
+Samoa,exp,2025,,,36.9,0.0,,
+Samoa,imp,2017,annual,354.2,372.2,1.4,2.0,1.05
+Samoa,imp,2018,annual,362.4,373.8,18.1,0.5,1.03
+Samoa,imp,2019,annual,389.9,429.2,19.9,0.8,1.1
+Samoa,imp,2020,,,364.6,1.0,,
+Samoa,imp,2021,annual,363.7,402.2,7.0,4.5,1.11
+Samoa,imp,2022,annual,423.0,494.3,17.5,22.4,1.17
+Samoa,imp,2023,annual,471.1,495.2,12.6,2.2,1.05
+Samoa,imp,2024,annual,489.6,542.4,28.0,0.6,1.11
+Samoa,imp,2025,,,509.1,3.3,,
+Sao Tome and Principe,exp,2017,annual,10.3,14.2,0.1,0.3,1.39
+Sao Tome and Principe,exp,2018,annual,11.4,16.8,0.3,0.7,1.48
+Sao Tome and Principe,exp,2019,annual,0.9,21.9,2.0,0.0,24.61
+Sao Tome and Principe,exp,2020,annual,11.7,22.9,3.7,0.8,1.96
+Sao Tome and Principe,exp,2021,annual,18.7,28.1,2.1,0.5,1.5
+Sao Tome and Principe,exp,2022,annual,17.6,23.6,0.8,0.0,1.34
+Sao Tome and Principe,exp,2023,annual,16.5,56.9,1.9,0.1,3.46
+Sao Tome and Principe,exp,2024,,,44.4,32.4,,
+Sao Tome and Principe,exp,2025,annual,31.1,42.3,0.2,0.1,1.36
+Sao Tome and Principe,imp,2017,annual,146.9,135.1,0.6,0.0,0.92
+Sao Tome and Principe,imp,2018,annual,147.6,142.3,0.5,0.7,0.96
+Sao Tome and Principe,imp,2019,annual,146.9,109.7,37.8,0.8,0.75
+Sao Tome and Principe,imp,2020,annual,137.7,110.8,7.0,0.3,0.8
+Sao Tome and Principe,imp,2021,annual,166.2,128.1,4.6,0.0,0.77
+Sao Tome and Principe,imp,2022,annual,195.6,173.9,17.8,0.7,0.89
+Sao Tome and Principe,imp,2023,annual,183.5,149.4,23.1,0.1,0.81
+Sao Tome and Principe,imp,2024,,,146.8,11.0,,
+Sao Tome and Principe,imp,2025,annual,205.3,173.3,5.3,0.1,0.84
+Solomon Islands,exp,2017,annual,499.4,844.6,5.8,0.3,1.69
+Solomon Islands,exp,2018,annual,569.1,921.1,0.7,0.0,1.62
+Solomon Islands,exp,2019,,,714.2,0.6,,
+Solomon Islands,exp,2020,,,553.9,0.9,,
+Solomon Islands,exp,2021,,,535.0,1.3,,
+Solomon Islands,exp,2022,,,573.9,0.2,,
+Solomon Islands,exp,2023,,,560.8,0.6,,
+Solomon Islands,exp,2024,,,680.9,0.0,,
+Solomon Islands,exp,2025,,,776.9,0.0,,
+Solomon Islands,imp,2017,annual,565.3,412.7,15.6,6.5,0.73
+Solomon Islands,imp,2018,annual,557.9,447.2,10.7,43.5,0.8
+Solomon Islands,imp,2019,,,425.5,12.5,,
+Solomon Islands,imp,2020,,,369.7,1.8,,
+Solomon Islands,imp,2021,,,472.1,10.8,,
+Solomon Islands,imp,2022,,,548.7,3.0,,
+Solomon Islands,imp,2023,,,588.1,8.4,,
+Solomon Islands,imp,2024,,,557.0,10.1,,
+Solomon Islands,imp,2025,,,632.1,10.2,,
+Timor-Leste,exp,2017,annual,24.1,103.3,0.1,0.1,4.29
+Timor-Leste,exp,2018,annual,23.1,77.9,0.4,0.0,3.37
+Timor-Leste,exp,2019,annual,141.4,122.0,0.6,0.0,0.86
+Timor-Leste,exp,2020,annual,249.9,108.2,0.0,0.0,0.43
+Timor-Leste,exp,2021,annual,458.3,332.5,1.0,0.0,0.73
+Timor-Leste,exp,2022,annual,471.4,412.8,2.0,0.4,0.88
+Timor-Leste,exp,2023,annual,140.4,177.2,0.2,23.4,1.26
+Timor-Leste,exp,2024,,,74.7,0.0,,
+Timor-Leste,exp,2025,,,120.3,0.0,,
+Timor-Leste,imp,2017,annual,587.1,536.7,5.8,0.7,0.91
+Timor-Leste,imp,2018,annual,516.8,431.4,39.3,2.6,0.83
+Timor-Leste,imp,2019,annual,534.9,522.8,16.1,0.7,0.98
+Timor-Leste,imp,2020,annual,496.5,607.6,13.1,0.4,1.22
+Timor-Leste,imp,2021,annual,542.2,798.8,14.2,0.1,1.47
+Timor-Leste,imp,2022,annual,918.1,961.6,4.8,15.4,1.05
+Timor-Leste,imp,2023,annual,904.8,967.5,30.2,4.6,1.07
+Timor-Leste,imp,2024,,,1028.6,4.3,,
+Timor-Leste,imp,2025,,,1047.2,2.8,,
+Tonga,exp,2017,annual,30.7,17.5,0.1,2.6,0.57
+Tonga,exp,2018,annual,24.5,14.0,0.4,0.1,0.57
+Tonga,exp,2019,annual,42.1,16.4,0.1,0.2,0.39
+Tonga,exp,2020,annual,17.0,11.9,0.0,0.0,0.7
+Tonga,exp,2021,annual,12.8,16.2,0.0,0.0,1.27
+Tonga,exp,2022,annual,61.7,14.2,0.0,0.2,0.23
+Tonga,exp,2023,annual,10.3,25.0,0.1,1.6,2.43
+Tonga,exp,2024,monthly x12/9,28.4,23.2,0.0,0.0,0.82
+Tonga,exp,2025,annual,28.8,19.2,0.0,0.0,0.67
+Tonga,imp,2017,annual,187.8,181.3,2.3,1.7,0.97
+Tonga,imp,2018,annual,171.7,206.6,2.2,4.3,1.2
+Tonga,imp,2019,annual,249.2,209.7,3.9,23.0,0.84
+Tonga,imp,2020,annual,216.5,184.3,1.5,1.3,0.85
+Tonga,imp,2021,annual,270.0,233.0,1.0,0.9,0.86
+Tonga,imp,2022,annual,272.4,256.9,0.8,1.1,0.94
+Tonga,imp,2023,annual,320.3,277.8,5.5,6.1,0.87
+Tonga,imp,2024,monthly x12/9,331.5,300.3,7.6,3.1,0.91
+Tonga,imp,2025,annual,307.3,260.3,7.1,4.2,0.85
+Tuvalu,exp,2017,,,9.9,0.0,,
+Tuvalu,exp,2018,,,30.5,0.2,,
+Tuvalu,exp,2019,,,13.9,7.6,,
+Tuvalu,exp,2020,,,16.2,0.0,,
+Tuvalu,exp,2021,,,22.7,106.2,,
+Tuvalu,exp,2022,,,64.8,15.2,,
+Tuvalu,exp,2023,,,56.6,0.0,,
+Tuvalu,exp,2024,,,64.8,19.3,,
+Tuvalu,exp,2025,,,53.3,0.0,,
+Tuvalu,imp,2017,,,57.4,29.4,,
+Tuvalu,imp,2018,,,67.1,20.0,,
+Tuvalu,imp,2019,,,63.1,26.7,,
+Tuvalu,imp,2020,,,73.5,36.2,,
+Tuvalu,imp,2021,,,89.2,79.7,,
+Tuvalu,imp,2022,,,117.1,35.5,,
+Tuvalu,imp,2023,,,108.8,34.1,,
+Tuvalu,imp,2024,,,112.0,0.7,,
+Tuvalu,imp,2025,,,91.2,32.2,,
+Vanuatu,exp,2017,,,165.6,100.9,,
+Vanuatu,exp,2018,,,155.5,34.7,,
+Vanuatu,exp,2019,,,154.8,23.7,,
+Vanuatu,exp,2020,,,188.9,41.8,,
+Vanuatu,exp,2021,,,185.1,124.6,,
+Vanuatu,exp,2022,,,228.4,0.4,,
+Vanuatu,exp,2023,,,187.4,26.5,,
+Vanuatu,exp,2024,,,205.1,125.5,,
+Vanuatu,exp,2025,,,340.5,12.8,,
+Vanuatu,imp,2017,,,323.1,117.0,,
+Vanuatu,imp,2018,,,305.9,27.5,,
+Vanuatu,imp,2019,,,278.9,73.9,,
+Vanuatu,imp,2020,,,254.4,43.0,,
+Vanuatu,imp,2021,,,329.8,64.4,,
+Vanuatu,imp,2022,,,412.8,22.0,,
+Vanuatu,imp,2023,,,451.5,47.9,,
+Vanuatu,imp,2024,,,487.7,67.5,,
+Vanuatu,imp,2025,,,479.6,206.6,,

@@ -1,0 +1,10 @@
+# secrets - never commit
+.env
+COMTRADE_API.txt
+github_creds.txt
+publish_config.json
+# caches and bytecode
+tracker/data/cache/
+__pycache__/
+*.pyc
+.pytest_cache/

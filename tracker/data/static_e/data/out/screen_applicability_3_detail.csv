@@ -1,0 +1,2101 @@
+country,side,weights,partner_code,value_usd,share,partner_latest_month,partner_lag_months,reports_within_6m,reports_within_12m
+Comoros,exp,own 2025,699,17451500,0.5585,202607,2,True,True
+Comoros,exp,own 2025,251,4617915,0.1478,202512,9,False,True
+Comoros,exp,own 2025,784,3387658,0.1084,,,False,False
+Comoros,exp,own 2025,528,1646567,0.0527,202607,2,True,True
+Comoros,exp,own 2025,276,858084,0.0275,202607,2,True,True
+Comoros,exp,own 2025,586,584706,0.0187,202601,8,False,True
+Comoros,exp,own 2025,818,404028,0.0129,202606,3,True,True
+Comoros,exp,own 2025,826,302972,0.0097,202607,2,True,True
+Comoros,exp,own 2025,710,250792,0.008,202605,4,True,True
+Comoros,exp,own 2025,842,218353,0.007,202607,2,True,True
+Comoros,exp,own 2025,450,212810,0.0068,,,False,False
+Comoros,exp,own 2025,702,204544,0.0065,202603,6,False,True
+Comoros,exp,own 2025,380,189392,0.0061,202606,3,True,True
+Comoros,exp,own 2025,300,186523,0.006,202607,2,True,True
+Comoros,exp,own 2025,704,103305,0.0033,,,False,False
+Comoros,exp,own 2025,834,90026,0.0029,,,False,False
+Comoros,exp,own 2025,384,68181,0.0022,202605,4,True,True
+Comoros,exp,own 2025,724,63430,0.002,202606,3,True,True
+Comoros,exp,own 2025,288,63131,0.002,202603,6,False,True
+Comoros,exp,own 2025,440,63131,0.002,202607,2,True,True
+Comoros,exp,own 2025,458,63131,0.002,202608,1,True,True
+Comoros,exp,own 2025,616,63131,0.002,202606,3,True,True
+Comoros,exp,own 2025,156,50057,0.0016,202412,21,False,False
+Comoros,exp,own 2025,430,42972,0.0014,,,False,False
+Comoros,exp,own 2025,562,25506,0.0008,,,False,False
+Comoros,exp,own 2025,132,12923,0.0004,,,False,False
+Comoros,exp,own 2025,180,8132,0.0003,,,False,False
+Comoros,exp,own 2025,768,7231,0.0002,202603,6,False,True
+Comoros,exp,own 2025,646,5510,0.0002,,,False,False
+Comoros,exp,own 2025,480,1251,0.0,202606,3,True,True
+Comoros,exp,own 2025,682,290,0.0,202604,5,True,True
+Comoros,exp,own 2025,404,122,0.0,,,False,False
+Comoros,exp,own 2025,508,113,0.0,,,False,False
+Comoros,imp,own 2025,784,48273327,0.1549,,,False,False
+Comoros,imp,own 2025,156,45274333,0.1453,202412,21,False,False
+Comoros,imp,own 2025,586,35553448,0.1141,202601,8,False,True
+Comoros,imp,own 2025,699,33836236,0.1086,202607,2,True,True
+Comoros,imp,own 2025,251,32623845,0.1047,202512,9,False,True
+Comoros,imp,own 2025,704,18732639,0.0601,,,False,False
+Comoros,imp,own 2025,792,15827430,0.0508,202512,9,False,True
+Comoros,imp,own 2025,834,11042873,0.0354,,,False,False
+Comoros,imp,own 2025,458,7660033,0.0246,202608,1,True,True
+Comoros,imp,own 2025,616,7472516,0.024,202606,3,True,True
+Comoros,imp,own 2025,480,6283841,0.0202,202606,3,True,True
+Comoros,imp,own 2025,724,5626300,0.0181,202606,3,True,True
+Comoros,imp,own 2025,360,4484247,0.0144,202607,2,True,True
+Comoros,imp,own 2025,76,4369350,0.014,202608,1,True,True
+Comoros,imp,own 2025,344,4268899,0.0137,202607,2,True,True
+Comoros,imp,own 2025,710,4183857,0.0134,202605,4,True,True
+Comoros,imp,own 2025,528,3863131,0.0124,202607,2,True,True
+Comoros,imp,own 2025,450,3036235,0.0097,,,False,False
+Comoros,imp,own 2025,818,2706803,0.0087,202606,3,True,True
+Comoros,imp,own 2025,32,1718073,0.0055,202606,3,True,True
+Comoros,imp,own 2025,380,1643805,0.0053,202606,3,True,True
+Comoros,imp,own 2025,702,1423383,0.0046,202603,6,False,True
+Comoros,imp,own 2025,842,1162432,0.0037,202607,2,True,True
+Comoros,imp,own 2025,504,1126431,0.0036,202512,9,False,True
+Comoros,imp,own 2025,208,991242,0.0032,202607,2,True,True
+Comoros,imp,own 2025,56,972814,0.0031,202606,3,True,True
+Comoros,imp,own 2025,512,972710,0.0031,202605,4,True,True
+Comoros,imp,own 2025,276,972183,0.0031,202607,2,True,True
+Comoros,imp,own 2025,508,860318,0.0028,,,False,False
+Comoros,imp,own 2025,826,644374,0.0021,202607,2,True,True
+Comoros,imp,own 2025,788,607649,0.0019,,,False,False
+Comoros,imp,own 2025,404,551306,0.0018,,,False,False
+Comoros,imp,own 2025,764,541406,0.0017,202605,4,True,True
+Comoros,imp,own 2025,554,377664,0.0012,202608,1,True,True
+Comoros,imp,own 2025,50,263137,0.0008,,,False,False
+Comoros,imp,own 2025,682,235579,0.0008,202604,5,True,True
+Comoros,imp,own 2025,170,224015,0.0007,202604,5,True,True
+Comoros,imp,own 2025,196,223391,0.0007,202512,9,False,True
+Comoros,imp,own 2025,124,146471,0.0005,202607,2,True,True
+Comoros,imp,own 2025,410,129413,0.0004,202512,9,False,True
+Comoros,imp,own 2025,392,123315,0.0004,202607,2,True,True
+Comoros,imp,own 2025,804,109000,0.0003,202509,12,False,False
+Comoros,imp,own 2025,620,101037,0.0003,202607,2,True,True
+Comoros,imp,own 2025,422,98550,0.0003,,,False,False
+Comoros,imp,own 2025,752,93713,0.0003,202607,2,True,True
+Comoros,imp,own 2025,116,63339,0.0002,202412,21,False,False
+Comoros,imp,own 2025,600,53966,0.0002,202603,6,False,True
+Comoros,imp,own 2025,705,22193,0.0001,202606,3,True,True
+Comoros,imp,own 2025,703,15514,0.0,202605,4,True,True
+Comoros,imp,own 2025,430,15220,0.0,,,False,False
+Comoros,imp,own 2025,634,12815,0.0,,,False,False
+Comoros,imp,own 2025,686,10320,0.0,,,False,False
+Comoros,imp,own 2025,266,9563,0.0,,,False,False
+Comoros,imp,own 2025,218,8866,0.0,202603,6,False,True
+Comoros,imp,own 2025,414,6380,0.0,202412,21,False,False
+Comoros,imp,own 2025,324,5173,0.0,,,False,False
+Comoros,imp,own 2025,232,3212,0.0,,,False,False
+Comoros,imp,own 2025,757,2809,0.0,202608,1,True,True
+Comoros,imp,own 2025,408,2340,0.0,,,False,False
+Comoros,imp,own 2025,222,2296,0.0,202608,1,True,True
+Comoros,imp,own 2025,384,1198,0.0,202605,4,True,True
+Comoros,imp,own 2025,490,914,0.0,,,False,False
+Comoros,imp,own 2025,204,742,0.0,,,False,False
+Comoros,imp,own 2025,516,324,0.0,202501,20,False,False
+Comoros,imp,own 2025,120,320,0.0,,,False,False
+Comoros,imp,own 2025,768,126,0.0,202603,6,False,True
+Comoros,imp,own 2025,262,121,0.0,,,False,False
+Comoros,imp,own 2025,36,114,0.0,202608,1,True,True
+Fiji,exp,own 2025,842,190463803,0.2174,202607,2,True,True
+Fiji,exp,own 2025,36,131364342,0.1499,202608,1,True,True
+Fiji,exp,own 2025,156,89278802,0.1019,202412,21,False,False
+Fiji,exp,own 2025,554,63826379,0.0729,202608,1,True,True
+Fiji,exp,own 2025,776,60956424,0.0696,202607,2,True,True
+Fiji,exp,own 2025,548,33273466,0.038,,,False,False
+Fiji,exp,own 2025,16,30252871,0.0345,,,False,False
+Fiji,exp,own 2025,882,29322010,0.0335,,,False,False
+Fiji,exp,own 2025,392,23525658,0.0269,202607,2,True,True
+Fiji,exp,own 2025,296,23194602,0.0265,202607,2,True,True
+Fiji,exp,own 2025,798,19796863,0.0226,,,False,False
+Fiji,exp,own 2025,876,17823248,0.0203,,,False,False
+Fiji,exp,own 2025,184,17467625,0.0199,,,False,False
+Fiji,exp,own 2025,620,14287872,0.0163,202607,2,True,True
+Fiji,exp,own 2025,598,12557808,0.0143,,,False,False
+Fiji,exp,own 2025,90,11463364,0.0131,,,False,False
+Fiji,exp,own 2025,344,10579866,0.0121,202607,2,True,True
+Fiji,exp,own 2025,702,10510545,0.012,202603,6,False,True
+Fiji,exp,own 2025,458,9641823,0.011,202608,1,True,True
+Fiji,exp,own 2025,704,8346341,0.0095,,,False,False
+Fiji,exp,own 2025,826,6262125,0.0071,202607,2,True,True
+Fiji,exp,own 2025,520,5861403,0.0067,,,False,False
+Fiji,exp,own 2025,584,5478283,0.0063,,,False,False
+Fiji,exp,own 2025,724,5473195,0.0062,202606,3,True,True
+Fiji,exp,own 2025,258,5311441,0.0061,202412,21,False,False
+Fiji,exp,own 2025,124,4676507,0.0053,202607,2,True,True
+Fiji,exp,own 2025,251,4099619,0.0047,202512,9,False,True
+Fiji,exp,own 2025,540,4047622,0.0046,,,False,False
+Fiji,exp,own 2025,764,3399788,0.0039,202605,4,True,True
+Fiji,exp,own 2025,784,2594711,0.003,,,False,False
+Fiji,exp,own 2025,214,2302779,0.0026,202604,5,True,True
+Fiji,exp,own 2025,410,2125970,0.0024,202512,9,False,True
+Fiji,exp,own 2025,574,2037414,0.0023,,,False,False
+Fiji,exp,own 2025,528,1710911,0.002,202607,2,True,True
+Fiji,exp,own 2025,699,1354594,0.0015,202607,2,True,True
+Fiji,exp,own 2025,50,1014773,0.0012,,,False,False
+Fiji,exp,own 2025,490,748883,0.0009,,,False,False
+Fiji,exp,own 2025,56,737509,0.0008,202606,3,True,True
+Fiji,exp,own 2025,446,717623,0.0008,202607,2,True,True
+Fiji,exp,own 2025,710,679674,0.0008,202605,4,True,True
+Fiji,exp,own 2025,276,611918,0.0007,202607,2,True,True
+Fiji,exp,own 2025,583,588023,0.0007,,,False,False
+Fiji,exp,own 2025,626,527129,0.0006,,,False,False
+Fiji,exp,own 2025,162,514050,0.0006,,,False,False
+Fiji,exp,own 2025,116,509108,0.0006,202412,21,False,False
+Fiji,exp,own 2025,380,434702,0.0005,202606,3,True,True
+Fiji,exp,own 2025,360,414893,0.0005,202607,2,True,True
+Fiji,exp,own 2025,608,403993,0.0005,202606,3,True,True
+Fiji,exp,own 2025,570,292155,0.0003,,,False,False
+Fiji,exp,own 2025,616,246217,0.0003,202606,3,True,True
+Fiji,exp,own 2025,682,245422,0.0003,202604,5,True,True
+Fiji,exp,own 2025,480,237966,0.0003,202606,3,True,True
+Fiji,exp,own 2025,246,196402,0.0002,202607,2,True,True
+Fiji,exp,own 2025,634,185963,0.0002,,,False,False
+Fiji,exp,own 2025,450,181199,0.0002,,,False,False
+Fiji,exp,own 2025,212,167308,0.0002,,,False,False
+Fiji,exp,own 2025,48,151146,0.0002,202412,21,False,False
+Fiji,exp,own 2025,316,146607,0.0002,,,False,False
+Fiji,exp,own 2025,414,146186,0.0002,202412,21,False,False
+Fiji,exp,own 2025,376,130795,0.0001,202607,2,True,True
+Fiji,exp,own 2025,585,112880,0.0001,,,False,False
+Fiji,exp,own 2025,196,102027,0.0001,202512,9,False,True
+Fiji,exp,own 2025,804,100148,0.0001,202509,12,False,False
+Fiji,exp,own 2025,51,91285,0.0001,202605,4,True,True
+Fiji,exp,own 2025,300,80045,0.0001,202607,2,True,True
+Fiji,exp,own 2025,203,67845,0.0001,202607,2,True,True
+Fiji,exp,own 2025,558,51064,0.0001,,,False,False
+Fiji,exp,own 2025,504,47938,0.0001,202512,9,False,True
+Fiji,exp,own 2025,470,40484,0.0,202512,9,False,True
+Fiji,exp,own 2025,462,39543,0.0,,,False,False
+Fiji,exp,own 2025,703,36969,0.0,202605,4,True,True
+Fiji,exp,own 2025,586,33125,0.0,202601,8,False,True
+Fiji,exp,own 2025,642,32825,0.0,202606,3,True,True
+Fiji,exp,own 2025,757,27962,0.0,202608,1,True,True
+Fiji,exp,own 2025,348,27030,0.0,202607,2,True,True
+Fiji,exp,own 2025,40,23510,0.0,,,False,False
+Fiji,exp,own 2025,388,21369,0.0,,,False,False
+Fiji,exp,own 2025,484,20991,0.0,202607,2,True,True
+Fiji,exp,own 2025,654,20369,0.0,,,False,False
+Fiji,exp,own 2025,188,20034,0.0,,,False,False
+Fiji,exp,own 2025,372,18553,0.0,202607,2,True,True
+Fiji,exp,own 2025,418,18269,0.0,,,False,False
+Fiji,exp,own 2025,400,16165,0.0,,,False,False
+Fiji,exp,own 2025,76,13049,0.0,202608,1,True,True
+Fiji,exp,own 2025,748,13049,0.0,,,False,False
+Fiji,exp,own 2025,694,11396,0.0,,,False,False
+Fiji,exp,own 2025,208,10964,0.0,202607,2,True,True
+Fiji,exp,own 2025,478,10874,0.0,,,False,False
+Fiji,exp,own 2025,499,10222,0.0,202512,9,False,True
+Fiji,exp,own 2025,260,10033,0.0,,,False,False
+Fiji,exp,own 2025,152,9311,0.0,202608,1,True,True
+Fiji,exp,own 2025,428,8113,0.0,202607,2,True,True
+Fiji,exp,own 2025,144,7708,0.0,,,False,False
+Fiji,exp,own 2025,604,6320,0.0,202504,17,False,False
+Fiji,exp,own 2025,752,6091,0.0,202607,2,True,True
+Fiji,exp,own 2025,580,6090,0.0,,,False,False
+Fiji,exp,own 2025,768,4962,0.0,202603,6,False,True
+Fiji,exp,own 2025,508,4480,0.0,,,False,False
+Fiji,exp,own 2025,12,4132,0.0,,,False,False
+Fiji,exp,own 2025,858,4132,0.0,,,False,False
+Fiji,exp,own 2025,800,3190,0.0,,,False,False
+Fiji,exp,own 2025,512,2375,0.0,202605,4,True,True
+Fiji,exp,own 2025,84,2175,0.0,202607,2,True,True
+Fiji,exp,own 2025,32,1868,0.0,202606,3,True,True
+Fiji,exp,own 2025,8,1305,0.0,,,False,False
+Fiji,exp,own 2025,408,870,0.0,,,False,False
+Fiji,exp,own 2025,422,611,0.0,,,False,False
+Fiji,exp,own 2025,44,490,0.0,,,False,False
+Fiji,exp,own 2025,579,435,0.0,202608,1,True,True
+Fiji,imp,own 2025,702,713635124,0.2289,202603,6,False,True
+Fiji,imp,own 2025,156,594249491,0.1906,202412,21,False,False
+Fiji,imp,own 2025,36,449945105,0.1444,202608,1,True,True
+Fiji,imp,own 2025,554,445605461,0.143,202608,1,True,True
+Fiji,imp,own 2025,392,132022387,0.0424,202607,2,True,True
+Fiji,imp,own 2025,699,108553476,0.0348,202607,2,True,True
+Fiji,imp,own 2025,344,78521792,0.0252,202607,2,True,True
+Fiji,imp,own 2025,458,78040115,0.025,202608,1,True,True
+Fiji,imp,own 2025,764,75876278,0.0243,202605,4,True,True
+Fiji,imp,own 2025,410,49496195,0.0159,202512,9,False,True
+Fiji,imp,own 2025,360,47070140,0.0151,202607,2,True,True
+Fiji,imp,own 2025,842,45318216,0.0145,202607,2,True,True
+Fiji,imp,own 2025,490,38861286,0.0125,,,False,False
+Fiji,imp,own 2025,246,34443488,0.0111,202607,2,True,True
+Fiji,imp,own 2025,704,30683953,0.0098,,,False,False
+Fiji,imp,own 2025,757,20070791,0.0064,202608,1,True,True
+Fiji,imp,own 2025,608,15996571,0.0051,202606,3,True,True
+Fiji,imp,own 2025,826,15908444,0.0051,202607,2,True,True
+Fiji,imp,own 2025,784,15073547,0.0048,,,False,False
+Fiji,imp,own 2025,251,13263121,0.0043,202512,9,False,True
+Fiji,imp,own 2025,276,11863141,0.0038,202607,2,True,True
+Fiji,imp,own 2025,548,11136655,0.0036,,,False,False
+Fiji,imp,own 2025,528,10315843,0.0033,202607,2,True,True
+Fiji,imp,own 2025,598,8897462,0.0029,,,False,False
+Fiji,imp,own 2025,124,6715374,0.0022,202607,2,True,True
+Fiji,imp,own 2025,380,5321402,0.0017,202606,3,True,True
+Fiji,imp,own 2025,144,5207949,0.0017,,,False,False
+Fiji,imp,own 2025,470,5020135,0.0016,202512,9,False,True
+Fiji,imp,own 2025,50,4524625,0.0015,,,False,False
+Fiji,imp,own 2025,56,4460627,0.0014,202606,3,True,True
+Fiji,imp,own 2025,724,4369970,0.0014,202606,3,True,True
+Fiji,imp,own 2025,792,3492031,0.0011,202512,9,False,True
+Fiji,imp,own 2025,484,2901454,0.0009,202607,2,True,True
+Fiji,imp,own 2025,296,2258253,0.0007,202607,2,True,True
+Fiji,imp,own 2025,752,2173645,0.0007,202607,2,True,True
+Fiji,imp,own 2025,540,2099195,0.0007,,,False,False
+Fiji,imp,own 2025,90,1867792,0.0006,,,False,False
+Fiji,imp,own 2025,368,1704639,0.0005,,,False,False
+Fiji,imp,own 2025,208,1633098,0.0005,202607,2,True,True
+Fiji,imp,own 2025,586,1592850,0.0005,202601,8,False,True
+Fiji,imp,own 2025,76,1400626,0.0004,202608,1,True,True
+Fiji,imp,own 2025,710,1229232,0.0004,202605,4,True,True
+Fiji,imp,own 2025,408,1109405,0.0004,,,False,False
+Fiji,imp,own 2025,882,1022552,0.0003,,,False,False
+Fiji,imp,own 2025,300,920833,0.0003,202607,2,True,True
+Fiji,imp,own 2025,776,884026,0.0003,202607,2,True,True
+Fiji,imp,own 2025,152,878665,0.0003,202608,1,True,True
+Fiji,imp,own 2025,104,784431,0.0003,202512,9,False,True
+Fiji,imp,own 2025,442,660281,0.0002,202607,2,True,True
+Fiji,imp,own 2025,384,639440,0.0002,202605,4,True,True
+Fiji,imp,own 2025,818,516732,0.0002,202606,3,True,True
+Fiji,imp,own 2025,170,473798,0.0002,202604,5,True,True
+Fiji,imp,own 2025,40,467996,0.0002,,,False,False
+Fiji,imp,own 2025,616,430539,0.0001,202606,3,True,True
+Fiji,imp,own 2025,372,430333,0.0001,202607,2,True,True
+Fiji,imp,own 2025,504,423204,0.0001,202512,9,False,True
+Fiji,imp,own 2025,196,350953,0.0001,202512,9,False,True
+Fiji,imp,own 2025,100,336030,0.0001,202603,6,False,True
+Fiji,imp,own 2025,748,312662,0.0001,,,False,False
+Fiji,imp,own 2025,440,292114,0.0001,202607,2,True,True
+Fiji,imp,own 2025,242,265762,0.0001,202606,3,True,True
+Fiji,imp,own 2025,203,244301,0.0001,202607,2,True,True
+Fiji,imp,own 2025,376,231564,0.0001,202607,2,True,True
+Fiji,imp,own 2025,48,231087,0.0001,202412,21,False,False
+Fiji,imp,own 2025,516,202717,0.0001,202501,20,False,False
+Fiji,imp,own 2025,584,150562,0.0,,,False,False
+Fiji,imp,own 2025,798,118337,0.0,,,False,False
+Fiji,imp,own 2025,570,109850,0.0,,,False,False
+Fiji,imp,own 2025,32,85850,0.0,202606,3,True,True
+Fiji,imp,own 2025,703,84462,0.0,202605,4,True,True
+Fiji,imp,own 2025,116,81559,0.0,202412,21,False,False
+Fiji,imp,own 2025,620,81019,0.0,202607,2,True,True
+Fiji,imp,own 2025,512,76390,0.0,202605,4,True,True
+Fiji,imp,own 2025,70,76230,0.0,202608,1,True,True
+Fiji,imp,own 2025,16,74760,0.0,,,False,False
+Fiji,imp,own 2025,642,69914,0.0,202606,3,True,True
+Fiji,imp,own 2025,336,63956,0.0,,,False,False
+Fiji,imp,own 2025,84,59154,0.0,202607,2,True,True
+Fiji,imp,own 2025,348,58623,0.0,202607,2,True,True
+Fiji,imp,own 2025,233,49981,0.0,202607,2,True,True
+Fiji,imp,own 2025,804,45269,0.0,202509,12,False,False
+Fiji,imp,own 2025,218,43507,0.0,202603,6,False,True
+Fiji,imp,own 2025,858,38692,0.0,,,False,False
+Fiji,imp,own 2025,694,35942,0.0,,,False,False
+Fiji,imp,own 2025,258,34425,0.0,202412,21,False,False
+Fiji,imp,own 2025,583,34197,0.0,,,False,False
+Fiji,imp,own 2025,604,32322,0.0,202504,17,False,False
+Fiji,imp,own 2025,430,31938,0.0,,,False,False
+Fiji,imp,own 2025,860,31324,0.0,202607,2,True,True
+Fiji,imp,own 2025,388,31181,0.0,,,False,False
+Fiji,imp,own 2025,404,26459,0.0,,,False,False
+Fiji,imp,own 2025,450,23115,0.0,,,False,False
+Fiji,imp,own 2025,686,21422,0.0,,,False,False
+Fiji,imp,own 2025,120,20961,0.0,,,False,False
+Fiji,imp,own 2025,454,20930,0.0,,,False,False
+Fiji,imp,own 2025,862,20104,0.0,,,False,False
+Fiji,imp,own 2025,508,18131,0.0,,,False,False
+Fiji,imp,own 2025,422,16814,0.0,,,False,False
+Fiji,imp,own 2025,352,16367,0.0,202608,1,True,True
+Fiji,imp,own 2025,800,16160,0.0,,,False,False
+Fiji,imp,own 2025,60,15270,0.0,202604,5,True,True
+Fiji,imp,own 2025,520,13823,0.0,,,False,False
+Fiji,imp,own 2025,591,12938,0.0,202608,1,True,True
+Fiji,imp,own 2025,188,12886,0.0,,,False,False
+Fiji,imp,own 2025,428,11171,0.0,202607,2,True,True
+Fiji,imp,own 2025,340,10772,0.0,,,False,False
+Fiji,imp,own 2025,364,10674,0.0,,,False,False
+Fiji,imp,own 2025,660,10339,0.0,,,False,False
+Fiji,imp,own 2025,876,10181,0.0,,,False,False
+Fiji,imp,own 2025,316,10119,0.0,,,False,False
+Fiji,imp,own 2025,24,10060,0.0,202604,5,True,True
+Fiji,imp,own 2025,184,9997,0.0,,,False,False
+Fiji,imp,own 2025,499,9813,0.0,202512,9,False,True
+Fiji,imp,own 2025,524,8978,0.0,,,False,False
+Fiji,imp,own 2025,531,8835,0.0,,,False,False
+Fiji,imp,own 2025,64,8590,0.0,202512,9,False,True
+Fiji,imp,own 2025,574,8123,0.0,,,False,False
+Fiji,imp,own 2025,579,7875,0.0,202608,1,True,True
+Fiji,imp,own 2025,498,7338,0.0,202606,3,True,True
+Fiji,imp,own 2025,320,6902,0.0,202606,3,True,True
+Fiji,imp,own 2025,716,6850,0.0,202501,20,False,False
+Fiji,imp,own 2025,654,6320,0.0,,,False,False
+Fiji,imp,own 2025,92,5655,0.0,,,False,False
+Fiji,imp,own 2025,780,4558,0.0,202512,9,False,True
+Fiji,imp,own 2025,268,4468,0.0,202608,1,True,True
+Fiji,imp,own 2025,96,3606,0.0,,,False,False
+Fiji,imp,own 2025,670,3198,0.0,,,False,False
+Fiji,imp,own 2025,52,2944,0.0,202607,2,True,True
+Fiji,imp,own 2025,10,2559,0.0,,,False,False
+Fiji,imp,own 2025,466,2273,0.0,,,False,False
+Fiji,imp,own 2025,166,2032,0.0,,,False,False
+Fiji,imp,own 2025,446,1883,0.0,202607,2,True,True
+Fiji,imp,own 2025,682,1565,0.0,202604,5,True,True
+Fiji,imp,own 2025,634,1198,0.0,,,False,False
+Fiji,imp,own 2025,222,930,0.0,202608,1,True,True
+Fiji,imp,own 2025,400,919,0.0,,,False,False
+Fiji,imp,own 2025,585,870,0.0,,,False,False
+Fiji,imp,own 2025,788,783,0.0,,,False,False
+Fiji,imp,own 2025,192,749,0.0,,,False,False
+Fiji,imp,own 2025,270,719,0.0,,,False,False
+Fiji,imp,own 2025,626,673,0.0,,,False,False
+Fiji,imp,own 2025,566,596,0.0,202512,9,False,True
+Fiji,imp,own 2025,480,586,0.0,202606,3,True,True
+Fiji,imp,own 2025,31,565,0.0,202607,2,True,True
+Fiji,imp,own 2025,214,522,0.0,202604,5,True,True
+Fiji,imp,own 2025,418,389,0.0,,,False,False
+Fiji,imp,own 2025,496,354,0.0,,,False,False
+Fiji,imp,own 2025,558,276,0.0,,,False,False
+Fiji,imp,own 2025,705,241,0.0,202606,3,True,True
+Fiji,imp,own 2025,132,227,0.0,,,False,False
+Fiji,imp,own 2025,688,202,0.0,202607,2,True,True
+Fiji,imp,own 2025,478,187,0.0,,,False,False
+Fiji,imp,own 2025,414,130,0.0,202412,21,False,False
+Fiji,imp,own 2025,292,99,0.0,,,False,False
+Fiji,imp,own 2025,796,89,0.0,,,False,False
+Fiji,imp,own 2025,324,77,0.0,,,False,False
+Fiji,imp,own 2025,162,51,0.0,,,False,False
+Fiji,imp,own 2025,288,36,0.0,202603,6,False,True
+Fiji,imp,own 2025,260,4,0.0,,,False,False
+Fiji,imp,own 2025,795,2,0.0,,,False,False
+Fiji,imp,own 2025,266,2,0.0,,,False,False
+Kiribati,exp,own 2025,458,5952993,0.4119,202608,1,True,True
+Kiribati,exp,own 2025,392,4365473,0.302,202607,2,True,True
+Kiribati,exp,own 2025,242,3284301,0.2272,202606,3,True,True
+Kiribati,exp,own 2025,36,375633,0.026,202608,1,True,True
+Kiribati,exp,own 2025,344,172560,0.0119,202607,2,True,True
+Kiribati,exp,own 2025,251,165651,0.0115,202512,9,False,True
+Kiribati,exp,own 2025,764,61849,0.0043,202605,4,True,True
+Kiribati,exp,own 2025,528,58561,0.0041,202607,2,True,True
+Kiribati,exp,own 2025,520,16615,0.0011,,,False,False
+Kiribati,imp,own 2025,156,70587367,0.2871,202412,21,False,False
+Kiribati,imp,own 2025,36,28560584,0.1162,202608,1,True,True
+Kiribati,imp,own 2025,242,26174561,0.1065,202606,3,True,True
+Kiribati,imp,own 2025,484,19678906,0.0801,202607,2,True,True
+Kiribati,imp,own 2025,548,17711282,0.072,,,False,False
+Kiribati,imp,own 2025,392,16718610,0.068,202607,2,True,True
+Kiribati,imp,own 2025,554,15646844,0.0636,202608,1,True,True
+Kiribati,imp,own 2025,764,8151882,0.0332,202605,4,True,True
+Kiribati,imp,own 2025,704,7588570,0.0309,,,False,False
+Kiribati,imp,own 2025,490,7462354,0.0304,,,False,False
+Kiribati,imp,own 2025,360,4558577,0.0185,202607,2,True,True
+Kiribati,imp,own 2025,458,3741397,0.0152,202608,1,True,True
+Kiribati,imp,own 2025,702,3709779,0.0151,202603,6,False,True
+Kiribati,imp,own 2025,344,2859004,0.0116,202607,2,True,True
+Kiribati,imp,own 2025,699,2768002,0.0113,202607,2,True,True
+Kiribati,imp,own 2025,842,2262842,0.0092,202607,2,True,True
+Kiribati,imp,own 2025,410,1661379,0.0068,202512,9,False,True
+Kiribati,imp,own 2025,598,1085802,0.0044,,,False,False
+Kiribati,imp,own 2025,608,1056541,0.0043,202606,3,True,True
+Kiribati,imp,own 2025,208,723743,0.0029,202607,2,True,True
+Kiribati,imp,own 2025,50,388823,0.0016,,,False,False
+Kiribati,imp,own 2025,757,381941,0.0016,202608,1,True,True
+Kiribati,imp,own 2025,724,367991,0.0015,202606,3,True,True
+Kiribati,imp,own 2025,372,320451,0.0013,202607,2,True,True
+Kiribati,imp,own 2025,144,188661,0.0008,,,False,False
+Kiribati,imp,own 2025,584,179785,0.0007,,,False,False
+Kiribati,imp,own 2025,251,161001,0.0007,202512,9,False,True
+Kiribati,imp,own 2025,586,145104,0.0006,202601,8,False,True
+Kiribati,imp,own 2025,784,136571,0.0006,,,False,False
+Kiribati,imp,own 2025,76,134859,0.0005,202608,1,True,True
+Kiribati,imp,own 2025,380,124232,0.0005,202606,3,True,True
+Kiribati,imp,own 2025,276,96989,0.0004,202607,2,True,True
+Kiribati,imp,own 2025,408,93861,0.0004,,,False,False
+Kiribati,imp,own 2025,196,77482,0.0003,202512,9,False,True
+Kiribati,imp,own 2025,792,65674,0.0003,202512,9,False,True
+Kiribati,imp,own 2025,124,63269,0.0003,202607,2,True,True
+Kiribati,imp,own 2025,826,53841,0.0002,202607,2,True,True
+Kiribati,imp,own 2025,376,41933,0.0002,202607,2,True,True
+Kiribati,imp,own 2025,520,30708,0.0001,,,False,False
+Kiribati,imp,own 2025,583,20417,0.0001,,,False,False
+Kiribati,imp,own 2025,752,14943,0.0001,202607,2,True,True
+Kiribati,imp,own 2025,90,6356,0.0,,,False,False
+Kiribati,imp,own 2025,882,5453,0.0,,,False,False
+Kiribati,imp,own 2025,246,4688,0.0,202607,2,True,True
+Kiribati,imp,own 2025,620,3982,0.0,202607,2,True,True
+Kiribati,imp,own 2025,56,2355,0.0,202606,3,True,True
+Kiribati,imp,own 2025,120,1593,0.0,,,False,False
+Kiribati,imp,own 2025,798,1593,0.0,,,False,False
+Kiribati,imp,own 2025,528,1575,0.0,202607,2,True,True
+Kiribati,imp,own 2025,233,791,0.0,202607,2,True,True
+Kiribati,imp,own 2025,612,791,0.0,,,False,False
+Kiribati,imp,own 2025,20,781,0.0,202605,4,True,True
+Kiribati,imp,own 2025,512,779,0.0,202605,4,True,True
+Kiribati,imp,own 2025,604,779,0.0,202504,17,False,False
+Maldives,exp,own 2025,764,71639135,0.4956,202605,4,True,True
+Maldives,exp,own 2025,826,28368343,0.1963,202607,2,True,True
+Maldives,exp,own 2025,480,6977990,0.0483,202606,3,True,True
+Maldives,exp,own 2025,704,5452447,0.0377,,,False,False
+Maldives,exp,own 2025,699,4150789,0.0287,202607,2,True,True
+Maldives,exp,own 2025,50,4032788,0.0279,,,False,False
+Maldives,exp,own 2025,251,3912480,0.0271,202512,9,False,True
+Maldives,exp,own 2025,276,3695450,0.0256,202607,2,True,True
+Maldives,exp,own 2025,144,3612403,0.025,,,False,False
+Maldives,exp,own 2025,392,2432956,0.0168,202607,2,True,True
+Maldives,exp,own 2025,757,2392299,0.0166,202608,1,True,True
+Maldives,exp,own 2025,528,1081612,0.0075,202607,2,True,True
+Maldives,exp,own 2025,344,903913,0.0063,202607,2,True,True
+Maldives,exp,own 2025,490,864396,0.006,,,False,False
+Maldives,exp,own 2025,818,796832,0.0055,202606,3,True,True
+Maldives,exp,own 2025,380,748185,0.0052,202606,3,True,True
+Maldives,exp,own 2025,188,598880,0.0041,,,False,False
+Maldives,exp,own 2025,434,416052,0.0029,,,False,False
+Maldives,exp,own 2025,842,411651,0.0028,202607,2,True,True
+Maldives,exp,own 2025,724,368284,0.0025,202606,3,True,True
+Maldives,exp,own 2025,784,332605,0.0023,,,False,False
+Maldives,exp,own 2025,458,257975,0.0018,202608,1,True,True
+Maldives,exp,own 2025,56,242278,0.0017,202606,3,True,True
+Maldives,exp,own 2025,608,195341,0.0014,202606,3,True,True
+Maldives,exp,own 2025,616,159344,0.0011,202606,3,True,True
+Maldives,exp,own 2025,499,136283,0.0009,202512,9,False,True
+Maldives,exp,own 2025,688,119844,0.0008,202607,2,True,True
+Maldives,exp,own 2025,702,50520,0.0003,202603,6,False,True
+Maldives,exp,own 2025,156,42770,0.0003,202412,21,False,False
+Maldives,exp,own 2025,360,41812,0.0003,202607,2,True,True
+Maldives,exp,own 2025,620,39880,0.0003,202607,2,True,True
+Maldives,exp,own 2025,124,28586,0.0002,202607,2,True,True
+Maldives,exp,own 2025,792,13851,0.0001,202512,9,False,True
+Maldives,exp,own 2025,682,11302,0.0001,202604,5,True,True
+Maldives,exp,own 2025,690,4701,0.0,,,False,False
+Maldives,exp,own 2025,48,3511,0.0,202412,21,False,False
+Maldives,exp,own 2025,36,2976,0.0,202608,1,True,True
+Maldives,exp,own 2025,196,2959,0.0,202512,9,False,True
+Maldives,exp,own 2025,634,1915,0.0,,,False,False
+Maldives,exp,own 2025,586,1337,0.0,202601,8,False,True
+Maldives,exp,own 2025,208,920,0.0,202607,2,True,True
+Maldives,exp,own 2025,860,135,0.0,202607,2,True,True
+Maldives,exp,own 2025,410,132,0.0,202512,9,False,True
+Maldives,exp,own 2025,203,19,0.0,202607,2,True,True
+Maldives,exp,own 2025,710,12,0.0,202605,4,True,True
+Maldives,imp,own 2025,156,688438538,0.1982,202412,21,False,False
+Maldives,imp,own 2025,699,529661438,0.1525,202607,2,True,True
+Maldives,imp,own 2025,784,410535523,0.1182,,,False,False
+Maldives,imp,own 2025,512,341797418,0.0984,202605,4,True,True
+Maldives,imp,own 2025,458,213217326,0.0614,202608,1,True,True
+Maldives,imp,own 2025,702,132393292,0.0381,202603,6,False,True
+Maldives,imp,own 2025,144,130339827,0.0375,,,False,False
+Maldives,imp,own 2025,764,99003701,0.0285,202605,4,True,True
+Maldives,imp,own 2025,842,93972774,0.0271,202607,2,True,True
+Maldives,imp,own 2025,360,75752853,0.0218,202607,2,True,True
+Maldives,imp,own 2025,380,66330028,0.0191,202606,3,True,True
+Maldives,imp,own 2025,392,65701680,0.0189,202607,2,True,True
+Maldives,imp,own 2025,36,64190893,0.0185,202608,1,True,True
+Maldives,imp,own 2025,792,55338135,0.0159,202512,9,False,True
+Maldives,imp,own 2025,276,48997498,0.0141,202607,2,True,True
+Maldives,imp,own 2025,251,47181825,0.0136,202512,9,False,True
+Maldives,imp,own 2025,76,34093577,0.0098,202608,1,True,True
+Maldives,imp,own 2025,704,30721636,0.0088,,,False,False
+Maldives,imp,own 2025,528,30491783,0.0088,202607,2,True,True
+Maldives,imp,own 2025,826,30042669,0.0087,202607,2,True,True
+Maldives,imp,own 2025,724,27658342,0.008,202606,3,True,True
+Maldives,imp,own 2025,710,19299365,0.0056,202605,4,True,True
+Maldives,imp,own 2025,554,18697461,0.0054,202608,1,True,True
+Maldives,imp,own 2025,124,17835655,0.0051,202607,2,True,True
+Maldives,imp,own 2025,56,15854824,0.0046,202606,3,True,True
+Maldives,imp,own 2025,410,14642137,0.0042,202512,9,False,True
+Maldives,imp,own 2025,616,13771245,0.004,202606,3,True,True
+Maldives,imp,own 2025,586,13384429,0.0039,202601,8,False,True
+Maldives,imp,own 2025,818,13026520,0.0038,202606,3,True,True
+Maldives,imp,own 2025,757,12408736,0.0036,202608,1,True,True
+Maldives,imp,own 2025,208,10763683,0.0031,202607,2,True,True
+Maldives,imp,own 2025,40,8908658,0.0026,,,False,False
+Maldives,imp,own 2025,50,8790462,0.0025,,,False,False
+Maldives,imp,own 2025,490,6682527,0.0019,,,False,False
+Maldives,imp,own 2025,608,6283669,0.0018,202606,3,True,True
+Maldives,imp,own 2025,752,6036364,0.0017,202607,2,True,True
+Maldives,imp,own 2025,203,5316941,0.0015,202607,2,True,True
+Maldives,imp,own 2025,484,5230376,0.0015,202607,2,True,True
+Maldives,imp,own 2025,682,4102991,0.0012,202604,5,True,True
+Maldives,imp,own 2025,620,4081529,0.0012,202607,2,True,True
+Maldives,imp,own 2025,344,3842479,0.0011,202607,2,True,True
+Maldives,imp,own 2025,372,3794864,0.0011,202607,2,True,True
+Maldives,imp,own 2025,579,3417765,0.001,202608,1,True,True
+Maldives,imp,own 2025,300,2931337,0.0008,202607,2,True,True
+Maldives,imp,own 2025,800,2180298,0.0006,,,False,False
+Maldives,imp,own 2025,422,1953176,0.0006,,,False,False
+Maldives,imp,own 2025,196,1796083,0.0005,202512,9,False,True
+Maldives,imp,own 2025,404,1793312,0.0005,,,False,False
+Maldives,imp,own 2025,634,1732060,0.0005,,,False,False
+Maldives,imp,own 2025,642,1686748,0.0005,202606,3,True,True
+Maldives,imp,own 2025,440,1678929,0.0005,202607,2,True,True
+Maldives,imp,own 2025,152,1577787,0.0005,202608,1,True,True
+Maldives,imp,own 2025,246,1485926,0.0004,202607,2,True,True
+Maldives,imp,own 2025,348,1284914,0.0004,202607,2,True,True
+Maldives,imp,own 2025,480,1179481,0.0003,202606,3,True,True
+Maldives,imp,own 2025,604,1162198,0.0003,202504,17,False,False
+Maldives,imp,own 2025,32,1152777,0.0003,202606,3,True,True
+Maldives,imp,own 2025,804,1098315,0.0003,202509,12,False,False
+Maldives,imp,own 2025,788,1072893,0.0003,,,False,False
+Maldives,imp,own 2025,643,1052802,0.0003,,,False,False
+Maldives,imp,own 2025,504,842499,0.0002,202512,9,False,True
+Maldives,imp,own 2025,858,836786,0.0002,,,False,False
+Maldives,imp,own 2025,703,817129,0.0002,202605,4,True,True
+Maldives,imp,own 2025,218,736623,0.0002,202603,6,False,True
+Maldives,imp,own 2025,100,681672,0.0002,202603,6,False,True
+Maldives,imp,own 2025,364,605940,0.0002,,,False,False
+Maldives,imp,own 2025,428,596882,0.0002,202607,2,True,True
+Maldives,imp,own 2025,188,561133,0.0002,,,False,False
+Maldives,imp,own 2025,170,532481,0.0002,202604,5,True,True
+Maldives,imp,own 2025,233,513028,0.0001,202607,2,True,True
+Maldives,imp,own 2025,705,477201,0.0001,202606,3,True,True
+Maldives,imp,own 2025,400,456865,0.0001,,,False,False
+Maldives,imp,own 2025,116,380598,0.0001,202412,21,False,False
+Maldives,imp,own 2025,414,271202,0.0001,202412,21,False,False
+Maldives,imp,own 2025,748,250425,0.0001,,,False,False
+Maldives,imp,own 2025,834,231258,0.0001,,,False,False
+Maldives,imp,own 2025,320,215485,0.0001,202606,3,True,True
+Maldives,imp,own 2025,706,203448,0.0001,,,False,False
+Maldives,imp,own 2025,446,203444,0.0001,202607,2,True,True
+Maldives,imp,own 2025,268,202798,0.0001,202608,1,True,True
+Maldives,imp,own 2025,191,200251,0.0001,202606,3,True,True
+Maldives,imp,own 2025,48,197176,0.0001,202412,21,False,False
+Maldives,imp,own 2025,340,184623,0.0001,,,False,False
+Maldives,imp,own 2025,690,174807,0.0001,,,False,False
+Maldives,imp,own 2025,470,168990,0.0,202512,9,False,True
+Maldives,imp,own 2025,450,168689,0.0,,,False,False
+Maldives,imp,own 2025,214,166867,0.0,202604,5,True,True
+Maldives,imp,own 2025,862,162261,0.0,,,False,False
+Maldives,imp,own 2025,688,158179,0.0,202607,2,True,True
+Maldives,imp,own 2025,516,146375,0.0,202501,20,False,False
+Maldives,imp,own 2025,524,144448,0.0,,,False,False
+Maldives,imp,own 2025,288,138399,0.0,202603,6,False,True
+Maldives,imp,own 2025,242,114747,0.0,202606,3,True,True
+Maldives,imp,own 2025,44,113626,0.0,,,False,False
+Maldives,imp,own 2025,600,113114,0.0,202603,6,False,True
+Maldives,imp,own 2025,894,105306,0.0,,,False,False
+Maldives,imp,own 2025,807,97168,0.0,202608,1,True,True
+Maldives,imp,own 2025,499,83099,0.0,202512,9,False,True
+Maldives,imp,own 2025,508,71781,0.0,,,False,False
+Maldives,imp,own 2025,498,71755,0.0,202606,3,True,True
+Maldives,imp,own 2025,84,71531,0.0,202607,2,True,True
+Maldives,imp,own 2025,860,67555,0.0,202607,2,True,True
+Maldives,imp,own 2025,442,59745,0.0,202607,2,True,True
+Maldives,imp,own 2025,562,57338,0.0,,,False,False
+Maldives,imp,own 2025,266,50278,0.0,,,False,False
+Maldives,imp,own 2025,70,49981,0.0,202608,1,True,True
+Maldives,imp,own 2025,8,47917,0.0,,,False,False
+Maldives,imp,own 2025,694,46936,0.0,,,False,False
+Maldives,imp,own 2025,388,45503,0.0,,,False,False
+Maldives,imp,own 2025,28,45158,0.0,202501,20,False,False
+Maldives,imp,own 2025,328,44790,0.0,202606,3,True,True
+Maldives,imp,own 2025,462,38464,0.0,,,False,False
+Maldives,imp,own 2025,192,37448,0.0,,,False,False
+Maldives,imp,own 2025,520,36510,0.0,,,False,False
+Maldives,imp,own 2025,166,35746,0.0,,,False,False
+Maldives,imp,own 2025,795,35518,0.0,,,False,False
+Maldives,imp,own 2025,212,35375,0.0,,,False,False
+Maldives,imp,own 2025,112,35123,0.0,,,False,False
+Maldives,imp,own 2025,12,33873,0.0,,,False,False
+Maldives,imp,own 2025,887,31770,0.0,202412,21,False,False
+Maldives,imp,own 2025,780,31641,0.0,202512,9,False,True
+Maldives,imp,own 2025,132,28626,0.0,,,False,False
+Maldives,imp,own 2025,368,26788,0.0,,,False,False
+Maldives,imp,own 2025,598,26707,0.0,,,False,False
+Maldives,imp,own 2025,31,25777,0.0,202607,2,True,True
+Maldives,imp,own 2025,478,23012,0.0,,,False,False
+Maldives,imp,own 2025,533,21433,0.0,,,False,False
+Maldives,imp,own 2025,140,20251,0.0,,,False,False
+Maldives,imp,own 2025,104,19115,0.0,202512,9,False,True
+Maldives,imp,own 2025,308,18056,0.0,202606,3,True,True
+Maldives,imp,own 2025,686,17675,0.0,,,False,False
+Maldives,imp,own 2025,120,16934,0.0,,,False,False
+Maldives,imp,own 2025,740,16853,0.0,,,False,False
+Maldives,imp,own 2025,4,15823,0.0,,,False,False
+Maldives,imp,own 2025,231,15731,0.0,,,False,False
+Maldives,imp,own 2025,659,14765,0.0,,,False,False
+Maldives,imp,own 2025,674,14644,0.0,,,False,False
+Maldives,imp,own 2025,583,12599,0.0,,,False,False
+Maldives,imp,own 2025,558,12508,0.0,,,False,False
+Maldives,imp,own 2025,178,12232,0.0,,,False,False
+Maldives,imp,own 2025,324,11287,0.0,,,False,False
+Maldives,imp,own 2025,68,10738,0.0,202608,1,True,True
+Maldives,imp,own 2025,352,9607,0.0,202608,1,True,True
+Maldives,imp,own 2025,316,9190,0.0,,,False,False
+Maldives,imp,own 2025,418,8947,0.0,,,False,False
+Maldives,imp,own 2025,234,8842,0.0,202606,3,True,True
+Maldives,imp,own 2025,20,7900,0.0,202605,4,True,True
+Maldives,imp,own 2025,408,7876,0.0,,,False,False
+Maldives,imp,own 2025,760,7596,0.0,,,False,False
+Maldives,imp,own 2025,798,7365,0.0,,,False,False
+Maldives,imp,own 2025,466,6492,0.0,,,False,False
+Maldives,imp,own 2025,716,5135,0.0,202501,20,False,False
+Maldives,imp,own 2025,662,5106,0.0,,,False,False
+Maldives,imp,own 2025,540,3211,0.0,,,False,False
+Maldives,imp,own 2025,332,2658,0.0,,,False,False
+Maldives,imp,own 2025,52,2629,0.0,202607,2,True,True
+Maldives,imp,own 2025,108,2620,0.0,202504,17,False,False
+Maldives,imp,own 2025,591,2046,0.0,202608,1,True,True
+Maldives,imp,own 2025,96,1959,0.0,,,False,False
+Maldives,imp,own 2025,646,1824,0.0,,,False,False
+Maldives,imp,own 2025,136,1776,0.0,,,False,False
+Maldives,imp,own 2025,384,1394,0.0,202605,4,True,True
+Maldives,imp,own 2025,678,1393,0.0,,,False,False
+Maldives,imp,own 2025,51,1296,0.0,202605,4,True,True
+Maldives,imp,own 2025,60,1185,0.0,202604,5,True,True
+Maldives,imp,own 2025,275,1059,0.0,202412,21,False,False
+Maldives,imp,own 2025,762,1025,0.0,,,False,False
+Maldives,imp,own 2025,222,960,0.0,202608,1,True,True
+Maldives,imp,own 2025,398,947,0.0,202604,5,True,True
+Maldives,imp,own 2025,612,890,0.0,,,False,False
+Maldives,imp,own 2025,566,880,0.0,202512,9,False,True
+Maldives,imp,own 2025,660,849,0.0,,,False,False
+Maldives,imp,own 2025,86,755,0.0,,,False,False
+Maldives,imp,own 2025,64,687,0.0,202512,9,False,True
+Maldives,imp,own 2025,232,576,0.0,,,False,False
+Maldives,imp,own 2025,854,575,0.0,202412,21,False,False
+Maldives,imp,own 2025,180,550,0.0,,,False,False
+Maldives,imp,own 2025,585,523,0.0,,,False,False
+Maldives,imp,own 2025,74,492,0.0,,,False,False
+Maldives,imp,own 2025,184,388,0.0,,,False,False
+Maldives,imp,own 2025,148,326,0.0,,,False,False
+Maldives,imp,own 2025,584,325,0.0,,,False,False
+Maldives,imp,own 2025,434,308,0.0,,,False,False
+Maldives,imp,own 2025,729,263,0.0,,,False,False
+Maldives,imp,own 2025,670,221,0.0,,,False,False
+Maldives,imp,own 2025,570,112,0.0,,,False,False
+Maldives,imp,own 2025,430,95,0.0,,,False,False
+Maldives,imp,own 2025,732,78,0.0,,,False,False
+Maldives,imp,own 2025,500,74,0.0,202412,21,False,False
+Maldives,imp,own 2025,270,70,0.0,,,False,False
+Maldives,imp,own 2025,24,65,0.0,202604,5,True,True
+Maldives,imp,own 2025,580,56,0.0,,,False,False
+Maldives,imp,own 2025,768,19,0.0,202603,6,False,True
+Micronesia (FS),exp,mirror 2025,764,139010029,0.6833,202605,4,True,True
+Micronesia (FS),exp,mirror 2025,156,29797386,0.1465,202412,21,False,False
+Micronesia (FS),exp,mirror 2025,608,25242244,0.1241,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,392,2979949,0.0146,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,218,1856169,0.0091,202603,6,False,True
+Micronesia (FS),exp,mirror 2025,203,1429215,0.007,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,410,988126,0.0049,202512,9,False,True
+Micronesia (FS),exp,mirror 2025,842,674170,0.0033,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,276,339877,0.0017,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,826,191057,0.0009,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,458,153149,0.0008,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,40,147813,0.0007,,,False,False
+Micronesia (FS),exp,mirror 2025,724,76208,0.0004,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,100,73236,0.0004,202603,6,False,True
+Micronesia (FS),exp,mirror 2025,36,68831,0.0003,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,251,60201,0.0003,202512,9,False,True
+Micronesia (FS),exp,mirror 2025,344,52864,0.0003,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,414,38907,0.0002,202412,21,False,False
+Micronesia (FS),exp,mirror 2025,152,34693,0.0002,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,242,34197,0.0002,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,752,25816,0.0001,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,372,22650,0.0001,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,699,19310,0.0001,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,702,16892,0.0001,202603,6,False,True
+Micronesia (FS),exp,mirror 2025,528,15820,0.0001,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,462,12599,0.0001,,,False,False
+Micronesia (FS),exp,mirror 2025,554,9648,0.0,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,76,9334,0.0,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,214,8768,0.0,202604,5,True,True
+Micronesia (FS),exp,mirror 2025,380,8736,0.0,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,688,8687,0.0,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,56,7652,0.0,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,800,4435,0.0,,,False,False
+Micronesia (FS),exp,mirror 2025,620,3371,0.0,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,780,3152,0.0,202512,9,False,True
+Micronesia (FS),exp,mirror 2025,710,3077,0.0,202605,4,True,True
+Micronesia (FS),exp,mirror 2025,484,2322,0.0,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,384,1837,0.0,202605,4,True,True
+Micronesia (FS),exp,mirror 2025,233,1675,0.0,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,616,1391,0.0,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,705,1244,0.0,202606,3,True,True
+Micronesia (FS),exp,mirror 2025,858,838,0.0,,,False,False
+Micronesia (FS),exp,mirror 2025,792,398,0.0,202512,9,False,True
+Micronesia (FS),exp,mirror 2025,682,309,0.0,202604,5,True,True
+Micronesia (FS),exp,mirror 2025,246,280,0.0,202607,2,True,True
+Micronesia (FS),exp,mirror 2025,703,139,0.0,202605,4,True,True
+Micronesia (FS),exp,mirror 2025,60,135,0.0,202604,5,True,True
+Micronesia (FS),exp,mirror 2025,352,121,0.0,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,600,78,0.0,202603,6,False,True
+Micronesia (FS),exp,mirror 2025,807,21,0.0,202608,1,True,True
+Micronesia (FS),exp,mirror 2025,404,8,0.0,,,False,False
+Micronesia (FS),exp,mirror 2025,360,5,0.0,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,842,47919963,0.3147,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,156,38906224,0.2555,202412,21,False,False
+Micronesia (FS),imp,mirror 2025,392,23639333,0.1553,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,410,7218686,0.0474,202512,9,False,True
+Micronesia (FS),imp,mirror 2025,608,6434002,0.0423,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,36,5603913,0.0368,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,702,5526495,0.0363,202603,6,False,True
+Micronesia (FS),imp,mirror 2025,554,3852772,0.0253,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,764,3579726,0.0235,202605,4,True,True
+Micronesia (FS),imp,mirror 2025,724,2101738,0.0138,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,344,2061686,0.0135,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,360,1723820,0.0113,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,458,1128748,0.0074,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,242,588023,0.0039,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,152,474548,0.0031,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,699,457116,0.003,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,76,272768,0.0018,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,208,190200,0.0012,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,144,129073,0.0008,,,False,False
+Micronesia (FS),imp,mirror 2025,380,103066,0.0007,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,528,100694,0.0007,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,320,51584,0.0003,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,826,29849,0.0002,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,792,28050,0.0002,202512,9,False,True
+Micronesia (FS),imp,mirror 2025,682,27076,0.0002,202604,5,True,True
+Micronesia (FS),imp,mirror 2025,703,20862,0.0001,202605,4,True,True
+Micronesia (FS),imp,mirror 2025,276,18229,0.0001,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,586,17254,0.0001,202601,8,False,True
+Micronesia (FS),imp,mirror 2025,757,16304,0.0001,202608,1,True,True
+Micronesia (FS),imp,mirror 2025,752,16262,0.0001,202607,2,True,True
+Micronesia (FS),imp,mirror 2025,616,5824,0.0,202606,3,True,True
+Micronesia (FS),imp,mirror 2025,710,4203,0.0,202605,4,True,True
+Micronesia (FS),imp,mirror 2025,251,708,0.0,202512,9,False,True
+Micronesia (FS),imp,mirror 2025,40,565,0.0,,,False,False
+Nauru,exp,mirror 2025,764,132564708,0.7824,202605,4,True,True
+Nauru,exp,mirror 2025,608,11240012,0.0663,202606,3,True,True
+Nauru,exp,mirror 2025,36,4705459,0.0278,202608,1,True,True
+Nauru,exp,mirror 2025,251,3798198,0.0224,202512,9,False,True
+Nauru,exp,mirror 2025,392,2764347,0.0163,202607,2,True,True
+Nauru,exp,mirror 2025,218,1769267,0.0104,202603,6,False,True
+Nauru,exp,mirror 2025,699,1711728,0.0101,202607,2,True,True
+Nauru,exp,mirror 2025,203,1521312,0.009,202607,2,True,True
+Nauru,exp,mirror 2025,410,1251141,0.0074,202512,9,False,True
+Nauru,exp,mirror 2025,20,1189321,0.007,202605,4,True,True
+Nauru,exp,mirror 2025,276,973276,0.0057,202607,2,True,True
+Nauru,exp,mirror 2025,724,680387,0.004,202606,3,True,True
+Nauru,exp,mirror 2025,554,609078,0.0036,202608,1,True,True
+Nauru,exp,mirror 2025,702,587117,0.0035,202603,6,False,True
+Nauru,exp,mirror 2025,360,498786,0.0029,202607,2,True,True
+Nauru,exp,mirror 2025,682,472651,0.0028,202604,5,True,True
+Nauru,exp,mirror 2025,826,423489,0.0025,202607,2,True,True
+Nauru,exp,mirror 2025,566,358181,0.0021,202512,9,False,True
+Nauru,exp,mirror 2025,100,233865,0.0014,202603,6,False,True
+Nauru,exp,mirror 2025,124,216189,0.0013,202607,2,True,True
+Nauru,exp,mirror 2025,458,208146,0.0012,202608,1,True,True
+Nauru,exp,mirror 2025,842,175357,0.001,202607,2,True,True
+Nauru,exp,mirror 2025,24,157295,0.0009,202604,5,True,True
+Nauru,exp,mirror 2025,40,126285,0.0007,,,False,False
+Nauru,exp,mirror 2025,384,114109,0.0007,202605,4,True,True
+Nauru,exp,mirror 2025,616,95019,0.0006,202606,3,True,True
+Nauru,exp,mirror 2025,288,81122,0.0005,202603,6,False,True
+Nauru,exp,mirror 2025,752,61711,0.0004,202607,2,True,True
+Nauru,exp,mirror 2025,834,61280,0.0004,,,False,False
+Nauru,exp,mirror 2025,579,58863,0.0003,202608,1,True,True
+Nauru,exp,mirror 2025,705,55844,0.0003,202606,3,True,True
+Nauru,exp,mirror 2025,710,55181,0.0003,202605,4,True,True
+Nauru,exp,mirror 2025,204,55102,0.0003,,,False,False
+Nauru,exp,mirror 2025,442,47550,0.0003,202607,2,True,True
+Nauru,exp,mirror 2025,170,47131,0.0003,202604,5,True,True
+Nauru,exp,mirror 2025,60,42978,0.0003,202604,5,True,True
+Nauru,exp,mirror 2025,156,41765,0.0002,202412,21,False,False
+Nauru,exp,mirror 2025,792,41353,0.0002,202512,9,False,True
+Nauru,exp,mirror 2025,462,36510,0.0002,,,False,False
+Nauru,exp,mirror 2025,703,28614,0.0002,202605,4,True,True
+Nauru,exp,mirror 2025,328,24707,0.0001,202606,3,True,True
+Nauru,exp,mirror 2025,404,24542,0.0001,,,False,False
+Nauru,exp,mirror 2025,480,23088,0.0001,202606,3,True,True
+Nauru,exp,mirror 2025,591,20766,0.0001,202608,1,True,True
+Nauru,exp,mirror 2025,68,20236,0.0001,202608,1,True,True
+Nauru,exp,mirror 2025,152,19456,0.0001,202608,1,True,True
+Nauru,exp,mirror 2025,246,19415,0.0001,202607,2,True,True
+Nauru,exp,mirror 2025,414,18634,0.0001,202412,21,False,False
+Nauru,exp,mirror 2025,242,13823,0.0001,202606,3,True,True
+Nauru,exp,mirror 2025,96,13697,0.0001,,,False,False
+Nauru,exp,mirror 2025,516,10002,0.0001,202501,20,False,False
+Nauru,exp,mirror 2025,372,9849,0.0001,202607,2,True,True
+Nauru,exp,mirror 2025,76,8943,0.0001,202608,1,True,True
+Nauru,exp,mirror 2025,144,7872,0.0,,,False,False
+Nauru,exp,mirror 2025,642,6259,0.0,202606,3,True,True
+Nauru,exp,mirror 2025,499,6126,0.0,202512,9,False,True
+Nauru,exp,mirror 2025,484,4292,0.0,202607,2,True,True
+Nauru,exp,mirror 2025,32,3012,0.0,202606,3,True,True
+Nauru,exp,mirror 2025,807,2608,0.0,202608,1,True,True
+Nauru,exp,mirror 2025,512,2458,0.0,202605,4,True,True
+Nauru,exp,mirror 2025,562,2062,0.0,,,False,False
+Nauru,exp,mirror 2025,430,1933,0.0,,,False,False
+Nauru,exp,mirror 2025,454,1865,0.0,,,False,False
+Nauru,exp,mirror 2025,234,1432,0.0,202606,3,True,True
+Nauru,exp,mirror 2025,233,1184,0.0,202607,2,True,True
+Nauru,exp,mirror 2025,504,771,0.0,202512,9,False,True
+Nauru,exp,mirror 2025,222,762,0.0,202608,1,True,True
+Nauru,exp,mirror 2025,586,652,0.0,202601,8,False,True
+Nauru,exp,mirror 2025,398,561,0.0,202604,5,True,True
+Nauru,exp,mirror 2025,800,404,0.0,,,False,False
+Nauru,exp,mirror 2025,320,367,0.0,202606,3,True,True
+Nauru,exp,mirror 2025,70,167,0.0,202608,1,True,True
+Nauru,exp,mirror 2025,417,48,0.0,202605,4,True,True
+Nauru,exp,mirror 2025,498,6,0.0,202606,3,True,True
+Nauru,imp,mirror 2025,36,31105089,0.4579,202608,1,True,True
+Nauru,imp,mirror 2025,156,17159917,0.2526,202412,21,False,False
+Nauru,imp,mirror 2025,242,5861403,0.0863,202606,3,True,True
+Nauru,imp,mirror 2025,392,4404559,0.0648,202607,2,True,True
+Nauru,imp,mirror 2025,554,2256594,0.0332,202608,1,True,True
+Nauru,imp,mirror 2025,702,1718785,0.0253,202603,6,False,True
+Nauru,imp,mirror 2025,842,1224799,0.018,202607,2,True,True
+Nauru,imp,mirror 2025,170,921246,0.0136,202604,5,True,True
+Nauru,imp,mirror 2025,360,649656,0.0096,202607,2,True,True
+Nauru,imp,mirror 2025,792,435892,0.0064,202512,9,False,True
+Nauru,imp,mirror 2025,458,404916,0.006,202608,1,True,True
+Nauru,imp,mirror 2025,764,301684,0.0044,202605,4,True,True
+Nauru,imp,mirror 2025,608,264800,0.0039,202606,3,True,True
+Nauru,imp,mirror 2025,76,257103,0.0038,202608,1,True,True
+Nauru,imp,mirror 2025,344,250784,0.0037,202607,2,True,True
+Nauru,imp,mirror 2025,724,129315,0.0019,202606,3,True,True
+Nauru,imp,mirror 2025,380,110560,0.0016,202606,3,True,True
+Nauru,imp,mirror 2025,40,109061,0.0016,,,False,False
+Nauru,imp,mirror 2025,410,68818,0.001,202512,9,False,True
+Nauru,imp,mirror 2025,442,65767,0.001,202607,2,True,True
+Nauru,imp,mirror 2025,528,59794,0.0009,202607,2,True,True
+Nauru,imp,mirror 2025,144,40550,0.0006,,,False,False
+Nauru,imp,mirror 2025,752,32409,0.0005,202607,2,True,True
+Nauru,imp,mirror 2025,512,24268,0.0004,202605,4,True,True
+Nauru,imp,mirror 2025,699,21348,0.0003,202607,2,True,True
+Nauru,imp,mirror 2025,826,14240,0.0002,202607,2,True,True
+Nauru,imp,mirror 2025,710,7667,0.0001,202605,4,True,True
+Nauru,imp,mirror 2025,586,6742,0.0001,202601,8,False,True
+Nauru,imp,mirror 2025,251,4773,0.0001,202512,9,False,True
+Nauru,imp,mirror 2025,276,4734,0.0001,202607,2,True,True
+Nauru,imp,mirror 2025,591,2625,0.0,202608,1,True,True
+Nauru,imp,mirror 2025,703,2490,0.0,202605,4,True,True
+Nauru,imp,mirror 2025,616,789,0.0,202606,3,True,True
+Nauru,imp,mirror 2025,203,465,0.0,202607,2,True,True
+Palau,exp,own 2018,392,6656859,0.8943,202607,2,True,True
+Palau,exp,own 2018,583,285706,0.0384,,,False,False
+Palau,exp,own 2018,842,226207,0.0304,202607,2,True,True
+Palau,exp,own 2018,490,163828,0.022,,,False,False
+Palau,exp,own 2018,316,40184,0.0054,,,False,False
+Palau,exp,own 2018,116,14685,0.002,202412,21,False,False
+Palau,exp,own 2018,242,10074,0.0014,202606,3,True,True
+Palau,exp,own 2018,156,10000,0.0013,202412,21,False,False
+Palau,exp,own 2018,344,9653,0.0013,202607,2,True,True
+Palau,exp,own 2018,404,7665,0.001,,,False,False
+Palau,exp,own 2018,608,6830,0.0009,202606,3,True,True
+Palau,exp,own 2018,410,6820,0.0009,202512,9,False,True
+Palau,exp,own 2018,702,2317,0.0003,202603,6,False,True
+Palau,exp,own 2018,36,1760,0.0002,202608,1,True,True
+Palau,exp,own 2018,591,1086,0.0001,202608,1,True,True
+Palau,exp,own 2018,580,387,0.0001,,,False,False
+Palau,imp,own 2018,842,53376656,0.3491,202607,2,True,True
+Palau,imp,own 2018,702,26280346,0.1719,202603,6,False,True
+Palau,imp,own 2018,410,15850978,0.1037,202512,9,False,True
+Palau,imp,own 2018,392,15355494,0.1004,202607,2,True,True
+Palau,imp,own 2018,490,8759057,0.0573,,,False,False
+Palau,imp,own 2018,156,8670162,0.0567,202412,21,False,False
+Palau,imp,own 2018,316,7329573,0.0479,,,False,False
+Palau,imp,own 2018,608,6131213,0.0401,202606,3,True,True
+Palau,imp,own 2018,36,1882669,0.0123,202608,1,True,True
+Palau,imp,own 2018,344,1605270,0.0105,202607,2,True,True
+Palau,imp,own 2018,554,1542195,0.0101,202608,1,True,True
+Palau,imp,own 2018,764,1012305,0.0066,202605,4,True,True
+Palau,imp,own 2018,380,602472,0.0039,202606,3,True,True
+Palau,imp,own 2018,458,594839,0.0039,202608,1,True,True
+Palau,imp,own 2018,276,527961,0.0035,202607,2,True,True
+Palau,imp,own 2018,704,481461,0.0031,,,False,False
+Palau,imp,own 2018,757,300459,0.002,202608,1,True,True
+Palau,imp,own 2018,251,231951,0.0015,202512,9,False,True
+Palau,imp,own 2018,583,213061,0.0014,,,False,False
+Palau,imp,own 2018,705,202234,0.0013,202606,3,True,True
+Palau,imp,own 2018,826,179526,0.0012,202607,2,True,True
+Palau,imp,own 2018,528,170219,0.0011,202607,2,True,True
+Palau,imp,own 2018,56,153349,0.001,202606,3,True,True
+Palau,imp,own 2018,40,130585,0.0009,,,False,False
+Palau,imp,own 2018,804,128774,0.0008,202509,12,False,False
+Palau,imp,own 2018,360,121857,0.0008,202607,2,True,True
+Palau,imp,own 2018,699,113243,0.0007,202607,2,True,True
+Palau,imp,own 2018,20,99756,0.0007,202605,4,True,True
+Palau,imp,own 2018,242,92045,0.0006,202606,3,True,True
+Palau,imp,own 2018,580,78336,0.0005,,,False,False
+Palau,imp,own 2018,208,75953,0.0005,202607,2,True,True
+Palau,imp,own 2018,384,71004,0.0005,202605,4,True,True
+Palau,imp,own 2018,124,63563,0.0004,202607,2,True,True
+Palau,imp,own 2018,266,57455,0.0004,,,False,False
+Palau,imp,own 2018,579,51438,0.0003,202608,1,True,True
+Palau,imp,own 2018,752,51187,0.0003,202607,2,True,True
+Palau,imp,own 2018,703,37787,0.0002,202605,4,True,True
+Palau,imp,own 2018,792,29776,0.0002,202512,9,False,True
+Palau,imp,own 2018,270,27838,0.0002,,,False,False
+Palau,imp,own 2018,428,26577,0.0002,202607,2,True,True
+Palau,imp,own 2018,484,24882,0.0002,202607,2,True,True
+Palau,imp,own 2018,336,15971,0.0001,,,False,False
+Palau,imp,own 2018,76,13440,0.0001,202608,1,True,True
+Palau,imp,own 2018,516,13058,0.0001,202501,20,False,False
+Palau,imp,own 2018,376,12418,0.0001,202607,2,True,True
+Palau,imp,own 2018,388,11542,0.0001,,,False,False
+Palau,imp,own 2018,788,9294,0.0001,,,False,False
+Palau,imp,own 2018,466,9132,0.0001,,,False,False
+Palau,imp,own 2018,320,7462,0.0,202606,3,True,True
+Palau,imp,own 2018,446,7461,0.0,202607,2,True,True
+Palau,imp,own 2018,686,6882,0.0,,,False,False
+Palau,imp,own 2018,581,5060,0.0,,,False,False
+Palau,imp,own 2018,418,4903,0.0,,,False,False
+Palau,imp,own 2018,404,4782,0.0,,,False,False
+Palau,imp,own 2018,44,4678,0.0,,,False,False
+Palau,imp,own 2018,340,4412,0.0,,,False,False
+Palau,imp,own 2018,616,4189,0.0,202606,3,True,True
+Palau,imp,own 2018,710,4000,0.0,202605,4,True,True
+Palau,imp,own 2018,116,3987,0.0,202412,21,False,False
+Palau,imp,own 2018,268,2932,0.0,202608,1,True,True
+Palau,imp,own 2018,470,2692,0.0,202512,9,False,True
+Palau,imp,own 2018,682,2452,0.0,202604,5,True,True
+Palau,imp,own 2018,308,2313,0.0,202606,3,True,True
+Palau,imp,own 2018,50,2206,0.0,,,False,False
+Palau,imp,own 2018,858,1823,0.0,,,False,False
+Palau,imp,own 2018,772,1811,0.0,,,False,False
+Palau,imp,own 2018,598,1444,0.0,,,False,False
+Palau,imp,own 2018,724,1368,0.0,202606,3,True,True
+Palau,imp,own 2018,800,1323,0.0,,,False,False
+Palau,imp,own 2018,100,1123,0.0,202603,6,False,True
+Palau,imp,own 2018,624,1034,0.0,,,False,False
+Palau,imp,own 2018,586,963,0.0,202601,8,False,True
+Palau,imp,own 2018,191,907,0.0,202606,3,True,True
+Palau,imp,own 2018,258,901,0.0,202412,21,False,False
+Palau,imp,own 2018,166,889,0.0,,,False,False
+Palau,imp,own 2018,591,659,0.0,202608,1,True,True
+Palau,imp,own 2018,584,615,0.0,,,False,False
+Palau,imp,own 2018,348,591,0.0,202607,2,True,True
+Palau,imp,own 2018,192,584,0.0,,,False,False
+Palau,imp,own 2018,174,528,0.0,,,False,False
+Palau,imp,own 2018,784,511,0.0,,,False,False
+Palau,imp,own 2018,414,464,0.0,202412,21,False,False
+Palau,imp,own 2018,626,454,0.0,,,False,False
+Palau,imp,own 2018,643,343,0.0,,,False,False
+Palau,imp,own 2018,706,284,0.0,,,False,False
+Palau,imp,own 2018,620,234,0.0,202607,2,True,True
+Palau,imp,own 2018,233,233,0.0,202607,2,True,True
+Palau,imp,own 2018,729,227,0.0,,,False,False
+Palau,imp,own 2018,222,200,0.0,202608,1,True,True
+Palau,imp,own 2018,239,155,0.0,,,False,False
+Palau,imp,own 2018,136,150,0.0,,,False,False
+Palau,imp,own 2018,860,145,0.0,202607,2,True,True
+Palau,imp,own 2018,442,138,0.0,202607,2,True,True
+Palau,imp,own 2018,604,118,0.0,202504,17,False,False
+Palau,imp,own 2018,178,117,0.0,,,False,False
+Palau,imp,own 2018,120,81,0.0,,,False,False
+Palau,imp,own 2018,262,79,0.0,,,False,False
+Palau,imp,own 2018,332,61,0.0,,,False,False
+Palau,imp,own 2018,104,58,0.0,202512,9,False,True
+Palau,imp,own 2018,246,56,0.0,202607,2,True,True
+Palau,imp,own 2018,524,53,0.0,,,False,False
+Palau,imp,own 2018,504,50,0.0,202512,9,False,True
+Palau,imp,own 2018,96,39,0.0,,,False,False
+Palau,imp,own 2018,540,30,0.0,,,False,False
+Palau,imp,own 2018,400,23,0.0,,,False,False
+Palau,imp,own 2018,300,23,0.0,202607,2,True,True
+Palau,imp,own 2018,70,20,0.0,202608,1,True,True
+Palau,imp,own 2018,203,20,0.0,202607,2,True,True
+Palau,imp,own 2018,324,20,0.0,,,False,False
+Palau,imp,own 2018,440,20,0.0,202607,2,True,True
+Palau,imp,own 2018,496,20,0.0,,,False,False
+Palau,imp,own 2018,796,20,0.0,,,False,False
+Palau,imp,own 2018,887,20,0.0,202412,21,False,False
+Palau,imp,own 2018,612,10,0.0,,,False,False
+Palau,imp,own 2018,48,0,0.0,202412,21,False,False
+Papua New Guinea,exp,own 2023,36,2177346522,0.2197,202608,1,True,True
+Papua New Guinea,exp,own 2023,392,2068184291,0.2087,202607,2,True,True
+Papua New Guinea,exp,own 2023,156,1936544949,0.1954,202412,21,False,False
+Papua New Guinea,exp,own 2023,490,730816801,0.0738,,,False,False
+Papua New Guinea,exp,own 2023,408,431857042,0.0436,,,False,False
+Papua New Guinea,exp,own 2023,702,327649746,0.0331,202603,6,False,True
+Papua New Guinea,exp,own 2023,826,254437017,0.0257,202607,2,True,True
+Papua New Guinea,exp,own 2023,699,250533375,0.0253,202607,2,True,True
+Papua New Guinea,exp,own 2023,528,240220954,0.0242,202607,2,True,True
+Papua New Guinea,exp,own 2023,458,217250352,0.0219,202608,1,True,True
+Papua New Guinea,exp,own 2023,608,207532073,0.0209,202606,3,True,True
+Papua New Guinea,exp,own 2023,56,164427767,0.0166,202606,3,True,True
+Papua New Guinea,exp,own 2023,764,142430321,0.0144,202605,4,True,True
+Papua New Guinea,exp,own 2023,276,142187411,0.0143,202607,2,True,True
+Papua New Guinea,exp,own 2023,246,92468140,0.0093,202607,2,True,True
+Papua New Guinea,exp,own 2023,360,88371239,0.0089,202607,2,True,True
+Papua New Guinea,exp,own 2023,380,85118178,0.0086,202606,3,True,True
+Papua New Guinea,exp,own 2023,842,76450701,0.0077,202607,2,True,True
+Papua New Guinea,exp,own 2023,724,65850769,0.0066,202606,3,True,True
+Papua New Guinea,exp,own 2023,124,32581181,0.0033,202607,2,True,True
+Papua New Guinea,exp,own 2023,757,32517472,0.0033,202608,1,True,True
+Papua New Guinea,exp,own 2023,90,31032850,0.0031,,,False,False
+Papua New Guinea,exp,own 2023,251,25167109,0.0025,202512,9,False,True
+Papua New Guinea,exp,own 2023,554,17599397,0.0018,202608,1,True,True
+Papua New Guinea,exp,own 2023,704,15233187,0.0015,,,False,False
+Papua New Guinea,exp,own 2023,344,13621662,0.0014,202607,2,True,True
+Papua New Guinea,exp,own 2023,50,7110696,0.0007,,,False,False
+Papua New Guinea,exp,own 2023,300,5586420,0.0006,202607,2,True,True
+Papua New Guinea,exp,own 2023,144,4159867,0.0004,,,False,False
+Papua New Guinea,exp,own 2023,620,3771520,0.0004,202607,2,True,True
+Papua New Guinea,exp,own 2023,660,3389367,0.0003,,,False,False
+Papua New Guinea,exp,own 2023,784,3060111,0.0003,,,False,False
+Papua New Guinea,exp,own 2023,548,2842498,0.0003,,,False,False
+Papua New Guinea,exp,own 2023,242,2459551,0.0002,202606,3,True,True
+Papua New Guinea,exp,own 2023,752,1327993,0.0001,202607,2,True,True
+Papua New Guinea,exp,own 2023,540,875400,0.0001,,,False,False
+Papua New Guinea,exp,own 2023,40,873496,0.0001,,,False,False
+Papua New Guinea,exp,own 2023,748,696283,0.0001,,,False,False
+Papua New Guinea,exp,own 2023,188,626413,0.0001,,,False,False
+Papua New Guinea,exp,own 2023,616,538262,0.0001,202606,3,True,True
+Papua New Guinea,exp,own 2023,882,530311,0.0001,,,False,False
+Papua New Guinea,exp,own 2023,705,513311,0.0001,202606,3,True,True
+Papua New Guinea,exp,own 2023,585,365915,0.0,,,False,False
+Papua New Guinea,exp,own 2023,296,322952,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,504,238940,0.0,202512,9,False,True
+Papua New Guinea,exp,own 2023,372,236321,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,604,221114,0.0,202504,17,False,False
+Papua New Guinea,exp,own 2023,792,205412,0.0,202512,9,False,True
+Papua New Guinea,exp,own 2023,776,200572,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,400,153983,0.0,,,False,False
+Papua New Guinea,exp,own 2023,258,151385,0.0,202412,21,False,False
+Papua New Guinea,exp,own 2023,214,142467,0.0,202604,5,True,True
+Papua New Guinea,exp,own 2023,268,140537,0.0,202608,1,True,True
+Papua New Guinea,exp,own 2023,104,138449,0.0,202512,9,False,True
+Papua New Guinea,exp,own 2023,710,123825,0.0,202605,4,True,True
+Papua New Guinea,exp,own 2023,579,117872,0.0,202608,1,True,True
+Papua New Guinea,exp,own 2023,233,107735,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,682,92477,0.0,202604,5,True,True
+Papua New Guinea,exp,own 2023,376,89415,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,191,72849,0.0,202606,3,True,True
+Papua New Guinea,exp,own 2023,170,51566,0.0,202604,5,True,True
+Papua New Guinea,exp,own 2023,352,47106,0.0,202608,1,True,True
+Papua New Guinea,exp,own 2023,520,41412,0.0,,,False,False
+Papua New Guinea,exp,own 2023,642,38088,0.0,202606,3,True,True
+Papua New Guinea,exp,own 2023,203,34919,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,804,32679,0.0,202509,12,False,False
+Papua New Guinea,exp,own 2023,116,27437,0.0,202412,21,False,False
+Papua New Guinea,exp,own 2023,414,24480,0.0,202412,21,False,False
+Papua New Guinea,exp,own 2023,626,22293,0.0,,,False,False
+Papua New Guinea,exp,own 2023,340,19863,0.0,,,False,False
+Papua New Guinea,exp,own 2023,818,16230,0.0,202606,3,True,True
+Papua New Guinea,exp,own 2023,586,8952,0.0,202601,8,False,True
+Papua New Guinea,exp,own 2023,484,7364,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,32,7002,0.0,202606,3,True,True
+Papua New Guinea,exp,own 2023,634,5906,0.0,,,False,False
+Papua New Guinea,exp,own 2023,96,3980,0.0,,,False,False
+Papua New Guinea,exp,own 2023,24,3192,0.0,202604,5,True,True
+Papua New Guinea,exp,own 2023,583,2236,0.0,,,False,False
+Papua New Guinea,exp,own 2023,288,2231,0.0,202603,6,False,True
+Papua New Guinea,exp,own 2023,388,1440,0.0,,,False,False
+Papua New Guinea,exp,own 2023,716,1245,0.0,202501,20,False,False
+Papua New Guinea,exp,own 2023,184,961,0.0,,,False,False
+Papua New Guinea,exp,own 2023,208,903,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,422,903,0.0,,,False,False
+Papua New Guinea,exp,own 2023,76,626,0.0,202608,1,True,True
+Papua New Guinea,exp,own 2023,364,542,0.0,,,False,False
+Papua New Guinea,exp,own 2023,86,460,0.0,,,False,False
+Papua New Guinea,exp,own 2023,20,311,0.0,202605,4,True,True
+Papua New Guinea,exp,own 2023,566,272,0.0,202512,9,False,True
+Papua New Guinea,exp,own 2023,324,211,0.0,,,False,False
+Papua New Guinea,exp,own 2023,178,149,0.0,,,False,False
+Papua New Guinea,exp,own 2023,450,83,0.0,,,False,False
+Papua New Guinea,exp,own 2023,862,79,0.0,,,False,False
+Papua New Guinea,exp,own 2023,266,30,0.0,,,False,False
+Papua New Guinea,exp,own 2023,218,28,0.0,202603,6,False,True
+Papua New Guinea,exp,own 2023,591,18,0.0,202608,1,True,True
+Papua New Guinea,exp,own 2023,404,15,0.0,,,False,False
+Papua New Guinea,exp,own 2023,60,5,0.0,202604,5,True,True
+Papua New Guinea,exp,own 2023,418,3,0.0,,,False,False
+Papua New Guinea,exp,own 2023,48,1,0.0,202412,21,False,False
+Papua New Guinea,exp,own 2023,348,1,0.0,202607,2,True,True
+Papua New Guinea,exp,own 2023,654,1,0.0,,,False,False
+Papua New Guinea,imp,own 2023,36,1806874074,0.3058,202608,1,True,True
+Papua New Guinea,imp,own 2023,156,1128456761,0.191,202412,21,False,False
+Papua New Guinea,imp,own 2023,702,872623028,0.1477,202603,6,False,True
+Papua New Guinea,imp,own 2023,458,435666670,0.0737,202608,1,True,True
+Papua New Guinea,imp,own 2023,360,241789557,0.0409,202607,2,True,True
+Papua New Guinea,imp,own 2023,392,224613044,0.038,202607,2,True,True
+Papua New Guinea,imp,own 2023,764,174719437,0.0296,202605,4,True,True
+Papua New Guinea,imp,own 2023,408,143185885,0.0242,,,False,False
+Papua New Guinea,imp,own 2023,490,133831632,0.0227,,,False,False
+Papua New Guinea,imp,own 2023,554,119285991,0.0202,202608,1,True,True
+Papua New Guinea,imp,own 2023,699,101331397,0.0172,202607,2,True,True
+Papua New Guinea,imp,own 2023,842,99720465,0.0169,202607,2,True,True
+Papua New Guinea,imp,own 2023,344,73322541,0.0124,202607,2,True,True
+Papua New Guinea,imp,own 2023,704,61635043,0.0104,,,False,False
+Papua New Guinea,imp,own 2023,608,24040447,0.0041,202606,3,True,True
+Papua New Guinea,imp,own 2023,788,21281193,0.0036,,,False,False
+Papua New Guinea,imp,own 2023,634,20024235,0.0034,,,False,False
+Papua New Guinea,imp,own 2023,276,18668984,0.0032,202607,2,True,True
+Papua New Guinea,imp,own 2023,528,16760545,0.0028,202607,2,True,True
+Papua New Guinea,imp,own 2023,124,14857591,0.0025,202607,2,True,True
+Papua New Guinea,imp,own 2023,784,14640730,0.0025,,,False,False
+Papua New Guinea,imp,own 2023,242,12888005,0.0022,202606,3,True,True
+Papua New Guinea,imp,own 2023,380,12854379,0.0022,202606,3,True,True
+Papua New Guinea,imp,own 2023,56,11535078,0.002,202606,3,True,True
+Papua New Guinea,imp,own 2023,826,11337569,0.0019,202607,2,True,True
+Papua New Guinea,imp,own 2023,724,10142778,0.0017,202606,3,True,True
+Papua New Guinea,imp,own 2023,208,10019949,0.0017,202607,2,True,True
+Papua New Guinea,imp,own 2023,710,9897582,0.0017,202605,4,True,True
+Papua New Guinea,imp,own 2023,246,9687201,0.0016,202607,2,True,True
+Papua New Guinea,imp,own 2023,251,8917658,0.0015,202512,9,False,True
+Papua New Guinea,imp,own 2023,792,5398988,0.0009,202512,9,False,True
+Papua New Guinea,imp,own 2023,484,5358134,0.0009,202607,2,True,True
+Papua New Guinea,imp,own 2023,757,3907163,0.0007,202608,1,True,True
+Papua New Guinea,imp,own 2023,296,3710307,0.0006,202607,2,True,True
+Papua New Guinea,imp,own 2023,40,3689022,0.0006,,,False,False
+Papua New Guinea,imp,own 2023,104,3644206,0.0006,202512,9,False,True
+Papua New Guinea,imp,own 2023,76,3429378,0.0006,202608,1,True,True
+Papua New Guinea,imp,own 2023,752,3379702,0.0006,202607,2,True,True
+Papua New Guinea,imp,own 2023,144,3069061,0.0005,,,False,False
+Papua New Guinea,imp,own 2023,50,2360888,0.0004,,,False,False
+Papua New Guinea,imp,own 2023,616,1866923,0.0003,202606,3,True,True
+Papua New Guinea,imp,own 2023,376,1669785,0.0003,202607,2,True,True
+Papua New Guinea,imp,own 2023,372,1630711,0.0003,202607,2,True,True
+Papua New Guinea,imp,own 2023,90,1627502,0.0003,,,False,False
+Papua New Guinea,imp,own 2023,584,1257511,0.0002,,,False,False
+Papua New Guinea,imp,own 2023,410,1229654,0.0002,202512,9,False,True
+Papua New Guinea,imp,own 2023,583,1225243,0.0002,,,False,False
+Papua New Guinea,imp,own 2023,116,1045582,0.0002,202412,21,False,False
+Papua New Guinea,imp,own 2023,96,1009738,0.0002,,,False,False
+Papua New Guinea,imp,own 2023,414,806802,0.0001,202412,21,False,False
+Papua New Guinea,imp,own 2023,586,702875,0.0001,202601,8,False,True
+Papua New Guinea,imp,own 2023,643,693388,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,112,680940,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,548,678181,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,818,669453,0.0001,202606,3,True,True
+Papua New Guinea,imp,own 2023,804,582881,0.0001,202509,12,False,False
+Papua New Guinea,imp,own 2023,422,522315,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,579,480598,0.0001,202608,1,True,True
+Papua New Guinea,imp,own 2023,682,396549,0.0001,202604,5,True,True
+Papua New Guinea,imp,own 2023,196,387412,0.0001,202512,9,False,True
+Papua New Guinea,imp,own 2023,32,376498,0.0001,202606,3,True,True
+Papua New Guinea,imp,own 2023,626,352398,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,212,349581,0.0001,,,False,False
+Papua New Guinea,imp,own 2023,203,341906,0.0001,202607,2,True,True
+Papua New Guinea,imp,own 2023,705,306822,0.0001,202606,3,True,True
+Papua New Guinea,imp,own 2023,862,293927,0.0,,,False,False
+Papua New Guinea,imp,own 2023,796,239671,0.0,,,False,False
+Papua New Guinea,imp,own 2023,748,236531,0.0,,,False,False
+Papua New Guinea,imp,own 2023,233,207640,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,404,204248,0.0,,,False,False
+Papua New Guinea,imp,own 2023,440,185926,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,512,184289,0.0,202605,4,True,True
+Papua New Guinea,imp,own 2023,428,183646,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,520,173737,0.0,,,False,False
+Papua New Guinea,imp,own 2023,20,167786,0.0,202605,4,True,True
+Papua New Guinea,imp,own 2023,292,166532,0.0,,,False,False
+Papua New Guinea,imp,own 2023,442,133737,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,170,131070,0.0,202604,5,True,True
+Papua New Guinea,imp,own 2023,136,118023,0.0,,,False,False
+Papua New Guinea,imp,own 2023,152,114386,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,858,111826,0.0,,,False,False
+Papua New Guinea,imp,own 2023,222,104137,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,268,97112,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,703,93130,0.0,202605,4,True,True
+Papua New Guinea,imp,own 2023,540,89704,0.0,,,False,False
+Papua New Guinea,imp,own 2023,591,88950,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,300,79526,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,620,73866,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,68,67921,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,288,65704,0.0,202603,6,False,True
+Papua New Guinea,imp,own 2023,516,56806,0.0,202501,20,False,False
+Papua New Guinea,imp,own 2023,480,49965,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,348,49238,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,694,48833,0.0,,,False,False
+Papua New Guinea,imp,own 2023,328,47907,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,834,47782,0.0,,,False,False
+Papua New Guinea,imp,own 2023,534,47658,0.0,,,False,False
+Papua New Guinea,imp,own 2023,642,43312,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,660,40964,0.0,,,False,False
+Papua New Guinea,imp,own 2023,400,34097,0.0,,,False,False
+Papua New Guinea,imp,own 2023,180,33561,0.0,,,False,False
+Papua New Guinea,imp,own 2023,28,31542,0.0,202501,20,False,False
+Papua New Guinea,imp,own 2023,120,30707,0.0,,,False,False
+Papua New Guinea,imp,own 2023,218,26018,0.0,202603,6,False,True
+Papua New Guinea,imp,own 2023,604,23124,0.0,202504,17,False,False
+Papua New Guinea,imp,own 2023,100,21882,0.0,202603,6,False,True
+Papua New Guinea,imp,own 2023,188,21270,0.0,,,False,False
+Papua New Guinea,imp,own 2023,316,20147,0.0,,,False,False
+Papua New Guinea,imp,own 2023,430,19899,0.0,,,False,False
+Papua New Guinea,imp,own 2023,336,19502,0.0,,,False,False
+Papua New Guinea,imp,own 2023,417,15263,0.0,202605,4,True,True
+Papua New Guinea,imp,own 2023,364,14852,0.0,,,False,False
+Papua New Guinea,imp,own 2023,524,14064,0.0,,,False,False
+Papua New Guinea,imp,own 2023,266,13789,0.0,,,False,False
+Papua New Guinea,imp,own 2023,16,13580,0.0,,,False,False
+Papua New Guinea,imp,own 2023,352,13201,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,688,10830,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,504,10415,0.0,202512,9,False,True
+Papua New Guinea,imp,own 2023,24,9388,0.0,202604,5,True,True
+Papua New Guinea,imp,own 2023,166,8954,0.0,,,False,False
+Papua New Guinea,imp,own 2023,798,8778,0.0,,,False,False
+Papua New Guinea,imp,own 2023,686,8652,0.0,,,False,False
+Papua New Guinea,imp,own 2023,800,6273,0.0,,,False,False
+Papua New Guinea,imp,own 2023,398,6220,0.0,202604,5,True,True
+Papua New Guinea,imp,own 2023,44,5804,0.0,,,False,False
+Papua New Guinea,imp,own 2023,499,5763,0.0,202512,9,False,True
+Papua New Guinea,imp,own 2023,239,4381,0.0,,,False,False
+Papua New Guinea,imp,own 2023,585,3622,0.0,,,False,False
+Papua New Guinea,imp,own 2023,566,3209,0.0,202512,9,False,True
+Papua New Guinea,imp,own 2023,446,2651,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,716,2538,0.0,202501,20,False,False
+Papua New Guinea,imp,own 2023,31,2518,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,570,2439,0.0,,,False,False
+Papua New Guinea,imp,own 2023,270,2401,0.0,,,False,False
+Papua New Guinea,imp,own 2023,882,2090,0.0,,,False,False
+Papua New Guinea,imp,own 2023,70,1900,0.0,202608,1,True,True
+Papua New Guinea,imp,own 2023,214,1892,0.0,202604,5,True,True
+Papua New Guinea,imp,own 2023,234,1341,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,191,1280,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,894,1020,0.0,,,False,False
+Papua New Guinea,imp,own 2023,500,854,0.0,202412,21,False,False
+Papua New Guinea,imp,own 2023,670,842,0.0,,,False,False
+Papua New Guinea,imp,own 2023,418,839,0.0,,,False,False
+Papua New Guinea,imp,own 2023,426,836,0.0,,,False,False
+Papua New Guinea,imp,own 2023,795,831,0.0,,,False,False
+Papua New Guinea,imp,own 2023,678,825,0.0,,,False,False
+Papua New Guinea,imp,own 2023,470,695,0.0,202512,9,False,True
+Papua New Guinea,imp,own 2023,654,683,0.0,,,False,False
+Papua New Guinea,imp,own 2023,84,675,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,478,587,0.0,,,False,False
+Papua New Guinea,imp,own 2023,368,570,0.0,,,False,False
+Papua New Guinea,imp,own 2023,231,556,0.0,,,False,False
+Papua New Guinea,imp,own 2023,132,513,0.0,,,False,False
+Papua New Guinea,imp,own 2023,308,435,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,659,379,0.0,,,False,False
+Papua New Guinea,imp,own 2023,258,374,0.0,202412,21,False,False
+Papua New Guinea,imp,own 2023,740,259,0.0,,,False,False
+Papua New Guinea,imp,own 2023,780,246,0.0,202512,9,False,True
+Papua New Guinea,imp,own 2023,729,208,0.0,,,False,False
+Papua New Guinea,imp,own 2023,887,195,0.0,202412,21,False,False
+Papua New Guinea,imp,own 2023,384,192,0.0,202605,4,True,True
+Papua New Guinea,imp,own 2023,48,171,0.0,202412,21,False,False
+Papua New Guinea,imp,own 2023,10,160,0.0,,,False,False
+Papua New Guinea,imp,own 2023,776,134,0.0,202607,2,True,True
+Papua New Guinea,imp,own 2023,275,90,0.0,202412,21,False,False
+Papua New Guinea,imp,own 2023,690,87,0.0,,,False,False
+Papua New Guinea,imp,own 2023,92,50,0.0,,,False,False
+Papua New Guinea,imp,own 2023,320,40,0.0,202606,3,True,True
+Papua New Guinea,imp,own 2023,192,30,0.0,,,False,False
+Samoa,exp,own 2024,702,11967369,0.2855,202603,6,False,True
+Samoa,exp,own 2024,554,7393428,0.1764,202608,1,True,True
+Samoa,exp,own 2024,842,5600559,0.1336,202607,2,True,True
+Samoa,exp,own 2024,36,4558121,0.1087,202608,1,True,True
+Samoa,exp,own 2024,772,3627471,0.0865,,,False,False
+Samoa,exp,own 2024,16,1976593,0.0472,,,False,False
+Samoa,exp,own 2024,90,1820988,0.0434,,,False,False
+Samoa,exp,own 2024,242,1119182,0.0267,202606,3,True,True
+Samoa,exp,own 2024,184,820610,0.0196,,,False,False
+Samoa,exp,own 2024,156,612309,0.0146,202412,21,False,False
+Samoa,exp,own 2024,490,555835,0.0133,,,False,False
+Samoa,exp,own 2024,392,453275,0.0108,202607,2,True,True
+Samoa,exp,own 2024,757,385835,0.0092,202608,1,True,True
+Samoa,exp,own 2024,410,292569,0.007,202512,9,False,True
+Samoa,exp,own 2024,50,216555,0.0052,,,False,False
+Samoa,exp,own 2024,584,126313,0.003,,,False,False
+Samoa,exp,own 2024,776,100923,0.0024,202607,2,True,True
+Samoa,exp,own 2024,458,86559,0.0021,202608,1,True,True
+Samoa,exp,own 2024,784,82919,0.002,,,False,False
+Samoa,exp,own 2024,764,42111,0.001,202605,4,True,True
+Samoa,exp,own 2024,136,25940,0.0006,,,False,False
+Samoa,exp,own 2024,798,19989,0.0005,,,False,False
+Samoa,exp,own 2024,583,10397,0.0002,,,False,False
+Samoa,exp,own 2024,124,9676,0.0002,202607,2,True,True
+Samoa,exp,own 2024,826,3130,0.0001,202607,2,True,True
+Samoa,exp,own 2024,470,2594,0.0001,202512,9,False,True
+Samoa,exp,own 2024,344,2411,0.0001,202607,2,True,True
+Samoa,exp,own 2024,251,1007,0.0,202512,9,False,True
+Samoa,exp,own 2024,580,933,0.0,,,False,False
+Samoa,exp,own 2024,598,409,0.0,,,False,False
+Samoa,exp,own 2024,548,73,0.0,,,False,False
+Samoa,exp,own 2024,380,57,0.0,202606,3,True,True
+Samoa,exp,own 2024,360,55,0.0,202607,2,True,True
+Samoa,exp,own 2024,40,55,0.0,,,False,False
+Samoa,exp,own 2024,348,36,0.0,202607,2,True,True
+Samoa,exp,own 2024,570,18,0.0,,,False,False
+Samoa,exp,own 2024,699,18,0.0,202607,2,True,True
+Samoa,exp,own 2024,388,0,0.0,,,False,False
+Samoa,imp,own 2024,554,104362949,0.2132,202608,1,True,True
+Samoa,imp,own 2024,702,95690796,0.1954,202603,6,False,True
+Samoa,imp,own 2024,156,70262705,0.1435,202412,21,False,False
+Samoa,imp,own 2024,36,50195369,0.1025,202608,1,True,True
+Samoa,imp,own 2024,842,43430937,0.0887,202607,2,True,True
+Samoa,imp,own 2024,242,43147278,0.0881,202606,3,True,True
+Samoa,imp,own 2024,392,18465548,0.0377,202607,2,True,True
+Samoa,imp,own 2024,344,13841554,0.0283,202607,2,True,True
+Samoa,imp,own 2024,764,11625899,0.0237,202605,4,True,True
+Samoa,imp,own 2024,360,8393880,0.0171,202607,2,True,True
+Samoa,imp,own 2024,410,5355537,0.0109,202512,9,False,True
+Samoa,imp,own 2024,704,4859540,0.0099,,,False,False
+Samoa,imp,own 2024,458,4522144,0.0092,202608,1,True,True
+Samoa,imp,own 2024,699,1910698,0.0039,202607,2,True,True
+Samoa,imp,own 2024,144,1579483,0.0032,,,False,False
+Samoa,imp,own 2024,490,1496252,0.0031,,,False,False
+Samoa,imp,own 2024,528,1436514,0.0029,202607,2,True,True
+Samoa,imp,own 2024,16,1335971,0.0027,,,False,False
+Samoa,imp,own 2024,76,1270901,0.0026,202608,1,True,True
+Samoa,imp,own 2024,757,955948,0.002,202608,1,True,True
+Samoa,imp,own 2024,276,639868,0.0013,202607,2,True,True
+Samoa,imp,own 2024,784,617316,0.0013,,,False,False
+Samoa,imp,own 2024,792,587161,0.0012,202512,9,False,True
+Samoa,imp,own 2024,50,400382,0.0008,,,False,False
+Samoa,imp,own 2024,826,355287,0.0007,202607,2,True,True
+Samoa,imp,own 2024,608,330077,0.0007,202606,3,True,True
+Samoa,imp,own 2024,598,325615,0.0007,,,False,False
+Samoa,imp,own 2024,408,289704,0.0006,,,False,False
+Samoa,imp,own 2024,724,269875,0.0006,202606,3,True,True
+Samoa,imp,own 2024,251,258333,0.0005,202512,9,False,True
+Samoa,imp,own 2024,40,231249,0.0005,,,False,False
+Samoa,imp,own 2024,56,212105,0.0004,202606,3,True,True
+Samoa,imp,own 2024,484,134102,0.0003,202607,2,True,True
+Samoa,imp,own 2024,208,90056,0.0002,202607,2,True,True
+Samoa,imp,own 2024,540,82564,0.0002,,,False,False
+Samoa,imp,own 2024,90,77454,0.0002,,,False,False
+Samoa,imp,own 2024,772,59846,0.0001,,,False,False
+Samoa,imp,own 2024,616,55749,0.0001,202606,3,True,True
+Samoa,imp,own 2024,316,54607,0.0001,,,False,False
+Samoa,imp,own 2024,380,50156,0.0001,202606,3,True,True
+Samoa,imp,own 2024,586,43973,0.0001,202601,8,False,True
+Samoa,imp,own 2024,124,38648,0.0001,202607,2,True,True
+Samoa,imp,own 2024,548,36996,0.0001,,,False,False
+Samoa,imp,own 2024,300,31458,0.0001,202607,2,True,True
+Samoa,imp,own 2024,372,20156,0.0,202607,2,True,True
+Samoa,imp,own 2024,776,19361,0.0,202607,2,True,True
+Samoa,imp,own 2024,332,13635,0.0,,,False,False
+Samoa,imp,own 2024,404,12454,0.0,,,False,False
+Samoa,imp,own 2024,116,12003,0.0,202412,21,False,False
+Samoa,imp,own 2024,516,11520,0.0,202501,20,False,False
+Samoa,imp,own 2024,705,11366,0.0,202606,3,True,True
+Samoa,imp,own 2024,422,9212,0.0,,,False,False
+Samoa,imp,own 2024,348,8870,0.0,202607,2,True,True
+Samoa,imp,own 2024,376,8758,0.0,202607,2,True,True
+Samoa,imp,own 2024,203,8340,0.0,202607,2,True,True
+Samoa,imp,own 2024,710,7671,0.0,202605,4,True,True
+Samoa,imp,own 2024,818,7225,0.0,202606,3,True,True
+Samoa,imp,own 2024,184,6655,0.0,,,False,False
+Samoa,imp,own 2024,703,5739,0.0,202605,4,True,True
+Samoa,imp,own 2024,498,5596,0.0,202606,3,True,True
+Samoa,imp,own 2024,570,5306,0.0,,,False,False
+Samoa,imp,own 2024,442,5198,0.0,202607,2,True,True
+Samoa,imp,own 2024,682,2666,0.0,202604,5,True,True
+Samoa,imp,own 2024,388,1812,0.0,,,False,False
+Samoa,imp,own 2024,400,1549,0.0,,,False,False
+Samoa,imp,own 2024,876,1524,0.0,,,False,False
+Samoa,imp,own 2024,191,1469,0.0,202606,3,True,True
+Samoa,imp,own 2024,752,1380,0.0,202607,2,True,True
+Samoa,imp,own 2024,96,1333,0.0,,,False,False
+Samoa,imp,own 2024,246,980,0.0,202607,2,True,True
+Samoa,imp,own 2024,574,979,0.0,,,False,False
+Samoa,imp,own 2024,258,970,0.0,202412,21,False,False
+Samoa,imp,own 2024,233,915,0.0,202607,2,True,True
+Samoa,imp,own 2024,100,809,0.0,202603,6,False,True
+Samoa,imp,own 2024,188,597,0.0,,,False,False
+Samoa,imp,own 2024,591,440,0.0,202608,1,True,True
+Samoa,imp,own 2024,508,431,0.0,,,False,False
+Samoa,imp,own 2024,558,417,0.0,,,False,False
+Samoa,imp,own 2024,84,331,0.0,202607,2,True,True
+Samoa,imp,own 2024,804,223,0.0,202509,12,False,False
+Samoa,imp,own 2024,660,182,0.0,,,False,False
+Samoa,imp,own 2024,642,94,0.0,202606,3,True,True
+Samoa,imp,own 2024,296,36,0.0,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,528,19621951,0.6305,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,276,4148489,0.1333,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,56,3240336,0.1041,202606,3,True,True
+Sao Tome and Principe,exp,own 2025,428,1178636,0.0379,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,784,785760,0.0252,,,False,False
+Sao Tome and Principe,exp,own 2025,724,486354,0.0156,202606,3,True,True
+Sao Tome and Principe,exp,own 2025,251,394491,0.0127,202512,9,False,True
+Sao Tome and Principe,exp,own 2025,620,360491,0.0116,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,748,281830,0.0091,,,False,False
+Sao Tome and Principe,exp,own 2025,120,231184,0.0074,,,False,False
+Sao Tome and Principe,exp,own 2025,842,170530,0.0055,202607,2,True,True
+Sao Tome and Principe,exp,own 2025,24,60480,0.0019,202604,5,True,True
+Sao Tome and Principe,exp,own 2025,380,43000,0.0014,202606,3,True,True
+Sao Tome and Principe,exp,own 2025,566,36001,0.0012,202512,9,False,True
+Sao Tome and Principe,exp,own 2025,710,31638,0.001,202605,4,True,True
+Sao Tome and Principe,exp,own 2025,76,23473,0.0008,202608,1,True,True
+Sao Tome and Principe,exp,own 2025,340,21338,0.0007,,,False,False
+Sao Tome and Principe,exp,own 2025,462,5657,0.0002,,,False,False
+Sao Tome and Principe,exp,own 2025,417,810,0.0,202605,4,True,True
+Sao Tome and Principe,exp,own 2025,702,611,0.0,202603,6,False,True
+Sao Tome and Principe,exp,own 2025,266,316,0.0,,,False,False
+Sao Tome and Principe,exp,own 2025,768,92,0.0,202603,6,False,True
+Sao Tome and Principe,exp,own 2025,36,49,0.0,202608,1,True,True
+Sao Tome and Principe,exp,own 2025,826,10,0.0,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,620,78613671,0.383,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,768,28539149,0.139,202603,6,False,True
+Sao Tome and Principe,imp,own 2025,156,20653794,0.1006,202412,21,False,False
+Sao Tome and Principe,imp,own 2025,24,20633823,0.1005,202604,5,True,True
+Sao Tome and Principe,imp,own 2025,792,13510927,0.0658,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,76,4960867,0.0242,202608,1,True,True
+Sao Tome and Principe,imp,own 2025,226,4848972,0.0236,,,False,False
+Sao Tome and Principe,imp,own 2025,392,3369421,0.0164,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,699,2939038,0.0143,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,724,2404224,0.0117,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,266,2391487,0.0116,,,False,False
+Sao Tome and Principe,imp,own 2025,818,2288087,0.0111,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,56,2183164,0.0106,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,528,2000657,0.0097,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,251,1284300,0.0063,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,784,1282847,0.0062,,,False,False
+Sao Tome and Principe,imp,own 2025,586,1171642,0.0057,202601,8,False,True
+Sao Tome and Principe,imp,own 2025,458,1098869,0.0054,202608,1,True,True
+Sao Tome and Principe,imp,own 2025,826,1026747,0.005,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,704,1020985,0.005,,,False,False
+Sao Tome and Principe,imp,own 2025,710,1020753,0.005,202605,4,True,True
+Sao Tome and Principe,imp,own 2025,566,935807,0.0046,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,764,800656,0.0039,202605,4,True,True
+Sao Tome and Principe,imp,own 2025,418,726445,0.0035,,,False,False
+Sao Tome and Principe,imp,own 2025,288,706559,0.0034,202603,6,False,True
+Sao Tome and Principe,imp,own 2025,120,587874,0.0029,,,False,False
+Sao Tome and Principe,imp,own 2025,276,556488,0.0027,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,360,504212,0.0025,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,842,417760,0.002,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,504,362272,0.0018,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,682,335669,0.0016,202604,5,True,True
+Sao Tome and Principe,imp,own 2025,104,285057,0.0014,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,12,264377,0.0013,,,False,False
+Sao Tome and Principe,imp,own 2025,422,255739,0.0012,,,False,False
+Sao Tome and Principe,imp,own 2025,208,169023,0.0008,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,410,143213,0.0007,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,32,125633,0.0006,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,757,94758,0.0005,202608,1,True,True
+Sao Tome and Principe,imp,own 2025,428,93358,0.0005,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,624,89529,0.0004,,,False,False
+Sao Tome and Principe,imp,own 2025,116,58680,0.0003,202412,21,False,False
+Sao Tome and Principe,imp,own 2025,408,47304,0.0002,,,False,False
+Sao Tome and Principe,imp,own 2025,364,37866,0.0002,,,False,False
+Sao Tome and Principe,imp,own 2025,490,37251,0.0002,,,False,False
+Sao Tome and Principe,imp,own 2025,124,36542,0.0002,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,404,34459,0.0002,,,False,False
+Sao Tome and Principe,imp,own 2025,788,34222,0.0002,,,False,False
+Sao Tome and Principe,imp,own 2025,616,32120,0.0002,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,702,27669,0.0001,202603,6,False,True
+Sao Tome and Principe,imp,own 2025,70,27113,0.0001,202608,1,True,True
+Sao Tome and Principe,imp,own 2025,344,26069,0.0001,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,660,20282,0.0001,,,False,False
+Sao Tome and Principe,imp,own 2025,50,19230,0.0001,,,False,False
+Sao Tome and Principe,imp,own 2025,196,17319,0.0001,202512,9,False,True
+Sao Tome and Principe,imp,own 2025,442,16642,0.0001,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,348,15874,0.0001,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,626,15586,0.0001,,,False,False
+Sao Tome and Principe,imp,own 2025,8,14256,0.0001,,,False,False
+Sao Tome and Principe,imp,own 2025,854,12951,0.0001,202412,21,False,False
+Sao Tome and Principe,imp,own 2025,380,10169,0.0,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,36,8357,0.0,202608,1,True,True
+Sao Tome and Principe,imp,own 2025,600,7984,0.0,202603,6,False,True
+Sao Tome and Principe,imp,own 2025,796,7707,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,686,7671,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,132,3454,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,174,2265,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,752,1915,0.0,202607,2,True,True
+Sao Tome and Principe,imp,own 2025,804,1172,0.0,202509,12,False,False
+Sao Tome and Principe,imp,own 2025,275,803,0.0,202412,21,False,False
+Sao Tome and Principe,imp,own 2025,748,668,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,191,398,0.0,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,706,245,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,705,164,0.0,202606,3,True,True
+Sao Tome and Principe,imp,own 2025,540,58,0.0,,,False,False
+Sao Tome and Principe,imp,own 2025,20,44,0.0,202605,4,True,True
+Sao Tome and Principe,imp,own 2025,598,28,0.0,,,False,False
+Solomon Islands,exp,own 2018,156,380352737,0.6684,202412,21,False,False
+Solomon Islands,exp,own 2018,380,41102166,0.0722,202606,3,True,True
+Solomon Islands,exp,own 2018,699,28936951,0.0508,202607,2,True,True
+Solomon Islands,exp,own 2018,757,13867691,0.0244,202608,1,True,True
+Solomon Islands,exp,own 2018,764,11962968,0.021,202605,4,True,True
+Solomon Islands,exp,own 2018,490,11115033,0.0195,,,False,False
+Solomon Islands,exp,own 2018,528,10912265,0.0192,202607,2,True,True
+Solomon Islands,exp,own 2018,608,10703910,0.0188,202606,3,True,True
+Solomon Islands,exp,own 2018,458,8771909,0.0154,202608,1,True,True
+Solomon Islands,exp,own 2018,344,8073485,0.0142,202607,2,True,True
+Solomon Islands,exp,own 2018,826,6053094,0.0106,202607,2,True,True
+Solomon Islands,exp,own 2018,702,5018567,0.0088,202603,6,False,True
+Solomon Islands,exp,own 2018,36,5017159,0.0088,202608,1,True,True
+Solomon Islands,exp,own 2018,554,4506000,0.0079,202608,1,True,True
+Solomon Islands,exp,own 2018,410,4397019,0.0077,202512,9,False,True
+Solomon Islands,exp,own 2018,704,4200052,0.0074,,,False,False
+Solomon Islands,exp,own 2018,842,2933204,0.0052,202607,2,True,True
+Solomon Islands,exp,own 2018,724,1766572,0.0031,202606,3,True,True
+Solomon Islands,exp,own 2018,598,1761975,0.0031,,,False,False
+Solomon Islands,exp,own 2018,548,1740092,0.0031,,,False,False
+Solomon Islands,exp,own 2018,50,1413844,0.0025,,,False,False
+Solomon Islands,exp,own 2018,242,1156951,0.002,202606,3,True,True
+Solomon Islands,exp,own 2018,392,1077219,0.0019,202607,2,True,True
+Solomon Islands,exp,own 2018,520,511601,0.0009,,,False,False
+Solomon Islands,exp,own 2018,16,472087,0.0008,,,False,False
+Solomon Islands,exp,own 2018,251,423315,0.0007,202512,9,False,True
+Solomon Islands,exp,own 2018,296,271205,0.0005,202607,2,True,True
+Solomon Islands,exp,own 2018,360,186983,0.0003,202607,2,True,True
+Solomon Islands,exp,own 2018,540,129001,0.0002,,,False,False
+Solomon Islands,exp,own 2018,56,105610,0.0002,202606,3,True,True
+Solomon Islands,exp,own 2018,144,48094,0.0001,,,False,False
+Solomon Islands,exp,own 2018,876,18729,0.0,,,False,False
+Solomon Islands,exp,own 2018,422,16278,0.0,,,False,False
+Solomon Islands,exp,own 2018,586,13319,0.0,202601,8,False,True
+Solomon Islands,exp,own 2018,804,9915,0.0,202509,12,False,False
+Solomon Islands,exp,own 2018,300,8414,0.0,202607,2,True,True
+Solomon Islands,exp,own 2018,643,7742,0.0,,,False,False
+Solomon Islands,exp,own 2018,584,5932,0.0,,,False,False
+Solomon Islands,exp,own 2018,798,5796,0.0,,,False,False
+Solomon Islands,exp,own 2018,400,5045,0.0,,,False,False
+Solomon Islands,exp,own 2018,404,3048,0.0,,,False,False
+Solomon Islands,exp,own 2018,276,2505,0.0,202607,2,True,True
+Solomon Islands,exp,own 2018,792,1381,0.0,202512,9,False,True
+Solomon Islands,exp,own 2018,512,1331,0.0,202605,4,True,True
+Solomon Islands,exp,own 2018,414,1325,0.0,202412,21,False,False
+Solomon Islands,exp,own 2018,368,644,0.0,,,False,False
+Solomon Islands,exp,own 2018,585,200,0.0,,,False,False
+Solomon Islands,exp,own 2018,583,186,0.0,,,False,False
+Solomon Islands,imp,own 2018,36,108777752,0.195,202608,1,True,True
+Solomon Islands,imp,own 2018,702,97806967,0.1753,202603,6,False,True
+Solomon Islands,imp,own 2018,156,89176532,0.1599,202412,21,False,False
+Solomon Islands,imp,own 2018,458,75841721,0.136,202608,1,True,True
+Solomon Islands,imp,own 2018,704,26995484,0.0484,,,False,False
+Solomon Islands,imp,own 2018,392,26516825,0.0475,202607,2,True,True
+Solomon Islands,imp,own 2018,554,25635526,0.046,202608,1,True,True
+Solomon Islands,imp,own 2018,360,16910654,0.0303,202607,2,True,True
+Solomon Islands,imp,own 2018,344,14474592,0.0259,202607,2,True,True
+Solomon Islands,imp,own 2018,242,14468574,0.0259,202606,3,True,True
+Solomon Islands,imp,own 2018,764,12715049,0.0228,202605,4,True,True
+Solomon Islands,imp,own 2018,598,11333784,0.0203,,,False,False
+Solomon Islands,imp,own 2018,842,9240149,0.0166,202607,2,True,True
+Solomon Islands,imp,own 2018,490,5820569,0.0104,,,False,False
+Solomon Islands,imp,own 2018,410,3376949,0.0061,202512,9,False,True
+Solomon Islands,imp,own 2018,826,2972854,0.0053,202607,2,True,True
+Solomon Islands,imp,own 2018,608,2311784,0.0041,202606,3,True,True
+Solomon Islands,imp,own 2018,16,2002041,0.0036,,,False,False
+Solomon Islands,imp,own 2018,699,1838873,0.0033,202607,2,True,True
+Solomon Islands,imp,own 2018,208,1133937,0.002,202607,2,True,True
+Solomon Islands,imp,own 2018,548,877071,0.0016,,,False,False
+Solomon Islands,imp,own 2018,104,822844,0.0015,202512,9,False,True
+Solomon Islands,imp,own 2018,724,741671,0.0013,202606,3,True,True
+Solomon Islands,imp,own 2018,56,708317,0.0013,202606,3,True,True
+Solomon Islands,imp,own 2018,124,620476,0.0011,202607,2,True,True
+Solomon Islands,imp,own 2018,528,620284,0.0011,202607,2,True,True
+Solomon Islands,imp,own 2018,408,522011,0.0009,,,False,False
+Solomon Islands,imp,own 2018,752,493832,0.0009,202607,2,True,True
+Solomon Islands,imp,own 2018,380,378012,0.0007,202606,3,True,True
+Solomon Islands,imp,own 2018,50,362272,0.0006,,,False,False
+Solomon Islands,imp,own 2018,276,342972,0.0006,202607,2,True,True
+Solomon Islands,imp,own 2018,144,260451,0.0005,,,False,False
+Solomon Islands,imp,own 2018,251,226375,0.0004,202512,9,False,True
+Solomon Islands,imp,own 2018,583,183731,0.0003,,,False,False
+Solomon Islands,imp,own 2018,76,163132,0.0003,202608,1,True,True
+Solomon Islands,imp,own 2018,784,133642,0.0002,,,False,False
+Solomon Islands,imp,own 2018,32,100941,0.0002,202606,3,True,True
+Solomon Islands,imp,own 2018,28,96589,0.0002,202501,20,False,False
+Solomon Islands,imp,own 2018,882,88255,0.0002,,,False,False
+Solomon Islands,imp,own 2018,484,86881,0.0002,202607,2,True,True
+Solomon Islands,imp,own 2018,540,80812,0.0001,,,False,False
+Solomon Islands,imp,own 2018,818,78139,0.0001,202606,3,True,True
+Solomon Islands,imp,own 2018,246,49553,0.0001,202607,2,True,True
+Solomon Islands,imp,own 2018,757,47711,0.0001,202608,1,True,True
+Solomon Islands,imp,own 2018,682,46344,0.0001,202604,5,True,True
+Solomon Islands,imp,own 2018,579,45069,0.0001,202608,1,True,True
+Solomon Islands,imp,own 2018,376,44120,0.0001,202607,2,True,True
+Solomon Islands,imp,own 2018,516,30864,0.0001,202501,20,False,False
+Solomon Islands,imp,own 2018,404,29764,0.0001,,,False,False
+Solomon Islands,imp,own 2018,710,28028,0.0001,202605,4,True,True
+Solomon Islands,imp,own 2018,170,27798,0.0,202604,5,True,True
+Solomon Islands,imp,own 2018,40,23335,0.0,,,False,False
+Solomon Islands,imp,own 2018,792,23200,0.0,202512,9,False,True
+Solomon Islands,imp,own 2018,643,14418,0.0,,,False,False
+Solomon Islands,imp,own 2018,24,14164,0.0,202604,5,True,True
+Solomon Islands,imp,own 2018,496,12514,0.0,,,False,False
+Solomon Islands,imp,own 2018,372,11506,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,388,9415,0.0,,,False,False
+Solomon Islands,imp,own 2018,748,8770,0.0,,,False,False
+Solomon Islands,imp,own 2018,400,6826,0.0,,,False,False
+Solomon Islands,imp,own 2018,504,6415,0.0,202512,9,False,True
+Solomon Islands,imp,own 2018,670,5321,0.0,,,False,False
+Solomon Islands,imp,own 2018,51,4600,0.0,202605,4,True,True
+Solomon Islands,imp,own 2018,203,4423,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,586,4289,0.0,202601,8,False,True
+Solomon Islands,imp,own 2018,562,2663,0.0,,,False,False
+Solomon Islands,imp,own 2018,686,2543,0.0,,,False,False
+Solomon Islands,imp,own 2018,703,2486,0.0,202605,4,True,True
+Solomon Islands,imp,own 2018,446,1997,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,512,1936,0.0,202605,4,True,True
+Solomon Islands,imp,own 2018,212,1461,0.0,,,False,False
+Solomon Islands,imp,own 2018,470,1450,0.0,202512,9,False,True
+Solomon Islands,imp,own 2018,500,1259,0.0,202412,21,False,False
+Solomon Islands,imp,own 2018,296,1042,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,626,992,0.0,,,False,False
+Solomon Islands,imp,own 2018,660,908,0.0,,,False,False
+Solomon Islands,imp,own 2018,184,732,0.0,,,False,False
+Solomon Islands,imp,own 2018,478,683,0.0,,,False,False
+Solomon Islands,imp,own 2018,316,531,0.0,,,False,False
+Solomon Islands,imp,own 2018,804,516,0.0,202509,12,False,False
+Solomon Islands,imp,own 2018,780,447,0.0,202512,9,False,True
+Solomon Islands,imp,own 2018,694,311,0.0,,,False,False
+Solomon Islands,imp,own 2018,120,298,0.0,,,False,False
+Solomon Islands,imp,own 2018,116,284,0.0,202412,21,False,False
+Solomon Islands,imp,own 2018,96,275,0.0,,,False,False
+Solomon Islands,imp,own 2018,300,218,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,520,158,0.0,,,False,False
+Solomon Islands,imp,own 2018,620,106,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,192,84,0.0,,,False,False
+Solomon Islands,imp,own 2018,591,61,0.0,202608,1,True,True
+Solomon Islands,imp,own 2018,348,30,0.0,202607,2,True,True
+Solomon Islands,imp,own 2018,70,16,0.0,202608,1,True,True
+Timor-Leste,exp,own 2023,156,76212751,0.5429,202412,21,False,False
+Timor-Leste,exp,own 2023,702,31241849,0.2226,202603,6,False,True
+Timor-Leste,exp,own 2023,360,8837044,0.063,202607,2,True,True
+Timor-Leste,exp,own 2023,36,8399483,0.0598,202608,1,True,True
+Timor-Leste,exp,own 2023,392,4843861,0.0345,202607,2,True,True
+Timor-Leste,exp,own 2023,842,2623124,0.0187,202607,2,True,True
+Timor-Leste,exp,own 2023,620,1841088,0.0131,202607,2,True,True
+Timor-Leste,exp,own 2023,144,1370390,0.0098,,,False,False
+Timor-Leste,exp,own 2023,608,924731,0.0066,202606,3,True,True
+Timor-Leste,exp,own 2023,490,662844,0.0047,,,False,False
+Timor-Leste,exp,own 2023,410,486256,0.0035,202512,9,False,True
+Timor-Leste,exp,own 2023,682,412774,0.0029,202604,5,True,True
+Timor-Leste,exp,own 2023,124,330801,0.0024,202607,2,True,True
+Timor-Leste,exp,own 2023,554,289203,0.0021,202608,1,True,True
+Timor-Leste,exp,own 2023,192,278665,0.002,,,False,False
+Timor-Leste,exp,own 2023,528,257283,0.0018,202607,2,True,True
+Timor-Leste,exp,own 2023,826,173347,0.0012,202607,2,True,True
+Timor-Leste,exp,own 2023,598,157386,0.0011,,,False,False
+Timor-Leste,exp,own 2023,446,151956,0.0011,202607,2,True,True
+Timor-Leste,exp,own 2023,32,132330,0.0009,202606,3,True,True
+Timor-Leste,exp,own 2023,276,112435,0.0008,202607,2,True,True
+Timor-Leste,exp,own 2023,764,99340,0.0007,202605,4,True,True
+Timor-Leste,exp,own 2023,380,94708,0.0007,202606,3,True,True
+Timor-Leste,exp,own 2023,242,69125,0.0005,202606,3,True,True
+Timor-Leste,exp,own 2023,418,43568,0.0003,,,False,False
+Timor-Leste,exp,own 2023,132,40874,0.0003,,,False,False
+Timor-Leste,exp,own 2023,458,38884,0.0003,202608,1,True,True
+Timor-Leste,exp,own 2023,178,38241,0.0003,,,False,False
+Timor-Leste,exp,own 2023,56,37530,0.0003,202606,3,True,True
+Timor-Leste,exp,own 2023,48,30018,0.0002,202412,21,False,False
+Timor-Leste,exp,own 2023,724,27494,0.0002,202606,3,True,True
+Timor-Leste,exp,own 2023,174,22690,0.0002,,,False,False
+Timor-Leste,exp,own 2023,104,20538,0.0001,202512,9,False,True
+Timor-Leste,exp,own 2023,344,16694,0.0001,202607,2,True,True
+Timor-Leste,exp,own 2023,100,16380,0.0001,202603,6,False,True
+Timor-Leste,exp,own 2023,251,10484,0.0001,202512,9,False,True
+Timor-Leste,exp,own 2023,634,5756,0.0,,,False,False
+Timor-Leste,exp,own 2023,710,3875,0.0,202605,4,True,True
+Timor-Leste,exp,own 2023,531,3872,0.0,,,False,False
+Timor-Leste,exp,own 2023,140,3132,0.0,,,False,False
+Timor-Leste,exp,own 2023,524,2388,0.0,,,False,False
+Timor-Leste,exp,own 2023,116,2166,0.0,202412,21,False,False
+Timor-Leste,exp,own 2023,76,1503,0.0,202608,1,True,True
+Timor-Leste,exp,own 2023,591,1263,0.0,202608,1,True,True
+Timor-Leste,exp,own 2023,508,1050,0.0,,,False,False
+Timor-Leste,exp,own 2023,616,237,0.0,202606,3,True,True
+Timor-Leste,exp,own 2023,372,117,0.0,202607,2,True,True
+Timor-Leste,exp,own 2023,270,115,0.0,,,False,False
+Timor-Leste,exp,own 2023,788,98,0.0,,,False,False
+Timor-Leste,exp,own 2023,440,58,0.0,202607,2,True,True
+Timor-Leste,exp,own 2023,442,52,0.0,202607,2,True,True
+Timor-Leste,exp,own 2023,699,18,0.0,202607,2,True,True
+Timor-Leste,exp,own 2023,784,2,0.0,,,False,False
+Timor-Leste,exp,own 2023,376,1,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,360,299968452,0.3315,202607,2,True,True
+Timor-Leste,imp,own 2023,156,128629554,0.1422,202412,21,False,False
+Timor-Leste,imp,own 2023,702,94235987,0.1042,202603,6,False,True
+Timor-Leste,imp,own 2023,490,81930113,0.0906,,,False,False
+Timor-Leste,imp,own 2023,36,59665495,0.0659,202608,1,True,True
+Timor-Leste,imp,own 2023,699,52146189,0.0576,202607,2,True,True
+Timor-Leste,imp,own 2023,458,30220625,0.0334,202608,1,True,True
+Timor-Leste,imp,own 2023,344,20880384,0.0231,202607,2,True,True
+Timor-Leste,imp,own 2023,704,19987413,0.0221,,,False,False
+Timor-Leste,imp,own 2023,842,17984467,0.0199,202607,2,True,True
+Timor-Leste,imp,own 2023,76,13990997,0.0155,202608,1,True,True
+Timor-Leste,imp,own 2023,392,13250758,0.0146,202607,2,True,True
+Timor-Leste,imp,own 2023,764,12506879,0.0138,202605,4,True,True
+Timor-Leste,imp,own 2023,626,12204425,0.0135,,,False,False
+Timor-Leste,imp,own 2023,276,6398417,0.0071,202607,2,True,True
+Timor-Leste,imp,own 2023,620,4674967,0.0052,202607,2,True,True
+Timor-Leste,imp,own 2023,56,4375166,0.0048,202606,3,True,True
+Timor-Leste,imp,own 2023,586,4250112,0.0047,202601,8,False,True
+Timor-Leste,imp,own 2023,826,3658680,0.004,202607,2,True,True
+Timor-Leste,imp,own 2023,410,3305898,0.0037,202512,9,False,True
+Timor-Leste,imp,own 2023,251,3262178,0.0036,202512,9,False,True
+Timor-Leste,imp,own 2023,784,2646389,0.0029,,,False,False
+Timor-Leste,imp,own 2023,528,2375570,0.0026,202607,2,True,True
+Timor-Leste,imp,own 2023,554,1324548,0.0015,202608,1,True,True
+Timor-Leste,imp,own 2023,246,1299231,0.0014,202607,2,True,True
+Timor-Leste,imp,own 2023,208,1056745,0.0012,202607,2,True,True
+Timor-Leste,imp,own 2023,380,972955,0.0011,202606,3,True,True
+Timor-Leste,imp,own 2023,608,942066,0.001,202606,3,True,True
+Timor-Leste,imp,own 2023,752,807518,0.0009,202607,2,True,True
+Timor-Leste,imp,own 2023,242,792561,0.0009,202606,3,True,True
+Timor-Leste,imp,own 2023,710,440262,0.0005,202605,4,True,True
+Timor-Leste,imp,own 2023,104,427275,0.0005,202512,9,False,True
+Timor-Leste,imp,own 2023,50,415475,0.0005,,,False,False
+Timor-Leste,imp,own 2023,757,405877,0.0004,202608,1,True,True
+Timor-Leste,imp,own 2023,724,360977,0.0004,202606,3,True,True
+Timor-Leste,imp,own 2023,792,318347,0.0004,202512,9,False,True
+Timor-Leste,imp,own 2023,818,293099,0.0003,202606,3,True,True
+Timor-Leste,imp,own 2023,748,291918,0.0003,,,False,False
+Timor-Leste,imp,own 2023,579,266464,0.0003,202608,1,True,True
+Timor-Leste,imp,own 2023,40,252746,0.0003,,,False,False
+Timor-Leste,imp,own 2023,548,187063,0.0002,,,False,False
+Timor-Leste,imp,own 2023,484,162197,0.0002,202607,2,True,True
+Timor-Leste,imp,own 2023,124,126486,0.0001,202607,2,True,True
+Timor-Leste,imp,own 2023,196,115605,0.0001,202512,9,False,True
+Timor-Leste,imp,own 2023,376,91358,0.0001,202607,2,True,True
+Timor-Leste,imp,own 2023,446,77478,0.0001,202607,2,True,True
+Timor-Leste,imp,own 2023,90,71898,0.0001,,,False,False
+Timor-Leste,imp,own 2023,188,71530,0.0001,,,False,False
+Timor-Leste,imp,own 2023,152,70970,0.0001,202608,1,True,True
+Timor-Leste,imp,own 2023,372,61382,0.0001,202607,2,True,True
+Timor-Leste,imp,own 2023,320,48160,0.0001,202606,3,True,True
+Timor-Leste,imp,own 2023,508,40140,0.0,,,False,False
+Timor-Leste,imp,own 2023,116,38420,0.0,202412,21,False,False
+Timor-Leste,imp,own 2023,616,38282,0.0,202606,3,True,True
+Timor-Leste,imp,own 2023,894,37537,0.0,,,False,False
+Timor-Leste,imp,own 2023,218,31894,0.0,202603,6,False,True
+Timor-Leste,imp,own 2023,68,28585,0.0,202608,1,True,True
+Timor-Leste,imp,own 2023,682,22914,0.0,202604,5,True,True
+Timor-Leste,imp,own 2023,32,22275,0.0,202606,3,True,True
+Timor-Leste,imp,own 2023,316,19568,0.0,,,False,False
+Timor-Leste,imp,own 2023,170,18602,0.0,202604,5,True,True
+Timor-Leste,imp,own 2023,388,18408,0.0,,,False,False
+Timor-Leste,imp,own 2023,642,17717,0.0,202606,3,True,True
+Timor-Leste,imp,own 2023,440,15288,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,418,15101,0.0,,,False,False
+Timor-Leste,imp,own 2023,144,14060,0.0,,,False,False
+Timor-Leste,imp,own 2023,300,13361,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,270,12075,0.0,,,False,False
+Timor-Leste,imp,own 2023,804,11151,0.0,202509,12,False,False
+Timor-Leste,imp,own 2023,348,8749,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,352,8646,0.0,202608,1,True,True
+Timor-Leste,imp,own 2023,504,8592,0.0,202512,9,False,True
+Timor-Leste,imp,own 2023,72,8346,0.0,,,False,False
+Timor-Leste,imp,own 2023,705,8064,0.0,202606,3,True,True
+Timor-Leste,imp,own 2023,404,6709,0.0,,,False,False
+Timor-Leste,imp,own 2023,192,5373,0.0,,,False,False
+Timor-Leste,imp,own 2023,643,3568,0.0,,,False,False
+Timor-Leste,imp,own 2023,688,3527,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,203,3192,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,703,2993,0.0,202605,4,True,True
+Timor-Leste,imp,own 2023,52,2547,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,422,2387,0.0,,,False,False
+Timor-Leste,imp,own 2023,233,2319,0.0,202607,2,True,True
+Timor-Leste,imp,own 2023,100,1991,0.0,202603,6,False,True
+Timor-Leste,imp,own 2023,780,1776,0.0,202512,9,False,True
+Timor-Leste,imp,own 2023,288,1465,0.0,202603,6,False,True
+Timor-Leste,imp,own 2023,716,1175,0.0,202501,20,False,False
+Timor-Leste,imp,own 2023,566,1156,0.0,202512,9,False,True
+Timor-Leste,imp,own 2023,604,1094,0.0,202504,17,False,False
+Timor-Leste,imp,own 2023,512,690,0.0,202605,4,True,True
+Timor-Leste,imp,own 2023,8,625,0.0,,,False,False
+Timor-Leste,imp,own 2023,524,618,0.0,,,False,False
+Timor-Leste,imp,own 2023,214,565,0.0,202604,5,True,True
+Timor-Leste,imp,own 2023,862,493,0.0,,,False,False
+Timor-Leste,imp,own 2023,788,276,0.0,,,False,False
+Timor-Leste,imp,own 2023,70,193,0.0,202608,1,True,True
+Timor-Leste,imp,own 2023,400,169,0.0,,,False,False
+Timor-Leste,imp,own 2023,340,139,0.0,,,False,False
+Timor-Leste,imp,own 2023,480,126,0.0,202606,3,True,True
+Timor-Leste,imp,own 2023,470,121,0.0,202512,9,False,True
+Timor-Leste,imp,own 2023,408,42,0.0,,,False,False
+Timor-Leste,imp,own 2023,500,40,0.0,202412,21,False,False
+Timor-Leste,imp,own 2023,478,38,0.0,,,False,False
+Timor-Leste,imp,own 2023,132,15,0.0,,,False,False
+Timor-Leste,imp,own 2023,414,14,0.0,202412,21,False,False
+Timor-Leste,imp,own 2023,96,12,0.0,,,False,False
+Timor-Leste,imp,own 2023,231,2,0.0,,,False,False
+Timor-Leste,imp,own 2023,148,1,0.0,,,False,False
+Timor-Leste,imp,own 2023,328,1,0.0,202606,3,True,True
+Tonga,exp,own 2025,554,25025114,0.8689,202608,1,True,True
+Tonga,exp,own 2025,242,1467833,0.051,202606,3,True,True
+Tonga,exp,own 2025,842,951144,0.033,202607,2,True,True
+Tonga,exp,own 2025,36,756796,0.0263,202608,1,True,True
+Tonga,exp,own 2025,16,196965,0.0068,,,False,False
+Tonga,exp,own 2025,410,87927,0.0031,202512,9,False,True
+Tonga,exp,own 2025,548,76770,0.0027,,,False,False
+Tonga,exp,own 2025,882,52010,0.0018,,,False,False
+Tonga,exp,own 2025,124,40479,0.0014,202607,2,True,True
+Tonga,exp,own 2025,490,40380,0.0014,,,False,False
+Tonga,exp,own 2025,704,30186,0.001,,,False,False
+Tonga,exp,own 2025,90,27297,0.0009,,,False,False
+Tonga,exp,own 2025,458,17763,0.0006,202608,1,True,True
+Tonga,exp,own 2025,392,15235,0.0005,202607,2,True,True
+Tonga,exp,own 2025,184,5742,0.0002,,,False,False
+Tonga,exp,own 2025,344,2479,0.0001,202607,2,True,True
+Tonga,exp,own 2025,348,1668,0.0001,202607,2,True,True
+Tonga,exp,own 2025,528,1656,0.0001,202607,2,True,True
+Tonga,exp,own 2025,702,1257,0.0,202603,6,False,True
+Tonga,exp,own 2025,826,1244,0.0,202607,2,True,True
+Tonga,exp,own 2025,156,834,0.0,202412,21,False,False
+Tonga,exp,own 2025,784,417,0.0,,,False,False
+Tonga,exp,own 2025,764,410,0.0,202605,4,True,True
+Tonga,imp,own 2025,554,85058361,0.2768,202608,1,True,True
+Tonga,imp,own 2025,702,56056350,0.1824,202603,6,False,True
+Tonga,imp,own 2025,156,40172640,0.1307,202412,21,False,False
+Tonga,imp,own 2025,242,26918180,0.0876,202606,3,True,True
+Tonga,imp,own 2025,36,25955804,0.0845,202608,1,True,True
+Tonga,imp,own 2025,392,15156445,0.0493,202607,2,True,True
+Tonga,imp,own 2025,842,14875384,0.0484,202607,2,True,True
+Tonga,imp,own 2025,76,9821701,0.032,202608,1,True,True
+Tonga,imp,own 2025,360,5921971,0.0193,202607,2,True,True
+Tonga,imp,own 2025,344,5085266,0.0165,202607,2,True,True
+Tonga,imp,own 2025,458,4120302,0.0134,202608,1,True,True
+Tonga,imp,own 2025,764,3461164,0.0113,202605,4,True,True
+Tonga,imp,own 2025,704,2712030,0.0088,,,False,False
+Tonga,imp,own 2025,826,1865622,0.0061,202607,2,True,True
+Tonga,imp,own 2025,699,1534447,0.005,202607,2,True,True
+Tonga,imp,own 2025,490,1426598,0.0046,,,False,False
+Tonga,imp,own 2025,410,1404383,0.0046,202512,9,False,True
+Tonga,imp,own 2025,152,1180965,0.0038,202608,1,True,True
+Tonga,imp,own 2025,608,689006,0.0022,202606,3,True,True
+Tonga,imp,own 2025,792,381102,0.0012,202512,9,False,True
+Tonga,imp,own 2025,380,369581,0.0012,202606,3,True,True
+Tonga,imp,own 2025,784,354729,0.0012,,,False,False
+Tonga,imp,own 2025,757,353982,0.0012,202608,1,True,True
+Tonga,imp,own 2025,484,283027,0.0009,202607,2,True,True
+Tonga,imp,own 2025,276,271770,0.0009,202607,2,True,True
+Tonga,imp,own 2025,882,264704,0.0009,,,False,False
+Tonga,imp,own 2025,724,171263,0.0006,202606,3,True,True
+Tonga,imp,own 2025,422,145555,0.0005,,,False,False
+Tonga,imp,own 2025,710,141451,0.0005,202605,4,True,True
+Tonga,imp,own 2025,591,138887,0.0005,202608,1,True,True
+Tonga,imp,own 2025,90,133348,0.0004,,,False,False
+Tonga,imp,own 2025,50,133217,0.0004,,,False,False
+Tonga,imp,own 2025,752,92685,0.0003,202607,2,True,True
+Tonga,imp,own 2025,124,88656,0.0003,202607,2,True,True
+Tonga,imp,own 2025,528,66939,0.0002,202607,2,True,True
+Tonga,imp,own 2025,246,51197,0.0002,202607,2,True,True
+Tonga,imp,own 2025,388,47735,0.0002,,,False,False
+Tonga,imp,own 2025,586,43742,0.0001,202601,8,False,True
+Tonga,imp,own 2025,56,40601,0.0001,202606,3,True,True
+Tonga,imp,own 2025,16,40506,0.0001,,,False,False
+Tonga,imp,own 2025,408,38754,0.0001,,,False,False
+Tonga,imp,own 2025,670,30071,0.0001,,,False,False
+Tonga,imp,own 2025,300,23930,0.0001,202607,2,True,True
+Tonga,imp,own 2025,116,21496,0.0001,202412,21,False,False
+Tonga,imp,own 2025,251,21234,0.0001,202512,9,False,True
+Tonga,imp,own 2025,239,20526,0.0001,,,False,False
+Tonga,imp,own 2025,598,14059,0.0,,,False,False
+Tonga,imp,own 2025,144,12358,0.0,,,False,False
+Tonga,imp,own 2025,604,11893,0.0,202504,17,False,False
+Tonga,imp,own 2025,862,11556,0.0,,,False,False
+Tonga,imp,own 2025,188,10854,0.0,,,False,False
+Tonga,imp,own 2025,512,7872,0.0,202605,4,True,True
+Tonga,imp,own 2025,372,7441,0.0,202607,2,True,True
+Tonga,imp,own 2025,96,6160,0.0,,,False,False
+Tonga,imp,own 2025,428,5778,0.0,202607,2,True,True
+Tonga,imp,own 2025,203,5777,0.0,202607,2,True,True
+Tonga,imp,own 2025,404,5759,0.0,,,False,False
+Tonga,imp,own 2025,104,4997,0.0,202512,9,False,True
+Tonga,imp,own 2025,616,4951,0.0,202606,3,True,True
+Tonga,imp,own 2025,214,4569,0.0,202604,5,True,True
+Tonga,imp,own 2025,470,4152,0.0,202512,9,False,True
+Tonga,imp,own 2025,84,4126,0.0,202607,2,True,True
+Tonga,imp,own 2025,40,3756,0.0,,,False,False
+Tonga,imp,own 2025,642,3348,0.0,202606,3,True,True
+Tonga,imp,own 2025,352,2086,0.0,202608,1,True,True
+Tonga,imp,own 2025,548,2060,0.0,,,False,False
+Tonga,imp,own 2025,508,1672,0.0,,,False,False
+Tonga,imp,own 2025,20,1668,0.0,202605,4,True,True
+Tonga,imp,own 2025,184,1668,0.0,,,False,False
+Tonga,imp,own 2025,804,1651,0.0,202509,12,False,False
+Tonga,imp,own 2025,620,1236,0.0,202607,2,True,True
+Tonga,imp,own 2025,682,1236,0.0,202604,5,True,True
+Tonga,imp,own 2025,268,1230,0.0,202608,1,True,True
+Tonga,imp,own 2025,496,836,0.0,,,False,False
+Tonga,imp,own 2025,566,833,0.0,202512,9,False,True
+Tonga,imp,own 2025,348,825,0.0,202607,2,True,True
+Tonga,imp,own 2025,504,825,0.0,202512,9,False,True
+Tonga,imp,own 2025,748,825,0.0,,,False,False
+Tonga,imp,own 2025,100,414,0.0,202603,6,False,True
+Tonga,imp,own 2025,600,414,0.0,202603,6,False,True
+Tonga,imp,own 2025,807,414,0.0,202608,1,True,True
+Tonga,imp,own 2025,166,413,0.0,,,False,False
+Tonga,imp,own 2025,466,413,0.0,,,False,False
+Tonga,imp,own 2025,876,412,0.0,,,False,False
+Tonga,imp,own 2025,788,410,0.0,,,False,False
+Tuvalu,exp,mirror 2025,764,46563763,0.8731,202605,4,True,True
+Tuvalu,exp,mirror 2025,276,1890026,0.0354,202607,2,True,True
+Tuvalu,exp,mirror 2025,410,1333701,0.025,202512,9,False,True
+Tuvalu,exp,mirror 2025,392,943505,0.0177,202607,2,True,True
+Tuvalu,exp,mirror 2025,233,470561,0.0088,202607,2,True,True
+Tuvalu,exp,mirror 2025,344,373828,0.007,202607,2,True,True
+Tuvalu,exp,mirror 2025,752,312636,0.0059,202607,2,True,True
+Tuvalu,exp,mirror 2025,826,271226,0.0051,202607,2,True,True
+Tuvalu,exp,mirror 2025,251,267108,0.005,202512,9,False,True
+Tuvalu,exp,mirror 2025,76,171723,0.0032,202608,1,True,True
+Tuvalu,exp,mirror 2025,480,158387,0.003,202606,3,True,True
+Tuvalu,exp,mirror 2025,242,118337,0.0022,202606,3,True,True
+Tuvalu,exp,mirror 2025,642,82852,0.0016,202606,3,True,True
+Tuvalu,exp,mirror 2025,702,56671,0.0011,202603,6,False,True
+Tuvalu,exp,mirror 2025,203,42753,0.0008,202607,2,True,True
+Tuvalu,exp,mirror 2025,780,41170,0.0008,202512,9,False,True
+Tuvalu,exp,mirror 2025,554,38026,0.0007,202608,1,True,True
+Tuvalu,exp,mirror 2025,36,33545,0.0006,202608,1,True,True
+Tuvalu,exp,mirror 2025,528,28922,0.0005,202607,2,True,True
+Tuvalu,exp,mirror 2025,208,18834,0.0004,202607,2,True,True
+Tuvalu,exp,mirror 2025,586,11876,0.0002,202601,8,False,True
+Tuvalu,exp,mirror 2025,218,11342,0.0002,202603,6,False,True
+Tuvalu,exp,mirror 2025,724,9460,0.0002,202606,3,True,True
+Tuvalu,exp,mirror 2025,842,7873,0.0001,202607,2,True,True
+Tuvalu,exp,mirror 2025,703,7393,0.0001,202605,4,True,True
+Tuvalu,exp,mirror 2025,462,7365,0.0001,,,False,False
+Tuvalu,exp,mirror 2025,579,6334,0.0001,202608,1,True,True
+Tuvalu,exp,mirror 2025,144,6112,0.0001,,,False,False
+Tuvalu,exp,mirror 2025,499,5705,0.0001,202512,9,False,True
+Tuvalu,exp,mirror 2025,682,5287,0.0001,202604,5,True,True
+Tuvalu,exp,mirror 2025,380,4924,0.0001,202606,3,True,True
+Tuvalu,exp,mirror 2025,688,4532,0.0001,202607,2,True,True
+Tuvalu,exp,mirror 2025,699,3305,0.0001,202607,2,True,True
+Tuvalu,exp,mirror 2025,705,3243,0.0001,202606,3,True,True
+Tuvalu,exp,mirror 2025,40,2884,0.0001,,,False,False
+Tuvalu,exp,mirror 2025,710,2752,0.0001,202605,4,True,True
+Tuvalu,exp,mirror 2025,616,2429,0.0,202606,3,True,True
+Tuvalu,exp,mirror 2025,566,1941,0.0,202512,9,False,True
+Tuvalu,exp,mirror 2025,442,1884,0.0,202607,2,True,True
+Tuvalu,exp,mirror 2025,458,1806,0.0,202608,1,True,True
+Tuvalu,exp,mirror 2025,372,1459,0.0,202607,2,True,True
+Tuvalu,exp,mirror 2025,70,1117,0.0,202608,1,True,True
+Tuvalu,exp,mirror 2025,498,534,0.0,202606,3,True,True
+Tuvalu,exp,mirror 2025,414,408,0.0,202412,21,False,False
+Tuvalu,exp,mirror 2025,56,344,0.0,202606,3,True,True
+Tuvalu,exp,mirror 2025,360,242,0.0,202607,2,True,True
+Tuvalu,exp,mirror 2025,792,113,0.0,202512,9,False,True
+Tuvalu,exp,mirror 2025,156,63,0.0,202412,21,False,False
+Tuvalu,exp,mirror 2025,170,60,0.0,202604,5,True,True
+Tuvalu,exp,mirror 2025,214,31,0.0,202604,5,True,True
+Tuvalu,exp,mirror 2025,484,25,0.0,202607,2,True,True
+Tuvalu,imp,mirror 2025,702,30157115,0.3308,202603,6,False,True
+Tuvalu,imp,mirror 2025,242,19796863,0.2172,202606,3,True,True
+Tuvalu,imp,mirror 2025,156,18490269,0.2028,202412,21,False,False
+Tuvalu,imp,mirror 2025,36,9173093,0.1006,202608,1,True,True
+Tuvalu,imp,mirror 2025,410,4515134,0.0495,202512,9,False,True
+Tuvalu,imp,mirror 2025,554,3101945,0.034,202608,1,True,True
+Tuvalu,imp,mirror 2025,842,2207400,0.0242,202607,2,True,True
+Tuvalu,imp,mirror 2025,392,842622,0.0092,202607,2,True,True
+Tuvalu,imp,mirror 2025,764,786257,0.0086,202605,4,True,True
+Tuvalu,imp,mirror 2025,792,639388,0.007,202512,9,False,True
+Tuvalu,imp,mirror 2025,208,252871,0.0028,202607,2,True,True
+Tuvalu,imp,mirror 2025,360,187966,0.0021,202607,2,True,True
+Tuvalu,imp,mirror 2025,251,187277,0.0021,202512,9,False,True
+Tuvalu,imp,mirror 2025,458,182713,0.002,202608,1,True,True
+Tuvalu,imp,mirror 2025,710,146413,0.0016,202605,4,True,True
+Tuvalu,imp,mirror 2025,344,103753,0.0011,202607,2,True,True
+Tuvalu,imp,mirror 2025,300,67045,0.0007,202607,2,True,True
+Tuvalu,imp,mirror 2025,246,62455,0.0007,202607,2,True,True
+Tuvalu,imp,mirror 2025,152,61825,0.0007,202608,1,True,True
+Tuvalu,imp,mirror 2025,56,43007,0.0005,202606,3,True,True
+Tuvalu,imp,mirror 2025,699,39362,0.0004,202607,2,True,True
+Tuvalu,imp,mirror 2025,528,23688,0.0003,202607,2,True,True
+Tuvalu,imp,mirror 2025,516,19116,0.0002,202501,20,False,False
+Tuvalu,imp,mirror 2025,826,15119,0.0002,202607,2,True,True
+Tuvalu,imp,mirror 2025,276,14884,0.0002,202607,2,True,True
+Tuvalu,imp,mirror 2025,608,13156,0.0001,202606,3,True,True
+Tuvalu,imp,mirror 2025,752,7313,0.0001,202607,2,True,True
+Tuvalu,imp,mirror 2025,440,6780,0.0001,202607,2,True,True
+Tuvalu,imp,mirror 2025,579,5334,0.0001,202608,1,True,True
+Tuvalu,imp,mirror 2025,757,4849,0.0001,202608,1,True,True
+Tuvalu,imp,mirror 2025,100,3145,0.0,202603,6,False,True
+Tuvalu,imp,mirror 2025,380,2478,0.0,202606,3,True,True
+Tuvalu,imp,mirror 2025,442,1445,0.0,202607,2,True,True
+Tuvalu,imp,mirror 2025,203,1246,0.0,202607,2,True,True
+Tuvalu,imp,mirror 2025,512,1043,0.0,202605,4,True,True
+Tuvalu,imp,mirror 2025,40,288,0.0,,,False,False
+Vanuatu,exp,mirror 2025,764,108152825,0.3176,202605,4,True,True
+Vanuatu,exp,mirror 2025,156,98043204,0.2879,202412,21,False,False
+Vanuatu,exp,mirror 2025,410,33548494,0.0985,202512,9,False,True
+Vanuatu,exp,mirror 2025,392,32218904,0.0946,202607,2,True,True
+Vanuatu,exp,mirror 2025,842,17587464,0.0516,202607,2,True,True
+Vanuatu,exp,mirror 2025,608,14765344,0.0434,202606,3,True,True
+Vanuatu,exp,mirror 2025,242,11136655,0.0327,202606,3,True,True
+Vanuatu,exp,mirror 2025,458,10297992,0.0302,202608,1,True,True
+Vanuatu,exp,mirror 2025,36,5802036,0.017,202608,1,True,True
+Vanuatu,exp,mirror 2025,710,1505259,0.0044,202605,4,True,True
+Vanuatu,exp,mirror 2025,554,1461989,0.0043,202608,1,True,True
+Vanuatu,exp,mirror 2025,724,1291881,0.0038,202606,3,True,True
+Vanuatu,exp,mirror 2025,699,936577,0.0028,202607,2,True,True
+Vanuatu,exp,mirror 2025,616,745670,0.0022,202606,3,True,True
+Vanuatu,exp,mirror 2025,702,695347,0.002,202603,6,False,True
+Vanuatu,exp,mirror 2025,251,576434,0.0017,202512,9,False,True
+Vanuatu,exp,mirror 2025,344,407430,0.0012,202607,2,True,True
+Vanuatu,exp,mirror 2025,360,354424,0.001,202607,2,True,True
+Vanuatu,exp,mirror 2025,516,336293,0.001,202501,20,False,False
+Vanuatu,exp,mirror 2025,124,133754,0.0004,202607,2,True,True
+Vanuatu,exp,mirror 2025,528,128225,0.0004,202607,2,True,True
+Vanuatu,exp,mirror 2025,218,120298,0.0004,202603,6,False,True
+Vanuatu,exp,mirror 2025,276,34076,0.0001,202607,2,True,True
+Vanuatu,exp,mirror 2025,320,31114,0.0001,202606,3,True,True
+Vanuatu,exp,mirror 2025,40,30684,0.0001,,,False,False
+Vanuatu,exp,mirror 2025,258,30345,0.0001,202412,21,False,False
+Vanuatu,exp,mirror 2025,826,28636,0.0001,202607,2,True,True
+Vanuatu,exp,mirror 2025,372,21352,0.0001,202607,2,True,True
+Vanuatu,exp,mirror 2025,100,15442,0.0,202603,6,False,True
+Vanuatu,exp,mirror 2025,328,13656,0.0,202606,3,True,True
+Vanuatu,exp,mirror 2025,214,10837,0.0,202604,5,True,True
+Vanuatu,exp,mirror 2025,703,10060,0.0,202605,4,True,True
+Vanuatu,exp,mirror 2025,752,8942,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,682,6295,0.0,202604,5,True,True
+Vanuatu,exp,mirror 2025,76,6130,0.0,202608,1,True,True
+Vanuatu,exp,mirror 2025,196,5167,0.0,202512,9,False,True
+Vanuatu,exp,mirror 2025,591,3206,0.0,202608,1,True,True
+Vanuatu,exp,mirror 2025,414,2813,0.0,202412,21,False,False
+Vanuatu,exp,mirror 2025,776,2060,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,484,2045,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,442,1767,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,203,1321,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,508,1206,0.0,,,False,False
+Vanuatu,exp,mirror 2025,586,745,0.0,202601,8,False,True
+Vanuatu,exp,mirror 2025,222,717,0.0,202608,1,True,True
+Vanuatu,exp,mirror 2025,470,678,0.0,202512,9,False,True
+Vanuatu,exp,mirror 2025,56,501,0.0,202606,3,True,True
+Vanuatu,exp,mirror 2025,144,321,0.0,,,False,False
+Vanuatu,exp,mirror 2025,152,258,0.0,202608,1,True,True
+Vanuatu,exp,mirror 2025,348,234,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,70,231,0.0,202608,1,True,True
+Vanuatu,exp,mirror 2025,498,223,0.0,202606,3,True,True
+Vanuatu,exp,mirror 2025,208,119,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,504,39,0.0,202512,9,False,True
+Vanuatu,exp,mirror 2025,233,14,0.0,202607,2,True,True
+Vanuatu,exp,mirror 2025,31,9,0.0,202607,2,True,True
+Vanuatu,imp,mirror 2025,156,135733254,0.283,202412,21,False,False
+Vanuatu,imp,mirror 2025,36,75404190,0.1572,202608,1,True,True
+Vanuatu,imp,mirror 2025,554,39832195,0.0831,202608,1,True,True
+Vanuatu,imp,mirror 2025,458,36140424,0.0754,202608,1,True,True
+Vanuatu,imp,mirror 2025,702,35935210,0.0749,202603,6,False,True
+Vanuatu,imp,mirror 2025,842,34197748,0.0713,202607,2,True,True
+Vanuatu,imp,mirror 2025,242,33273466,0.0694,202606,3,True,True
+Vanuatu,imp,mirror 2025,764,15714983,0.0328,202605,4,True,True
+Vanuatu,imp,mirror 2025,360,10092893,0.021,202607,2,True,True
+Vanuatu,imp,mirror 2025,392,9905565,0.0207,202607,2,True,True
+Vanuatu,imp,mirror 2025,251,9001961,0.0188,202512,9,False,True
+Vanuatu,imp,mirror 2025,410,8442185,0.0176,202512,9,False,True
+Vanuatu,imp,mirror 2025,792,7018613,0.0146,202512,9,False,True
+Vanuatu,imp,mirror 2025,710,6280261,0.0131,202605,4,True,True
+Vanuatu,imp,mirror 2025,699,4253905,0.0089,202607,2,True,True
+Vanuatu,imp,mirror 2025,344,3366404,0.007,202607,2,True,True
+Vanuatu,imp,mirror 2025,246,3013065,0.0063,202607,2,True,True
+Vanuatu,imp,mirror 2025,76,2680148,0.0056,202608,1,True,True
+Vanuatu,imp,mirror 2025,300,1263678,0.0026,202607,2,True,True
+Vanuatu,imp,mirror 2025,608,1160592,0.0024,202606,3,True,True
+Vanuatu,imp,mirror 2025,380,1047079,0.0022,202606,3,True,True
+Vanuatu,imp,mirror 2025,56,744320,0.0016,202606,3,True,True
+Vanuatu,imp,mirror 2025,724,676637,0.0014,202606,3,True,True
+Vanuatu,imp,mirror 2025,528,600345,0.0013,202607,2,True,True
+Vanuatu,imp,mirror 2025,516,532442,0.0011,202501,20,False,False
+Vanuatu,imp,mirror 2025,40,502629,0.001,,,False,False
+Vanuatu,imp,mirror 2025,616,440280,0.0009,202606,3,True,True
+Vanuatu,imp,mirror 2025,826,383572,0.0008,202607,2,True,True
+Vanuatu,imp,mirror 2025,144,282315,0.0006,,,False,False
+Vanuatu,imp,mirror 2025,196,269489,0.0006,202512,9,False,True
+Vanuatu,imp,mirror 2025,442,200154,0.0004,202607,2,True,True
+Vanuatu,imp,mirror 2025,752,158370,0.0003,202607,2,True,True
+Vanuatu,imp,mirror 2025,276,140726,0.0003,202607,2,True,True
+Vanuatu,imp,mirror 2025,124,130072,0.0003,202607,2,True,True
+Vanuatu,imp,mirror 2025,757,126252,0.0003,202608,1,True,True
+Vanuatu,imp,mirror 2025,104,82125,0.0002,202512,9,False,True
+Vanuatu,imp,mirror 2025,586,81060,0.0002,202601,8,False,True
+Vanuatu,imp,mirror 2025,776,76770,0.0002,202607,2,True,True
+Vanuatu,imp,mirror 2025,208,67837,0.0001,202607,2,True,True
+Vanuatu,imp,mirror 2025,440,57700,0.0001,202607,2,True,True
+Vanuatu,imp,mirror 2025,620,46578,0.0001,202607,2,True,True
+Vanuatu,imp,mirror 2025,498,42477,0.0001,202606,3,True,True
+Vanuatu,imp,mirror 2025,579,37065,0.0001,202608,1,True,True
+Vanuatu,imp,mirror 2025,203,24058,0.0001,202607,2,True,True
+Vanuatu,imp,mirror 2025,818,19496,0.0,202606,3,True,True
+Vanuatu,imp,mirror 2025,512,17334,0.0,202605,4,True,True
+Vanuatu,imp,mirror 2025,233,16085,0.0,202607,2,True,True
+Vanuatu,imp,mirror 2025,705,13765,0.0,202606,3,True,True
+Vanuatu,imp,mirror 2025,703,11729,0.0,202605,4,True,True
+Vanuatu,imp,mirror 2025,428,9849,0.0,202607,2,True,True
+Vanuatu,imp,mirror 2025,100,8415,0.0,202603,6,False,True
+Vanuatu,imp,mirror 2025,372,5860,0.0,202607,2,True,True
+Vanuatu,imp,mirror 2025,642,4811,0.0,202606,3,True,True
+Vanuatu,imp,mirror 2025,480,2297,0.0,202606,3,True,True
+Vanuatu,imp,mirror 2025,24,2281,0.0,202604,5,True,True
+Vanuatu,imp,mirror 2025,348,1202,0.0,202607,2,True,True
+Vanuatu,imp,mirror 2025,376,1000,0.0,202607,2,True,True

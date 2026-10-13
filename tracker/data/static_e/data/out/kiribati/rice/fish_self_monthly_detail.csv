@@ -1,0 +1,386 @@
+side,period,reporterCode,reporterDesc,partnerCode,partnerDesc,cmdCode,cmdDesc,primaryValue,netWgt,qty,qtyUnitAbbr,freq,year,is_tuna,value_usd_m
+self,201701,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",135.539,303.334,303.334,kg,M,2017,False,0.00013553899999999998
+self,201701,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",534566.171,876426.0,876426.0,kg,M,2017,False,0.5345661709999999
+self,201701,296,Kiribati,862,Venezuela,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",69029.419,112015.0,112015.0,kg,M,2017,False,0.069029419
+self,201702,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",130241.695,224429.1,224429.1,kg,M,2017,False,0.13024169500000002
+self,201702,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",28723.066,45109.1,45109.1,kg,M,2017,False,0.028723066
+self,201702,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",530535.256,875530.0,875530.0,kg,M,2017,False,0.5305352560000001
+self,201702,296,Kiribati,842,USA,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",153.341,368.18,368.18,kg,M,2017,False,0.000153341
+self,201703,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",113062.93,179636.0,179636.0,kg,M,2017,False,0.11306292999999999
+self,201703,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",103.68,226.666,226.666,kg,M,2017,False,0.00010368000000000001
+self,201703,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",13483.723,22425.6,22425.6,kg,M,2017,False,0.013483723
+self,201703,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",29434.418,54940.7,54940.7,kg,M,2017,False,0.029434418
+self,201703,296,Kiribati,842,USA,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",61.751,135.0,135.0,kg,M,2017,False,6.1751e-05
+self,201704,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",14450.972,22454.5,22454.5,kg,M,2017,False,0.014450972
+self,201704,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",85.201,188.333,188.333,kg,M,2017,False,8.5201e-05
+self,201704,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",370.209,818.333,818.333,kg,M,2017,False,0.000370209
+self,201704,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",459590.835,741428.0,741428.0,kg,M,2017,False,0.45959083500000003
+self,201705,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",55121.052,89818.2,89818.2,kg,M,2017,False,0.055121052000000004
+self,201705,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",411.074,921.667,921.667,kg,M,2017,False,0.000411074
+self,201705,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",14262.699,31978.3,31978.3,kg,M,2017,False,0.014262699
+self,201705,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",753419.419,1291210.8,1291210.8,kg,M,2017,False,0.753419419
+self,201705,296,Kiribati,842,USA,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",56897.664,90363.6,90363.6,kg,M,2017,False,0.056897663999999994
+self,201705,296,Kiribati,862,Venezuela,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",82683.065,134462.0,134462.0,kg,M,2017,False,0.082683065
+self,201706,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",446.667,450.0,450.0,kg,M,2017,False,0.000446667
+self,201706,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1081.524,2333.33,2333.33,kg,M,2017,False,0.001081524
+self,201706,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",231768.803,463050.4,463050.4,kg,M,2017,False,0.23176880300000002
+self,201707,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",72357.662,112229.1,112229.1,kg,M,2017,False,0.072357662
+self,201707,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",59677.595,91522.0,91522.0,kg,M,2017,False,0.059677595
+self,201707,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",34.289,73.333,73.333,kg,M,2017,False,3.4289e-05
+self,201707,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",647606.492,1098561.0,1098561.0,kg,M,2017,False,0.647606492
+self,201708,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",57.801,121.667,121.667,kg,M,2017,False,5.7801000000000004e-05
+self,201708,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",34.839,73.333,73.333,kg,M,2017,False,3.4838999999999996e-05
+self,201708,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",28771.48,44080.2,44080.2,kg,M,2017,False,0.02877148
+self,201708,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",425983.711,673274.0,673274.0,kg,M,2017,False,0.425983711
+self,201709,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",148625.636,295844.1,295844.1,kg,M,2017,False,0.148625636
+self,201709,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",126098.483,223555.0,223555.0,kg,M,2017,False,0.12609848299999998
+self,201709,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",86.897,181.667,181.667,kg,M,2017,False,8.6897e-05
+self,201709,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",22025.699,46046.7,46046.7,kg,M,2017,False,0.022025699
+self,201709,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",810097.37,1292367.0,1292367.0,kg,M,2017,False,0.81009737
+self,201709,296,Kiribati,36,Australia,100620,Cereals; husked (brown) rice,63.778,2.0,2.0,kg,M,2017,False,6.3778e-05
+self,201710,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",13970.704,49400.0,49400.0,kg,M,2017,False,0.013970704
+self,201710,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",61507.556,161280.333,161280.333,kg,M,2017,False,0.061507556
+self,201710,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",406.664,870.0,870.0,kg,M,2017,False,0.000406664
+self,201710,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1102221.94,1864976.0,1864976.0,kg,M,2017,False,1.10222194
+self,201710,296,Kiribati,36,Australia,100620,Cereals; husked (brown) rice,59.987,4.0,4.0,kg,M,2017,False,5.9987e-05
+self,201711,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",24475.487,44909.1,44909.1,kg,M,2017,False,0.024475487
+self,201711,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",63.287,138.333,138.333,kg,M,2017,False,6.3287e-05
+self,201711,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",303248.537,461491.3,461491.3,kg,M,2017,False,0.303248537
+self,201712,296,Kiribati,36,Australia,100620,Cereals; husked (brown) rice,341.734,85.0,85.0,kg,M,2017,False,0.000341734
+self,201712,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",123391.839,202091.1,202091.1,kg,M,2017,False,0.123391839
+self,201712,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",224564.111,479768.2,479768.2,kg,M,2017,False,0.224564111
+self,201712,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",522.921,1140.0,1140.0,kg,M,2017,False,0.0005229210000000001
+self,201712,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",73816.761,156616.4,156616.4,kg,M,2017,False,0.073816761
+self,201712,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",33255.959,66936.6,66936.6,kg,M,2017,False,0.033255959
+self,201712,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",460702.06,763900.5,763900.5,kg,M,2017,False,0.46070206
+self,201801,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",28490.634,35868.0,35868.0,kg,M,2018,False,0.028490633999999997
+self,201801,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",190095.232,314079.2,314079.2,kg,M,2018,False,0.190095232
+self,201801,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",316.139,398.0,398.0,kg,M,2018,False,0.000316139
+self,201801,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",22315.598,44624.4,44624.4,kg,M,2018,False,0.022315598000000002
+self,201801,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",103548.219,130361.0,130361.0,kg,M,2018,False,0.103548219
+self,201801,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",27083.101,44624.4,44624.4,kg,M,2018,False,0.027083101
+self,201801,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",170936.654,271097.0,271097.0,kg,M,2018,False,0.17093665400000002
+self,201802,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",75876.783,157277.1,157277.1,kg,M,2018,False,0.07587678299999999
+self,201802,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",417412.136,721733.4,721733.4,kg,M,2018,False,0.417412136
+self,201802,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1236.325,1569.0,1569.0,kg,M,2018,False,0.0012363250000000001
+self,201802,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",578622.918,1010375.0,1010375.0,kg,M,2018,False,0.578622918
+self,201802,296,Kiribati,842,USA,100620,Cereals; husked (brown) rice,30.731,32.5,32.5,kg,M,2018,False,3.0731e-05
+self,201803,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",97522.494,157393.1,157393.1,kg,M,2018,False,0.097522494
+self,201803,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",219086.511,458892.0,458892.0,kg,M,2018,False,0.219086511
+self,201803,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",308.414,312.0,312.0,kg,M,2018,False,0.00030841399999999996
+self,201803,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",54081.192,69615.0,69615.0,kg,M,2018,False,0.054081192
+self,201803,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",473676.356,763455.0,763455.0,kg,M,2018,False,0.473676356
+self,201804,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",96622.365,157393.0,157393.0,kg,M,2018,False,0.096622365
+self,201804,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",166026.924,342846.0,342846.0,kg,M,2018,False,0.166026924
+self,201804,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",20789.349,44624.4,44624.4,kg,M,2018,False,0.020789349
+self,201804,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",71022.449,92274.0,92274.0,kg,M,2018,False,0.07102244899999999
+self,201804,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",35458.885,46069.0,46069.0,kg,M,2018,False,0.035458885
+self,201804,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",414091.341,673459.2,673459.2,kg,M,2018,False,0.414091341
+self,201805,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",26997.532,44821.0,44821.0,kg,M,2018,False,0.026997531999999998
+self,201805,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",27959.471,37146.0,37146.0,kg,M,2018,False,0.027959471000000003
+self,201805,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",611.185,812.0,812.0,kg,M,2018,False,0.000611185
+self,201805,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",75436.98,119100.0,119100.0,kg,M,2018,False,0.07543698
+self,201805,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",2682.592,3564.0,3564.0,kg,M,2018,False,0.002682592
+self,201805,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",148125.884,247528.8,247528.8,kg,M,2018,False,0.14812588399999999
+self,201805,296,Kiribati,36,Australia,100620,Cereals; husked (brown) rice,112.151,54.0,54.0,kg,M,2018,False,0.00011215099999999999
+self,201806,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",40404.131,67619.0,67619.0,kg,M,2018,False,0.040404131
+self,201806,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",239061.015,416288.0,416288.0,kg,M,2018,False,0.23906101500000002
+self,201806,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",562.677,751.0,751.0,kg,M,2018,False,0.000562677
+self,201806,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",12318.963,22675.0,22675.0,kg,M,2018,False,0.012318963
+self,201806,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",734219.034,1204745.1,1204745.1,kg,M,2018,False,0.734219034
+self,201807,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",58802.596,79402.0,79402.0,kg,M,2018,False,0.058802596
+self,201807,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",86468.002,182101.0,182101.0,kg,M,2018,False,0.08646800199999999
+self,201807,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",908.677,1227.0,1227.0,kg,M,2018,False,0.000908677
+self,201807,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",12173.46,22675.0,22675.0,kg,M,2018,False,0.012173459999999999
+self,201807,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",162925.004,227875.0,227875.0,kg,M,2018,False,0.16292500399999998
+self,201807,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",810126.809,1369365.3,1369365.3,kg,M,2018,False,0.810126809
+self,201808,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",115621.21,202437.5,202437.5,kg,M,2018,False,0.11562121
+self,201808,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",239528.602,453938.0,453938.0,kg,M,2018,False,0.239528602
+self,201808,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",554.561,757.0,757.0,kg,M,2018,False,0.0005545610000000001
+self,201808,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",21684.288,45350.0,45350.0,kg,M,2018,False,0.021684288
+self,201808,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",170785.746,291621.7,291621.7,kg,M,2018,False,0.17078574600000002
+self,201809,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",37222.685,65589.6,65589.6,kg,M,2018,False,0.037222685
+self,201809,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",227981.291,363707.0,363707.0,kg,M,2018,False,0.227981291
+self,201809,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",269.39,374.0,374.0,kg,M,2018,False,0.00026939
+self,201809,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",24454.015,45350.0,45350.0,kg,M,2018,False,0.024454015
+self,201809,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",36024.834,67654.5,67654.5,kg,M,2018,False,0.036024834000000006
+self,201809,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",271912.803,497884.2,497884.2,kg,M,2018,False,0.27191280300000004
+self,201810,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",114157.201,224627.0,224627.0,kg,M,2018,False,0.114157201
+self,201810,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",272076.995,523276.0,523276.0,kg,M,2018,False,0.272076995
+self,201810,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",289.795,408.0,408.0,kg,M,2018,False,0.000289795
+self,201810,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",33521.039,63194.0,63194.0,kg,M,2018,False,0.033521038999999996
+self,201810,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",167380.747,281660.0,281660.0,kg,M,2018,False,0.167380747
+self,201810,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",50825.635,90200.0,90200.0,kg,M,2018,False,0.050825635
+self,201810,296,Kiribati,36,Australia,100620,Cereals; husked (brown) rice,30.542,12.0,12.0,kg,M,2018,False,3.0542e-05
+self,201810,296,Kiribati,344,"China, Hong Kong SAR",100620,Cereals; husked (brown) rice,29.122,34.167,34.167,kg,M,2018,False,2.9122e-05
+self,201811,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",545576.967,852664.2,852664.2,kg,M,2018,False,0.5455769669999999
+self,201811,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",67390.339,113813.0,113813.0,kg,M,2018,False,0.06739033900000001
+self,201811,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",462.312,638.0,638.0,kg,M,2018,False,0.000462312
+self,201811,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",36466.869,68025.0,68025.0,kg,M,2018,False,0.036466869
+self,201811,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",110883.919,224211.1,224211.1,kg,M,2018,False,0.110883919
+self,201811,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",51080.428,70492.0,70492.0,kg,M,2018,False,0.051080428
+self,201812,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",12517.033,22454.0,22454.0,kg,M,2018,False,0.012517032999999999
+self,202001,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",233544.638,436016.7,436016.7,kg,M,2020,False,0.233544638
+self,202001,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",102571.338,12400.0,12400.0,kg,M,2020,False,0.102571338
+self,202001,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",395331.385,846999.0,846999.0,kg,M,2020,False,0.39533138500000004
+self,202001,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",21602.391,46082.4,46082.4,kg,M,2020,False,0.021602391
+self,202002,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",60913.495,138155.2,138155.2,kg,M,2020,False,0.060913495000000005
+self,202002,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",581098.032,1304142.4,1304142.4,kg,M,2020,False,0.581098032
+self,202002,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",18607.192,46082.4,46082.4,kg,M,2020,False,0.018607191999999998
+self,202003,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",26051.873,69054.5,69054.5,kg,M,2020,False,0.026051873
+self,202003,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",184148.409,26500.0,26500.0,kg,M,2020,False,0.184148409
+self,202003,296,Kiribati,702,Singapore,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",21251.631,45086.4,45086.4,kg,M,2020,False,0.021251631
+self,202003,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",66915.602,161705.0,161705.0,kg,M,2020,False,0.066915602
+self,202004,296,Kiribati,36,Australia,100640,"Cereals; rice, broken",351.42,20.0,20.0,kg,M,2020,False,0.00035142
+self,202004,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",26945.981,69054.5,69054.5,kg,M,2020,False,0.026945981
+self,202004,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",93222.035,222832.0,222832.0,kg,M,2020,False,0.09322203500000001
+self,202004,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",137969.519,294709.0,294709.0,kg,M,2020,False,0.137969519
+self,202004,296,Kiribati,842,USA,100640,"Cereals; rice, broken",62.349,3.0,3.0,kg,M,2020,False,6.2349e-05
+self,202005,296,Kiribati,36,Australia,100640,"Cereals; rice, broken",87.879,32.12,32.12,kg,M,2020,False,8.7879e-05
+self,202005,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",251141.241,440142.0,440142.0,kg,M,2020,False,0.251141241
+self,202005,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",3677.908,2530.0,2530.0,kg,M,2020,False,0.0036779079999999997
+self,202006,296,Kiribati,344,"China, Hong Kong SAR",100640,"Cereals; rice, broken",49.623,5.0,5.0,kg,M,2020,False,4.9622999999999996e-05
+self,202006,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",341667.766,705068.1,705068.1,kg,M,2020,False,0.341667766
+self,202006,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",28206.396,0.0,0.0,N/A,M,2020,False,0.028206396
+self,202006,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",102772.152,275272.9,275272.9,kg,M,2020,False,0.102772152
+self,202007,296,Kiribati,757,Switzerland,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",38353.884,0.0,0.0,N/A,M,2020,False,0.038353884
+self,202007,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",91364.591,230182.0,230182.0,kg,M,2020,False,0.091364591
+self,202007,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",472937.148,754301.0,754301.0,kg,M,2020,False,0.472937148
+self,202007,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",630883.214,665649.343,665649.343,kg,M,2020,False,0.630883214
+self,202007,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",48105.012,0.0,0.0,N/A,M,2020,False,0.048105012
+self,202007,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",23376.718,45350.0,45350.0,kg,M,2020,False,0.023376718
+self,202008,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",162470.106,322254.7,322254.7,kg,M,2020,False,0.162470106
+self,202008,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",390807.132,149718.0,149718.0,kg,M,2020,False,0.390807132
+self,202008,296,Kiribati,548,Vanuatu,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",71588.845,6200.0,6200.0,kg,M,2020,False,0.071588845
+self,202008,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",155041.251,233932.0,233932.0,kg,M,2020,False,0.155041251
+self,202009,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",36454.95,94950.0,94950.0,kg,M,2020,False,0.03645495
+self,202009,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",222746.712,432197.7,432197.7,kg,M,2020,False,0.222746712
+self,202009,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",379971.937,525673.0,525673.0,kg,M,2020,False,0.379971937
+self,202009,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",23140.175,45350.0,45350.0,kg,M,2020,False,0.023140175
+self,202009,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",13446.504,24489.0,24489.0,kg,M,2020,False,0.013446504000000001
+self,202010,296,Kiribati,156,China,100640,"Cereals; rice, broken",22.808,10.0,10.0,kg,M,2020,False,2.2808e-05
+self,202010,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",41.339,5.0,5.0,kg,M,2020,False,4.1339e-05
+self,202010,296,Kiribati,344,"China, Hong Kong SAR",100640,"Cereals; rice, broken",79.114,125.0,125.0,kg,M,2020,False,7.9114e-05
+self,202010,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",20751.37,45350.0,45350.0,kg,M,2020,False,0.020751369999999998
+self,202010,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",115243.336,230182.0,230182.0,kg,M,2020,False,0.115243336
+self,202010,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",261347.519,562390.0,562390.0,kg,M,2020,False,0.261347519
+self,202011,296,Kiribati,36,Australia,100640,"Cereals; rice, broken",170.721,54.0,54.0,kg,M,2020,False,0.000170721
+self,202011,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",104236.296,228417.7,228417.7,kg,M,2020,False,0.104236296
+self,202011,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",162549.429,337404.0,337404.0,kg,M,2020,False,0.162549429
+self,202011,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",715556.167,1326980.0,1326980.0,kg,M,2020,False,0.715556167
+self,202011,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",45182.889,126600.0,126600.0,kg,M,2020,False,0.045182889000000004
+self,202012,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",188210.441,340375.0,340375.0,kg,M,2020,False,0.18821044099999998
+self,202012,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",103.783,10.0,10.0,kg,M,2020,False,0.000103783
+self,202012,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",23227.742,45454.5,45454.5,kg,M,2020,False,0.023227742
+self,202012,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",140132.79,276218.0,276218.0,kg,M,2020,False,0.14013279
+self,202012,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",276685.833,562340.0,562340.0,kg,M,2020,False,0.276685833
+self,202306,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",69764.19,59774.92,59774.92,kg,M,2023,False,0.06976419
+self,202306,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",4024.857,3448.553,3448.553,kg,M,2023,False,0.004024857
+self,202306,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",556101.092,927358.378,927358.378,kg,M,2023,False,0.5561010919999999
+self,202306,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1341.619,1149.518,1149.518,kg,M,2023,False,0.0013416189999999998
+self,202306,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",273690.284,456407.983,456407.983,kg,M,2023,False,0.273690284
+self,202306,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",103975.476,89087.621,89087.621,kg,M,2023,False,0.103975476
+self,202307,296,Kiribati,156,China,100640,"Cereals; rice, broken",130708.885,217971.123,217971.123,kg,M,2023,False,0.130708885
+self,202307,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",150921.599,129311.707,129311.707,kg,M,2023,False,0.150921599
+self,202307,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",92304.728,153928.061,153928.061,kg,M,2023,False,0.092304728
+self,202307,296,Kiribati,702,Singapore,100640,"Cereals; rice, broken",295105.627,492120.371,492120.371,kg,M,2023,False,0.295105627
+self,202307,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",641416.797,549574.756,549574.756,kg,M,2023,False,0.641416797
+self,202307,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",673.757,1123.562,1123.562,kg,M,2023,False,0.000673757
+self,202307,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",295105.627,252850.57,252850.57,kg,M,2023,False,0.295105627
+self,202307,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),45141.728,53104.92,53104.92,kg,M,2023,False,0.045141728000000006
+self,202307,296,Kiribati,899,"Areas, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",673.757,577.284,577.284,kg,M,2023,False,0.000673757
+self,202307,296,Kiribati,899,"Areas, nes",100610,Cereals; rice in the husk (paddy or rough),673.757,792.611,792.611,kg,M,2023,False,0.000673757
+self,202308,296,Kiribati,156,China,100640,"Cereals; rice, broken",72018.818,120099.124,120099.124,kg,M,2023,False,0.072018818
+self,202308,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",648.818,1081.974,1081.974,kg,M,2023,False,0.000648818
+self,202308,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",763658.998,1273483.508,1273483.508,kg,M,2023,False,0.763658998
+self,202308,296,Kiribati,554,New Zealand,100640,"Cereals; rice, broken",75911.727,126590.969,126590.969,kg,M,2023,False,0.075911727
+self,202308,296,Kiribati,702,Singapore,100640,"Cereals; rice, broken",142091.181,236952.326,236952.326,kg,M,2023,False,0.142091181
+self,202308,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",142091.181,121745.683,121745.683,kg,M,2023,False,0.142091181
+self,202308,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),72018.818,84723.241,84723.241,kg,M,2023,False,0.072018818
+self,202309,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",411818.078,352851.407,352851.407,kg,M,2023,False,0.411818078
+self,202309,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",104078.828,89176.175,89176.175,kg,M,2023,False,0.104078828
+self,202309,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),71313.271,83893.233,83893.233,kg,M,2023,False,0.071313271
+self,202310,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),43180.972,50798.277,50798.277,kg,M,2023,False,0.043180972000000005
+self,202310,296,Kiribati,554,New Zealand,100610,Cereals; rice in the husk (paddy or rough),635.014,747.033,747.033,kg,M,2023,False,0.000635014
+self,202310,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",226065.087,193695.684,193695.684,kg,M,2023,False,0.226065087
+self,202310,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1905.043,1632.267,1632.267,kg,M,2023,False,0.001905043
+self,202310,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",635.014,1058.955,1058.955,kg,M,2023,False,0.000635014
+self,202310,296,Kiribati,702,Singapore,100640,"Cereals; rice, broken",71121.6,118602.918,118602.918,kg,M,2023,False,0.07112160000000001
+self,202310,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",635.014,1058.955,1058.955,kg,M,2023,False,0.000635014
+self,202311,296,Kiribati,242,Fiji,100610,Cereals; rice in the husk (paddy or rough),649.186,763.706,763.706,kg,M,2023,False,0.0006491860000000001
+self,202311,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",505066.988,432748.359,432748.359,kg,M,2023,False,0.505066988
+self,202311,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",3245.932,2781.159,2781.159,kg,M,2023,False,0.003245932
+self,202311,296,Kiribati,156,China,100640,"Cereals; rice, broken",103220.631,172131.504,172131.504,kg,M,2023,False,0.103220631
+self,202312,296,Kiribati,36,Australia,100640,"Cereals; rice, broken",28735.542,47919.607,47919.607,kg,M,2023,False,0.028735542000000003
+self,202312,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",3341.342,2862.908,2862.908,kg,M,2023,False,0.003341342
+self,202401,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",517551.531,417224.873,417224.873,kg,M,2024,False,0.5175515310000001
+self,202401,296,Kiribati,344,"China, Hong Kong SAR",100610,Cereals; rice in the husk (paddy or rough),54549.133,54236.571,54236.571,kg,M,2024,False,0.054549133
+self,202401,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",89806.5,72397.632,72397.632,kg,M,2024,False,0.0898065
+self,202401,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),143690.399,142867.065,142867.065,kg,M,2024,False,0.143690399
+self,202402,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",668024.043,538528.494,538528.494,kg,M,2024,False,0.668024043
+self,202402,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",653.005,1033.327,1033.327,kg,M,2024,False,0.000653005
+self,202402,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",257936.947,408164.347,408164.347,kg,M,2024,False,0.25793694699999997
+self,202402,296,Kiribati,670,Saint Vincent and the Grenadines,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",16978.128,13686.941,13686.941,kg,M,2024,False,0.016978128000000002
+self,202402,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",653.005,526.421,526.421,kg,M,2024,False,0.000653005
+self,202402,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",302341.283,243732.838,243732.838,kg,M,2024,False,0.302341283
+self,202403,296,Kiribati,156,China,100640,"Cereals; rice, broken",54439.285,86145.763,86145.763,kg,M,2024,False,0.054439285000000004
+self,202403,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",234810.41,371568.473,371568.473,kg,M,2024,False,0.23481041
+self,202403,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",688033.855,554659.431,554659.431,kg,M,2024,False,0.688033855
+self,202403,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),89857.615,89342.738,89342.738,kg,M,2024,False,0.089857615
+self,202403,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",267605.16,215730.265,215730.265,kg,M,2024,False,0.26760515999999995
+self,202404,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",176465.715,142258.077,142258.077,kg,M,2024,False,0.176465715
+self,202404,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",3255.825,2624.688,2624.688,kg,M,2024,False,0.003255825
+self,202405,296,Kiribati,554,New Zealand,100610,Cereals; rice in the husk (paddy or rough),172724.126,171734.431,171734.431,kg,M,2024,False,0.17272412599999998
+self,202405,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",179341.908,144576.724,144576.724,kg,M,2024,False,0.179341908
+self,202405,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",275961.534,222466.768,222466.768,kg,M,2024,False,0.275961534
+self,202405,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",90663.622,73088.602,73088.602,kg,M,2024,False,0.090663622
+self,202406,296,Kiribati,36,Australia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",17948.889,14469.522,14469.522,kg,M,2024,False,0.017948889
+self,202406,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",72460.332,58413.995,58413.995,kg,M,2024,False,0.07246033199999999
+self,202406,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",5318.189,4287.266,4287.266,kg,M,2024,False,0.005318189
+self,202406,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",257267.416,207396.478,207396.478,kg,M,2024,False,0.25726741599999997
+self,202406,296,Kiribati,899,"Areas, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",664.774,535.908,535.908,kg,M,2024,False,0.000664774
+self,202406,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),40551.195,40318.84,40318.84,kg,M,2024,False,0.040551195
+self,202408,296,Kiribati,36,Australia,100640,"Cereals; rice, broken",45296.095,71677.406,71677.406,kg,M,2024,False,0.045296095
+self,202408,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",570197.907,459665.821,459665.821,kg,M,2024,False,0.5701979070000001
+self,202408,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",666.119,536.993,536.993,kg,M,2024,False,0.0006661190000000001
+self,202408,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",979195.004,789379.389,789379.389,kg,M,2024,False,0.9791950039999999
+self,202408,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",99251.738,80011.924,80011.924,kg,M,2024,False,0.09925173799999999
+self,202408,296,Kiribati,798,Tuvalu,100640,"Cereals; rice, broken",69276.381,109624.268,109624.268,kg,M,2024,False,0.069276381
+self,202408,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),60616.834,60269.504,60269.504,kg,M,2024,False,0.060616834
+self,202410,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",23486.273,37165.126,37165.126,kg,M,2024,False,0.023486273000000002
+self,202410,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",51669.8,41653.68,41653.68,kg,M,2024,False,0.0516698
+self,202410,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",779073.214,628050.935,628050.935,kg,M,2024,False,0.7790732140000001
+self,202411,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",78430.285,63226.681,63226.681,kg,M,2024,False,0.078430285
+self,202411,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1960.757,1580.667,1580.667,kg,M,2024,False,0.001960757
+self,202411,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",458817.168,369876.087,369876.087,kg,M,2024,False,0.458817168
+self,202411,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",351629.112,283466.289,283466.289,kg,M,2024,False,0.351629112
+self,202411,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",133985.071,108012.248,108012.248,kg,M,2024,False,0.13398507099999998
+self,202411,296,Kiribati,899,"Areas, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",653.586,526.889,526.889,kg,M,2024,False,0.000653586
+self,202412,296,Kiribati,156,China,100640,"Cereals; rice, broken",17759.98,28103.731,28103.731,kg,M,2024,False,0.017759979999999998
+self,202412,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",6342.85,5113.297,5113.297,kg,M,2024,False,0.006342850000000001
+self,202412,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",445268.07,358953.462,358953.462,kg,M,2024,False,0.44526807
+self,202412,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",493473.73,397814.521,397814.521,kg,M,2024,False,0.49347373
+self,202412,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",130028.425,104822.592,104822.592,kg,M,2024,False,0.130028425
+self,202412,296,Kiribati,784,United Arab Emirates,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",634.285,511.33,511.33,kg,M,2024,False,0.000634285
+self,202412,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),57719.935,57389.205,57389.205,kg,M,2024,False,0.057719935
+self,202501,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",17429.333,14408.305,14408.305,kg,M,2025,False,0.017429332999999998
+self,202501,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",90881.524,75129.017,75129.017,kg,M,2025,False,0.090881524
+self,202501,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",37348.571,63002.66,63002.66,kg,M,2025,False,0.037348571000000004
+self,202501,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",79676.952,65866.535,65866.535,kg,M,2025,False,0.07967695200000001
+self,202501,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",489888.762,404976.275,404976.275,kg,M,2025,False,0.489888762
+self,202502,296,Kiribati,842,USA,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",629.82,520.653,520.653,kg,M,2025,False,0.00062982
+self,202502,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",2519.28,2082.613,2082.613,kg,M,2025,False,0.00251928
+self,202502,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",1259.64,2124.865,2124.865,kg,M,2025,False,0.00125964
+self,202504,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1255.674,1038.028,1038.028,kg,M,2025,False,0.001255674
+self,202504,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",404326.925,334244.883,334244.883,kg,M,2025,False,0.404326925
+self,202504,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",122428.184,206521.989,206521.989,kg,M,2025,False,0.122428184
+self,202504,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",455181.709,376285.001,376285.001,kg,M,2025,False,0.455181709
+self,202505,296,Kiribati,156,China,100640,"Cereals; rice, broken",644.141,1086.59,1086.59,kg,M,2025,False,0.000644141
+self,202505,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",65058.232,53781.68,53781.68,kg,M,2025,False,0.06505823200000001
+self,202505,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",582947.524,481905.149,481905.149,kg,M,2025,False,0.5829475239999999
+self,202505,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",81805.896,137996.953,137996.953,kg,M,2025,False,0.08180589599999999
+self,202505,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",269250.9,222581.605,222581.605,kg,M,2025,False,0.2692509
+self,202505,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",90823.868,75081.355,75081.355,kg,M,2025,False,0.090823868
+self,202505,296,Kiribati,242,Fiji,100610,Cereals; rice in the husk (paddy or rough),644.141,707.023,707.023,kg,M,2025,False,0.000644141
+self,202505,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",667329.983,551661.585,551661.585,kg,M,2025,False,0.667329983
+self,202506,296,Kiribati,156,China,100640,"Cereals; rice, broken",18185.44,30676.705,30676.705,kg,M,2025,False,0.018185439999999997
+self,202506,296,Kiribati,360,Indonesia,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",649.48,536.906,536.906,kg,M,2025,False,0.00064948
+self,202506,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",40267.76,67926.989,67926.989,kg,M,2025,False,0.04026776
+self,202506,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",100019.92,168721.876,168721.876,kg,M,2025,False,0.10001992
+self,202506,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",694294.12,573952.025,573952.025,kg,M,2025,False,0.69429412
+self,202506,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",490357.4,405363.684,405363.684,kg,M,2025,False,0.4903574
+self,202506,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),157823.64,173230.733,173230.733,kg,M,2025,False,0.15782364000000002
+self,202507,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1963.187,1622.907,1622.907,kg,M,2025,False,0.001963187
+self,202507,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",499958.277,413300.44,413300.44,kg,M,2025,False,0.499958277
+self,202507,296,Kiribati,554,New Zealand,100610,Cereals; rice in the husk (paddy or rough),654.396,718.279,718.279,kg,M,2025,False,0.0006543959999999999
+self,202507,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",87689.017,147921.089,147921.089,kg,M,2025,False,0.08768901700000001
+self,202507,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",265030.238,219092.511,219092.511,kg,M,2025,False,0.26503023800000003
+self,202507,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",654.396,1103.889,1103.889,kg,M,2025,False,0.0006543959999999999
+self,202507,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",724415.985,598852.862,598852.862,kg,M,2025,False,0.724415985
+self,202507,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),64785.169,71109.641,71109.641,kg,M,2025,False,0.064785169
+self,202508,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",5193.2,4293.062,4293.062,kg,M,2025,False,0.0051932
+self,202508,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",4544.05,7665.279,7665.279,kg,M,2025,False,0.00454405
+self,202508,296,Kiribati,344,"China, Hong Kong SAR",100640,"Cereals; rice, broken",58423.5,98553.593,98553.593,kg,M,2025,False,0.0584235
+self,202508,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",88284.4,72982.053,72982.053,kg,M,2025,False,0.0882844
+self,202508,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",66862.45,112789.112,112789.112,kg,M,2025,False,0.06686245
+self,202508,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",3894.9,3219.796,3219.796,kg,M,2025,False,0.0038949
+self,202508,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",590726.5,488335.795,488335.795,kg,M,2025,False,0.5907265
+self,202508,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),649.15,712.521,712.521,kg,M,2025,False,0.00064915
+self,202509,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",89667.891,74125.743,74125.743,kg,M,2025,False,0.089667891
+self,202509,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",659.323,545.042,545.042,kg,M,2025,False,0.000659323
+self,202509,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",59339.046,49053.801,49053.801,kg,M,2025,False,0.059339046
+self,202509,296,Kiribati,490,"Other Asia, nes",100640,"Cereals; rice, broken",102195.023,172391.02,172391.02,kg,M,2025,False,0.102195023
+self,202509,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",179995.105,148796.529,148796.529,kg,M,2025,False,0.17999510500000002
+self,202509,296,Kiribati,899,"Areas, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",659.323,545.042,545.042,kg,M,2025,False,0.000659323
+self,202509,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",497129.338,410961.842,410961.842,kg,M,2025,False,0.497129338
+self,202511,296,Kiribati,156,China,100640,"Cereals; rice, broken",19520.4,32928.626,32928.626,kg,M,2025,False,0.0195204
+self,202511,296,Kiribati,344,"China, Hong Kong SAR",100640,"Cereals; rice, broken",39040.8,65857.251,65857.251,kg,M,2025,False,0.0390408
+self,202511,296,Kiribati,490,"Other Asia, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",490612.72,405574.75,405574.75,kg,M,2025,False,0.49061271999999995
+self,202511,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",190649.24,321602.911,321602.911,kg,M,2025,False,0.19064924
+self,202511,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",650.68,1097.621,1097.621,kg,M,2025,False,0.0006506799999999999
+self,202511,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",166574.08,137701.772,137701.772,kg,M,2025,False,0.16657407999999999
+self,202511,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",614892.6,508313.181,508313.181,kg,M,2025,False,0.6148926
+self,202512,296,Kiribati,156,China,100640,"Cereals; rice, broken",50443.733,85092.662,85092.662,kg,M,2025,False,0.050443733
+self,202512,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",4646.133,3840.818,3840.818,kg,M,2025,False,0.004646133
+self,202512,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",157968.533,130587.825,130587.825,kg,M,2025,False,0.157968533
+self,202512,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",96241.333,162347.843,162347.843,kg,M,2025,False,0.096241333
+self,202512,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",172570.666,142658.969,142658.969,kg,M,2025,False,0.17257066599999998
+self,202512,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",663.733,1119.64,1119.64,kg,M,2025,False,0.0006637329999999999
+self,202512,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),20575.733,22584.382,22584.382,kg,M,2025,False,0.020575733
+self,202512,296,Kiribati,344,"China, Hong Kong SAR",100610,Cereals; rice in the husk (paddy or rough),42478.933,46625.821,46625.821,kg,M,2025,False,0.042478932999999997
+self,202512,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",451338.664,373108.072,373108.072,kg,M,2025,False,0.451338664
+self,202601,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",94897.6,78448.986,78448.986,kg,M,2026,False,0.09489760000000001
+self,202601,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",677.84,560.35,560.35,kg,M,2026,False,0.0006778400000000001
+self,202601,296,Kiribati,344,"China, Hong Kong SAR",100640,"Cereals; rice, broken",31180.64,52598.083,52598.083,kg,M,2026,False,0.03118064
+self,202601,296,Kiribati,554,New Zealand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",44059.6,36422.743,36422.743,kg,M,2026,False,0.0440596
+self,202601,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",98286.8,165798.306,165798.306,kg,M,2026,False,0.09828680000000001
+self,202601,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",310450.72,256640.254,256640.254,kg,M,2026,False,0.31045071999999996
+self,202601,296,Kiribati,798,Tuvalu,100640,"Cereals; rice, broken",677.84,1143.437,1143.437,kg,M,2026,False,0.0006778400000000001
+self,202601,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1785430.56,1475961.636,1475961.636,kg,M,2026,False,1.78543056
+self,202601,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),58972.08,64729.065,64729.065,kg,M,2026,False,0.05897208
+self,202602,296,Kiribati,156,China,100640,"Cereals; rice, broken",20460.515,34514.489,34514.489,kg,M,2026,False,0.020460515
+self,202602,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",36687.82,30328.715,30328.715,kg,M,2026,False,0.03668782
+self,202602,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",23988.19,40465.264,40465.264,kg,M,2026,False,0.02398819
+self,202602,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",210954.965,174390.112,174390.112,kg,M,2026,False,0.210954965
+self,202602,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),25399.26,27878.792,27878.792,kg,M,2026,False,0.02539926
+self,202603,296,Kiribati,156,China,100640,"Cereals; rice, broken",96929.318,163508.392,163508.392,kg,M,2026,False,0.096929318
+self,202603,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",1404.773,2369.687,2369.687,kg,M,2026,False,0.001404773
+self,202603,296,Kiribati,554,New Zealand,100640,"Cereals; rice, broken",702.386,1184.843,1184.843,kg,M,2026,False,0.0007023859999999999
+self,202603,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",347681.248,287417.61,287417.61,kg,M,2026,False,0.347681248
+self,202603,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",702.386,1184.843,1184.843,kg,M,2026,False,0.0007023859999999999
+self,202603,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",261990.112,216579.33,216579.33,kg,M,2026,False,0.261990112
+self,202603,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),20369.204,22357.691,22357.691,kg,M,2026,False,0.020369204000000002
+self,202603,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",4214.318,3483.85,3483.85,kg,M,2026,False,0.004214318
+self,202603,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),24583.523,26983.42,26983.42,kg,M,2026,False,0.024583523
+self,202604,296,Kiribati,156,China,100640,"Cereals; rice, broken",108479.416,182992.054,182992.054,kg,M,2026,False,0.108479416
+self,202604,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",1418.032,2392.053,2392.053,kg,M,2026,False,0.0014180319999999998
+self,202604,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",93590.084,77368.102,77368.102,kg,M,2026,False,0.093590084
+self,202604,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",100680.242,169835.762,169835.762,kg,M,2026,False,0.100680242
+self,202604,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",709.016,1196.026,1196.026,kg,M,2026,False,0.0007090159999999999
+self,202604,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",174417.884,144186.008,144186.008,kg,M,2026,False,0.174417884
+self,202604,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",11344.253,9377.952,9377.952,kg,M,2026,False,0.011344253
+self,202604,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",372233.29,307714.042,307714.042,kg,M,2026,False,0.37223329
+self,202605,296,Kiribati,156,China,100640,"Cereals; rice, broken",37334.514,62978.948,62978.948,kg,M,2026,False,0.037334514000000006
+self,202605,296,Kiribati,242,Fiji,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",1435.943,1187.051,1187.051,kg,M,2026,False,0.001435943
+self,202605,296,Kiribati,584,Marshall Isds,100610,Cereals; rice in the husk (paddy or rough),17949.286,19701.535,19701.535,kg,M,2026,False,0.017949286
+self,202605,296,Kiribati,702,Singapore,100640,"Cereals; rice, broken",41642.343,70245.749,70245.749,kg,M,2026,False,0.041642343
+self,202605,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",141440.372,238593.321,238593.321,kg,M,2026,False,0.141440372
+self,202605,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",290778.429,240377.764,240377.764,kg,M,2026,False,0.290778429
+self,202605,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",203185.915,167967.672,167967.672,kg,M,2026,False,0.203185915
+self,202605,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),41642.343,45707.561,45707.561,kg,M,2026,False,0.041642343
+self,202606,296,Kiribati,156,China,100610,Cereals; rice in the husk (paddy or rough),53394.704,58607.214,58607.214,kg,M,2026,False,0.053394704
+self,202606,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",702.562,1185.14,1185.14,kg,M,2026,False,0.000702562
+self,202606,296,Kiribati,554,New Zealand,100610,Cereals; rice in the husk (paddy or rough),1405.124,1542.295,1542.295,kg,M,2026,False,0.001405124
+self,202606,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",137702.132,232287.35,232287.35,kg,M,2026,False,0.137702132
+self,202606,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",144025.189,119061.284,119061.284,kg,M,2026,False,0.14402518900000003
+self,202606,296,Kiribati,899,"Areas, nes",100640,"Cereals; rice, broken",702.562,1185.14,1185.14,kg,M,2026,False,0.000702562
+self,202606,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",44261.4,36589.565,36589.565,kg,M,2026,False,0.0442614
+self,202607,296,Kiribati,156,China,100640,"Cereals; rice, broken",55707.13,93971.396,93971.396,kg,M,2026,False,0.05570713
+self,202607,296,Kiribati,242,Fiji,100640,"Cereals; rice, broken",696.339,1174.642,1174.642,kg,M,2026,False,0.000696339
+self,202607,296,Kiribati,344,"China, Hong Kong SAR",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",91220.426,75409.177,75409.177,kg,M,2026,False,0.09122042600000001
+self,202607,296,Kiribati,704,Viet Nam,100640,"Cereals; rice, broken",36209.635,61081.408,61081.408,kg,M,2026,False,0.036209635000000004
+self,202607,296,Kiribati,764,Thailand,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",184529.869,152545.282,152545.282,kg,M,2026,False,0.184529869
+self,202607,296,Kiribati,899,"Areas, nes",100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",696.339,575.643,575.643,kg,M,2026,False,0.000696339
+self,202607,296,Kiribati,156,China,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",323101.356,267098.154,267098.154,kg,M,2026,False,0.323101356
+self,202607,296,Kiribati,704,Viet Nam,100630,"Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",419196.156,346536.829,346536.829,kg,M,2026,False,0.41919615600000004
+self,202607,296,Kiribati,704,Viet Nam,100610,Cereals; rice in the husk (paddy or rough),20890.174,22929.519,22929.519,kg,M,2026,False,0.020890173999999997
