@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Import and Export Performance Tracker using Comtrade Trade-Partner Data</title>
+<meta name="description" content="Summarize and share trading-partner data to track the performance of the Kiribati economy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- Chart.js 4.4.1, pinned, from cdnjs. If the CDN cannot be reached, the same
+     version is loaded from assets/vendor/ so the charts still draw. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>if (!window.Chart) { document.write('<script src="assets/vendor/chart.umd.js"><\/script>'); }</script>
+</head>
+<body>
+
+<!-- Sticky bar: title, "last updated" badge and the Annual | Quarterly toggle.
+     The toggle here and the one in the hero are kept in sync by app.js. -->
+<div class="viewbar" id="viewbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Kiribati trade tracker <span>· partner data</span></a>
+    <span class="updated" id="updated-badge" data-updated-badge><span class="dot" aria-hidden="true"></span><span>Loading data…</span></span>
+    <div class="seg" role="group" aria-label="Choose the time unit for every chart">
+      <button type="button" data-view="annual" aria-pressed="false">Annual</button>
+      <button type="button" data-view="quarterly" aria-pressed="true">Quarterly</button>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- file:// notice (shown by app.js only when fetch() cannot work) -->
+<div class="wrap" id="file-notice" hidden>
+  <div class="notice" role="alert">
+    <h2>This page needs to be opened from its web address</h2>
+    <p>You opened the file directly from your computer, so the browser blocks it from loading the data files. Open the published address of the tracker instead (it ends in <code>github.io/…</code>), or serve the folder locally, for example with <code>python3 -m http.server</code> inside the <code>site/</code> folder.</p>
+  </div>
+</div>
+<div class="wrap" id="load-error" hidden>
+  <div class="notice" role="alert">
+    <h2>Some data could not be loaded</h2>
+    <p id="load-error-text"></p>
+  </div>
+</div>
+
+<!-- 0. Header -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="site-title">Import and Export Performance Tracker using Comtrade Trade-Partner Data</h1>
+      <p class="purpose" id="purpose">Summarize and share trading-partner data to track the performance of the Kiribati economy.</p>
+      <p class="updated" data-updated-badge><span class="dot" aria-hidden="true"></span><span>Loading data…</span></p>
+      <div class="hero-controls">
+        <div class="seg seg--lg" role="group" aria-label="Choose the time unit for every chart">
+          <button type="button" data-view="annual" aria-pressed="false">Annual</button>
+          <button type="button" data-view="quarterly" aria-pressed="true">Quarterly</button>
+        </div>
+        <p class="hint">One switch for every chart and table on this page. Monthly detail is available inside some charts.</p>
+      </div>
+    </div>
+    <!-- The strip: a live picture of how complete the latest period is -->
+    <aside class="strip" id="strip" aria-labelledby="strip-h">
+      <h3 id="strip-h">Latest period: loading…</h3>
+      <div class="dots" id="strip-dots" aria-hidden="true"></div>
+      <div class="meter"><b id="strip-meter" style="width:0%"></b></div>
+      <p class="legend" id="strip-legend"></p>
+    </aside>
+  </div>
+</header>
+
+<!-- 1. Introduction -->
+<section class="block" id="intro">
+  <div class="wrap--text">
+    <h2>What this page shows</h2>
+    <div class="prose" id="intro-paragraphs"></div>
+    <h3>How to use it</h3>
+    <ul class="how" id="how-to-use"></ul>
+    <a class="link-card" href="literature.html" id="lit-card">
+      <strong>Read the research behind this tracker →</strong>
+      <span id="lit-blurb"></span>
+    </a>
+    <div class="callout" id="sensitivity"></div>
+    <details class="glossary" id="glossary">
+      <summary>Words used on this page</summary>
+      <dl id="glossary-list"></dl>
+    </details>
+    <nav class="contents" aria-label="Sections on this page">
+      <strong>On this page</strong>
+      <ol>
+        <li><a href="#coverage">How complete the data are</a></li>
+        <li><a href="#observed">What partners record: exports and imports</a></li>
+        <li><a href="#national">Comparison with the official figures</a></li>
+        <li><a href="#peers">Neighbouring countries</a></li>
+        <li><a href="#products">All goods, line by line</a></li>
+        <li><a href="#findings">What we learn</a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- 2. Percent complete -->
+<section class="block" id="coverage">
+  <div class="wrap">
+    <h2>How complete the data are</h2>
+    <p class="section-lede">Partners publish on their own timetables, so recent periods fill in gradually. The chart shows, for each period, how much of the partner panel has published. Read every other chart with this one in mind.</p>
+    <figure class="fig" id="fig-coverage">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="legend" id="legend-coverage"></div>
+      <div class="plot"><canvas id="chart-coverage" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-coverage"></div></details>
+    </figure>
+    <h3>The partner panel</h3>
+    <p class="section-lede" id="panel-lede"></p>
+    <div class="scroll-x"><table class="panel" id="panel-table"></table></div>
+  </div>
+</section>
+
+<!-- 3. Observed series -->
+<section class="block" id="observed">
+  <div class="wrap">
+    <h2>What partners record: exports and imports</h2>
+    <p class="section-lede">These are the sums of what every partner on the panel declared about its trade with Kiribati, grouped by product. Kiribati's own total is drawn as a line where it has been published. Lighter bars mean fewer than 60% of partners have published for that period, so the figure will still grow.</p>
+
+    <figure class="fig" id="fig-exports">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="legend" id="legend-exports"></div>
+      <div class="plot"><canvas id="chart-exports" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <p class="note" id="note-exports"></p>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-exports"></div></details>
+    </figure>
+
+    <figure class="fig" id="fig-imports">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="legend" id="legend-imports"></div>
+      <div class="plot"><canvas id="chart-imports" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <p class="note" id="note-imports"></p>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-imports"></div></details>
+    </figure>
+
+    <figure class="fig" id="fig-rolling">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="legend" id="legend-rolling"></div>
+      <div class="plot short"><canvas id="chart-rolling" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-rolling"></div></details>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. Comparison with national accounts -->
+<section class="block" id="national">
+  <div class="wrap">
+    <h2>Comparison with the official figures</h2>
+    <div class="two-col--side">
+      <div>
+        <figure class="fig" id="fig-na-exports">
+          <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+          <div class="legend" id="legend-na-exports"></div>
+          <div class="plot"><canvas id="chart-na-exports" role="img"></canvas></div>
+          <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+          <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-na-exports"></div></details>
+        </figure>
+        <figure class="fig" id="fig-na-imports">
+          <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+          <div class="legend" id="legend-na-imports"></div>
+          <div class="plot"><canvas id="chart-na-imports" role="img"></canvas></div>
+          <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+          <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-na-imports"></div></details>
+        </figure>
+      </div>
+      <aside class="prose" id="na-side"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Peers -->
+<section class="block" id="peers">
+  <div class="wrap">
+    <h2>Neighbouring countries</h2>
+    <p class="section-lede">Two questions. First, how does the tuna that importers attribute to Kiribati compare with its neighbours? Second, could this tracker be built for other small island states?</p>
+    <figure class="fig" id="fig-peers-tuna">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="legend" id="legend-peers-tuna"></div>
+      <div class="plot tall"><canvas id="chart-peers-tuna" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-peers-tuna"></div></details>
+    </figure>
+    <figure class="fig" id="fig-peers-app">
+      <div class="fig-head"><div><h3></h3><p class="sub"></p><p class="how"></p></div></div>
+      <div class="scroll-x"><table class="peers sortable" id="peers-table"></table></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 6. Products -->
+<section class="block" id="products">
+  <div class="wrap">
+    <h2>All goods, line by line</h2>
+    <figure class="fig" id="fig-products">
+      <div class="fig-head">
+        <div><h3></h3><p class="sub"></p><p class="how"></p></div>
+        <div class="fig-tools">
+          <div class="seg" role="group" aria-label="Direction">
+            <button type="button" data-dir="exports" aria-pressed="true">Exports</button>
+            <button type="button" data-dir="imports" aria-pressed="false">Imports</button>
+          </div>
+          <label class="visually-hidden" for="products-year">Year</label>
+          <select class="chip" id="products-year"></select>
+        </div>
+      </div>
+      <div class="legend" id="legend-products"></div>
+      <div class="plot tall"><canvas id="chart-products" role="img"></canvas></div>
+      <figcaption><p class="caveat"></p><p class="src"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-products"></div></details>
+    </figure>
+    <div class="two-col">
+      <div>
+        <h3>Notable differences</h3>
+        <p class="section-lede" id="notable-lede"></p>
+        <ul class="notable" id="notable-list"></ul>
+      </div>
+      <div>
+        <h3 id="ships-title">Ships and aircraft</h3>
+        <p class="section-lede" id="ships-lede"></p>
+        <div class="scroll-x"><table id="ships-table"></table></div>
+        <p class="small muted" id="ships-caveat"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Findings -->
+<section class="block" id="findings">
+  <div class="wrap">
+    <h2>What we learn</h2>
+    <div class="findings" id="findings-cards"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- 8. Footer -->
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p><strong>Sources.</strong> UN Comtrade (partner returns and Kiribati's own returns); IMF balance-of-payments statistics; the Kiribati National Statistics Office through Comtrade. <span id="footer-release"></span></p>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="methods.html">How the numbers are made</a></li>
+        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="https://github.com/" id="github-link" rel="noopener">Source code and data on GitHub</a></li>
+        <li><a href="data/manifest.json">Data files (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

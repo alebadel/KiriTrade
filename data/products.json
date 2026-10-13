@@ -1,0 +1,4004 @@
+{
+ "meta": {
+  "generated_at": "2026-10-13T09:02:29Z",
+  "source": "UN Comtrade monthly HS6 (partner and Kiribati returns)",
+  "sources": [
+   "/home/claude/kir-tracker/_inputs/KiriTrade/data/interim/kiribati/mirror_metrics.parquet",
+   "data/out/kiribati/ships_hs6_annual_2.csv",
+   "ships_monthly_partners.csv",
+   "ships_by_year.csv",
+   "data/out/kiribati/rice/*",
+   "data/out/kiribati/sugar/*"
+  ],
+  "unit": "USD millions",
+  "excluded_lines": [
+   {
+    "period": "2024-01",
+    "direction": "import",
+    "hs6": "940690",
+    "description": "Prefabricated buildings",
+    "counterpart": "Viet Nam",
+    "kiribati_value_usd_m": 3135.336,
+    "partner_value_usd_m": null,
+    "reason": "One line in Kiribati's return worth more than twice the country's annual GDP. It is kept out of the Kiribati-side totals shown here and reported in this list (see notes); the as-published totals are given alongside."
+   }
+  ],
+  "definitions": {
+   "tuna_hs6": [
+    "030341",
+    "030342",
+    "030343",
+    "030344",
+    "030345",
+    "030346",
+    "030349",
+    "030487",
+    "160414"
+   ],
+   "ships_aircraft": "HS chapters 88 and 89",
+   "copra_and_coconut_oil": [
+    "120300",
+    "151311",
+    "151319"
+   ],
+   "metals": "HS chapters 72-83",
+   "other_fish": "HS chapter 03 and headings 1604-1605, excluding the tuna codes"
+  },
+  "notes": [
+   "categories (Table 2 of the handout, Jan 2025-Jul 2026, 17 months with a Kiribati return): both the recomputed value (partners, kiribati) and the handout value (handout_*) are given. They differ for tuna (97.4 here vs 100.8) and copra (6.5 vs 6.2) because the handout's partner-side category figures came from the 8 Sept data run, before a partner revision to frozen tuna fillets (19.5 -> 16.3); the total (109.7 vs 21.3) is the same in both. Kiribati-side figures agree throughout.",
+   "The tuna gap is tuna coded to Kiribati by vessel flag; under balance-of-payments rules much of it may correctly sit outside Kiribati's goods exports. Copra and coconut oil runs the other way: Kiribati records more than partners.",
+   "exports/imports.annual: top 15 HS4 headings per year ranked by the larger of the two sides, plus an 'All other' row and a 'Total, all goods' row (is_summary = true). n_partners = number of partner countries that reported the heading that year. annual_months lists the months Kiribati reported; partner values cover those months only.",
+   "Partner-reported imports are a lower bound; never compute a trade balance from these tables.",
+   "mirror_only_notable: products partners report that Kiribati's own records do not show in the window; hs6 code, number of partners and months given; handout_value is bullet 14 of the handout.",
+   "ships_aircraft: Table 4 of the handout recomputed from partners' annual returns (2026: monthly); ships_aircraft_detail has every line of USD 1m or more and the yearly totals with and without Kiribati's own record.",
+   "Labels are plain-English shortenings of the HS headings (tracker/hs4_labels.py); where no label is listed the Comtrade description is shortened.",
+   "Kiribati's January 2024 import return has one line (HS 940690, prefabricated buildings, USD 3,135m) worth about nine times GDP. It is set aside from the Kiribati-side figures in these tables and listed in meta.excluded_lines; the 9406 row for 2024 shows the remaining value of that heading."
+  ]
+ },
+ "categories": [
+  {
+   "category": "Tuna",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 97.405,
+   "kiribati": 6.333,
+   "ratio": 15.4,
+   "handout_partners": 100.8,
+   "handout_kiribati": 6.3,
+   "handout_ratio": "16×",
+   "is_total": false,
+   "note": "Coded to Kiribati by the catching vessel's flag; under balance-of-payments rules much of it may correctly sit outside Kiribati's goods exports. Handout partner figure (100.8) traces to the 8 Sept run (tuna fillets then 19.5, now 16.3 after a partner revision); current data give 97.4."
+  },
+  {
+   "category": "Other fish and seafood",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 2.509,
+   "kiribati": 0.584,
+   "ratio": 4.3,
+   "handout_partners": 2.5,
+   "handout_kiribati": 0.6,
+   "handout_ratio": "4×",
+   "is_total": false,
+   "note": "Mainly sea cucumber and live ornamental fish on the partner side."
+  },
+  {
+   "category": "Copra and coconut oil",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 6.483,
+   "kiribati": 12.745,
+   "ratio": 0.5,
+   "handout_partners": 6.2,
+   "handout_kiribati": 12.7,
+   "handout_ratio": "0.5×",
+   "is_total": false,
+   "note": "Kiribati records more than partners: the method is symmetric. Crude coconut oil (HS 151311): partners 5.7 vs Kiribati 11.9 (handout: 5.4 vs 11.9, 8 Sept run)."
+  },
+  {
+   "category": "Metals (scrap)",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 0.542,
+   "kiribati": 0.055,
+   "ratio": 9.9,
+   "handout_partners": 0.5,
+   "handout_kiribati": 0.05,
+   "handout_ratio": "10×",
+   "is_total": false,
+   "note": "HS chapters 72-83; on the partner side almost all scrap iron, aluminium and lead-acid batteries."
+  },
+  {
+   "category": "All other categories",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 2.801,
+   "kiribati": 1.596,
+   "ratio": 1.8,
+   "handout_partners": 2.5,
+   "handout_kiribati": 1.6,
+   "handout_ratio": "–",
+   "is_total": false,
+   "note": "Everything else; mostly goods not specified by kind (HS 9999), engine parts, cars and small aircraft on the partner side; cranes on Kiribati's side."
+  },
+  {
+   "category": "Total exports",
+   "window": "2025-01..2026-07",
+   "months_in_window": 17,
+   "direction": "export",
+   "partners": 109.741,
+   "kiribati": 21.313,
+   "ratio": 5.1,
+   "handout_partners": 109.7,
+   "handout_kiribati": 21.3,
+   "handout_ratio": "5.2×",
+   "is_total": true,
+   "note": "Sum of the five categories above (all goods, including ships and aircraft, which are small on the export side in this window)."
+  }
+ ],
+ "exports": {
+  "annual": {
+   "2017": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 124.061,
+     "kiribati": 0.0,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 8.118,
+     "kiribati": 4.823,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 6.451,
+     "kiribati": 3.386,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 2.183,
+     "kiribati": 3.956,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 1.299,
+     "kiribati": 0.0,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "0302",
+     "label": "Fresh or chilled fish, incl. tuna",
+     "partner": 1.135,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 0.0,
+     "kiribati": 1.106,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8901",
+     "label": "Cargo and passenger vessels",
+     "partner": 0.45,
+     "kiribati": 0.847,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8429",
+     "label": "Bulldozers, excavators and road rollers",
+     "partner": 0.0,
+     "kiribati": 0.386,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "8411",
+     "label": "Turbines and turbo-propellers",
+     "partner": 0.291,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.255,
+     "kiribati": 0.0,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "2402",
+     "label": "Cigarettes and cigars",
+     "partner": 0.149,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "4819",
+     "label": "Cartons and boxes",
+     "partner": 0.144,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "7307",
+     "label": "Pipe fittings",
+     "partner": 0.132,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "3901",
+     "label": "Plastics in primary form (polyethylene)",
+     "partner": 0.109,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (238 headings)",
+     "partner": 0.946,
+     "kiribati": 0.747,
+     "n_partners": 43,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 145.723,
+     "kiribati": 15.252,
+     "n_partners": 47,
+     "is_summary": true
+    }
+   ],
+   "2018": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 101.862,
+     "kiribati": 0.0,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 5.073,
+     "kiribati": 3.211,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 2.166,
+     "kiribati": 2.433,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 1.527,
+     "kiribati": 0.715,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0302",
+     "label": "Fresh or chilled fish, incl. tuna",
+     "partner": 1.431,
+     "kiribati": 0.314,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 1.381,
+     "kiribati": 0.0,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 0.0,
+     "kiribati": 1.241,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8438",
+     "label": "Food-processing machinery",
+     "partner": 0.295,
+     "kiribati": 0.026,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8411",
+     "label": "Turbines and turbo-propellers",
+     "partner": 0.277,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.272,
+     "kiribati": 0.004,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "3904",
+     "label": "Plastics in primary form (PVC)",
+     "partner": 0.216,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8456",
+     "label": "Machine tools",
+     "partner": 0.136,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "1212",
+     "label": "Seaweed and other edible plant products",
+     "partner": 0.089,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "7602",
+     "label": "Aluminium scrap",
+     "partner": 0.037,
+     "kiribati": 0.079,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8407",
+     "label": "Petrol engines (incl. aircraft engines)",
+     "partner": 0.0,
+     "kiribati": 0.075,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (153 headings)",
+     "partner": 0.781,
+     "kiribati": 0.185,
+     "n_partners": 35,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 115.543,
+     "kiribati": 8.283,
+     "n_partners": 39,
+     "is_summary": true
+    }
+   ],
+   "2020": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 95.671,
+     "kiribati": 4.562,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 3.344,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 1.039,
+     "kiribati": 3.008,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "8427",
+     "label": "Fork-lift trucks",
+     "partner": 0.0,
+     "kiribati": 0.425,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "8411",
+     "label": "Turbines and turbo-propellers",
+     "partner": 0.344,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 0.009,
+     "kiribati": 0.312,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.276,
+     "kiribati": 0.239,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.235,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8473",
+     "label": "Computer parts",
+     "partner": 0.221,
+     "kiribati": 0.015,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "4907",
+     "label": "Stamps and banknotes",
+     "partner": 0.0,
+     "kiribati": 0.2,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "8408",
+     "label": "Diesel engines",
+     "partner": 0.178,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8407",
+     "label": "Petrol engines (incl. aircraft engines)",
+     "partner": 0.0,
+     "kiribati": 0.155,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "2306",
+     "label": "Oil-cake (copra meal, animal feed)",
+     "partner": 0.109,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.076,
+     "kiribati": 0.024,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8803",
+     "label": "Aircraft parts",
+     "partner": 0.0,
+     "kiribati": 0.064,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (187 headings)",
+     "partner": 0.504,
+     "kiribati": 0.293,
+     "n_partners": 37,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 102.007,
+     "kiribati": 9.297,
+     "n_partners": 45,
+     "is_summary": true
+    }
+   ],
+   "2023": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 54.665,
+     "kiribati": 0.0,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 2.427,
+     "kiribati": 0.0,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 0.555,
+     "kiribati": 1.927,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "8473",
+     "label": "Computer parts",
+     "partner": 0.373,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "9031",
+     "label": "Measuring instruments",
+     "partner": 0.217,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "7204",
+     "label": "Scrap iron and steel",
+     "partner": 0.198,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.136,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8481",
+     "label": "Taps and valves",
+     "partner": 0.107,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8411",
+     "label": "Turbines and turbo-propellers",
+     "partner": 0.08,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "7602",
+     "label": "Aluminium scrap",
+     "partner": 0.046,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.041,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8517",
+     "label": "Phones and network equipment",
+     "partner": 0.037,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "7508",
+     "label": "Nickel articles",
+     "partner": 0.036,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8549",
+     "label": "Electrical waste and scrap (incl. batteries)",
+     "partner": 0.032,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8105",
+     "label": "Cobalt articles",
+     "partner": 0.026,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (92 headings)",
+     "partner": 0.253,
+     "kiribati": 0.02,
+     "n_partners": 35,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 59.227,
+     "kiribati": 1.947,
+     "n_partners": 39,
+     "is_summary": true
+    }
+   ],
+   "2024": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 73.292,
+     "kiribati": 0.585,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "8901",
+     "label": "Cargo and passenger vessels",
+     "partner": 7.704,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 4.866,
+     "kiribati": 0.0,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 0.752,
+     "kiribati": 3.47,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.66,
+     "kiribati": 0.0,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.397,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "0308",
+     "label": "Sea cucumbers and other aquatic invertebrates",
+     "partner": 0.318,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8509",
+     "label": "Small household appliances",
+     "partner": 0.26,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8307",
+     "label": "Flexible metal tubing",
+     "partner": 0.175,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "6307",
+     "label": "Other made-up textiles (cloths, bags)",
+     "partner": 0.17,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "7204",
+     "label": "Scrap iron and steel",
+     "partner": 0.144,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "7602",
+     "label": "Aluminium scrap",
+     "partner": 0.099,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "0511",
+     "label": "Animal products not elsewhere specified",
+     "partner": 0.097,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.081,
+     "kiribati": 0.0,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "0302",
+     "label": "Fresh or chilled fish, incl. tuna",
+     "partner": 0.008,
+     "kiribati": 0.078,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (121 headings)",
+     "partner": 0.674,
+     "kiribati": 0.046,
+     "n_partners": 43,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 89.698,
+     "kiribati": 4.179,
+     "n_partners": 48,
+     "is_summary": true
+    }
+   ],
+   "2025": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 66.879,
+     "kiribati": 3.442,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 1.544,
+     "kiribati": 7.817,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 6.789,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "0308",
+     "label": "Sea cucumbers and other aquatic invertebrates",
+     "partner": 0.97,
+     "kiribati": 0.144,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.746,
+     "kiribati": 0.0,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.535,
+     "kiribati": 0.181,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.464,
+     "kiribati": 0.0,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "0302",
+     "label": "Fresh or chilled fish, incl. tuna",
+     "partner": 0.115,
+     "kiribati": 0.415,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 0.231,
+     "kiribati": 0.013,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "7204",
+     "label": "Scrap iron and steel",
+     "partner": 0.158,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "8807",
+     "label": "Aircraft parts",
+     "partner": 0.123,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8411",
+     "label": "Turbines and turbo-propellers",
+     "partner": 0.067,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "8549",
+     "label": "Electrical waste and scrap (incl. batteries)",
+     "partner": 0.061,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "0902",
+     "label": "Tea",
+     "partner": 0.044,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8471",
+     "label": "Computers",
+     "partner": 0.043,
+     "kiribati": 0.001,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (134 headings)",
+     "partner": 0.41,
+     "kiribati": 0.037,
+     "n_partners": 39,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 79.18,
+     "kiribati": 12.05,
+     "n_partners": 44,
+     "is_summary": true
+    }
+   ],
+   "2026": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 14.226,
+     "kiribati": 2.891,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 9.512,
+     "kiribati": 0.0,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 4.16,
+     "kiribati": 4.602,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "8426",
+     "label": "Cranes",
+     "partner": 0.0,
+     "kiribati": 0.836,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0308",
+     "label": "Sea cucumbers and other aquatic invertebrates",
+     "partner": 0.354,
+     "kiribati": 0.026,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.16,
+     "kiribati": 0.303,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.256,
+     "kiribati": 0.0,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8409",
+     "label": "Engine parts",
+     "partner": 0.25,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.245,
+     "kiribati": 0.145,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "7204",
+     "label": "Scrap iron and steel",
+     "partner": 0.224,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "8903",
+     "label": "Yachts, motorboats and small boats",
+     "partner": 0.212,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8802",
+     "label": "Aircraft",
+     "partner": 0.202,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "8609",
+     "label": "Shipping containers",
+     "partner": 0.14,
+     "kiribati": 0.001,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8427",
+     "label": "Fork-lift trucks",
+     "partner": 0.0,
+     "kiribati": 0.139,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8543",
+     "label": "Other electrical machines",
+     "partner": 0.123,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (115 headings)",
+     "partner": 0.497,
+     "kiribati": 0.319,
+     "n_partners": 28,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 30.561,
+     "kiribati": 9.263,
+     "n_partners": 37,
+     "is_summary": true
+    }
+   ]
+  },
+  "annual_months": {
+   "2017": [
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2017-07",
+    "2017-08",
+    "2017-09",
+    "2017-10",
+    "2017-11",
+    "2017-12"
+   ],
+   "2018": [
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12"
+   ],
+   "2020": [
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12"
+   ],
+   "2023": [
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12"
+   ],
+   "2024": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-08",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+   ],
+   "2025": [
+    "2025-01",
+    "2025-02",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-11",
+    "2025-12"
+   ],
+   "2026": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+   ]
+  },
+  "latest_12m": {
+   "end": "2026-07",
+   "start": "2025-08",
+   "months_in_window": 11,
+   "months_with_kiribati_return": [
+    "2025-08",
+    "2025-09",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+   ],
+   "months_without_kiribati_return": [
+    "2025-10"
+   ],
+   "rows": [
+    {
+     "rank": 1,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 36.264,
+     "kiribati": 5.583,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "0304",
+     "label": "Fish fillets, incl. frozen tuna fillets",
+     "partner": 11.451,
+     "kiribati": 0.0,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1513",
+     "label": "Coconut (copra) oil",
+     "partner": 4.776,
+     "kiribati": 8.337,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "8426",
+     "label": "Cranes",
+     "partner": 0.0,
+     "kiribati": 0.836,
+     "n_partners": 0,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "0301",
+     "label": "Live fish (mostly ornamental)",
+     "partner": 0.539,
+     "kiribati": 0.0,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "0308",
+     "label": "Sea cucumbers and other aquatic invertebrates",
+     "partner": 0.495,
+     "kiribati": 0.17,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "0302",
+     "label": "Fresh or chilled fish, incl. tuna",
+     "partner": 0.073,
+     "kiribati": 0.415,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "1203",
+     "label": "Copra (dried coconut)",
+     "partner": 0.245,
+     "kiribati": 0.326,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 0.288,
+     "kiribati": 0.303,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "8409",
+     "label": "Engine parts",
+     "partner": 0.25,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 0.231,
+     "kiribati": 0.013,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "7204",
+     "label": "Scrap iron and steel",
+     "partner": 0.224,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "8903",
+     "label": "Yachts, motorboats and small boats",
+     "partner": 0.212,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8802",
+     "label": "Aircraft",
+     "partner": 0.202,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8609",
+     "label": "Shipping containers",
+     "partner": 0.14,
+     "kiribati": 0.001,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (157 headings)",
+     "partner": 0.863,
+     "kiribati": 0.463,
+     "n_partners": 38,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 56.25,
+     "kiribati": 16.447,
+     "n_partners": 47,
+     "is_summary": true
+    }
+   ],
+   "note": "Window 2025-08..2026-07: 11 of 12 months. Months with no Kiribati return (2025-10) are null on the Kiribati side and are also absent from the partner side of this dataset, which was pulled only for the months Kiribati reported. Partner data are usable about 4 months after the reference month; Thailand's June-July 2026 data were still missing at build time."
+  }
+ },
+ "imports": {
+  "annual": {
+   "2017": [
+    {
+     "rank": 1,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 10.346,
+     "kiribati": 10.943,
+     "n_partners": 11,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 0.766,
+     "kiribati": 7.884,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 6.036,
+     "kiribati": 0.0,
+     "n_partners": 17,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 6.003,
+     "kiribati": 0.325,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "2403",
+     "label": "Other tobacco",
+     "partner": 3.153,
+     "kiribati": 5.207,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 4.212,
+     "kiribati": 4.902,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 3.642,
+     "kiribati": 3.593,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.284,
+     "kiribati": 3.245,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8904",
+     "label": "Tugs",
+     "partner": 2.813,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "7308",
+     "label": "Steel structures and parts",
+     "partner": 2.579,
+     "kiribati": 1.777,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "5608",
+     "label": "Fishing nets, rope and twine",
+     "partner": 2.415,
+     "kiribati": 0.05,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8705",
+     "label": "Special-purpose vehicles (fire engines, cranes)",
+     "partner": 2.362,
+     "kiribati": 2.148,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 2.166,
+     "kiribati": 2.142,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8702",
+     "label": "Buses",
+     "partner": 1.338,
+     "kiribati": 2.148,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8704",
+     "label": "Trucks and vans",
+     "partner": 1.921,
+     "kiribati": 1.018,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (892 headings)",
+     "partner": 68.55,
+     "kiribati": 62.569,
+     "n_partners": 36,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 118.587,
+     "kiribati": 107.952,
+     "n_partners": 40,
+     "is_summary": true
+    }
+   ],
+   "2018": [
+    {
+     "rank": 1,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 4.781,
+     "kiribati": 14.15,
+     "n_partners": 10,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 2.312,
+     "kiribati": 8.313,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "0303",
+     "label": "Frozen fish, incl. tuna",
+     "partner": 6.685,
+     "kiribati": 0.346,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 6.475,
+     "kiribati": 0.039,
+     "n_partners": 15,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "2403",
+     "label": "Other tobacco",
+     "partner": 2.899,
+     "kiribati": 4.55,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.07,
+     "kiribati": 3.704,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 3.381,
+     "kiribati": 2.983,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "5608",
+     "label": "Fishing nets, rope and twine",
+     "partner": 3.19,
+     "kiribati": 0.0,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.71,
+     "kiribati": 2.98,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "1101",
+     "label": "Wheat flour",
+     "partner": 2.811,
+     "kiribati": 1.439,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 2.117,
+     "kiribati": 2.415,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8479",
+     "label": "Other machinery and parts",
+     "partner": 2.356,
+     "kiribati": 0.051,
+     "n_partners": 10,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "8541",
+     "label": "Solar panels and semiconductors",
+     "partner": 0.252,
+     "kiribati": 2.255,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "9014",
+     "label": "Navigation instruments",
+     "partner": 2.013,
+     "kiribati": 0.111,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "2203",
+     "label": "Beer",
+     "partner": 0.77,
+     "kiribati": 1.774,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (838 headings)",
+     "partner": 61.597,
+     "kiribati": 57.946,
+     "n_partners": 37,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 104.419,
+     "kiribati": 103.055,
+     "n_partners": 41,
+     "is_summary": true
+    }
+   ],
+   "2020": [
+    {
+     "rank": 1,
+     "hs4": "8802",
+     "label": "Aircraft",
+     "partner": 35.709,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 3.585,
+     "kiribati": 14.741,
+     "n_partners": 10,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 1.666,
+     "kiribati": 7.512,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.122,
+     "kiribati": 6.532,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 6.294,
+     "kiribati": 0.609,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 4.673,
+     "kiribati": 3.419,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "2403",
+     "label": "Other tobacco",
+     "partner": 1.797,
+     "kiribati": 4.14,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "8901",
+     "label": "Cargo and passenger vessels",
+     "partner": 3.638,
+     "kiribati": 0.455,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 3.296,
+     "kiribati": 3.539,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.997,
+     "kiribati": 3.316,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "5608",
+     "label": "Fishing nets, rope and twine",
+     "partner": 2.721,
+     "kiribati": 0.046,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 2.262,
+     "kiribati": 1.763,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 2.243,
+     "kiribati": 2.248,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8517",
+     "label": "Phones and network equipment",
+     "partner": 1.849,
+     "kiribati": 1.284,
+     "n_partners": 14,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "1101",
+     "label": "Wheat flour",
+     "partner": 1.824,
+     "kiribati": 1.792,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (814 headings)",
+     "partner": 62.647,
+     "kiribati": 58.506,
+     "n_partners": 33,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 137.322,
+     "kiribati": 109.902,
+     "n_partners": 36,
+     "is_summary": true
+    }
+   ],
+   "2023": [
+    {
+     "rank": 1,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.015,
+     "kiribati": 9.18,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 8.338,
+     "kiribati": 2.275,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "8702",
+     "label": "Buses",
+     "partner": 0.331,
+     "kiribati": 5.549,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 1.888,
+     "kiribati": 5.506,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "8421",
+     "label": "Filters and water-purifying machinery",
+     "partner": 4.318,
+     "kiribati": 4.649,
+     "n_partners": 12,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 2.49,
+     "kiribati": 4.383,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "8901",
+     "label": "Cargo and passenger vessels",
+     "partner": 3.916,
+     "kiribati": 0.008,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.171,
+     "kiribati": 2.837,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 2.004,
+     "kiribati": 2.507,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 1.847,
+     "kiribati": 2.388,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "8414",
+     "label": "Air pumps and compressors",
+     "partner": 0.282,
+     "kiribati": 2.317,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 1.241,
+     "kiribati": 1.986,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "2403",
+     "label": "Other tobacco",
+     "partner": 1.708,
+     "kiribati": 1.902,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 1.709,
+     "kiribati": 0.927,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "4407",
+     "label": "Sawn timber",
+     "partner": 1.573,
+     "kiribati": 1.577,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (727 headings)",
+     "partner": 53.959,
+     "kiribati": 60.898,
+     "n_partners": 32,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 87.79,
+     "kiribati": 108.888,
+     "n_partners": 32,
+     "is_summary": true
+    }
+   ],
+   "2024": [
+    {
+     "rank": 1,
+     "hs4": "8901",
+     "label": "Cargo and passenger vessels",
+     "partner": 12.506,
+     "kiribati": 0.598,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.107,
+     "kiribati": 12.266,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 1.686,
+     "kiribati": 9.535,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 4.426,
+     "kiribati": 6.193,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 3.001,
+     "kiribati": 5.74,
+     "n_partners": 10,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 3.297,
+     "kiribati": 5.64,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 3.235,
+     "kiribati": 5.451,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 3.539,
+     "kiribati": 5.181,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8704",
+     "label": "Trucks and vans",
+     "partner": 3.841,
+     "kiribati": 4.086,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 3.923,
+     "kiribati": 3.447,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "3926",
+     "label": "Other plastic articles",
+     "partner": 3.448,
+     "kiribati": 2.004,
+     "n_partners": 15,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "9406",
+     "label": "Prefabricated buildings",
+     "partner": 2.461,
+     "kiribati": 3.32,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "4407",
+     "label": "Sawn timber",
+     "partner": 1.193,
+     "kiribati": 2.802,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "1905",
+     "label": "Bread, biscuits and bakery products",
+     "partner": 1.951,
+     "kiribati": 2.762,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "5608",
+     "label": "Fishing nets, rope and twine",
+     "partner": 1.568,
+     "kiribati": 2.608,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (785 headings)",
+     "partner": 95.152,
+     "kiribati": 107.361,
+     "n_partners": 39,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 145.336,
+     "kiribati": 178.995,
+     "n_partners": 39,
+     "is_summary": true
+    }
+   ],
+   "2025": [
+    {
+     "rank": 1,
+     "hs4": "9406",
+     "label": "Prefabricated buildings",
+     "partner": 0.031,
+     "kiribati": 22.581,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.0,
+     "kiribati": 14.72,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 0.084,
+     "kiribati": 10.875,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 3.771,
+     "kiribati": 5.953,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 3.135,
+     "kiribati": 5.727,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 5.257,
+     "kiribati": 4.271,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.057,
+     "kiribati": 4.479,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 2.035,
+     "kiribati": 4.4,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8517",
+     "label": "Phones and network equipment",
+     "partner": 2.05,
+     "kiribati": 4.306,
+     "n_partners": 12,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "8704",
+     "label": "Trucks and vans",
+     "partner": 2.267,
+     "kiribati": 3.93,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 3.623,
+     "kiribati": 3.829,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "4407",
+     "label": "Sawn timber",
+     "partner": 1.22,
+     "kiribati": 3.087,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "2523",
+     "label": "Cement",
+     "partner": 0.76,
+     "kiribati": 3.067,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8429",
+     "label": "Bulldozers, excavators and road rollers",
+     "partner": 0.309,
+     "kiribati": 2.351,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "7308",
+     "label": "Steel structures and parts",
+     "partner": 1.25,
+     "kiribati": 2.333,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (765 headings)",
+     "partner": 64.831,
+     "kiribati": 110.356,
+     "n_partners": 36,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 92.68,
+     "kiribati": 206.265,
+     "n_partners": 36,
+     "is_summary": true
+    }
+   ],
+   "2026": [
+    {
+     "rank": 1,
+     "hs4": "8802",
+     "label": "Aircraft",
+     "partner": 40.21,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 0.55,
+     "kiribati": 16.224,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.0,
+     "kiribati": 7.457,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 0.019,
+     "kiribati": 6.653,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "2517",
+     "label": "Gravel and crushed stone",
+     "partner": 0.468,
+     "kiribati": 4.261,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.127,
+     "kiribati": 4.011,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 2.768,
+     "kiribati": 3.81,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "2523",
+     "label": "Cement",
+     "partner": 0.489,
+     "kiribati": 3.609,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "8517",
+     "label": "Phones and network equipment",
+     "partner": 0.69,
+     "kiribati": 3.369,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "2403",
+     "label": "Other tobacco",
+     "partner": 3.234,
+     "kiribati": 2.879,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 2.614,
+     "kiribati": 3.233,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 1.07,
+     "kiribati": 3.19,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "4407",
+     "label": "Sawn timber",
+     "partner": 0.989,
+     "kiribati": 2.848,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 1.97,
+     "kiribati": 2.814,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "8704",
+     "label": "Trucks and vans",
+     "partner": 1.281,
+     "kiribati": 2.772,
+     "n_partners": 6,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (720 headings)",
+     "partner": 39.511,
+     "kiribati": 102.014,
+     "n_partners": 26,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 97.991,
+     "kiribati": 169.144,
+     "n_partners": 28,
+     "is_summary": true
+    }
+   ]
+  },
+  "annual_months": {
+   "2017": [
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2017-07",
+    "2017-08",
+    "2017-09",
+    "2017-10",
+    "2017-11",
+    "2017-12"
+   ],
+   "2018": [
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12"
+   ],
+   "2020": [
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12"
+   ],
+   "2023": [
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12"
+   ],
+   "2024": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-08",
+    "2024-10",
+    "2024-11",
+    "2024-12"
+   ],
+   "2025": [
+    "2025-01",
+    "2025-02",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-11",
+    "2025-12"
+   ],
+   "2026": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+   ]
+  },
+  "latest_12m": {
+   "end": "2026-07",
+   "start": "2025-08",
+   "months_in_window": 11,
+   "months_with_kiribati_return": [
+    "2025-08",
+    "2025-09",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+   ],
+   "months_without_kiribati_return": [
+    "2025-10"
+   ],
+   "rows": [
+    {
+     "rank": 1,
+     "hs4": "8802",
+     "label": "Aircraft",
+     "partner": 40.21,
+     "kiribati": 0.0,
+     "n_partners": 1,
+     "is_summary": false
+    },
+    {
+     "rank": 2,
+     "hs4": "9406",
+     "label": "Prefabricated buildings",
+     "partner": 0.853,
+     "kiribati": 23.467,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 3,
+     "hs4": "2710",
+     "label": "Petroleum products (fuel)",
+     "partner": 1.002,
+     "kiribati": 16.768,
+     "n_partners": 7,
+     "is_summary": false
+    },
+    {
+     "rank": 4,
+     "hs4": "1211",
+     "label": "Plants used in medicine or perfumery (kava)",
+     "partner": 0.0,
+     "kiribati": 12.825,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 5,
+     "hs4": "1006",
+     "label": "Rice",
+     "partner": 0.028,
+     "kiribati": 10.921,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 6,
+     "hs4": "8517",
+     "label": "Phones and network equipment",
+     "partner": 1.053,
+     "kiribati": 7.145,
+     "n_partners": 10,
+     "is_summary": false
+    },
+    {
+     "rank": 7,
+     "hs4": "1602",
+     "label": "Prepared or canned meat (incl. corned beef)",
+     "partner": 2.868,
+     "kiribati": 5.998,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 8,
+     "hs4": "2517",
+     "label": "Gravel and crushed stone",
+     "partner": 0.849,
+     "kiribati": 5.452,
+     "n_partners": 2,
+     "is_summary": false
+    },
+    {
+     "rank": 9,
+     "hs4": "0207",
+     "label": "Chicken and other poultry meat",
+     "partner": 4.093,
+     "kiribati": 5.232,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 10,
+     "hs4": "9999",
+     "label": "Goods not specified by kind",
+     "partner": 4.7,
+     "kiribati": 5.088,
+     "n_partners": 9,
+     "is_summary": false
+    },
+    {
+     "rank": 11,
+     "hs4": "1902",
+     "label": "Pasta and noodles",
+     "partner": 1.594,
+     "kiribati": 4.765,
+     "n_partners": 8,
+     "is_summary": false
+    },
+    {
+     "rank": 12,
+     "hs4": "8703",
+     "label": "Cars",
+     "partner": 2.889,
+     "kiribati": 4.724,
+     "n_partners": 5,
+     "is_summary": false
+    },
+    {
+     "rank": 13,
+     "hs4": "2523",
+     "label": "Cement",
+     "partner": 0.867,
+     "kiribati": 4.539,
+     "n_partners": 4,
+     "is_summary": false
+    },
+    {
+     "rank": 14,
+     "hs4": "4407",
+     "label": "Sawn timber",
+     "partner": 1.511,
+     "kiribati": 4.412,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": 15,
+     "hs4": "1701",
+     "label": "Sugar",
+     "partner": 2.397,
+     "kiribati": 4.392,
+     "n_partners": 3,
+     "is_summary": false
+    },
+    {
+     "rank": null,
+     "hs4": "other",
+     "label": "All other (776 headings)",
+     "partner": 67.96,
+     "kiribati": 150.1,
+     "n_partners": 31,
+     "is_summary": true
+    },
+    {
+     "rank": null,
+     "hs4": "total",
+     "label": "Total, all goods",
+     "partner": 132.876,
+     "kiribati": 265.826,
+     "n_partners": 32,
+     "is_summary": true
+    }
+   ],
+   "note": "Window 2025-08..2026-07: 11 of 12 months. Months with no Kiribati return (2025-10) are null on the Kiribati side and are also absent from the partner side of this dataset, which was pulled only for the months Kiribati reported. Partner data are usable about 4 months after the reference month; Thailand's June-July 2026 data were still missing at build time."
+  }
+ },
+ "mirror_only_notable": [
+  {
+   "direction": "export",
+   "hs6": "030119",
+   "hs4": "0301",
+   "label": "Live ornamental fish (marine)",
+   "partners": 0.899,
+   "kiribati": 0.0,
+   "n_partners": 8,
+   "n_months": 17,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.89,
+   "matches_handout": true
+  },
+  {
+   "direction": "export",
+   "hs6": "030819",
+   "hs4": "0308",
+   "label": "Dried sea cucumber",
+   "partners": 0.354,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 2,
+   "window": "2026-01..2026-07",
+   "handout_value": 0.35,
+   "matches_handout": true,
+   "note": "Over 2025-01..2026-07 partners report 1.32 and Kiribati 0.14 (one month, 2025-11); in 2026 Kiribati has recorded none so far."
+  },
+  {
+   "direction": "export",
+   "hs6": "720449",
+   "hs4": "7204",
+   "label": "Scrap iron and steel",
+   "partners": 0.382,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 7,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.38,
+   "matches_handout": true
+  },
+  {
+   "direction": "export",
+   "hs6": "840910",
+   "hs4": "8409",
+   "label": "Aircraft engine parts",
+   "partners": 0.25,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 1,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.25,
+   "matches_handout": true
+  },
+  {
+   "direction": "export",
+   "hs6": "890332",
+   "hs4": "8903",
+   "label": "Motorboats",
+   "partners": 0.212,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 1,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.21,
+   "matches_handout": true
+  },
+  {
+   "direction": "export",
+   "hs6": "880230",
+   "hs4": "8802",
+   "label": "Light aircraft (2-15 t)",
+   "partners": 0.202,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 1,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.2,
+   "matches_handout": true
+  },
+  {
+   "direction": "import",
+   "hs6": "880240",
+   "hs4": "8802",
+   "label": "Aircraft (over 15 t)",
+   "partners": 40.21,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 1,
+   "window": "2025-01..2026-07",
+   "handout_value": 40.2,
+   "matches_handout": true
+  },
+  {
+   "direction": "import",
+   "hs6": "890120",
+   "hs4": "8901",
+   "label": "Tankers",
+   "partners": 1.099,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 1,
+   "window": "2025-01..2026-07",
+   "handout_value": 1.1,
+   "matches_handout": true
+  },
+  {
+   "direction": "import",
+   "hs6": "840710",
+   "hs4": "8407",
+   "label": "Aircraft engines",
+   "partners": 0.661,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 2,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.66,
+   "matches_handout": true
+  },
+  {
+   "direction": "import",
+   "hs6": "340250",
+   "hs4": "3402",
+   "label": "Cleaning products (detergent powders)",
+   "partners": 0.524,
+   "kiribati": 0.0,
+   "n_partners": 5,
+   "n_months": 17,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.52,
+   "matches_handout": true
+  },
+  {
+   "direction": "import",
+   "hs6": "040790",
+   "hs4": "0407",
+   "label": "Eggs (preserved or cooked)",
+   "partners": 0.502,
+   "kiribati": 0.0,
+   "n_partners": 1,
+   "n_months": 10,
+   "window": "2025-01..2026-07",
+   "handout_value": 0.47,
+   "matches_handout": true,
+   "note": "Handout gives 0.47; current data give 0.50 (Fiji, 10 months). Kiribati records eggs under other HS6 lines of heading 0407, so this is a difference of classification within the heading as much as of coverage."
+  }
+ ],
+ "ships_aircraft": [
+  {
+   "year": 2022,
+   "year_label": "2022",
+   "exporter": "Taiwan",
+   "type": "Fishing vessels",
+   "units": 2,
+   "value": 43.9,
+   "handout_units": 2,
+   "handout_value": 43.9,
+   "matches_handout": true,
+   "hs6": [
+    "890200"
+   ]
+  },
+  {
+   "year": 2022,
+   "year_label": "2022",
+   "exporter": "China, Japan",
+   "type": "Tugs, cruise, cargo, tankers",
+   "units": null,
+   "value": 8.7,
+   "handout_units": null,
+   "handout_value": 8.7,
+   "matches_handout": true,
+   "hs6": [
+    "890110",
+    "890120",
+    "890190",
+    "890400"
+   ]
+  },
+  {
+   "year": 2023,
+   "year_label": "2023",
+   "exporter": "Norway, Japan, China",
+   "type": "Other and cargo vessels",
+   "units": null,
+   "value": 17.9,
+   "handout_units": null,
+   "handout_value": 17.9,
+   "matches_handout": true,
+   "hs6": [
+    "890190",
+    "890690"
+   ]
+  },
+  {
+   "year": 2024,
+   "year_label": "2024",
+   "exporter": "Japan",
+   "type": "Tankers",
+   "units": 2,
+   "value": 12.0,
+   "handout_units": 2,
+   "handout_value": 12.0,
+   "matches_handout": true,
+   "hs6": [
+    "890120"
+   ]
+  },
+  {
+   "year": 2024,
+   "year_label": "2024",
+   "exporter": "China",
+   "type": "Fishing vessels (small)",
+   "units": 3,
+   "value": 3.9,
+   "handout_units": 3,
+   "handout_value": 3.9,
+   "matches_handout": true,
+   "hs6": [
+    "890200"
+   ]
+  },
+  {
+   "year": 2025,
+   "year_label": "2025",
+   "exporter": "China",
+   "type": "Fishing vessels (purse seiners)",
+   "units": 5,
+   "value": 108.3,
+   "handout_units": 5,
+   "handout_value": 108.3,
+   "matches_handout": true,
+   "hs6": [
+    "890200"
+   ]
+  },
+  {
+   "year": 2025,
+   "year_label": "2025",
+   "exporter": "Japan, Australia",
+   "type": "Tankers, cargo vessel",
+   "units": 3,
+   "value": 4.8,
+   "handout_units": 3,
+   "handout_value": 4.8,
+   "matches_handout": true,
+   "hs6": [
+    "890120",
+    "890190"
+   ]
+  },
+  {
+   "year": 2026,
+   "year_label": "Jul 2026",
+   "exporter": "Brazil",
+   "type": "Aircraft",
+   "units": 1,
+   "value": 40.2,
+   "handout_units": 1,
+   "handout_value": 40.2,
+   "matches_handout": true,
+   "hs6": [
+    "880240"
+   ]
+  }
+ ],
+ "ships_aircraft_detail": {
+  "lines_1m_plus": [
+   {
+    "year": 2017,
+    "period": "2017",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890400",
+    "type": "Tugs",
+    "units": null,
+    "value": 2.805
+   },
+   {
+    "year": 2017,
+    "period": "2017",
+    "basis": "annual return",
+    "exporter": "Taiwan",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": 1,
+    "value": 1.573
+   },
+   {
+    "year": 2019,
+    "period": "2019",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890200",
+    "type": "Fishing vessels",
+    "units": 3,
+    "value": 1.868
+   },
+   {
+    "year": 2020,
+    "period": "2020",
+    "basis": "annual return",
+    "exporter": "Brazil",
+    "hs6": "880240",
+    "type": "Aircraft",
+    "units": 1,
+    "value": 35.709
+   },
+   {
+    "year": 2020,
+    "period": "2020",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": null,
+    "value": 1.894
+   },
+   {
+    "year": 2020,
+    "period": "2020",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890120",
+    "type": "Tankers",
+    "units": 0,
+    "value": 1.744
+   },
+   {
+    "year": 2021,
+    "period": "2021",
+    "basis": "annual return",
+    "exporter": "Taiwan",
+    "hs6": "890200",
+    "type": "Fishing vessels",
+    "units": 1,
+    "value": 21.09
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "Taiwan",
+    "hs6": "890200",
+    "type": "Fishing vessels",
+    "units": 2,
+    "value": 43.89
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890110",
+    "type": "Cruise ships",
+    "units": 1,
+    "value": 2.165
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890400",
+    "type": "Tugs",
+    "units": 1,
+    "value": 1.876
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890400",
+    "type": "Tugs",
+    "units": null,
+    "value": 1.825
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890120",
+    "type": "Tankers",
+    "units": 0,
+    "value": 1.612
+   },
+   {
+    "year": 2022,
+    "period": "2022",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": 3,
+    "value": 1.21
+   },
+   {
+    "year": 2023,
+    "period": "2023",
+    "basis": "annual return",
+    "exporter": "Norway",
+    "hs6": "890690",
+    "type": "Other vessels",
+    "units": null,
+    "value": 8.503
+   },
+   {
+    "year": 2023,
+    "period": "2023",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": 1,
+    "value": 5.502
+   },
+   {
+    "year": 2023,
+    "period": "2023",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": 3,
+    "value": 3.916
+   },
+   {
+    "year": 2024,
+    "period": "2024",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890120",
+    "type": "Tankers",
+    "units": 2,
+    "value": 11.991
+   },
+   {
+    "year": 2024,
+    "period": "2024",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890200",
+    "type": "Fishing vessels",
+    "units": 3,
+    "value": 3.894
+   },
+   {
+    "year": 2025,
+    "period": "2025",
+    "basis": "annual return",
+    "exporter": "China",
+    "hs6": "890200",
+    "type": "Fishing vessels",
+    "units": 5,
+    "value": 108.286
+   },
+   {
+    "year": 2025,
+    "period": "2025",
+    "basis": "annual return",
+    "exporter": "Japan",
+    "hs6": "890120",
+    "type": "Tankers",
+    "units": 2,
+    "value": 2.909
+   },
+   {
+    "year": 2025,
+    "period": "2025",
+    "basis": "annual return",
+    "exporter": "Australia",
+    "hs6": "890190",
+    "type": "Cargo vessels",
+    "units": 1,
+    "value": 1.856
+   },
+   {
+    "year": 2026,
+    "period": "2026-02",
+    "basis": "monthly return",
+    "exporter": "Angola",
+    "hs6": "890690",
+    "type": "Other vessels",
+    "units": null,
+    "value": 1.125
+   },
+   {
+    "year": 2026,
+    "period": "2026-07",
+    "basis": "monthly return",
+    "exporter": "Brazil",
+    "hs6": "880240",
+    "type": "Aircraft",
+    "units": 1,
+    "value": 40.21
+   }
+  ],
+  "by_year": [
+   {
+    "year": 2017,
+    "partner_reported": 6.13,
+    "kiribati_recorded": 1.59,
+    "kiribati_months_published": 12,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2018,
+    "partner_reported": 1.21,
+    "kiribati_recorded": 0.47,
+    "kiribati_months_published": 12,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2019,
+    "partner_reported": 3.86,
+    "kiribati_recorded": 0.0,
+    "kiribati_months_published": 0,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2020,
+    "partner_reported": 40.78,
+    "kiribati_recorded": 1.22,
+    "kiribati_months_published": 12,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2021,
+    "partner_reported": 22.14,
+    "kiribati_recorded": 0.0,
+    "kiribati_months_published": 0,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2022,
+    "partner_reported": 54.32,
+    "kiribati_recorded": 0.0,
+    "kiribati_months_published": 0,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2023,
+    "partner_reported": 19.37,
+    "kiribati_recorded": 0.17,
+    "kiribati_months_published": 7,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2024,
+    "partner_reported": 20.0,
+    "kiribati_recorded": 1.82,
+    "kiribati_months_published": 10,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2025,
+    "partner_reported": 115.51,
+    "kiribati_recorded": 0.81,
+    "kiribati_months_published": 10,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   },
+   {
+    "year": 2026,
+    "partner_reported": 41.77,
+    "kiribati_recorded": 2.5,
+    "kiribati_months_published": 7,
+    "basis": "partner annual returns 2017-2025; 2026 = monthly reporters Jan-Aug"
+   }
+  ],
+  "note": "Partner-reported HS 88-89 exported to Kiribati, lines of USD 1m or more. Under BPM6 a vessel or aircraft is a goods import when a resident acquires it, however it is financed. China publishes no monthly data after 2024-12, so its 2025 deliveries cannot be dated by month. Lines before 2022 (e.g. an aircraft from Brazil in 2020, a fishing vessel from Taiwan in 2021) are in lines_1m_plus but not in the handout's Table 4."
+ },
+ "staples": {
+  "rice": {
+   "hs": "HS 1006",
+   "unit": "USD millions",
+   "annual": [
+    {
+     "year": 2017,
+     "partner_monthly": 0.766,
+     "partner_months": 10,
+     "partner_annual_return": 6.464,
+     "partner_n_reporters_annual": 5,
+     "kiribati_monthly": 7.884,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 7.862,
+     "kiribati_monthly_scaled12": 7.884,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Viet Nam",
+       "value": 6.289
+      },
+      {
+       "name": "Australia",
+       "value": 0.697
+      },
+      {
+       "name": "China",
+       "value": 0.501
+      },
+      {
+       "name": "Venezuela",
+       "value": 0.152
+      }
+     ]
+    },
+    {
+     "year": 2018,
+     "partner_monthly": 2.312,
+     "partner_months": 12,
+     "partner_annual_return": 2.312,
+     "partner_n_reporters_annual": 2,
+     "kiribati_monthly": 8.313,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 8.267,
+     "kiribati_monthly_scaled12": 8.313,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Viet Nam",
+       "value": 4.063
+      },
+      {
+       "name": "China",
+       "value": 2.153
+      },
+      {
+       "name": "Australia",
+       "value": 1.237
+      },
+      {
+       "name": "China, Hong Kong SAR",
+       "value": 0.313
+      }
+     ]
+    },
+    {
+     "year": 2019,
+     "partner_monthly": 1.491,
+     "partner_months": 12,
+     "partner_annual_return": 3.1,
+     "partner_n_reporters_annual": 5,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2020,
+     "partner_monthly": 1.666,
+     "partner_months": 12,
+     "partner_annual_return": 4.545,
+     "partner_n_reporters_annual": 3,
+     "kiribati_monthly": 7.512,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 7.387,
+     "kiribati_monthly_scaled12": 7.512,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Fiji",
+       "value": 2.486
+      },
+      {
+       "name": "Viet Nam",
+       "value": 2.412
+      },
+      {
+       "name": "China",
+       "value": 2.091
+      },
+      {
+       "name": "Australia",
+       "value": 0.233
+      }
+     ]
+    },
+    {
+     "year": 2021,
+     "partner_monthly": 1.575,
+     "partner_months": 12,
+     "partner_annual_return": 3.994,
+     "partner_n_reporters_annual": 5,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": 5.96,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2022,
+     "partner_monthly": 3.092,
+     "partner_months": 12,
+     "partner_annual_return": 6.196,
+     "partner_n_reporters_annual": 6,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2023,
+     "partner_monthly": 3.985,
+     "partner_months": 10,
+     "partner_annual_return": 6.383,
+     "partner_n_reporters_annual": 7,
+     "kiribati_monthly": 5.506,
+     "kiribati_months": 7,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 9.439,
+     "kiribati_top_suppliers": [
+      {
+       "name": "China",
+       "value": 2.188
+      },
+      {
+       "name": "Other Asia, nes",
+       "value": 1.412
+      },
+      {
+       "name": "Viet Nam",
+       "value": 1.123
+      },
+      {
+       "name": "Singapore",
+       "value": 0.508
+      }
+     ]
+    },
+    {
+     "year": 2024,
+     "partner_monthly": 1.845,
+     "partner_months": 12,
+     "partner_annual_return": 4.882,
+     "partner_n_reporters_annual": 5,
+     "kiribati_monthly": 9.535,
+     "kiribati_months": 10,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 11.442,
+     "kiribati_top_suppliers": [
+      {
+       "name": "China",
+       "value": 3.357
+      },
+      {
+       "name": "Other Asia, nes",
+       "value": 3.312
+      },
+      {
+       "name": "Viet Nam",
+       "value": 2.153
+      },
+      {
+       "name": "Thailand",
+       "value": 0.316
+      }
+     ]
+    },
+    {
+     "year": 2025,
+     "partner_monthly": 0.233,
+     "partner_months": 9,
+     "partner_annual_return": 0.235,
+     "partner_n_reporters_annual": 3,
+     "kiribati_monthly": 10.875,
+     "kiribati_months": 10,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 13.05,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Viet Nam",
+       "value": 5.49
+      },
+      {
+       "name": "Other Asia, nes",
+       "value": 3.491
+      },
+      {
+       "name": "Thailand",
+       "value": 0.967
+      },
+      {
+       "name": "China, Hong Kong SAR",
+       "value": 0.524
+      }
+     ]
+    },
+    {
+     "year": 2026,
+     "partner_monthly": 0.019,
+     "partner_months": 8,
+     "partner_annual_return": null,
+     "partner_n_reporters_annual": null,
+     "kiribati_monthly": 6.653,
+     "kiribati_months": 7,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 11.405,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Viet Nam",
+       "value": 4.093
+      },
+      {
+       "name": "China",
+       "value": 1.538
+      },
+      {
+       "name": "Thailand",
+       "value": 0.639
+      },
+      {
+       "name": "China, Hong Kong SAR",
+       "value": 0.253
+      }
+     ]
+    }
+   ],
+   "partner_reporters_recent": [
+    {
+     "name": "Other Asia, nes",
+     "2022": 3.113,
+     "2023": 2.403,
+     "2024": 3.037,
+     "2025": 0.0
+    },
+    {
+     "name": "China",
+     "2022": 2.07,
+     "2023": 3.275,
+     "2024": 1.369,
+     "2025": 0.0
+    },
+    {
+     "name": "Thailand",
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.448,
+     "2025": 0.0
+    },
+    {
+     "name": "Fiji",
+     "2022": 0.974,
+     "2023": 0.656,
+     "2024": 0.028,
+     "2025": 0.227
+    },
+    {
+     "name": "India",
+     "2022": 0.031,
+     "2023": 0.034,
+     "2024": 0.0,
+     "2025": 0.0
+    }
+   ],
+   "note": "Viet Nam and Australia do not report rice to Comtrade at HS6 monthly on time, and China and Taiwan have not yet published 2025, so partner data cannot measure rice. Kiribati's own data show rice imports up 40-50 percent in the last year, with suppliers shifting from Australia to Viet Nam, Taiwan and China.",
+   "basis": "partner_monthly sums every month partners published (all months, not only the months Kiribati reported); kiribati_monthly sums Kiribati's own monthly returns (kiribati_months of 12); *_annual_return are the annual datasets where one exists. Pipeline files are named fish_* but hold this product."
+  },
+  "sugar": {
+   "hs": "HS 1701",
+   "unit": "USD millions",
+   "annual": [
+    {
+     "year": 2017,
+     "partner_monthly": 4.212,
+     "partner_months": 12,
+     "partner_annual_return": 4.208,
+     "partner_n_reporters_annual": 4,
+     "kiribati_monthly": 4.902,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 4.906,
+     "kiribati_monthly_scaled12": 4.902,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 2.1
+      },
+      {
+       "name": "Australia",
+       "value": 1.298
+      },
+      {
+       "name": "Fiji",
+       "value": 1.075
+      },
+      {
+       "name": "Singapore",
+       "value": 0.161
+      }
+     ]
+    },
+    {
+     "year": 2018,
+     "partner_monthly": 2.117,
+     "partner_months": 12,
+     "partner_annual_return": 2.102,
+     "partner_n_reporters_annual": 6,
+     "kiribati_monthly": 2.415,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 2.382,
+     "kiribati_monthly_scaled12": 2.415,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 0.929
+      },
+      {
+       "name": "Fiji",
+       "value": 0.654
+      },
+      {
+       "name": "Australia",
+       "value": 0.508
+      },
+      {
+       "name": "Singapore",
+       "value": 0.085
+      }
+     ]
+    },
+    {
+     "year": 2019,
+     "partner_monthly": 3.06,
+     "partner_months": 12,
+     "partner_annual_return": 3.059,
+     "partner_n_reporters_annual": 4,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2020,
+     "partner_monthly": 3.296,
+     "partner_months": 11,
+     "partner_annual_return": 3.249,
+     "partner_n_reporters_annual": 5,
+     "kiribati_monthly": 3.539,
+     "kiribati_months": 12,
+     "kiribati_annual_return": 3.442,
+     "kiribati_monthly_scaled12": 3.539,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Fiji",
+       "value": 1.198
+      },
+      {
+       "name": "Thailand",
+       "value": 0.983
+      },
+      {
+       "name": "New Zealand",
+       "value": 0.726
+      },
+      {
+       "name": "Australia",
+       "value": 0.419
+      }
+     ]
+    },
+    {
+     "year": 2021,
+     "partner_monthly": 3.761,
+     "partner_months": 12,
+     "partner_annual_return": 3.774,
+     "partner_n_reporters_annual": 6,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": 5.437,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2022,
+     "partner_monthly": 3.198,
+     "partner_months": 12,
+     "partner_annual_return": 3.173,
+     "partner_n_reporters_annual": 7,
+     "kiribati_monthly": null,
+     "kiribati_months": 0,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": null,
+     "kiribati_top_suppliers": []
+    },
+    {
+     "year": 2023,
+     "partner_monthly": 5.305,
+     "partner_months": 12,
+     "partner_annual_return": 5.321,
+     "partner_n_reporters_annual": 7,
+     "kiribati_monthly": 4.383,
+     "kiribati_months": 7,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 7.514,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 2.723
+      },
+      {
+       "name": "Australia",
+       "value": 0.533
+      },
+      {
+       "name": "Malaysia",
+       "value": 0.447
+      },
+      {
+       "name": "Singapore",
+       "value": 0.246
+      }
+     ]
+    },
+    {
+     "year": 2024,
+     "partner_monthly": 5.525,
+     "partner_months": 12,
+     "partner_annual_return": 5.542,
+     "partner_n_reporters_annual": 7,
+     "kiribati_monthly": 6.193,
+     "kiribati_months": 10,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 7.432,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 4.307
+      },
+      {
+       "name": "India",
+       "value": 0.609
+      },
+      {
+       "name": "Australia",
+       "value": 0.559
+      },
+      {
+       "name": "Malaysia",
+       "value": 0.219
+      }
+     ]
+    },
+    {
+     "year": 2025,
+     "partner_monthly": 4.729,
+     "partner_months": 12,
+     "partner_annual_return": 4.729,
+     "partner_n_reporters_annual": 7,
+     "kiribati_monthly": 5.953,
+     "kiribati_months": 10,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 7.144,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 3.19
+      },
+      {
+       "name": "India",
+       "value": 1.35
+      },
+      {
+       "name": "New Zealand",
+       "value": 0.603
+      },
+      {
+       "name": "Australia",
+       "value": 0.501
+      }
+     ]
+    },
+    {
+     "year": 2026,
+     "partner_monthly": 1.026,
+     "partner_months": 7,
+     "partner_annual_return": null,
+     "partner_n_reporters_annual": null,
+     "kiribati_monthly": 2.316,
+     "kiribati_months": 7,
+     "kiribati_annual_return": null,
+     "kiribati_monthly_scaled12": 3.97,
+     "kiribati_top_suppliers": [
+      {
+       "name": "Thailand",
+       "value": 1.826
+      },
+      {
+       "name": "New Zealand",
+       "value": 0.332
+      },
+      {
+       "name": "China",
+       "value": 0.095
+      }
+     ]
+    }
+   ],
+   "partner_reporters_recent": [
+    {
+     "name": "Thailand",
+     "2022": 1.351,
+     "2023": 3.773,
+     "2024": 3.298,
+     "2025": 3.946
+    },
+    {
+     "name": "India",
+     "2022": 0.237,
+     "2023": 0.314,
+     "2024": 1.244,
+     "2025": 0.666
+    },
+    {
+     "name": "Australia",
+     "2022": 0.479,
+     "2023": 0.675,
+     "2024": 0.654,
+     "2025": 0.094
+    },
+    {
+     "name": "Malaysia",
+     "2022": 0.0,
+     "2023": 0.552,
+     "2024": 0.171,
+     "2025": 0.0
+    },
+    {
+     "name": "Brazil",
+     "2022": 0.064,
+     "2023": 0.0,
+     "2024": 0.166,
+     "2025": 0.0
+    },
+    {
+     "name": "Fiji",
+     "2022": 1.04,
+     "2023": 0.0,
+     "2024": 0.004,
+     "2025": 0.008
+    }
+   ],
+   "note": "Both sources agree: USD 5-6.5m a year, mostly from Thailand.",
+   "basis": "partner_monthly sums every month partners published (all months, not only the months Kiribati reported); kiribati_monthly sums Kiribati's own monthly returns (kiribati_months of 12); *_annual_return are the annual datasets where one exists. Pipeline files are named fish_* but hold this product."
+  }
+ },
+ "notes": [
+  "categories (Table 2 of the handout, Jan 2025-Jul 2026, 17 months with a Kiribati return): both the recomputed value (partners, kiribati) and the handout value (handout_*) are given. They differ for tuna (97.4 here vs 100.8) and copra (6.5 vs 6.2) because the handout's partner-side category figures came from the 8 Sept data run, before a partner revision to frozen tuna fillets (19.5 -> 16.3); the total (109.7 vs 21.3) is the same in both. Kiribati-side figures agree throughout.",
+  "The tuna gap is tuna coded to Kiribati by vessel flag; under balance-of-payments rules much of it may correctly sit outside Kiribati's goods exports. Copra and coconut oil runs the other way: Kiribati records more than partners.",
+  "exports/imports.annual: top 15 HS4 headings per year ranked by the larger of the two sides, plus an 'All other' row and a 'Total, all goods' row (is_summary = true). n_partners = number of partner countries that reported the heading that year. annual_months lists the months Kiribati reported; partner values cover those months only.",
+  "Partner-reported imports are a lower bound; never compute a trade balance from these tables.",
+  "mirror_only_notable: products partners report that Kiribati's own records do not show in the window; hs6 code, number of partners and months given; handout_value is bullet 14 of the handout.",
+  "ships_aircraft: Table 4 of the handout recomputed from partners' annual returns (2026: monthly); ships_aircraft_detail has every line of USD 1m or more and the yearly totals with and without Kiribati's own record.",
+  "Labels are plain-English shortenings of the HS headings (tracker/hs4_labels.py); where no label is listed the Comtrade description is shortened.",
+  "Kiribati's January 2024 import return has one line (HS 940690, prefabricated buildings, USD 3,135m) worth about nine times GDP. It is set aside from the Kiribati-side figures in these tables and listed in meta.excluded_lines; the 9406 row for 2024 shows the remaining value of that heading."
+ ]
+}

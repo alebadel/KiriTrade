@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "generated_at": "2026-10-13T08:39:32Z",
+    "source": "Prose by Agent D. Numbers trace to paper_build/bullet_points_comtrade_20261009.md (B# = bullet, T# = table) and project_docs/*.md; evidence fields cite them.",
+    "notes": [
+      "Kiribati's official statistics are the reference; partner data are a complement.",
+      "Every mention of the export gap names the tuna flag-versus-residency definition.",
+      "No partner-reported trade balance is ever shown or computed.",
+      "GDP shares quoted (about 30 percent for the 2025 seiners, about 11 percent for the 2026 aircraft) are as given in bullets 26 and 28, on 2025 nominal GDP of USD 349 million (IMF CR 26/99, Table 1)."
+    ]
+  },
+  "site_title": "Import and Export Performance Tracker using Comtrade Trade-Partner Data",
+  "purpose": "Summarize and share trading-partner data to track the performance of the Kiribati economy.",
+  "intro": [
+    "This page tracks what Kiribati sells to the world and what it buys from the world. Its purpose is simple: \"Summarize and share trading-partner data to track the performance of the Kiribati economy.\" Every international shipment is recorded twice: once by the country it leaves and once by the country it enters. This tracker reads the second record. It gathers what Kiribati's trading partners, such as Thailand, Australia, Japan and Fiji, have told the United Nations about their trade with Kiribati. It shows that record month by month, quarter by quarter and year by year.",
+    "Kiribati's own customs figures, compiled by the Kiribati National Statistics Office, are the official record and the reference for everything shown here. Kiribati is a nation of 33 islands spread across a vast area of ocean, with a small statistical team. Its monthly customs returns reach the United Nations database with a delay, and some months are not yet published. The records of its trading partners arrive on a steadier schedule, usually within about four months. Read together, the two records give a fuller and more timely picture than either gives alone. Where they differ, the difference almost always comes from what each side counts, or when, not from anyone's mistake. The largest difference, in tuna, is explained wherever it appears.",
+    "No partner-reported figure is final until every partner has published. So every number here comes with a \"percent complete\" score. We watch a fixed list of about twenty partners, called the partner panel. Percent complete is the share of that panel whose data for a period have already been published. A month at 90 percent complete is close to its final value. A month at 30 percent complete is an early reading that will rise as more partners publish. A second version of the score weights each partner by its share of Kiribati's trade, so that a missing large partner lowers the score more than a missing small one."
+  ],
+  "how_to_use": [
+    "Use the Annual / Quarterly / Monthly toggle at the top of the charts to change the time step. Annual figures are the most complete and the easiest to compare with Kiribati's official statistics. Quarterly figures show the recent trend. Monthly figures are the earliest signal but swing the most, because a single large shipment can move a month.",
+    "Each chart carries a percent-complete bar for the latest period shown. A full bar means every partner in the panel has published for that period. A short bar means only a few have. Values for periods below about 70 percent complete should be read as provisional; they usually rise as more partners publish.",
+    "Periods marked \"preliminary\" are those where a major partner has not yet published. For exports, Thailand is the partner that matters most, because it buys most of Kiribati's tuna. A preliminary export figure for a month without Thailand's data will typically rise a lot once Thailand publishes.",
+    "Hover over or tap any bar or point to see the value in US dollars, the number of partners it is built from, and the percent complete. Values are in millions of US dollars, shown to one decimal place.",
+    "Differences between partner-reported and Kiribati-reported figures are shown in US dollars, never only as ratios. Ratios are reported for full years only, because a monthly ratio can balloon when the figure in the denominator is close to zero.",
+    "Charts that compare the two sources always show which products drive the difference. For exports this is tuna, which partners record under Kiribati because the catching vessel flies Kiribati's flag. Under balance-of-payments rules much of that catch may correctly sit outside Kiribati's goods exports. This is a difference of definition, and it is noted every time it appears.",
+    "The tracker never shows a trade balance built from partner data, because partners report only part of what Kiribati imports. The imports shown are a lower bound.",
+    "The methods page explains how each number is built. The literature page explains where this way of reading trade data comes from."
+  ],
+  "glossary": [
+    {
+      "term": "Partner-reported data (mirror data)",
+      "definition": "What Kiribati's trading partners declared to UN Comtrade about their trade with Kiribati. A Thai import from Kiribati is a partner-reported Kiribati export. Economists call this the \"mirror\" of Kiribati's own record."
+    },
+    {
+      "term": "Kiribati-reported data",
+      "definition": "Kiribati's own customs returns, compiled by the Kiribati National Statistics Office and published on UN Comtrade. These are the official figures and the reference for this tracker."
+    },
+    {
+      "term": "UN Comtrade",
+      "definition": "The United Nations database that collects the customs trade statistics of almost every country in the world, by product and by partner country. Both sides of every shipment can be looked up there once each country has published."
+    },
+    {
+      "term": "HS code",
+      "definition": "The Harmonized System, a numbering scheme used by every customs service to classify goods. Two digits name a chapter (03 is fish), four digits a heading (0303 is frozen fish), six digits a product (030343 is frozen skipjack tuna). Six digits is the finest level that is the same in every country, so comparisons are made there."
+    },
+    {
+      "term": "Percent complete",
+      "definition": "The share of the partner panel whose data for a period have been published on UN Comtrade. Count-based: published partners divided by partners in the panel. Trade-weighted: the same share, but each partner counts in proportion to its share of Kiribati's trade. A period at 100 percent is final; a period at 30 percent is an early reading."
+    },
+    {
+      "term": "Partner panel",
+      "definition": "The fixed list of about twenty trading partners the tracker watches. It includes every country with at least half a percent of Kiribati's partner-reported exports or imports in 2023–2025, plus the main regional partners. Keeping the list fixed means a rising number is real growth, not a new partner joining the count."
+    },
+    {
+      "term": "Balance of payments (BOP)",
+      "definition": "A country's statement of all its dealings with the rest of the world: goods, services, income, gifts and finance. Goods exports and imports in the balance of payments come from customs data, adjusted to international rules. The international rulebook is called the Balance of Payments Manual, sixth edition (BPM6)."
+    },
+    {
+      "term": "Vessel flag versus residency",
+      "definition": "When fish lands in a foreign port, the importing customs office records its origin as the flag the catching vessel flies. Balance-of-payments rules instead ask where the vessel's operator is resident. A vessel can fly Kiribati's flag while its operator is resident elsewhere, in which case the catch is Kiribati-origin for customs but not a Kiribati export in the balance of payments. This single difference explains almost all of the export gap shown here."
+    },
+    {
+      "term": "CIF versus FOB",
+      "definition": "Two ways to value the same shipment. FOB (free on board) is the value as the goods leave the exporting port. CIF (cost, insurance and freight) adds shipping and insurance to the importing port. Importers record CIF, exporters FOB, so a partner-reported Kiribati export is a few percent higher than Kiribati's own figure for the same goods."
+    },
+    {
+      "term": "Lower bound",
+      "definition": "A figure that can only be too low, never too high. Partner-reported imports are a lower bound on Kiribati's imports because only partners that have published appear, and some large suppliers publish late or not monthly. The true import total is at least as large as the partner figure."
+    },
+    {
+      "term": "Preliminary period",
+      "definition": "A month, quarter or year for which a major partner has not yet published. Its value will usually rise. The tracker marks such periods and shows their percent complete."
+    },
+    {
+      "term": "Rolling 12 months",
+      "definition": "The sum of the latest twelve months, moved forward one month at a time. It smooths out single large shipments and lets a recent year be compared with the one before it without waiting for the calendar year to end."
+    },
+    {
+      "term": "Purse seiner",
+      "definition": "A large fishing vessel that encloses a school of tuna in a net drawn shut at the bottom like a purse. Most of the tuna partners record as Kiribati-origin is caught by purse seiners flying Kiribati's flag."
+    },
+    {
+      "term": "Joint-venture fleet",
+      "definition": "Fishing companies owned partly by the Government of Kiribati and partly by foreign partners, which operate most of the Kiribati-flagged purse seiners. Whether they count as resident in Kiribati under balance-of-payments rules is a question for the official compilers, and this tracker does not decide it."
+    },
+    {
+      "term": "Fishing licence fees",
+      "definition": "Payments by mostly foreign vessels for the right to fish in Kiribati's waters. They are income, not goods, and are recorded in a different part of the balance of payments. They are a separate flow from the tuna shown here and are not compared with it."
+    },
+    {
+      "term": "PNA",
+      "definition": "The Parties to the Nauru Agreement: eight Pacific countries that jointly manage purse-seine tuna fishing in their waters. They are Kiribati, the Federated States of Micronesia, the Marshall Islands, Nauru, Palau, Papua New Guinea, Solomon Islands and Tuvalu."
+    }
+  ],
+  "charts": {
+    "coverage": {
+      "title": "How much of the picture is in yet?",
+      "subtitle": "Percent complete: the share of the partner panel that has published for each period",
+      "how_to_read": "Each bar is one period. A full bar means every partner in the panel has published its data for that period. Two versions are shown: a simple count of partners, and a count weighted by each partner's share of Kiribati's trade. Read the trade-weighted bar for exports when judging a tuna figure, since Thailand alone carries most of the weight.",
+      "caveat": "Partners publish on their own schedules. China's latest monthly data are for December 2024, Korea's for December 2025 and Singapore's for March 2026 (B3). Recent periods will keep filling in. Source: UN Comtrade; release date shown in the page header."
+    },
+    "exports": {
+      "title": "What Kiribati sells abroad, as recorded by its buyers",
+      "subtitle": "Partner-reported exports, split into tuna, other fish, copra oil and everything else, with Kiribati's own figure alongside",
+      "how_to_read": "The stacked bars are what partner countries recorded as imports from Kiribati. The line is what Kiribati's own customs returns record for the same period. Most of the height of the bars is tuna. The difference between bar and line is shown in US dollars; for 2025 the tuna difference was about USD 70 million (T3).",
+      "caveat": "Partners record tuna as Kiribati-origin because the catching vessel flies Kiribati's flag. Under balance-of-payments rules much of this catch may correctly sit outside Kiribati's goods exports. The difference is one of definition; it does not mean either record is mistaken. It is present in every one of the 70 months with data since 2017 (T3). Partner values include freight and insurance, which adds a few percent. Check the percent complete before reading a recent period. Source: UN Comtrade."
+    },
+    "imports": {
+      "title": "What Kiribati buys abroad, as recorded by its suppliers",
+      "subtitle": "Partner-reported imports, with and without ships and aircraft, and Kiribati's own figure alongside",
+      "how_to_read": "The bars are what partner countries recorded as exports to Kiribati. The darker part is ordinary goods; the lighter part is ships and aircraft, which arrive as rare, very large items. The line is Kiribati's own import figure, which is higher. Read the bars as a floor under the true total, not as the total.",
+      "caveat": "Partner-reported imports are a lower bound. Partners report roughly 30 to 50 percent of what Kiribati records in most categories, and about 8 percent for fuel (B15). China, about a third of partner-reported imports, publishes only annual data since 2024 (B3). For these reasons no trade balance is calculated from partner data. Source: UN Comtrade."
+    },
+    "rolling_fish": {
+      "title": "Fish exports over the latest twelve months",
+      "subtitle": "Partner-reported fish and tuna, summed over rolling 12-month windows",
+      "how_to_read": "Each point is the total of the twelve months ending at that date. Moving the window forward one month at a time smooths out single shipments. Compare a point with the point twelve months earlier to read the year-on-year change. The twelve months to May 2026 totalled USD 67.5 million, against 96.3 million a year earlier and 100.9 million two years earlier (B20).",
+      "caveat": "The latest windows are preliminary when Thailand, the main buyer, has not yet published. As of 9 October 2026 Thailand's June and July 2026 data were missing (B20), so the last two points will rise. This series measures landings abroad by Kiribati-flagged vessels; it is not Kiribati's official export figure. Source: UN Comtrade."
+    },
+    "national_accounts": {
+      "title": "Three records of the same trade, side by side",
+      "subtitle": "Balance-of-payments goods, Kiribati customs and partner-reported figures, by year",
+      "how_to_read": "For each year, the first two bars are Kiribati's official figures: the balance-of-payments goods line and the customs total. They agree closely with each other (B12). The third bar is the partner-reported figure. For exports it is much higher because of tuna coded by vessel flag. For imports it is much lower because partners cover only part of Kiribati's purchases. The partner export bar is split into tuna and everything else, so the comparison can be read without the tuna.",
+      "caveat": "The tuna difference is a difference of definition: partners code fish to the flag of the catching vessel, while the balance of payments asks where the operator is resident. Whether the joint-venture catch belongs in Kiribati's goods exports is for the official compilers to decide. Years in which Kiribati published fewer than twelve months are marked, and the customs figure is also shown scaled to twelve months. Nominal GDP in US dollars comes from the IMF macro framework. No balance is computed from partner data. Sources: IMF Statistics Department balance of payments; UN Comtrade."
+    },
+    "peers_tuna": {
+      "title": "Tuna recorded as coming from each Pacific flag state",
+      "subtitle": "Partner-reported tuna by country of origin, seven Pacific tuna nations, 2010 to 2025",
+      "how_to_read": "Each line is the tuna that importing countries recorded as originating in one Pacific country, in US dollars. Because importers code origin by the vessel's flag, each line tracks the landings abroad of that country's flagged fleet. Kiribati is highlighted. It was second in 2015 and fourth or fifth in 2025; its figure fell from USD 119 million to 88 million, while Nauru rose from zero and Micronesia grew tenfold (T1, B11).",
+      "caveat": "The rises elsewhere came mostly from vessels moving onto those flags, not from more fish in those countries' waters (B11). Nauru's line was zero until it reflagged vessels in 2019 (B17). Micronesia's 2024 figure is a one-year spike; its three-year average is about USD 240 million (B11). The series says nothing about fishing licence fees, which are a separate flow. Source: UN Comtrade, annual data of all reporting countries."
+    },
+    "peers_applicability": {
+      "title": "Where does this method work? Fifteen small island states compared",
+      "subtitle": "Own monthly reporting, prompt partner coverage and the size of the gap, for exports and imports separately",
+      "how_to_read": "Each row is a small island state. The first columns show whether the country publishes its own monthly data and how recently. The next show the share of its trade that goes to partners who publish promptly; for the tuna exporters this is 95 percent or more on the export side (B6). The last show how partner-reported totals compare with the country's own, for 2025, with ships and aircraft removed. Kiribati's export ratio, 6.6, is the largest among countries with their own data; Papua New Guinea, Maldives and Comoros are between 1.4 and 2.1 (B8).",
+      "caveat": "Ratios are shown for full years only and with ships and aircraft removed, because single deliveries distort them; removing them lowers Maldives' export ratio from 2.65 to 1.62 (B10). For the Marshall Islands, partner data are not usable because trade booked to its ship registry swamps the figures (B9). Import coverage is partial everywhere, between about 40 and 85 percent (B7). Kiribati's larger export ratio reflects the flag coding of tuna and the small share of tuna that passes through its customs. Source: UN Comtrade."
+    },
+    "products": {
+      "title": "Which goods, from and to which partners",
+      "subtitle": "Top products by value, partner-reported and Kiribati-reported side by side",
+      "how_to_read": "Each row is a product group at the four-digit HS level, with a short plain-language label. The two bars show the partner-reported value and the Kiribati-reported value for the chosen year. Where only one bar appears, the other source recorded nothing under that code; it may have recorded the goods under a different code or in a different month.",
+      "caveat": "Comparing single products in single months creates false alarms: about three-quarters of apparent mismatches disappear when the same product is compared across all partners or by quarter instead of by month (B16). Read this chart for full years. Source: UN Comtrade."
+    },
+    "copra": {
+      "title": "Copra oil: the difference runs the other way",
+      "subtitle": "Crude coconut oil, Kiribati-reported and partner-reported",
+      "how_to_read": "For coconut oil, Kiribati's own records show more than its partners' records: USD 11.9 million against 5.4 million over January 2025 to July 2026 (B13). The bars show the two sources by period. This is the mirror image of the tuna case and shows the method cuts both ways.",
+      "caveat": "The copra oil difference is most likely about where and when buyers record the oil, for instance under a different product code or a different partner after processing or transit. It is shown because a method that only ever found partner figures higher would be suspect; this one does not. Source: UN Comtrade."
+    },
+    "ships": {
+      "title": "Ships and aircraft: rare, very large deliveries",
+      "subtitle": "Partner-reported exports of vessels and aircraft to Kiribati, lines of USD 1 million or more",
+      "how_to_read": "Each bar is one delivery or group of deliveries in a year, labelled by exporting country and type. The largest is five purse seiners from China in 2025, worth USD 108 million, about 30 percent of Kiribati's annual output (B26). An aircraft from Brazil, USD 40 million, appears in July 2026 (B28). Two fishing vessels from Taiwan, USD 44 million, appear in 2022 (B29, T4).",
+      "caveat": "Under balance-of-payments rules, a vessel or aircraft is a goods import when a resident acquires it, whether bought, loan-financed or donated. The financing only changes the offsetting entry (B25). Whether the operators of these vessels are resident in Kiribati is a question for the official compilers. Because these items are so large and so rare, every total in this tracker is shown with and without ships and aircraft (HS chapters 88 and 89). China publishes no monthly data after December 2024, so the 2025 deliveries cannot be dated to a month (B3). Source: UN Comtrade."
+    }
+  },
+  "findings": [
+    {
+      "id": "f1",
+      "headline": "Exports: the partner record is nearly complete",
+      "plain": "Between 96 and 99 percent of Kiribati's exports go to countries that publish their trade data within about four months. Thailand, Japan and the Philippines, the main buyers of fish, all publish promptly. So the partner-reported export series is close to final a few months after each period, and it can serve as a timely indicator.",
+      "evidence": "B1, B15",
+      "sensitivity": "This describes partner publication schedules, not the quality of Kiribati's returns."
+    },
+    {
+      "id": "f2",
+      "headline": "Imports: partners cover only part of the picture, so no balance is shown",
+      "plain": "For imports the partner record is partial. In most product categories partners report 30 to 50 percent of what Kiribati's own customs record, and only about 8 percent for fuel. China, about a third of partner-reported imports, publishes only annual data since 2024. Partner-reported imports are therefore a floor under the true figure, and the tracker never computes an export-minus-import balance from them.",
+      "evidence": "B3, B15",
+      "sensitivity": "Kiribati's own import figures are the better measure here, and the tracker says so."
+    },
+    {
+      "id": "f3",
+      "headline": "The tuna difference is a difference of definition, and it is permanent",
+      "plain": "Partners recorded USD 97.4 million of tuna from Kiribati between January 2025 and July 2026; Kiribati's customs recorded 6.3 million. The reason is a coding rule. When tuna lands in Bangkok, Thai customs record its origin as the flag of the vessel that caught it. Vessels flying Kiribati's flag land most of their catch abroad, so it appears as a Kiribati export in partner data. Balance-of-payments rules instead ask where the vessel's operator is resident, which can put the same catch outside Kiribati's goods exports. The difference has been positive in all 70 months with data since 2017: about USD 127 million in 2017, 70 million in 2025. It is quoted in dollars because ratios swing wildly when Kiribati's figure is near zero.",
+      "evidence": "T2, T3, B17, B18",
+      "sensitivity": "The balance-of-payments goods line and Kiribati's customs figures agree with each other (B12); the difference to partner data is one of coverage and definition, and its treatment belongs to the official compilers."
+    },
+    {
+      "id": "f4",
+      "headline": "The difference is narrowing in 2026, provisionally",
+      "plain": "In the first seven months of 2026 the tuna difference was about USD 21 million, and partners recorded 3.3 times Kiribati's total exports, the lowest ratio in the series. Kiribati's own records of frozen yellowfin tuna and of copra oil rose, while partner-reported tuna fell. This is provisional: Thailand's data for June and July 2026 were still missing when these figures were compiled, and the partner figure will rise when they arrive.",
+      "evidence": "T3, B20",
+      "sensitivity": "A rise in Kiribati's own recorded exports is good news for the national record and is reported as such."
+    },
+    {
+      "id": "f5",
+      "headline": "Copra oil runs the other way",
+      "plain": "For crude coconut oil, Kiribati's customs recorded USD 11.9 million over January 2025 to July 2026, while partners recorded 5.4 million. Outside fish, no other major export category shows partners recording more than Kiribati. The copra case matters because it shows the comparison is symmetric: differences appear in both directions, and the method does not simply favour the partner's figure.",
+      "evidence": "B13, T2",
+      "sensitivity": "Here Kiribati's record is the fuller one. The likely explanation is how buyers code or time the oil; both records can be right."
+    },
+    {
+      "id": "f6",
+      "headline": "Fish exports are down about a third in two years, mainly to Thailand",
+      "plain": "Summed over twelve-month windows ending in May, partner-reported fish exports fell from USD 100.9 million to 96.3 million to 67.5 million. Lower sales to Thailand explain most of the fall. January to July 2026 totalled 24.4 million: skipjack 11.4, tuna fillets 9.5, yellowfin 2.5. Japan's purchases of longline-caught fish have been flat. Kiribati's own fish export figures, USD 6 to 8 million a year, have been rising.",
+      "evidence": "B20",
+      "sensitivity": "This series measures landings abroad by Kiribati-flagged vessels. Kiribati's own rising figure may show value moving onshore, and that is a question to explore with the compilers, not a contradiction."
+    },
+    {
+      "id": "f7",
+      "headline": "Kiribati-flagged landings fell while neighbours' rose through reflagging",
+      "plain": "Among seven Pacific flag states, Kiribati is the only one whose partner-recorded tuna shows a clear decline, from USD 119 million in 2015 to 88 million in 2025. Over the same years Nauru rose from zero to 149 million, Micronesia grew tenfold and Tuvalu eightfold. The growth elsewhere came from vessels moving onto those flags, not from more fish in their waters. Nauru's figure was zero until it reflagged vessels in 2019, which is the clearest evidence that importers code tuna by flag.",
+      "evidence": "T1, B11, B17, B19",
+      "sensitivity": "Flag registration is a policy choice made for good reasons; this finding describes where fleets are registered, not how well any country keeps its statistics."
+    },
+    {
+      "id": "f8",
+      "headline": "Ships and aircraft arrive as rare, very large items",
+      "plain": "China recorded five purse seiners delivered to Kiribati in 2025, worth USD 108 million, about 30 percent of Kiribati's annual output. Brazil recorded an aircraft worth USD 40 million in July 2026, about 11 percent. Taiwan recorded two fishing vessels worth USD 44 million in 2022. Under balance-of-payments rules a vessel or aircraft is a goods import when a resident acquires it, whether bought, loan-financed or donated; the financing only decides the offsetting entry. Because such items are so large and so rare, every total here is shown with and without ships and aircraft.",
+      "evidence": "B25, B26, B28, B29, T4",
+      "sensitivity": "Whether the vessel operators are resident in Kiribati, and how the deliveries should enter the accounts, is for the official compilers to determine. The tracker reports what partners published and no more."
+    },
+    {
+      "id": "f9",
+      "headline": "Rice cannot be tracked from partner data; sugar can, and both sources agree",
+      "plain": "Rice is a staple import, but partner data cannot track it. Viet Nam and Australia do not report rice at the six-digit product level monthly. China and Taiwan had not published 2025 when these figures were compiled. Kiribati's own data are the only source, and they show rice imports up 40 to 50 percent in the last year as suppliers shifted from Australia to Viet Nam, Taiwan and China. Sugar is different: it comes mostly from Thailand, which publishes promptly. Both sources put sugar at a stable USD 5 to 6.5 million a year.",
+      "evidence": "B22, B23, B24",
+      "sensitivity": "This is a case where the national record is the only usable one, and where the two records agree when both exist."
+    },
+    {
+      "id": "f10",
+      "headline": "Some large partners publish with long delays",
+      "plain": "Partner data are usable about four months after the reference month, but not for every partner. China's latest monthly data are for December 2024; since then it publishes only annual totals. Korea's latest month is December 2025 and Singapore's is March 2026. This matters for imports, where China is about a third of the partner total, and for dating the 2025 vessel deliveries. It does not affect fish, whose buyers publish within about four months.",
+      "evidence": "B1, B3",
+      "sensitivity": "Publication lags are a feature of every country's statistical calendar, including large ones; the percent-complete score exists so readers can see them."
+    }
+  ],
+  "sensitivity_statement": "Kiribati's official statistics, compiled by the Kiribati National Statistics Office and Kiribati Customs, are the reference for everything on this site. Partner-reported data do not replace them. They complement them, by offering an earlier reading and a second view of the same trade. Where the two records differ, the difference comes in almost every case from coverage or definition. Examples are which goods pass through Kiribati's customs, how importing countries assign the origin of fish, and when and under which code a shipment is recorded. The large tuna difference follows a coding rule, vessel flag at the importing border against residency in the balance of payments, and its treatment is a matter for the official compilers. The copra oil case, where Kiribati records more than its partners, shows that the comparison runs both ways. This tracker was prepared in a spirit of cooperation, as a tool for the compilers and for the public. Corrections and suggestions from the statistical offices of Kiribati and its partners are welcome.",
+  "methods": [
+    {
+      "id": "m1",
+      "title": "What partner data are",
+      "paragraphs": [
+        "Every shipment that crosses a border is recorded twice. The exporting country records it as an export; the importing country records it as an import. Both records go to UN Comtrade, the United Nations trade database, once each country has published.",
+        "Kiribati's own record is the official one. Partner-reported data, sometimes called mirror data, are the other side of the same shipments: what Thailand recorded as imports from Kiribati, what Australia recorded as exports to Kiribati, and so on.",
+        "The two records of one shipment differ even when both are right. Importers add freight and insurance to the value. The two sides can record the shipment in different months. They can place it under different product codes. And they can attribute it to different partners, for instance when goods pass through a third country, or when fish is coded to the flag of the vessel that caught it. These mechanical differences are described in the literature and are allowed for here."
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "The partner panel",
+      "paragraphs": [
+        "The tracker watches a fixed list of partners, called the partner panel. A partner joins the panel if it accounted for at least half a percent of Kiribati's partner-reported exports or imports over 2023 to 2025. Sixteen main regional and global partners are always included: Australia, New Zealand, Fiji, China, Japan, Thailand, Korea, Singapore, the United States, Taiwan, the Philippines, Indonesia, Malaysia, India, Hong Kong and Colombia.",
+        "Each partner in the panel has two weights: its share of partner-reported Kiribati exports and its share of partner-reported Kiribati imports, both measured over 2023 to 2025. Thailand carries most of the export weight because it buys most of the tuna. The panel and the weights are published in a small file alongside the data.",
+        "Keeping the panel fixed means that a change in a total reflects a change in trade, not a change in who is being counted."
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Percent complete: count-based and trade-weighted",
+      "paragraphs": [
+        "For each month, the count-based percent complete is the number of panel partners that have published that month divided by the number of partners in the panel. For a quarter, it is the number of partner-months published divided by the number possible (three per partner). For a year, it is based on annual datasets where they exist and on twelve monthly datasets otherwise.",
+        "The trade-weighted percent complete uses the same published-or-not information but counts each partner by its weight. A month in which Thailand has published scores high on the export side even if several small partners have not. A month in which Thailand has not published scores low however many small partners have.",
+        "A quarter that has not ended still counts three months as possible, so the reader can see it filling up over time. Neither score says anything about whether Kiribati has published its own return for the period; that is shown separately."
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Publication lags",
+      "paragraphs": [
+        "Most partners publish a month's trade data within about four months. Some take much longer or publish only annual figures. When these figures were compiled, China's latest monthly data were for December 2024, Korea's for December 2025 and Singapore's for March 2026. Thailand's June and July 2026 data were not yet available.",
+        "Kiribati's own monthly returns were available on UN Comtrade for 70 of the 114 months between January 2017 and July 2026. The months not yet published are 2019, 2021, January 2022 to May 2023, July and September 2024, and March and October 2025. A missing month is treated as not available, never as zero.",
+        "Because of these lags, the latest periods are always preliminary. The percent-complete score is the reader's guide to how preliminary."
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "How products are grouped",
+      "paragraphs": [
+        "Goods are grouped using the Harmonized System (HS), the product code every customs service uses. Six-digit codes are the finest level that is the same in every country, and all comparisons are made there before being summed into groups.",
+        "Tuna means the six-digit codes for fresh, chilled and frozen tuna (skipjack, yellowfin, bigeye, albacore and bluefin), frozen tuna fillets and prepared or canned tuna. Fish means all of HS chapter 03 (fish and seafood) plus heading 1604 (prepared fish). Copra oil means crude coconut oil (code 151311) and other coconut oil. Ships and aircraft means HS chapters 88 and 89. Fuel means chapter 27. Food means chapters 01 to 24 excluding fish. The exact list of codes is recorded in the notes of the data files.",
+        "On the products chart, four-digit headings are shown with short plain-language labels, such as \"Frozen fish, including tuna\", \"Rice\" or \"Fishing vessels\"."
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "What is and is not comparable",
+      "paragraphs": [
+        "Comparable: annual totals by broad product group, once the percent complete is high. Partner-reported fish exports over twelve-month windows. Sugar imports, where the main supplier publishes promptly and both records agree.",
+        "Comparable with care: quarterly totals, and any period below about 70 percent complete. Kiribati's own quarters built on two months rather than three, which are marked.",
+        "Not comparable: single products in single months, where about three-quarters of apparent mismatches vanish when the same product is compared across all partners or by quarter. Ratios of partner to Kiribati figures for months or quarters, which can balloon when the Kiribati figure is near zero. Rice imports from partner data, because the main suppliers do not report promptly to the six-digit level.",
+        "Not the same flow: fishing licence fees, which are income paid for fishing days in Kiribati's waters and belong to a different part of the balance of payments. They are never compared with the tuna series here. And the tuna series itself is not Kiribati's official export figure; it is the landings abroad of Kiribati-flagged vessels as recorded by the importing countries."
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Why no trade balance is shown",
+      "paragraphs": [
+        "A trade balance is exports minus imports. The partner-reported export figure is nearly complete, but the partner-reported import figure is a lower bound covering roughly a third to a half of what Kiribati actually imports. Subtracting a partial import figure from a near-complete export figure would produce a number that means nothing.",
+        "For the same reason, partner-reported imports cannot be used to adjust the official import figure in the balance of payments. Where imports are concerned, Kiribati's own record is the better one. The tracker shows partner-reported imports because they still carry useful information: the timing of large deliveries, and items such as vessels and aircraft that appear on one side only."
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "How the two sources are compared",
+      "paragraphs": [
+        "Comparisons are made at the six-digit product code, by period, after summing across all partners. Differences are quoted in US dollars. Ratios are reported only for full years. A difference is treated as meaningful only if it persists over time and is visible in the records of more than one partner.",
+        "The official balance-of-payments goods lines and Kiribati's customs totals are also shown side by side. They agree closely, which means the comparison with partner data is a comparison of coverage and definition, not of compilation. Where Kiribati published fewer than twelve months in a year, its customs total is shown both as published and scaled to twelve months, with the assumption stated."
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "How the daily update works",
+      "paragraphs": [
+        "Once a day, an automated job asks UN Comtrade which months each panel partner, and Kiribati itself, has newly published. It downloads only those, adds them to the stored data, recomputes every series and every percent-complete score, and republishes the site. The release date of the data appears in the page header.",
+        "The job runs on a cloud service, not on anyone's computer. Access credentials are stored privately and never appear on the site or in its code. If UN Comtrade is unavailable on a given day, the site keeps showing the data from the last successful update.",
+        "A full offline rebuild from the stored files is also possible at any time, and is what produced the first version of the site."
+      ]
+    }
+  ],
+  "literature_blurb": "Economists and statisticians have compared the two records of international trade for a century. The literature uses them in three ways: to check the quality of trade statistics, to detect tax evasion, and to measure economies whose own data cannot serve. This tracker is a case of the third use, the one the IMF has made for decades in its Direction of Trade Statistics. The literature page lists fifteen IMF documents and sixteen academic papers, each with a short plain-language summary and a line on why it matters here.",
+  "footer": {
+    "credit": "Prepared by Alejandro Badel, IMF Kiribati desk, with the Kiribati National Statistics Office's published data as the reference. Data: UN Comtrade; IMF Statistics Department balance of payments; IMF macro framework for GDP.",
+    "disclaimer": "The views expressed on this site are those of the author and do not necessarily represent the views of the IMF, its Executive Board or its management. Partner-reported figures are provisional until all partners have published and are a complement to, not a substitute for, Kiribati's official statistics. Partner-reported imports are a lower bound and no trade balance is derived from them. Any error is the author's and corrections are welcome."
+  }
+}

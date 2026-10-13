@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the numbers are made — Kiribati trade tracker</title>
+<meta name="description" content="Plain-language notes on how the Import and Export Performance Tracker builds its figures from UN Comtrade partner data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="viewbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html">Tracker</a>
+      <a href="methods.html" aria-current="page">How the numbers are made</a>
+      <a href="literature.html">Research</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+<header class="hero">
+  <div class="wrap--text">
+    <h1>How the numbers are made</h1>
+    <p class="purpose">Plain-language notes on every number in the tracker: where it comes from, how it is added up, and what it can and cannot be compared with.</p>
+    <p class="small muted" id="methods-updated"></p>
+  </div>
+</header>
+
+<section class="block methods">
+  <div class="wrap--text">
+    <!-- Filled from data/text.json "methods" when available; otherwise the
+         fallback text below stays visible. -->
+    <nav class="contents" aria-label="Sections" id="methods-toc"></nav>
+    <div id="methods-body">
+
+      <h2 id="m1">What partner data are</h2>
+      <p>Every shipment that crosses a border is recorded twice: once by the country it leaves, as an export, and once by the country it enters, as an import. Both records are sent to UN Comtrade, the United Nations trade database.</p>
+      <p>Kiribati's own customs returns are the official record. "Partner-reported" data are the other side of the same shipments: what Thailand recorded as imports from Kiribati, what Australia recorded as exports to Kiribati, and so on. Economists call this "mirror" data.</p>
+      <p>The two records of one shipment differ even when both are right. Importers add freight and insurance to the value. The two sides can book the shipment in different months, under different product codes, or to different partners (for example when goods pass through a third country, or when fish is coded to the flag of the vessel that caught it).</p>
+
+      <h2 id="m2">The partner panel</h2>
+      <p>The tracker watches a fixed list of partners, called the partner panel. A partner joins the panel if it accounted for at least half of one percent of Kiribati's partner-reported exports or imports over the reference window (2023 to 2025). Sixteen main regional and global partners are always included.</p>
+      <p>Each partner carries two weights: its share of partner-reported Kiribati exports and its share of partner-reported Kiribati imports over the same window. The panel and the weights are published in <code>tracker/panel.json</code>.</p>
+      <p>Keeping the panel fixed means that a change in a total reflects a change in trade, not a change in who is being counted.</p>
+
+      <h2 id="m3">Percent complete: count-based and trade-weighted</h2>
+      <p>For a month, the count-based percent complete is the number of panel partners that have published that month, divided by the number of partners in the panel. For a quarter, it is the number of partner-months published divided by the number possible (three per partner). For a year, it is based on annual datasets where they exist and on twelve monthly datasets otherwise.</p>
+      <p>The trade-weighted version counts each partner by its weight. A month in which Thailand has published scores high on the export side even if several small partners have not, because Thailand buys most of the tuna.</p>
+      <p>A quarter that has not ended still counts three months as possible, so the reader can watch it fill up. Periods below 60 percent complete are drawn lighter and marked as preliminary.</p>
+
+      <h2 id="m4">Publication lags</h2>
+      <p>Partner data are usable about four months after the reference month. Some large partners publish much later: China's latest monthly data are for December 2024 (annual only since), Korea's for December 2025, and Singapore's for March 2026. Thailand, the main tuna buyer, publishes within about four months.</p>
+      <p>Kiribati's own monthly returns are missing for 2019, 2021, January 2022 to May 2023, July and September 2024, and March and October 2025. Where Kiribati's figure is not published, the line on the charts has a gap; it is never drawn as zero.</p>
+
+      <h2 id="m5">How products are grouped</h2>
+      <p>Goods are classified with the Harmonized System (HS), an international numbering scheme. Six-digit codes (HS6) are the finest level shared by all countries; four-digit codes (HS4) name product groups.</p>
+      <dl>
+        <dt>Tuna</dt><dd>HS6 030341 to 030349 (frozen tunas), 030487 (frozen tuna fillets) and 160414 (prepared or preserved tuna).</dd>
+        <dt>Fish and seafood</dt><dd>HS chapter 03 plus heading 1604.</dd>
+        <dt>Copra oil</dt><dd>HS6 151311 and 151319 (coconut oil).</dd>
+        <dt>Ships and aircraft</dt><dd>HS chapters 88 and 89.</dd>
+        <dt>Fuel</dt><dd>HS chapter 27.</dd>
+        <dt>Food</dt><dd>HS chapters 01 to 24, excluding chapter 03.</dd>
+      </dl>
+
+      <h2 id="m6">What is and is not comparable</h2>
+      <p>Years in which Kiribati published all twelve months can be compared directly with the official balance-of-payments goods lines. For years with missing months, the customs figure is also shown scaled to twelve months; that is an estimate, and it is labelled as one.</p>
+      <p>Partner-reported exports are nearly complete: 96 to 99 percent of Kiribati's exports go to partners that publish promptly. Partner-reported imports are partial: partners record roughly 30 to 50 percent of what Kiribati records in most categories, and about 8 percent for fuel.</p>
+      <p>Comparisons at the exact month, partner and product level create false alarms. About three-quarters of apparent mismatches disappear when the same product is compared across all partners, or by quarter instead of by month. Read product comparisons for full years.</p>
+      <p>Differences are quoted in US dollars. Ratios (partner figure divided by Kiribati figure) are read only for full years, because a monthly ratio balloons when the figure in the denominator is close to zero.</p>
+
+      <h2 id="m7">Why no trade balance is shown</h2>
+      <p>A trade balance is exports minus imports. Because partner data cover only part of Kiribati's imports, a balance built from them would be misleading. The tracker never computes one.</p>
+
+      <h2 id="m8">How the two sources are compared</h2>
+      <p>Partner-reported exports are the sum of what each partner recorded as imports from Kiribati; partner-reported imports are the sum of what each partner recorded as exports to Kiribati. Kiribati-reported figures are Kiribati's own returns as published on Comtrade, in the same months. Both are shown in millions of US dollars to one decimal place. A blank means not published, never zero.</p>
+      <p>Ships and aircraft are rare, very large items, so every total is shown with and without them.</p>
+
+      <h2 id="m9">How the daily update works</h2>
+      <p>A scheduled job runs once a day, asks UN Comtrade for any newly published partner data, rebuilds the data files and republishes the page. The time of the last run and the latest period covered are shown at the top of the tracker. If Comtrade cannot be reached, the previous data files stay in place.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="index.html">Back to the tracker</a></li>
+        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="data/manifest.json">Data files (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Fill the page from data/text.json when it loads; otherwise keep the static text above. */
+(function () {
+  'use strict';
+  if (location.protocol === 'file:') return;            // static fallback text is already on the page
+  function el(tag, text, attrs) { const e = document.createElement(tag); if (text != null) e.textContent = text; if (attrs) Object.entries(attrs).forEach(([k, v]) => e.setAttribute(k, v)); return e; }
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function fmtDate(iso) { const d = new Date(iso); return isNaN(d) ? String(iso) : d.getUTCDate() + ' ' + MONTHS[d.getUTCMonth()] + ' ' + d.getUTCFullYear(); }
+  Promise.all([
+    fetch('data/text.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/manifest.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null)
+  ]).then(([text, manifest]) => {
+    if (manifest && manifest.meta && manifest.meta.generated_at) {
+      const MONTHS2 = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      const mth = manifest.data_through && manifest.data_through.monthly ? String(manifest.data_through.monthly) : '';
+      const m = mth.match(/^(\d{4})-(\d{2})$/);
+      document.getElementById('methods-updated').textContent = 'Data last updated ' + fmtDate(manifest.meta.generated_at) + (m ? ' · monthly data through ' + MONTHS2[+m[2] - 1] + ' ' + m[1] : '') + '.';
+    }
+    if (text && text.footer) {
+      document.getElementById('footer-credit').textContent = text.footer.credit || '';
+      document.getElementById('footer-disclaimer').textContent = text.footer.disclaimer || '';
+    }
+    if (!text || !Array.isArray(text.methods) || !text.methods.length) return;
+    const body = document.getElementById('methods-body'); body.textContent = '';
+    const toc = document.getElementById('methods-toc'); toc.textContent = '';
+    toc.appendChild(el('strong', 'Sections'));
+    const ol = el('ol');
+    text.methods.forEach((m, i) => {
+      const id = m.id || ('m' + (i + 1));
+      const li = el('li'); const a = el('a', m.title || ('Section ' + (i + 1)), { href: '#' + id }); li.appendChild(a); ol.appendChild(li);
+      body.appendChild(el('h2', m.title || '', { id }));
+      (m.paragraphs || []).forEach(p => body.appendChild(el('p', p)));
+    });
+    toc.appendChild(ol);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,6308 @@
+{
+ "meta": {
+  "generated_at": "2026-10-13T09:08:57Z",
+  "source": "UN Comtrade (partner-reported and Kiribati-reported HS6 monthly data)",
+  "notes": [
+   "OFFLINE method (inferred_from_data). Publication status is inferred from the rows the pipeline holds: a partner counts as published for a month if it has at least one row with partner Kiribati in that month (any flow, or in the fish-only pull), or in any later month (Comtrade releases are cumulative).",
+   "A partner that published a dataset recording no trade with Kiribati in a month is indistinguishable from one that has not published; small partners therefore read as 'missing' more often than they really are, and the shares shown are a lower bound on true coverage.",
+   "Months Kiribati did not report (2019, 2021, 2022-01..2023-05, 2024-07, 2024-09, 2025-03, 2025-10) have no all-goods mirror pull; their status rests on the fish-only pull and the later-month rule and is labelled 'partial_fish_only'. Partners never observed (Other Asia, nes) count as not published.",
+   "Annual: a partner counts as published for a year if it appears in that year's annual fish or ships by-reporter table, or if at least 10 of its 12 months are counted as published.",
+   "The live refresh replaces this with Comtrade's data-availability service (coverage_method 'comtrade_getDa'), which answers the question directly."
+  ],
+  "method": "inferred_from_data",
+  "n_panel": 19,
+  "panel_codes": [
+   36,
+   156,
+   170,
+   208,
+   242,
+   344,
+   360,
+   380,
+   392,
+   410,
+   458,
+   490,
+   554,
+   608,
+   699,
+   702,
+   724,
+   764,
+   842
+  ],
+  "definitions": {
+   "share_count": "number of panel partners whose dataset for the period is published, divided by the panel size",
+   "share_w_exports": "same, weighting each partner by its share of partner-reported Kiribati exports in the reference window",
+   "share_w_imports": "same, weighting by share of partner-reported Kiribati imports",
+   "quarterly": "partner-months published / partner-months possible (3 per partner, also for an unfinished quarter)",
+   "annual": "a partner counts as published for a year if its annual dataset exists, or at least 10 of its 12 monthly datasets do; for the current, unfinished year (basis 'year_in_progress') the shares are partner-months published / (12 x panel), so the year fills up like an unfinished quarter"
+  }
+ },
+ "monthly": [
+  {
+   "period": "2017-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2017-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2017-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2017-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2017-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2017-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2017-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2018-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2018-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2018-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2018-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2018-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2018-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2019-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 6
+  },
+  {
+   "period": "2019-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 6
+  },
+  {
+   "period": "2019-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 7
+  },
+  {
+   "period": "2019-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 6
+  },
+  {
+   "period": "2019-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 6
+  },
+  {
+   "period": "2019-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2019-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2020-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2020-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2020-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2020-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2020-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2020-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2020-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2020-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2020-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2020-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2020-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2020-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2021-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 2
+  },
+  {
+   "period": "2021-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2021-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2021-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2021-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2021-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 2
+  },
+  {
+   "period": "2021-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2021-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2021-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2021-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2021-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2021-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2022-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2022-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2022-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2022-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2022-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2022-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2022-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2023-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 4
+  },
+  {
+   "period": "2023-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 2
+  },
+  {
+   "period": "2023-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 3
+  },
+  {
+   "period": "2023-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 2
+  },
+  {
+   "period": "2023-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 2
+  },
+  {
+   "period": "2023-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2023-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2023-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2023-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2023-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2023-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2023-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2024-01",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2024-02",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2024-03",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2024-04",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2024-05",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2024-06",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2024-07",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2024-08",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2024-09",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 6
+  },
+  {
+   "period": "2024-10",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 17
+  },
+  {
+   "period": "2024-11",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2024-12",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2025-01",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2025-02",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2025-03",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2025-04",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2025-05",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2025-06",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2025-07",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2025-08",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2025-09",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2025-10",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": false,
+   "method": "partial_fish_only",
+   "n_published_direct": 5
+  },
+  {
+   "period": "2025-11",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2025-12",
+   "n_panel": 19,
+   "n_published": 17,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 16
+  },
+  {
+   "period": "2026-01",
+   "n_panel": 19,
+   "n_published": 16,
+   "share_count": 0.842,
+   "share_w_exports": 0.975,
+   "share_w_imports": 0.743,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    410,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 14
+  },
+  {
+   "period": "2026-02",
+   "n_panel": 19,
+   "n_published": 16,
+   "share_count": 0.842,
+   "share_w_exports": 0.975,
+   "share_w_imports": 0.743,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    410,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2026-03",
+   "n_panel": 19,
+   "n_published": 16,
+   "share_count": 0.842,
+   "share_w_exports": 0.975,
+   "share_w_imports": 0.743,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    410,
+    490
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 15
+  },
+  {
+   "period": "2026-04",
+   "n_panel": 19,
+   "n_published": 14,
+   "share_count": 0.737,
+   "share_w_exports": 0.906,
+   "share_w_imports": 0.711,
+   "published": [
+    36,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    458,
+    554,
+    608,
+    699,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    170,
+    410,
+    490,
+    702
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 13
+  },
+  {
+   "period": "2026-05",
+   "n_panel": 19,
+   "n_published": 13,
+   "share_count": 0.684,
+   "share_w_exports": 0.899,
+   "share_w_imports": 0.709,
+   "published": [
+    36,
+    208,
+    242,
+    344,
+    360,
+    392,
+    458,
+    554,
+    608,
+    699,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    170,
+    380,
+    410,
+    490,
+    702
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 13
+  },
+  {
+   "period": "2026-06",
+   "n_panel": 19,
+   "n_published": 12,
+   "share_count": 0.632,
+   "share_w_exports": 0.187,
+   "share_w_imports": 0.671,
+   "published": [
+    36,
+    208,
+    242,
+    344,
+    360,
+    392,
+    458,
+    554,
+    608,
+    699,
+    724,
+    842
+   ],
+   "missing": [
+    156,
+    170,
+    380,
+    410,
+    490,
+    702,
+    764
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 12
+  },
+  {
+   "period": "2026-07",
+   "n_panel": 19,
+   "n_published": 9,
+   "share_count": 0.474,
+   "share_w_exports": 0.117,
+   "share_w_imports": 0.489,
+   "published": [
+    36,
+    208,
+    344,
+    360,
+    392,
+    458,
+    554,
+    699,
+    842
+   ],
+   "missing": [
+    156,
+    170,
+    242,
+    380,
+    410,
+    490,
+    608,
+    702,
+    724,
+    764
+   ],
+   "kiribati_reported": true,
+   "method": "inferred_from_data",
+   "n_published_direct": 9
+  }
+ ],
+ "quarterly": [
+  {
+   "period": "2017Q1",
+   "months": [
+    "2017-01",
+    "2017-02",
+    "2017-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2017-01",
+      "2017-02",
+      "2017-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2017Q2",
+   "months": [
+    "2017-04",
+    "2017-05",
+    "2017-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2017-04",
+      "2017-05",
+      "2017-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2017Q3",
+   "months": [
+    "2017-07",
+    "2017-08",
+    "2017-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2017-07",
+      "2017-08",
+      "2017-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2017Q4",
+   "months": [
+    "2017-10",
+    "2017-11",
+    "2017-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2017-10",
+      "2017-11",
+      "2017-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2018Q1",
+   "months": [
+    "2018-01",
+    "2018-02",
+    "2018-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2018-01",
+      "2018-02",
+      "2018-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2018Q2",
+   "months": [
+    "2018-04",
+    "2018-05",
+    "2018-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2018-04",
+      "2018-05",
+      "2018-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2018Q3",
+   "months": [
+    "2018-07",
+    "2018-08",
+    "2018-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2018-07",
+      "2018-08",
+      "2018-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2018Q4",
+   "months": [
+    "2018-10",
+    "2018-11",
+    "2018-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2018-10",
+      "2018-11",
+      "2018-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2019Q1",
+   "months": [
+    "2019-01",
+    "2019-02",
+    "2019-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2019-01",
+      "2019-02",
+      "2019-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2019Q2",
+   "months": [
+    "2019-04",
+    "2019-05",
+    "2019-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2019-04",
+      "2019-05",
+      "2019-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2019Q3",
+   "months": [
+    "2019-07",
+    "2019-08",
+    "2019-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2019-07",
+      "2019-08",
+      "2019-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2019Q4",
+   "months": [
+    "2019-10",
+    "2019-11",
+    "2019-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2019-10",
+      "2019-11",
+      "2019-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2020Q1",
+   "months": [
+    "2020-01",
+    "2020-02",
+    "2020-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2020-01",
+      "2020-02",
+      "2020-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2020Q2",
+   "months": [
+    "2020-04",
+    "2020-05",
+    "2020-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2020-04",
+      "2020-05",
+      "2020-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2020Q3",
+   "months": [
+    "2020-07",
+    "2020-08",
+    "2020-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2020-07",
+      "2020-08",
+      "2020-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2020Q4",
+   "months": [
+    "2020-10",
+    "2020-11",
+    "2020-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2020-10",
+      "2020-11",
+      "2020-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2021Q1",
+   "months": [
+    "2021-01",
+    "2021-02",
+    "2021-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2021-01",
+      "2021-02",
+      "2021-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2021Q2",
+   "months": [
+    "2021-04",
+    "2021-05",
+    "2021-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2021-04",
+      "2021-05",
+      "2021-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2021Q3",
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2021-07",
+      "2021-08",
+      "2021-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2021Q4",
+   "months": [
+    "2021-10",
+    "2021-11",
+    "2021-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2021-10",
+      "2021-11",
+      "2021-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2022Q1",
+   "months": [
+    "2022-01",
+    "2022-02",
+    "2022-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2022-01",
+      "2022-02",
+      "2022-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2022Q2",
+   "months": [
+    "2022-04",
+    "2022-05",
+    "2022-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2022-04",
+      "2022-05",
+      "2022-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2022Q3",
+   "months": [
+    "2022-07",
+    "2022-08",
+    "2022-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2022-07",
+      "2022-08",
+      "2022-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2022Q4",
+   "months": [
+    "2022-10",
+    "2022-11",
+    "2022-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2022-10",
+      "2022-11",
+      "2022-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2023Q1",
+   "months": [
+    "2023-01",
+    "2023-02",
+    "2023-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2023-01",
+      "2023-02",
+      "2023-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 0
+  },
+  {
+   "period": "2023Q2",
+   "months": [
+    "2023-04",
+    "2023-05",
+    "2023-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2023-04",
+      "2023-05",
+      "2023-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 1
+  },
+  {
+   "period": "2023Q3",
+   "months": [
+    "2023-07",
+    "2023-08",
+    "2023-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2023-07",
+      "2023-08",
+      "2023-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2023Q4",
+   "months": [
+    "2023-10",
+    "2023-11",
+    "2023-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2023-10",
+      "2023-11",
+      "2023-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2024Q1",
+   "months": [
+    "2024-01",
+    "2024-02",
+    "2024-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2024-01",
+      "2024-02",
+      "2024-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2024Q2",
+   "months": [
+    "2024-04",
+    "2024-05",
+    "2024-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2024-04",
+      "2024-05",
+      "2024-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2024Q3",
+   "months": [
+    "2024-07",
+    "2024-08",
+    "2024-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2024-07",
+      "2024-08",
+      "2024-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 1
+  },
+  {
+   "period": "2024Q4",
+   "months": [
+    "2024-10",
+    "2024-11",
+    "2024-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 54,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "missing_major": [
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2024-10",
+      "2024-11",
+      "2024-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2025Q1",
+   "months": [
+    "2025-01",
+    "2025-02",
+    "2025-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 51,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "missing_major": [
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2025-01",
+      "2025-02",
+      "2025-03"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2025-01",
+      "2025-02",
+      "2025-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 2
+  },
+  {
+   "period": "2025Q2",
+   "months": [
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 51,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "missing_major": [
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2025-04",
+      "2025-05",
+      "2025-06"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2025-04",
+      "2025-05",
+      "2025-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2025Q3",
+   "months": [
+    "2025-07",
+    "2025-08",
+    "2025-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 51,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "missing_major": [
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2025-07",
+      "2025-08",
+      "2025-09"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2025-07",
+      "2025-08",
+      "2025-09"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2025Q4",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 51,
+   "share_count": 0.895,
+   "share_w_exports": 1.0,
+   "share_w_imports": 0.797,
+   "missing_major": [
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2025-10",
+      "2025-11",
+      "2025-12"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2025-10",
+      "2025-11",
+      "2025-12"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 2
+  },
+  {
+   "period": "2026Q1",
+   "months": [
+    "2026-01",
+    "2026-02",
+    "2026-03"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 48,
+   "share_count": 0.842,
+   "share_w_exports": 0.975,
+   "share_w_imports": 0.743,
+   "missing_major": [
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2026-01",
+      "2026-02",
+      "2026-03"
+     ]
+    },
+    {
+     "code": 410,
+     "name": "Korea",
+     "months_missing": [
+      "2026-01",
+      "2026-02",
+      "2026-03"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2026-01",
+      "2026-02",
+      "2026-03"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2026Q2",
+   "months": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 39,
+   "share_count": 0.684,
+   "share_w_exports": 0.664,
+   "share_w_imports": 0.697,
+   "missing_major": [
+    {
+     "code": 764,
+     "name": "Thailand",
+     "months_missing": [
+      "2026-06"
+     ]
+    },
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2026-04",
+      "2026-05",
+      "2026-06"
+     ]
+    },
+    {
+     "code": 410,
+     "name": "Korea",
+     "months_missing": [
+      "2026-04",
+      "2026-05",
+      "2026-06"
+     ]
+    },
+    {
+     "code": 170,
+     "name": "Colombia",
+     "months_missing": [
+      "2026-04",
+      "2026-05",
+      "2026-06"
+     ]
+    },
+    {
+     "code": 702,
+     "name": "Singapore",
+     "months_missing": [
+      "2026-04",
+      "2026-05",
+      "2026-06"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2026-04",
+      "2026-05",
+      "2026-06"
+     ]
+    }
+   ],
+   "months_with_data": 3,
+   "kiribati_months_reported": 3
+  },
+  {
+   "period": "2026Q3",
+   "months": [
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "n_panel": 19,
+   "partner_months_possible": 57,
+   "partner_months_published": 9,
+   "share_count": 0.158,
+   "share_w_exports": 0.039,
+   "share_w_imports": 0.163,
+   "missing_major": [
+    {
+     "code": 764,
+     "name": "Thailand",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 156,
+     "name": "China",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 242,
+     "name": "Fiji",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 392,
+     "name": "Japan",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 36,
+     "name": "Australia",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 554,
+     "name": "New Zealand",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 410,
+     "name": "Korea",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 170,
+     "name": "Colombia",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 360,
+     "name": "Indonesia",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 608,
+     "name": "Philippines",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 842,
+     "name": "United States",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 702,
+     "name": "Singapore",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 458,
+     "name": "Malaysia",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 208,
+     "name": "Denmark",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 699,
+     "name": "India",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 344,
+     "name": "Hong Kong SAR",
+     "months_missing": [
+      "2026-08",
+      "2026-09"
+     ]
+    },
+    {
+     "code": 490,
+     "name": "Taiwan Province of China",
+     "months_missing": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+     ]
+    }
+   ],
+   "months_with_data": 1,
+   "kiribati_months_reported": 1
+  }
+ ],
+ "annual": [
+  {
+   "period": "2010",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "inferred_from_later_period",
+    "156": "inferred_from_later_period",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "annual_dataset",
+    "380": "inferred_from_later_period",
+    "392": "annual_dataset",
+    "410": "inferred_from_later_period",
+    "458": "inferred_from_later_period",
+    "490": "inferred_from_later_period",
+    "554": "inferred_from_later_period",
+    "608": "inferred_from_later_period",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2011",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "inferred_from_later_period",
+    "156": "inferred_from_later_period",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "inferred_from_later_period",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "inferred_from_later_period",
+    "554": "inferred_from_later_period",
+    "608": "inferred_from_later_period",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2012",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "inferred_from_later_period",
+    "156": "inferred_from_later_period",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "inferred_from_later_period",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "annual_dataset",
+    "554": "inferred_from_later_period",
+    "608": "inferred_from_later_period",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2013",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "inferred_from_later_period",
+    "156": "inferred_from_later_period",
+    "170": "annual_dataset",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "inferred_from_later_period",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "inferred_from_later_period",
+    "554": "annual_dataset",
+    "608": "inferred_from_later_period",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2014",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "inferred_from_later_period",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "inferred_from_later_period",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2015",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "inferred_from_later_period",
+    "380": "inferred_from_later_period",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "annual_dataset",
+    "554": "inferred_from_later_period",
+    "608": "annual_dataset",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2016",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "inferred_from_later_period",
+    "156": "annual_dataset",
+    "170": "inferred_from_later_period",
+    "208": "inferred_from_later_period",
+    "242": "inferred_from_later_period",
+    "344": "inferred_from_later_period",
+    "360": "inferred_from_later_period",
+    "380": "inferred_from_later_period",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "inferred_from_later_period",
+    "490": "inferred_from_later_period",
+    "554": "inferred_from_later_period",
+    "608": "annual_dataset",
+    "699": "inferred_from_later_period",
+    "702": "inferred_from_later_period",
+    "724": "inferred_from_later_period",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 0,
+   "share_count_partner_months": 0.0,
+   "months_elapsed": 0
+  },
+  {
+   "period": "2017",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "annual_dataset",
+    "380": "12_monthly_datasets",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "12_monthly_datasets",
+    "724": "annual_dataset",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 12,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2018",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "12_monthly_datasets",
+    "380": "12_monthly_datasets",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "annual_dataset",
+    "724": "annual_dataset",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 12,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2019",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "12_monthly_datasets",
+    "360": "12_monthly_datasets",
+    "380": "12_monthly_datasets",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "annual_dataset",
+    "724": "annual_dataset",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2020",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "annual_dataset",
+    "242": "annual_dataset",
+    "344": "12_monthly_datasets",
+    "360": "12_monthly_datasets",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "12_monthly_datasets",
+    "724": "12_monthly_datasets",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 12,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2021",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "12_monthly_datasets",
+    "360": "12_monthly_datasets",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "annual_dataset",
+    "490": "annual_dataset",
+    "554": "12_monthly_datasets",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "12_monthly_datasets",
+    "724": "12_monthly_datasets",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2022",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "12_monthly_datasets",
+    "360": "12_monthly_datasets",
+    "380": "12_monthly_datasets",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "12_monthly_datasets",
+    "724": "12_monthly_datasets",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 0,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2023",
+   "n_panel": 19,
+   "n_published": 19,
+   "share_count": 1.0,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    490,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "12_monthly_datasets",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "12_monthly_datasets",
+    "380": "12_monthly_datasets",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "12_monthly_datasets",
+    "490": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "annual_dataset",
+    "724": "12_monthly_datasets",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 7,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2024",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "annual_dataset",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "12_monthly_datasets",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "annual_dataset",
+    "724": "annual_dataset",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 10,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 216,
+   "share_count_partner_months": 0.947,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2025",
+   "n_panel": 19,
+   "n_published": 18,
+   "share_count": 0.947,
+   "share_w_exports": 1.0,
+   "share_w_imports": 1.0,
+   "published": [
+    36,
+    156,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    410,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    490
+   ],
+   "published_basis": {
+    "36": "annual_dataset",
+    "156": "annual_dataset",
+    "170": "annual_dataset",
+    "208": "12_monthly_datasets",
+    "242": "annual_dataset",
+    "344": "annual_dataset",
+    "360": "12_monthly_datasets",
+    "380": "annual_dataset",
+    "392": "annual_dataset",
+    "410": "annual_dataset",
+    "458": "annual_dataset",
+    "554": "annual_dataset",
+    "608": "annual_dataset",
+    "699": "12_monthly_datasets",
+    "702": "annual_dataset",
+    "724": "annual_dataset",
+    "764": "annual_dataset",
+    "842": "annual_dataset"
+   },
+   "kiribati_months_reported": 10,
+   "basis": "annual_dataset",
+   "partner_months_possible": 228,
+   "partner_months_published": 204,
+   "share_count_partner_months": 0.895,
+   "months_elapsed": 12
+  },
+  {
+   "period": "2026",
+   "n_panel": 19,
+   "n_published": 16,
+   "share_count": 0.421,
+   "share_w_exports": 0.42,
+   "share_w_imports": 0.401,
+   "published": [
+    36,
+    170,
+    208,
+    242,
+    344,
+    360,
+    380,
+    392,
+    458,
+    554,
+    608,
+    699,
+    702,
+    724,
+    764,
+    842
+   ],
+   "missing": [
+    156,
+    410,
+    490
+   ],
+   "published_basis": {
+    "36": "at_least_one_month",
+    "170": "at_least_one_month",
+    "208": "at_least_one_month",
+    "242": "at_least_one_month",
+    "344": "at_least_one_month",
+    "360": "at_least_one_month",
+    "380": "at_least_one_month",
+    "392": "at_least_one_month",
+    "458": "at_least_one_month",
+    "554": "at_least_one_month",
+    "608": "at_least_one_month",
+    "699": "at_least_one_month",
+    "702": "at_least_one_month",
+    "724": "at_least_one_month",
+    "764": "at_least_one_month",
+    "842": "at_least_one_month"
+   },
+   "kiribati_months_reported": 7,
+   "basis": "year_in_progress",
+   "partner_months_possible": 228,
+   "partner_months_published": 96,
+   "share_count_partner_months": 0.421,
+   "months_elapsed": 7
+  }
+ ],
+ "partner_status": {
+  "36": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "156": {
+   "latest_published_month": "2024-12",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "170": {
+   "latest_published_month": "2026-03",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "208": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2020
+  },
+  "242": {
+   "latest_published_month": "2026-06",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "344": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "360": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2017
+  },
+  "380": {
+   "latest_published_month": "2026-04",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "392": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "410": {
+   "latest_published_month": "2025-12",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "458": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "490": {
+   "latest_published_month": null,
+   "latest_published_year": 2023,
+   "latest_year_annual_dataset": 2023
+  },
+  "554": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "608": {
+   "latest_published_month": "2026-06",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "699": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": null
+  },
+  "702": {
+   "latest_published_month": "2026-03",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "724": {
+   "latest_published_month": "2026-06",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "764": {
+   "latest_published_month": "2026-05",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  },
+  "842": {
+   "latest_published_month": "2026-07",
+   "latest_published_year": 2025,
+   "latest_year_annual_dataset": 2025
+  }
+ }
+}

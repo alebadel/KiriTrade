@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "generated_at": "2026-10-13T08:34:51Z",
+    "source": "Mirror_analysis_literature_review_v5.md (7 Oct 2026) and _KB/lit_kb_light_tmp.json (16 academic papers, 15 IMF documents); citation fields checked against the review's reference list.",
+    "notes": [
+      "Mini-abstracts are paraphrases written for a general reader; they are not the papers' own abstracts.",
+      "Documents are ordered by year within each section.",
+      "The 'use' tag says which of the three uses of mirror analysis a document mainly serves; 'method' marks documents that explain why the two records differ or how to compare them.",
+      "This tracker is a case of the third use: partner data as a complement for an economy whose own returns arrive late or cover part of its trade. Nothing here treats Kiribati as an evasion or data-quality case.",
+      "Two IMF entries (Cambodia 2013, Kyrgyz Republic 2024) were added to the knowledge base with their use of partner data marked as unverified; their blurbs say so.",
+      "DOIs for Federico and Tena (1991) and Rozanski and Yeats (1994) were derived from the ScienceDirect article identifiers; the links are the ScienceDirect pages."
+    ]
+  },
+  "use_tags": {
+    "audit": "Checking the quality of trade statistics",
+    "evasion": "Detecting tax evasion (not the use made here)",
+    "measure": "Measuring an economy whose own data cannot serve (this tracker)",
+    "method": "Why the two records differ and how to compare them"
+  },
+  "imf": [
+    {
+      "id": "imf1993dots",
+      "title": "A Guide to Direction of Trade Statistics",
+      "authors": "International Monetary Fund, Statistics Department",
+      "year": 1993,
+      "series": "IMF Statistics Department (handbook)",
+      "url": "https://www.elibrary.imf.org/downloadpdf/display/book/9781451948431/9781451948431.pdf",
+      "doi": "",
+      "mini_abstract": "A handbook describing the IMF's Direction of Trade Statistics, a long-running dataset of every country's exports and imports broken down by trading partner. It explains how the data are collected, valued and timed, and what is done when a country reports late or not at all. The answer, since the dataset began, has been to fill the gap with what the partner country recorded. The IMF has therefore used partner data to complete the picture for small or late-reporting economies for decades.",
+      "why_it_matters_here": "It shows that using partner records to fill gaps for a small reporter is long-standing international practice, not an improvisation.",
+      "use": "measure"
+    },
+    {
+      "id": "eurostat2000",
+      "title": "Differences in the Mirror Statistics in INTRASTAT",
+      "authors": "Eurostat",
+      "year": 2000,
+      "series": "IMF Committee on Balance of Payments Statistics, paper BOPCOM-00/36",
+      "url": "https://www.imf.org/external/pubs/ft/bop/2000/0036.pdf",
+      "doi": "",
+      "mini_abstract": "Within the European Union, trade between member states is recorded through a survey system called INTRASTAT. Even there, with shared rules and a single market, the two records of the same shipment disagree. This short paper lists fifteen reasons, from small traders exempt from reporting, to confidentiality rules, to goods passing through a third country. It is a reminder that mirror differences arise everywhere, including between well-resourced statistical offices.",
+      "why_it_matters_here": "If two large European statistical offices cannot make their records of the same shipment agree, a difference between Kiribati's and Thailand's records should be expected, not read as a fault.",
+      "use": "method"
+    },
+    {
+      "id": "statcan2008",
+      "title": "Allocation of Merchandise Trade Data to Partner Country: Challenges Facing Canada",
+      "authors": "Statistics Canada",
+      "year": 2008,
+      "series": "IMF Committee on Balance of Payments Statistics, paper BOPCOM-08/14",
+      "url": "https://www.imf.org/external/pubs/ft/bop/2008/08-14.pdf",
+      "doi": "",
+      "mini_abstract": "When a shipment arrives, customs can attribute it to the country where the goods were made, the country they were shipped from, or the country of the seller. Statistics Canada shows that these three choices produce different bilateral trade figures by themselves, even when every value is right. The paper asks the international statistical community to agree on which rule to use and how to explain the differences.",
+      "why_it_matters_here": "Kiribati's tuna difference is exactly this kind of attribution question: importers assign fish to the flag of the vessel that caught it.",
+      "use": "method"
+    },
+    {
+      "id": "imf2013cambodia",
+      "title": "Cambodia: 2012 Article IV Consultation",
+      "authors": "International Monetary Fund",
+      "year": 2013,
+      "series": "IMF Country Report No. 13/2",
+      "url": "https://www.imf.org/external/pubs/ft/scr/2013/cr1302.pdf",
+      "doi": "",
+      "mini_abstract": "Every year or two, IMF staff visit each member country and write a report on its economy; this is called an Article IV consultation. This report covers Cambodia in 2012: its public finances, money, banks and growth prospects. It is in this collection because IMF country teams working where customs coverage is incomplete routinely compare the country's trade figures with what partners record. The staff note that added it flagged that its specific use of partner data still needs confirming from the full text.",
+      "why_it_matters_here": "It is an example of the same comparison being made in a routine IMF country report for another small Asian economy.",
+      "use": "audit"
+    },
+    {
+      "id": "bannister2017",
+      "title": "Lao P.D.R.: Assessing the Quality of Trade Statistics",
+      "authors": "Geoffrey Bannister, Manuk Ghazanchyan and Theodore Pierre Bikoi",
+      "year": 2017,
+      "series": "IMF Working Paper WP/17/251",
+      "url": "https://www.imf.org/-/media/files/publications/wp/2017/wp17251.pdf",
+      "doi": "",
+      "mini_abstract": "IMF staff compared Laos's own trade statistics with the records of its main partners, Thailand, China and Vietnam. They found that the partners recorded far more trade than Laos did: 8 to 50 percent more for exports and 30 to 70 percent more for imports. For exports the difference was concentrated in wood products; for imports it spread across food, fuel, vehicles and machinery. The paper discusses possible reasons, from informal border trade to classification differences, and what they mean for the country's economic statistics.",
+      "why_it_matters_here": "It is the closest IMF precedent for this tracker: a single-country comparison of own and partner records, with the differences explained product by product.",
+      "use": "audit"
+    },
+    {
+      "id": "marini2018",
+      "title": "New Estimates for Direction of Trade Statistics",
+      "authors": "Marco Marini, Robert Dippelsman and Michael Stanger",
+      "year": 2018,
+      "series": "IMF Working Paper WP/18/16",
+      "url": "https://www.imf.org/-/media/Files/Publications/WP/2018/wp1816.ashx",
+      "doi": "",
+      "mini_abstract": "In 2017 the IMF upgraded its Direction of Trade Statistics. This paper explains the new method for filling in months a country has not reported. It takes the partner's record of the same trade and adjusts it to line up with whatever the country itself has published, for example an annual total. The estimates cover only the missing observations, about 2 percent of world trade, and official figures are published exactly as reported.",
+      "why_it_matters_here": "The tracker follows the same principle of filling gaps rather than replacing official data, but shows partner levels directly, which the IMF's splicing method by design cannot do.",
+      "use": "measure"
+    },
+    {
+      "id": "biswas2019",
+      "title": "Misinvoicing Trade and Informal Capital Movements: The USA–India Case",
+      "authors": "Amit K. Biswas, Sugata Marjit and Saibal Sarkar",
+      "year": 2019,
+      "series": "7th IMF Statistical Forum, Washington, DC (presentation)",
+      "url": "https://www.imf.org/-/media/files/conferences/2019/7th-statistics-forum/session-iv-marjit.pdf",
+      "doi": "",
+      "mini_abstract": "The authors compare what India and the United States each recorded about their trade with one another from 1960 to 2017. They read the persistent differences as deliberate misstatement of invoices, used to move money out of or into India. They test whether export and import gaps move together and build a simple model of the incentives involved.",
+      "why_it_matters_here": "It is an example of the second, evasion-focused use of mirror data, which is not the use made here.",
+      "use": "evasion"
+    },
+    {
+      "id": "matei2019",
+      "title": "Asymmetries Arising from the CIF/FOB Adjustments in Recording International Trade in BPM6 and 2008 SNA",
+      "authors": "Silvia Matei and David Brackfield",
+      "year": 2019,
+      "series": "IMF Committee on Balance of Payments Statistics, paper BOPCOM-19/15",
+      "url": "https://www.imf.org/external/pubs/ft/bop/2019/pdf/19-15.pdf",
+      "doi": "",
+      "mini_abstract": "Exporters value goods as they leave the port; importers add the cost of shipping and insurance to get them to their own port. This paper for the IMF's balance of payments committee reviews that difference and how statistical offices adjust for it. It reports on a proposal to use the invoice value instead, which found little support among countries. It also encourages countries to compare records with their main partners to understand bilateral gaps.",
+      "why_it_matters_here": "It explains why partner-reported figures for Kiribati's exports carry a few percent of freight and insurance that Kiribati's own export figures do not.",
+      "use": "method"
+    },
+    {
+      "id": "kitsios2020",
+      "title": "Tax Evasion from Cross-Border Fraud: Does Digitalization Make a Difference?",
+      "authors": "Emmanouil Kitsios, João Tovar Jalles and Geneviève Verdier",
+      "year": 2020,
+      "series": "IMF Working Paper WP/20/245",
+      "url": "https://www.imf.org/-/media/files/publications/wp/2020/english/wpiea2020245-print-pdf.pdf",
+      "doi": "",
+      "mini_abstract": "The authors use gaps between exporters' and importers' records, within the European Union and worldwide, as a measure of cross-border tax fraud. They find that such fraud is widespread and that countries with more digital customs and tax systems have smaller gaps. They estimate that halving a country's distance to the digital frontier could raise government revenue by over 1.5 percent of national output in low-income countries.",
+      "why_it_matters_here": "It shows how the same raw comparison can be turned to a revenue question; the tracker does not make that use.",
+      "use": "evasion"
+    },
+    {
+      "id": "geourjon2023",
+      "title": "The Use of Mirror Data by Customs Administrations: From Principles to Practice",
+      "authors": "Anne-Marie Geourjon, Bertrand Laporte and Gilles Montagnat-Rentier",
+      "year": 2023,
+      "series": "IMF Technical Notes and Manuals 2023/005",
+      "url": "https://www.elibrary.imf.org/downloadpdf/view/journals/005/2023/005/005.2023.issue-005-en.pdf",
+      "doi": "",
+      "mini_abstract": "A practical manual for customs administrations on running a mirror analysis. It explains step by step how to download partner data, line them up with the administration's own import records at the finest product level, sort the differences, and decide which ones deserve a closer look. It stresses the precautions: compare at detailed product codes, allow for freight and timing, and treat a gap as a lead rather than a conclusion. One administration reports that the method helped double the duties it recovered between 2020 and 2022.",
+      "why_it_matters_here": "The tracker follows its practical rules: compare at the six-digit product level, remove mechanical differences first, and treat a gap as a question.",
+      "use": "method"
+    },
+    {
+      "id": "imf2023iff",
+      "title": "Macroeconomic Impact of Illicit Financial Flows (Background Paper I)",
+      "authors": "International Monetary Fund",
+      "year": 2023,
+      "series": "IMF Policy Paper 2023/053, Background Paper I",
+      "url": "https://www.elibrary.imf.org/downloadpdf/view/journals/007/2023/053/article-A001-en.pdf",
+      "doi": "",
+      "mini_abstract": "A background paper for an IMF policy discussion on illicit financial flows: money moved across borders to hide crime, corruption or tax abuse. It takes stock of how such flows are estimated and what harm they do to the countries involved. Among the estimation methods, it names differences between partners' trade records as the main top-down measure of flows disguised as trade. It also discusses how the IMF could help, including by analysing large datasets of cross-border payments.",
+      "why_it_matters_here": "It documents where mirror gaps sit in the IMF's wider toolkit, and by contrast makes clear how different the tracker's purpose is.",
+      "use": "evasion"
+    },
+    {
+      "id": "imf2024kyrgyz",
+      "title": "New Trade Patterns and the Cost of Fragmentation in the Kyrgyz Republic",
+      "authors": "International Monetary Fund",
+      "year": 2024,
+      "series": "IMF Country Report No. 24/65 (Selected Issues)",
+      "url": "https://www.elibrary.imf.org/downloadpdf/view/journals/002/2024/065/article-A002-en.pdf",
+      "doi": "",
+      "mini_abstract": "A short chapter in the IMF's 2024 report on the Kyrgyz Republic. It describes how the country's trade flows shifted after 2022 and estimates what a more fragmented world trading system could cost it over time. It is here because, for the Kyrgyz Republic, what trading partners report differs widely from the country's own trade figures, and staff draw on both records. The staff note that brought it into this collection marks its use of partner data as not yet confirmed from the full text.",
+      "why_it_matters_here": "Another current IMF country case where partner records and the country's own records are read side by side.",
+      "use": "measure"
+    },
+    {
+      "id": "markevych2025",
+      "title": "Detecting Illicit Financial Flows",
+      "authors": "Maksym Markevych",
+      "year": 2025,
+      "series": "13th IMF Statistical Forum, Washington, DC (presentation)",
+      "url": "https://www.imf.org/-/media/files/news/seminars/2025/13th-stats-forum/final-4-maksym-markevych.pdf",
+      "doi": "",
+      "mini_abstract": "Slides from an IMF conference on detecting illicit financial flows. They set out why such flows are hard to define and measure, the limits of looking only at the financial sector, and an in-house approach that screens cross-border payments for unusual patterns. Trade-based methods, including mirror gaps, are part of this wider family of tools. It is the least directly connected document in this list and is included for completeness.",
+      "why_it_matters_here": "It places mirror analysis within the broader toolkit for tracking hidden flows, a use the tracker does not make.",
+      "use": "evasion"
+    },
+    {
+      "id": "pastoris2025",
+      "title": "Mind the Gap: Analysing Asymmetries in the Bilateral Euro Area–US Current Account",
+      "authors": "Fausto Pastoris and Martin Schmitz",
+      "year": 2025,
+      "series": "13th IMF Statistical Forum, Washington, DC (presentation)",
+      "url": "https://www.imf.org/-/media/files/news/seminars/2025/13th-stats-forum/session-7-fausto-pastoris-martin-schmitz-mind-the-gap-analysing-asymmetries-in-the-bilateral-euro.pdf",
+      "doi": "",
+      "mini_abstract": "The euro area and the United States each publish an account of their dealings with the other, and the two accounts disagreed by almost 100 billion euros in 2024. The authors, from the European Central Bank, show that the two records of goods trade are broadly aligned. The disagreement sits in services and investment income, where multinational companies and intellectual property make attribution hard. They argue for exchanging detailed data between the two statistical systems.",
+      "why_it_matters_here": "It shows that even the two largest and best-resourced statistical systems have unresolved mirror differences, and that goods are the easiest part to reconcile.",
+      "use": "audit"
+    },
+    {
+      "id": "pudasaini2025",
+      "title": "Bilateral Trade Asymmetries Between Nepal and India: Evidence from Mirror Data",
+      "authors": "Mohan Pudasaini",
+      "year": 2025,
+      "series": "13th IMF Statistical Forum, Washington, DC (presentation)",
+      "url": "https://www.imf.org/en/-/media/files/news/seminars/2025/13th-stats-forum/session-7-mohan-pudasaini-bilateral-trade-asymmetries-between-nepal-and-india-evidence-from-mirro.pdf",
+      "doi": "",
+      "mini_abstract": "Nepal's trade runs overwhelmingly through India, and the two countries' records of it do not match. This presentation builds indices of the mismatch for each year from 2017/18 to 2024/25 and for each product group. Textiles stand out in both directions. The author attributes the differences to a mix of valuation, classification, invoicing practices and informal cross-border trade, and recommends closer cooperation between the two statistical offices.",
+      "why_it_matters_here": "It is a recent example of a small economy's own compilers studying their mirror differences with a large neighbour in a cooperative spirit.",
+      "use": "audit"
+    }
+  ],
+  "academic": [
+    {
+      "id": "federico1991",
+      "title": "On the Accuracy of Foreign Trade Statistics (1909–1935): Morgenstern Revisited",
+      "authors": "Giovanni Federico and Antonio Tena",
+      "year": 1991,
+      "series": "Explorations in Economic History 28(3), 259–273",
+      "url": "https://www.sciencedirect.com/science/article/pii/0014498391900076",
+      "doi": "10.1016/0014-4983(91)90007-6",
+      "mini_abstract": "The authors go back to trade statistics from 1909 to 1935 and ask how accurate they were, revisiting a famous earlier critique by the economist Oskar Morgenstern. Comparing what pairs of countries recorded about the same trade, they find that total values were reasonably reliable and improved after the First World War. The breakdown of trade by partner country was much less reliable. Mirror comparison as a test of statistics is thus a century old.",
+      "why_it_matters_here": "It set the pattern the tracker follows, and its warning still holds: totals are sturdier than the split by partner.",
+      "use": "audit"
+    },
+    {
+      "id": "rozanski1994",
+      "title": "On the (In)accuracy of Economic Observations: An Assessment of Trends in the Reliability of International Trade Statistics",
+      "authors": "Jerzy Rozanski and Alexander Yeats",
+      "year": 1994,
+      "series": "Journal of Development Economics 44(1), 103–130",
+      "url": "https://www.sciencedirect.com/science/article/pii/0304387894000085",
+      "doi": "10.1016/0304-3878(94)00008-5",
+      "mini_abstract": "Two World Bank economists test developing countries' trade statistics for internal consistency: whether totals match the sum of their parts, whether figures under old and new product classifications agree, and whether the United Nations and the IMF publish the same numbers. They find differences of 100 percent or more in some cases, and a deterioration from the 1960s to the 1980s. The share of trade not properly assigned to a partner country rose above 30 percent.",
+      "why_it_matters_here": "It explains why the tracker compares at the product level and treats any single month's partner figure with care.",
+      "use": "audit"
+    },
+    {
+      "id": "ferrantino2008",
+      "title": "Accounting for Discrepancies in Bilateral Trade: The Case of China, Hong Kong, and the United States",
+      "authors": "Michael J. Ferrantino and Zhi Wang",
+      "year": 2008,
+      "series": "China Economic Review 19(3), 502–520",
+      "url": "https://doi.org/10.1016/j.chieco.2008.02.002",
+      "doi": "10.1016/j.chieco.2008.02.002",
+      "mini_abstract": "China's reported exports to the United States have long been smaller than the United States' reported imports from China. For years the explanation was goods passing through Hong Kong. Using detailed customs records from all three places, the authors show that by 2005 a gap of 46 billion dollars, about a fifth of the flow, remained on direct shipments that never touched Hong Kong. The gap had to be explained some other way.",
+      "why_it_matters_here": "It is the model for how the tracker resolved Kiribati's tuna difference: go to detailed product codes and find the attribution rule that explains it.",
+      "use": "audit"
+    },
+    {
+      "id": "wang2010",
+      "title": "A Globally Consistent Framework for Reliability-Based Trade Statistics Reconciliation in the Presence of an Entrepôt",
+      "authors": "Zhi Wang, Mark Gehlhar and Shunli Yao",
+      "year": 2010,
+      "series": "China Economic Review 21(1), 161–189",
+      "url": "https://doi.org/10.1016/j.chieco.2009.12.003",
+      "doi": "10.1016/j.chieco.2009.12.003",
+      "mini_abstract": "When many countries' records disagree, which should be adjusted? The authors build a mathematical procedure that reconciles all bilateral trade flows at once, nudging each figure in proportion to how reliable its reporter is judged to be. They apply it to China, Hong Kong and their partners for 2004, allowing for re-export markups and shipping costs. The method underlies the database most widely used for global trade modelling.",
+      "why_it_matters_here": "It shows that weighing reporters by their track record is standard practice, which is why the tracker records each partner's publication history.",
+      "use": "audit"
+    },
+    {
+      "id": "ferrantino2012",
+      "title": "Evasion Behaviors of Exporters and Importers: Evidence from the U.S.–China Trade Data Discrepancy",
+      "authors": "Michael J. Ferrantino, Xuepeng Liu and Zhi Wang",
+      "year": 2012,
+      "series": "Journal of International Economics 86(1), 141–157",
+      "url": "https://doi.org/10.1016/j.jinteco.2011.08.006",
+      "doi": "10.1016/j.jinteco.2011.08.006",
+      "mini_abstract": "The authors return to the United States–China gap and ask whether traders misreport to both customs services at once. They find evidence that exporters understated values at the Chinese border to reduce value-added tax, worth about 6.5 billion dollars over 2002 to 2008, and that some importers understated values at the United States border to reduce tariffs. The two effects pull the recorded gap in opposite directions.",
+      "why_it_matters_here": "It is the leading example of reading a mirror gap as tax-driven misreporting, a reading that does not apply to Kiribati's tuna, where the difference follows a coding rule.",
+      "use": "evasion"
+    },
+    {
+      "id": "vezina2015",
+      "title": "Illegal Trade in Natural Resources: Evidence from Missing Exports",
+      "authors": "Pierre-Louis Vézina",
+      "year": 2015,
+      "series": "International Economics 142, 152–160",
+      "url": "https://doi.org/10.1016/j.inteco.2014.09.001",
+      "doi": "10.1016/j.inteco.2014.09.001",
+      "mini_abstract": "Some countries ban or tax the export of raw materials such as minerals, metals and wood. Comparing exporters' records with importers' records across many countries, the author finds that such goods are 36 to 50 percent more likely to be missing from the exporter's statistics when they face a ban or tax. The effect is stronger in countries with weaker control of corruption.",
+      "why_it_matters_here": "It shows the exporter-side version of the evasion design; Kiribati's fish face no export tax, and the tracker makes no such reading.",
+      "use": "evasion"
+    },
+    {
+      "id": "fernald2021",
+      "title": "Is China Fudging Its GDP Figures? Evidence from Trading Partner Data",
+      "authors": "John G. Fernald, Eric Hsu and Mark M. Spiegel",
+      "year": 2021,
+      "series": "Journal of International Money and Finance 110, 102262",
+      "url": "https://doi.org/10.1016/j.jimonfin.2020.102262",
+      "doi": "10.1016/j.jimonfin.2020.102262",
+      "mini_abstract": "Economists at the Federal Reserve Bank of San Francisco wanted an independent check on China's official growth figures. They used Chinese imports as recorded by China's trading partners, which Chinese agencies cannot influence, as a benchmark for how fast the economy was really moving. Against this benchmark, official GDP has looked unusually smooth since 2013. They build an alternative activity index from eight other indicators that fit the partner data better.",
+      "why_it_matters_here": "It is the clearest precedent for the tracker's purpose: using partner records as an independent, timely signal of an economy's activity.",
+      "use": "measure"
+    },
+    {
+      "id": "tochkov2021",
+      "title": "North Korea's Trade and the Integration of Northeast Asia",
+      "authors": "Kiril Tochkov",
+      "year": 2021,
+      "series": "Asia and the Global Economy 1(1), 100007",
+      "url": "https://doi.org/10.1016/j.aglobe.2021.100007",
+      "doi": "10.1016/j.aglobe.2021.100007",
+      "mini_abstract": "North Korea publishes almost no trade statistics. The author rebuilds its trade with 19 partners from 1989 to 2016 entirely from what those partners recorded. The reconstructed series show trade with developed countries falling for two decades and trade collapsing with everyone except China in the last ten years. He then measures how high the barriers around North Korea are compared with normal trade between neighbours.",
+      "why_it_matters_here": "It shows that a complete trade record can be built from partner data alone when a country's own data cannot serve.",
+      "use": "measure"
+    },
+    {
+      "id": "beverelli2022",
+      "title": "Reducing Tariff Evasion: The Role of Trade Facilitation",
+      "authors": "Cosimo Beverelli and Rohit Ticku",
+      "year": 2022,
+      "series": "Journal of Comparative Economics 50(2), 534–554",
+      "url": "https://doi.org/10.1016/j.jce.2021.12.004",
+      "doi": "10.1016/j.jce.2021.12.004",
+      "mini_abstract": "Can simpler customs procedures reduce tariff evasion? Using data for 121 importing countries and every product category in 2012, 2015 and 2017, the authors measure evasion as the tendency for recorded imports to fall short of partners' exports when tariffs are higher. Countries with smoother, more predictable border procedures show less of this pattern. Moving a country from the bottom quarter to the middle of the pack cuts the effect by almost a fifth.",
+      "why_it_matters_here": "It is the main worldwide estimate of how mirror gaps respond to tariffs; the tracker uses none of that machinery.",
+      "use": "evasion"
+    },
+    {
+      "id": "biswas2022",
+      "title": "FDI Mismatch, Trade Mis-reporting, and Hidden Capital Movements: The USA–China Case",
+      "authors": "Amit K. Biswas, Jürgen von Hagen and Saibal Sarkar",
+      "year": 2022,
+      "series": "Journal of International Money and Finance 120, 102534",
+      "url": "https://doi.org/10.1016/j.jimonfin.2021.102534",
+      "doi": "10.1016/j.jimonfin.2021.102534",
+      "mini_abstract": "The authors compare what the United States and China each reported about their mutual trade and investment from 1983 to 2017. They read the gaps as hidden movements of money: out of China through trade, and into China through investment. Using time-series methods, they find the two channels respond differently to financial conditions and are linked over the long run.",
+      "why_it_matters_here": "An example of the evasion reading extended to investment data; not a use made here.",
+      "use": "evasion"
+    },
+    {
+      "id": "dujava2022",
+      "title": "Is It Me or You? A Deeper Insight into Profile of Misreporting Economies",
+      "authors": "Daniel Dujava and Maria Siranova",
+      "year": 2022,
+      "series": "Quarterly Review of Economics and Finance 83, 10–25",
+      "url": "https://doi.org/10.1016/j.qref.2021.10.002",
+      "doi": "10.1016/j.qref.2021.10.002",
+      "mini_abstract": "Most mirror studies assume the richer partner's record is correct. The authors drop that assumption and ask, for every pair of countries, which side is more likely to be misreporting. They find the largest gaps on shipments from poorer to richer countries and from high-tax to low-tax places, and build a profile of the economies most prone to misreporting.",
+      "why_it_matters_here": "It is a caution against assuming the partner's record is always the right one, which is why the tracker calls differences differences and not errors.",
+      "use": "evasion"
+    },
+    {
+      "id": "bussy2023",
+      "title": "Corporate Tax Evasion: Evidence from International Trade",
+      "authors": "Adrien Bussy",
+      "year": 2023,
+      "series": "European Economic Review 159, 104571",
+      "url": "https://doi.org/10.1016/j.euroecorev.2023.104571",
+      "doi": "10.1016/j.euroecorev.2023.104571",
+      "mini_abstract": "Companies can lower their taxable profits by reporting lower sales abroad and lower purchases from abroad at the same time. The author looks for this pattern in product-level trade gaps across countries and finds that gaps on both sides grow with corporate tax rates. He estimates that reported profits respond to the tax rate with an elasticity of about 0.24. Multinational firms, which have other options, do not show the pattern.",
+      "why_it_matters_here": "Another tax-driven reading of mirror gaps, cited here for completeness.",
+      "use": "evasion"
+    },
+    {
+      "id": "wazzan2023",
+      "title": "Measuring Misreporting at Customs",
+      "authors": "Lynn Al Wazzan, Pablo Grether and Marcelo Olarreaga",
+      "year": 2023,
+      "series": "Economics Letters 229, 111232",
+      "url": "https://doi.org/10.1016/j.econlet.2023.111232",
+      "doi": "10.1016/j.econlet.2023.111232",
+      "mini_abstract": "A short note pointing out that the standard way of measuring misreporting at customs assumes the exporter's record is correct. The authors offer a simple method to separate the exporter's reporting error from the importer's, using the fact that each country trades with many partners. When they apply it, estimates of importer misreporting change materially.",
+      "why_it_matters_here": "It is the one tool in the literature the Kiribati project has not yet applied; copra oil, where Kiribati reports more than its partners, would be the natural test.",
+      "use": "method"
+    },
+    {
+      "id": "janus2024",
+      "title": "Does Export Underreporting Contribute to the Resource Curse?",
+      "authors": "Thorsten Janus",
+      "year": 2024,
+      "series": "World Development 181, 106681",
+      "url": "https://doi.org/10.1016/j.worlddev.2024.106681",
+      "doi": "10.1016/j.worlddev.2024.106681",
+      "mini_abstract": "Countries rich in natural resources have tended to grow more slowly, a pattern known as the resource curse. The author suggests one reason: exports are understated and money leaves the country. He shows that in countries with less accountable governments, export earnings and tax revenues respond 30 to 50 percent less to world commodity prices than elsewhere, which he attributes to under-recording.",
+      "why_it_matters_here": "A macro-level evasion argument; it does not describe Kiribati, where tuna is coded to the vessel's flag rather than hidden.",
+      "use": "evasion"
+    },
+    {
+      "id": "che2025",
+      "title": "Pains or Gains: Trade War, Trade Deficit, and Tariff Evasion",
+      "authors": "Yi Che, Donglin Lin and Yan Zhang",
+      "year": 2025,
+      "series": "Journal of International Economics 155, 104090",
+      "url": "https://doi.org/10.1016/j.jinteco.2025.104090",
+      "doi": "10.1016/j.jinteco.2025.104090",
+      "mini_abstract": "During the 2018–2019 trade war, United States tariffs on Chinese goods rose sharply and the recorded bilateral deficit shrank. The authors show that part of the shrinkage reflected goods arriving under different labels or at lower declared values to avoid the new tariffs. The effect was larger in states with strong local demand for the affected goods and worked mainly through intermediate goods used by factories.",
+      "why_it_matters_here": "It is the most recent example of the evasion use, included to show what this tracker is not doing.",
+      "use": "evasion"
+    },
+    {
+      "id": "haggard2026",
+      "title": "Studying Economic Black Holes: Lessons from North Korea",
+      "authors": "Stephan Haggard, Kyoochul Kim and Munseob Lee",
+      "year": 2026,
+      "series": "World Development 201, 107315",
+      "url": "https://doi.org/10.1016/j.worlddev.2026.107315",
+      "doi": "10.1016/j.worlddev.2026.107315",
+      "mini_abstract": "Some economies are hard to observe because of government control, conflict or very small statistical systems. Drawing on decades of research on North Korea, the authors review six ways to learn about such economies anyway: satellite images, aid agency reports, partners' trade records, prices, surveys of migrants and official documents. Each source has blind spots. Trade records kept by partners, for instance, cannot see informal trade at all.",
+      "why_it_matters_here": "It lists partner trade records among the standard sources for economies whose own publications are sparse, and names their main blind spot: informal trade.",
+      "use": "measure"
+    }
+  ],
+  "three_uses": [
+    {
+      "use": "audit",
+      "label": "Checking the quality of trade statistics",
+      "plain": "Statisticians compare the two records of the same shipments to see how consistent a country's trade figures are, and to find the products or partners where the two records part ways. Totals usually agree better than the breakdown by partner. A difference found this way is a lead to investigate, not a verdict.",
+      "academic": [
+        "federico1991",
+        "rozanski1994",
+        "ferrantino2008",
+        "wang2010"
+      ],
+      "imf": [
+        "imf2013cambodia",
+        "bannister2017",
+        "pudasaini2025",
+        "pastoris2025"
+      ]
+    },
+    {
+      "use": "evasion",
+      "label": "Detecting tax evasion and hidden money flows",
+      "plain": "If the gap between the two records grows when a tax or tariff rises, some traders are probably misstating values to pay less. This is the largest strand of the literature, started by Fisman and Wei (2004), who are cited by most of these papers but are not in this collection. It is not the use made here: Kiribati's differences follow a coding rule for fish and a coverage limit for imports, and nothing in this tracker tests for evasion.",
+      "academic": [
+        "ferrantino2012",
+        "vezina2015",
+        "beverelli2022",
+        "biswas2022",
+        "dujava2022",
+        "bussy2023",
+        "janus2024",
+        "che2025"
+      ],
+      "imf": [
+        "biswas2019",
+        "kitsios2020",
+        "imf2023iff",
+        "markevych2025"
+      ]
+    },
+    {
+      "use": "measure",
+      "label": "Measuring an economy whose own data cannot serve",
+      "plain": "When a country's own figures arrive late, cover only part of its trade, or are not published, partners' records give a timely picture of the same trade. The IMF has done this for decades in its Direction of Trade Statistics. This tracker is a case of this third use: it summarizes what Kiribati's partners publish, as a complement to Kiribati's official statistics, and treats every difference between the two as a matter of coverage or definition.",
+      "academic": [
+        "fernald2021",
+        "tochkov2021",
+        "haggard2026"
+      ],
+      "imf": [
+        "imf1993dots",
+        "marini2018",
+        "imf2024kyrgyz"
+      ]
+    }
+  ],
+  "method_notes": {
+    "label": "Why the two records differ, and how to compare them properly",
+    "plain": "A fourth group of documents does not make any of the three uses. It explains the mechanical reasons two accurate records of one shipment differ (freight and insurance, timing, product codes, which partner a shipment is attributed to) and how to run the comparison with care. The tracker's rules of thumb come from these: compare at the six-digit product code, quote differences in dollars, prefer years to months, and treat a difference as meaningful only when it persists and several partners show it.",
+    "academic": [
+      "wazzan2023"
+    ],
+    "imf": [
+      "eurostat2000",
+      "statcan2008",
+      "matei2019",
+      "geourjon2023"
+    ]
+  },
+  "counts": {
+    "imf": 15,
+    "academic": 16
+  }
+}
