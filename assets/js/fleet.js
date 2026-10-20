@@ -94,8 +94,8 @@
       'Covers vessels on the Kiribati, Nauru or Tuvalu registers while registered. A call at a Thai port shows where a carrier went next, not what it carried.');
     const t = callsSince(f.port_calls_quarterly, '2025Q1');
     add(nf0.format(t.total) + ' port calls',
-      'recorded by AIS for Kiribati-flagged vessels since January 2025: ' + nf0.format(t.KIR) + ' in Kiribati, ' + nf0.format(t.CHN) + ' in China, ' + nf0.format(t.KOR) + ' in Korea, ' + nf0.format(t.THA) + ' in Thailand and ' + nf0.format(t.other) + ' elsewhere.',
-      'A call is not a landing, and calls say nothing about tonnage.');
+      'recorded by AIS for Kiribati-flagged catching vessels since January 2025: ' + nf0.format(t.KIR) + ' in Kiribati and ' + nf0.format(t.total - t.KIR) + ' in ports of other countries.',
+      'Catchers usually hand their fish to carriers at sea, so their own calls do not trace the fish. A call is not a landing.');
   }
 
   /* ---------- 3. chart: monthly hours ---------- */
@@ -281,15 +281,18 @@
       .concat(DEST.map(([k, name]) => ({ key: k, label: name, num: true, fmt: (v) => nf0.format(v) })))
       .concat([{ key: 'total', label: 'Total', num: true, fmt: (v) => nf0.format(v) }]), q.slice().reverse());
     const t = callsSince(q, '2025Q1');
-    $('chart-ports').setAttribute('aria-label', 'Quarterly port calls of Kiribati-flagged vessels by country of port, ' + KT.fmtPeriod(labels[0]) + ' to ' + KT.fmtPeriod(last) + '. Since January 2025: ' + t.total + ' calls, of which ' + t.KIR + ' in Kiribati and ' + t.CHN + ' in China.');
+    $('chart-ports').setAttribute('aria-label', 'Quarterly port calls of Kiribati-flagged vessels by country of port, ' + KT.fmtPeriod(labels[0]) + ' to ' + KT.fmtPeriod(last) + '. Since January 2025: ' + t.total + ' calls, of which ' + t.KIR + ' in Kiribati.');
   }
 
-  /* ---------- 6. the open question ---------- */
-  function renderCallout(f, series) {
-    const t = callsSince(f.port_calls_quarterly, '2025Q1');
-    const box = $('china-callout'); box.textContent = '';
-    box.appendChild(el('p', 'Since January 2025, AIS records ' + nf0.format(t.CHN) + ' port calls by Kiribati-flagged vessels in Chinese ports. Mainland China’s own returns to UN Comtrade list no fish originating in Kiribati for 2020 to 2025.'));
-    box.appendChild(el('p', 'How landings from such calls enter each country’s trade and production statistics is an open question for the compilers of those statistics. The tracker draws no conclusion from the two observations. They are shown so that compilers and readers can ask the question with the same data in front of them.'));
+  /* ---------- 6. numbers inside the cycle diagram ---------- */
+  function renderCycle(f) {
+    const c = f.chain_facts;
+    const ys = yearSums(f.monthly), cy = completeYears(f.monthly);
+    const last = cy[cy.length - 1];
+    const set = (key, text) => { document.querySelectorAll('[data-fill="' + key + '"]').forEach((n) => { n.textContent = text; }); };
+    set('hours', nf0.format(ys[last]) + ' hours spent fishing in ' + last);
+    set('encounters', nf0.format(c.n_encounters) + ' vessel pairs seen together at sea');
+    set('lag', nf0.format(c.tha_share_pct) + '% of hand-overs were followed by a carrier call at a Thai port within ' + c.tha_window_days + ' days (median ' + nf0.format(c.lag_median_days) + ' days)');
   }
 
   /* ---------- 7. footer text ---------- */
@@ -315,7 +318,7 @@
       renderHours(fleet);
       renderMirror(fleet, series);
       renderPorts(fleet);
-      renderCallout(fleet, series);
+      renderCycle(fleet);
     }).catch((err) => {
       $('load-error-text').textContent = 'The fleet data could not be loaded (' + err.message + '). Reload the page; if it persists, the data files may be mid-update.';
       show('load-error', true);

@@ -305,3 +305,30 @@ table.annual { width: 100%; max-width: 760px; font-size: .9rem; margin-top: .75r
 table.annual caption { text-align: left; font-weight: 700; padding: .25rem 0; }
 table.annual tfoot td { font-size: .82rem; color: var(--muted); }
 .topnav a[aria-current="page"] { font-weight: 700; }
+
+/* ---------- fish-cycle infographic (fleet.html #cycle) ---------- */
+.cycle-key { margin: .5rem 0 1rem; }
+.cycle-key i.k { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+.cycle-key i.k-ais, .pt.ais::before { border-radius: 50%; background: var(--kir); }
+.cycle-key i.k-rec, .pt.rec::before { border-radius: 2px; background: var(--partner); }
+.cycle-key i.k-none, .pt.none::before { border-radius: 50%; background: transparent; border: 2px dashed var(--muted); }
+ol.cycle { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.6rem; counter-reset: none; }
+@media (min-width: 1100px) { ol.cycle { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.4rem; } }
+.cycle .step { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1rem .9rem; }
+.cycle .step::after { content: "\2193"; position: absolute; left: 50%; bottom: -1.45rem; transform: translateX(-50%); font-size: 1.2rem; color: var(--muted); }
+.cycle .step:last-child::after { display: none; }
+@media (min-width: 1100px) { .cycle .step::after { content: "\2192"; left: auto; right: -1.25rem; bottom: auto; top: 3.1rem; transform: none; } }
+.cycle .num { position: absolute; top: -.7rem; left: .9rem; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--ink); color: var(--surface); font-weight: 700; font-size: .85rem; display: grid; place-items: center; }
+.cycle .ico { width: 64px; height: 40px; display: block; margin: .3rem 0 .4rem; fill: none; stroke: var(--ink-2); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.cycle h3 { margin: 0 0 .3rem; font-size: 1.05rem; }
+.cycle p { margin: 0 0 .6rem; font-size: .92rem; color: var(--ink-2); }
+ul.pts { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+.pt { position: relative; padding-left: 1.5rem; font-size: .88rem; line-height: 1.4; }
+.pt::before { content: ""; position: absolute; left: 0; top: .25em; width: 12px; height: 12px; box-sizing: border-box; }
+.pt.none { color: var(--ink-2); }
+.ledgers { display: grid; gap: 1rem; margin-top: 1.6rem; }
+@media (min-width: 820px) { .ledgers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ledger { background: var(--callout); border-left: 4px solid var(--callout-rule); border-radius: 0 10px 10px 0; padding: .9rem 1.1rem; }
+.ledger h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
+.ledger p { margin: 0 0 .5rem; font-size: .93rem; }
+.ledger p:last-child { margin-bottom: 0; }
