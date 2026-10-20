@@ -17,6 +17,7 @@
     <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Tracker</a>
+      <a href="nowcast.html">Nowcast</a>
       <a href="fleet.html">Fleet activity (AIS)</a>
       <a href="methods.html" aria-current="page">How the numbers are made</a>
       <a href="literature.html">Research</a>
@@ -90,6 +91,23 @@
 </section>
 
 <!-- Kept outside #methods-body on purpose: that block is rewritten from data/text.json when the page loads. -->
+<!-- NOWCAST-METHODS-START -->
+<section class="block methods" id="nowcast-methods">
+  <div class="wrap--text">
+    <h2>Nowcast: how it is made</h2>
+    <p>The <a href="nowcast.html">Nowcast page</a> is a prototype. It estimates the partner-reported tuna series for months that are not yet fully published and splits the total into two components. It does not read, check or replace any official Kiribati statistic.</p>
+    <h3>The baseline</h3>
+    <p>For a month with some partner returns, the baseline adds the non-Thai partner returns already published for that month to the average of Thailand’s last twelve published months. For months with no returns, it uses the trailing twelve-month total. Its range is the 10th to 90th percentile of its own errors in a pseudo-real-time test over 86 months (March 2019 to May 2026), in which each month was forecast using only what had been published at the time.</p>
+    <p>In that test the baseline roughly halves the three-month error of repeating the same month of the previous year (6.5 against 10.9, USD millions). A version that also used carrier arrivals at Thai ports from ship-tracking did slightly better in raw error (6.4) but the difference was not significant, and port arrivals are essentially uncorrelated with the value Thailand reports. The pre-set rule was that ship-tracking must beat the baseline significantly to be included. It did not, so it is shown to the agents as context only.</p>
+    <h3>The agents</h3>
+    <p>Thirty agents receive the same evidence pack and the same written instructions. The pack holds the partner series, aggregate fleet statistics, the baseline with its scorecard, and extracts from the international statistical standards. It does not hold Kiribati’s own trade or balance of payments figures, or any vessel or company names. Each agent first writes numbered principles that link the evidence to its figures, then fixes them, then estimates the total and splits it into Component A and Component B, then audits itself. A program, not an agent, checks every answer (components add to the total, ranges are ordered, principles and evidence are cited, no names) and computes the averages and percentiles. A separate summariser agent writes the dated note from those statistics, and a separate reviewer agent checks the note against them.</p>
+    <p>Component A is each agent’s best application of the balance of payments goods-export concept (change of economic ownership between a resident and a nonresident). Component B is the total minus Component A. The labels are neutral on purpose.</p>
+    <h3>What it cannot tell you</h3>
+    <p>The spread between agents is disagreement given identical evidence. It is not a standard error. There is no observed true value to test the split against, so its credibility rests on the written principles. The comparable-country panel that would let the agents learn from other places’ published figures is still empty, so today the principles rest on the standards texts and the model’s general knowledge. The first run showed the agents close to one another, which partly reflects that they share the same evidence and the same underlying model.</p>
+  </div>
+</section>
+<!-- NOWCAST-METHODS-END -->
+
 <!-- FLEET-METHODS-START -->
 <section class="block methods" id="fleet-methods">
   <div class="wrap--text">
@@ -181,6 +199,7 @@
       body.appendChild(el('h2', m.title || '', { id }));
       (m.paragraphs || []).forEach(p => body.appendChild(el('p', p)));
     });
+    { const li = el('li'); li.appendChild(el('a', 'Nowcast: how it is made', { href: '#nowcast-methods' })); ol.appendChild(li); }
     { const li = el('li'); li.appendChild(el('a', 'Fleet activity (AIS): how it is made', { href: '#fleet-methods' })); ol.appendChild(li); }
     toc.appendChild(ol);
   });

@@ -1,0 +1,83 @@
+{
+ "meta": {
+  "generated_at": "2026-10-20T21:59:58Z",
+  "last_thai_month_published": "2026-05",
+  "thai_trailing12_mean_usd_m": 3.635,
+  "non_thai_trailing12_mean_usd_m": 1.883,
+  "backtest_months": 86,
+  "interval": "empirical 10th-90th percentile of out-of-sample residuals",
+  "residual_q_S2": [
+   -4.261,
+   3.416
+  ],
+  "residual_q_S1": [
+   -5.076,
+   4.023
+  ]
+ },
+ "scorecard": {
+  "horizon_3m_rmse_usd_m": {
+   "S4_AIS_blend": 6.435,
+   "S2_partner_completion": 6.527,
+   "S3_AIS_only": 7.017,
+   "S1_trailing12_total": 8.284,
+   "S0_seasonal_naive": 10.852
+  },
+  "gate": {
+   "rule": "AIS-augmented model must beat partner-completion on 3-month RMSE with Diebold-Mariano p<0.10",
+   "result": "FAIL",
+   "dm_S2_vs_S4": 0.26,
+   "note": "AIS port arrivals are essentially uncorrelated with Thai-reported value (r 0.05-0.18); AIS stays context for the agents, not an input to the baseline."
+  }
+ },
+ "nowcast": [
+  {
+   "period": "2026-06",
+   "model": "S2",
+   "basis": "non-Thai partner returns (partial: floored at trailing mean) + Thai trailing-12m mean",
+   "point_usd_m": 6.171,
+   "lo80_usd_m": 1.909,
+   "hi80_usd_m": 9.587
+  },
+  {
+   "period": "2026-07",
+   "model": "S2",
+   "basis": "non-Thai partner returns (complete) + Thai trailing-12m mean",
+   "point_usd_m": 5.836,
+   "lo80_usd_m": 1.574,
+   "hi80_usd_m": 9.251
+  },
+  {
+   "period": "2026-08",
+   "model": "S1",
+   "basis": "trailing-12m total (no partner returns yet)",
+   "point_usd_m": 5.517,
+   "lo80_usd_m": 0.441,
+   "hi80_usd_m": 9.541
+  },
+  {
+   "period": "2026-09",
+   "model": "S1",
+   "basis": "trailing-12m total (no partner returns yet)",
+   "point_usd_m": 5.517,
+   "lo80_usd_m": 0.441,
+   "hi80_usd_m": 9.541
+  },
+  {
+   "period": "2026-10",
+   "model": "S1",
+   "basis": "trailing-12m total (no partner returns yet)",
+   "point_usd_m": 5.517,
+   "lo80_usd_m": 0.441,
+   "hi80_usd_m": 9.541
+  },
+  {
+   "period": "2026-11",
+   "model": "S1",
+   "basis": "trailing-12m total (no partner returns yet)",
+   "point_usd_m": 5.517,
+   "lo80_usd_m": 0.441,
+   "hi80_usd_m": 9.541
+  }
+ ]
+}

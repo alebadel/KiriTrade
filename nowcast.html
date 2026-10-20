@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nowcast (AI evidence layer) — Kiribati trade tracker</title>
+<meta name="description" content="A nowcast of partner-reported tuna for months not yet published, with a decomposition produced by 30 independent AI agents given the same evidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>if (!window.Chart) { document.write('<script src="assets/vendor/chart.umd.js"><\/script>'); }</script>
+</head>
+<body>
+
+<div class="viewbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html">Tracker</a>
+      <a href="nowcast.html" aria-current="page">Nowcast</a>
+      <a href="fleet.html">Fleet activity (AIS)</a>
+      <a href="methods.html">How the numbers are made</a>
+      <a href="literature.html">Research</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="wrap" id="file-notice" hidden>
+  <div class="notice" role="alert">
+    <h2>This page needs to be opened from its web address</h2>
+    <p>You opened the file directly from your computer, so the browser blocks it from loading the data files. Open the published address of the tracker instead, or serve the folder locally, for example with <code>python3 -m http.server</code>.</p>
+  </div>
+</div>
+<div class="wrap" id="load-error" hidden>
+  <div class="notice" role="alert">
+    <h2>Some data could not be loaded</h2>
+    <p id="load-error-text"></p>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Nowcast</h1>
+      <p class="purpose">An estimate of the tuna importers will record as coming from Kiribati in months whose figures are not yet published, with a split into two components.</p>
+      <p class="hint small muted">This is a <strong>prototype</strong>. It does not use, check or replace any official Kiribati statistic. See “What this is, and is not” below.</p>
+    </div>
+    <aside class="strip" aria-labelledby="nc-strip-h">
+      <h3 id="nc-strip-h">Latest run</h3>
+      <p class="legend" id="nc-strip-legend">Loading…</p>
+    </aside>
+  </div>
+</header>
+
+<section class="block" id="headline">
+  <div class="wrap">
+    <h2>The estimate</h2>
+    <div class="stats" id="nc-stats" aria-live="polite">
+      <div class="stat"><p class="stat-n">…</p><p class="stat-t">Loading…</p></div>
+    </div>
+
+    <figure class="fig" id="fig-nowcast">
+      <div class="fig-head"><div>
+        <h3>Partner-reported tuna: published months, baseline and agents’ view</h3>
+        <p class="sub">USD millions per month</p>
+        <p class="how">Bars are published partner figures (the lighter bars have fewer than five partners reporting). The orange line is a simple statistical baseline. The blue line is the average of the agents; the shaded band runs from the 10th to the 90th percentile of the agents’ answers.</p>
+      </div></div>
+      <div class="legend" id="legend-nowcast"></div>
+      <div class="plot tall"><canvas id="chart-nowcast" role="img" aria-label="Published partner-reported tuna by month with baseline and agent nowcasts for coming months"></canvas></div>
+      <figcaption>
+        <p class="caveat">The band is disagreement between agents who were all given the same evidence. It is not a standard error and not a confidence interval.</p>
+        <p class="src">Source: UN Comtrade partner returns (tuna HS 030341-030349, 030487, 160414); Global Fishing Watch; WCPFC. Agent answers: see “Principles”.</p>
+      </figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-nowcast"></div></details>
+    </figure>
+
+    <figure class="fig" id="fig-split">
+      <div class="fig-head"><div>
+        <h3>The two components</h3>
+        <p class="sub">Average of the agents, USD millions per month</p>
+        <p class="how">Component A is each agent’s best application of the balance of payments goods-export concept to the total, using the standards and what it knows of the country’s rules and practice. Component B is whatever is left of the total.</p>
+      </div></div>
+      <div class="legend" id="legend-split"></div>
+      <div class="plot"><canvas id="chart-split" role="img" aria-label="Average split of the nowcast into Component A and Component B"></canvas></div>
+      <figcaption>
+        <p class="caveat">The split rests on principles the agents wrote down and then applied. It cannot be checked against an observed “true” figure, because none exists. Its credibility comes from the stated principles, which you can read and challenge below.</p>
+      </figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-split"></div></details>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="note">
+  <div class="wrap--text">
+    <h2>The note for this run</h2>
+    <p class="small muted" id="note-meta"></p>
+    <div class="prose" id="note-body"></div>
+    <p class="small" id="note-review"></p>
+    <details class="glossary"><summary>Earlier notes</summary><ul id="note-archive"></ul></details>
+  </div>
+</section>
+
+<section class="block" id="principles">
+  <div class="wrap--text">
+    <h2>Principles the agents wrote</h2>
+    <p class="section-lede">Each agent first wrote down the principles linking the evidence to its numbers, then applied them. These are the principles, grouped by wording, with the number of agents that wrote each.</p>
+    <ol class="prose" id="principle-list"></ol>
+  </div>
+</section>
+
+<section class="block" id="what">
+  <div class="wrap--text">
+    <h2>What this is, and is not</h2>
+    <div class="prose">
+      <p><strong>What it is.</strong> The tracker’s partner-reported tuna series lags by months, and Thailand, the main importer, publishes latest. The nowcast fills the unpublished months with a baseline built from what has been published, and asks 30 AI agents to give their own view and to split it into Component A and Component B. Every agent receives the same evidence and the same instructions.</p>
+      <p><strong>How the baseline is tested.</strong> On a pseudo-real-time test over 86 months, using only what was known at each date, the baseline roughly halves the error of simply repeating the same month last year. Adding ship-tracking port arrivals did <em>not</em> improve it, so those signals are shown to the agents as context and are not part of the baseline.</p>
+      <p><strong>What it is not.</strong> It does not use Kiribati’s own trade or balance of payments figures, and it makes no claim that they are right or wrong. It is not an official estimate. The agents’ answers are not validated against an observed truth, because there is none to validate against. The comparable-country panel that would let the agents learn how other places’ figures are built is still empty, so today the principles rest on the standards texts and the model’s general knowledge.</p>
+      <p>The method is in <a href="methods.html#nowcast-methods">How the numbers are made</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="index.html">Back to the tracker</a></li>
+        <li><a href="methods.html#nowcast-methods">How the nowcast is made</a></li>
+        <li><a href="data/nowcast.json">Nowcast data (JSON)</a></li>
+        <li><a href="https://github.com/alebadel/KiriTrade/issues/new?title=Nowcast%20comment">Comment on this nowcast</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/nowcast.js"></script>
+</body>
+</html>

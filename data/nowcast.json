@@ -1,0 +1,343 @@
+{
+ "meta": {
+  "run_date": "20 October 2026",
+  "generated_at": "2026-10-20T22:06:08Z",
+  "tier_label": "2 of 4 (partner series and fleet aggregates; comparable-country panel not yet built)",
+  "n_agents": 30,
+  "evidence_pack": "GPS/ensemble/evidence_20261020 (kept internally)",
+  "status": "prototype"
+ },
+ "labels": {
+  "component_a": "Component A",
+  "component_b": "Component B",
+  "total": "Partner-reported total (flag basis)"
+ },
+ "baseline": {
+  "nowcast": [
+   {
+    "period": "2026-06",
+    "model": "S2",
+    "basis": "non-Thai partner returns (partial: floored at trailing mean) + Thai trailing-12m mean",
+    "point_usd_m": 6.171,
+    "lo80_usd_m": 1.909,
+    "hi80_usd_m": 9.587
+   },
+   {
+    "period": "2026-07",
+    "model": "S2",
+    "basis": "non-Thai partner returns (complete) + Thai trailing-12m mean",
+    "point_usd_m": 5.836,
+    "lo80_usd_m": 1.574,
+    "hi80_usd_m": 9.251
+   },
+   {
+    "period": "2026-08",
+    "model": "S1",
+    "basis": "trailing-12m total (no partner returns yet)",
+    "point_usd_m": 5.517,
+    "lo80_usd_m": 0.441,
+    "hi80_usd_m": 9.541
+   },
+   {
+    "period": "2026-09",
+    "model": "S1",
+    "basis": "trailing-12m total (no partner returns yet)",
+    "point_usd_m": 5.517,
+    "lo80_usd_m": 0.441,
+    "hi80_usd_m": 9.541
+   },
+   {
+    "period": "2026-10",
+    "model": "S1",
+    "basis": "trailing-12m total (no partner returns yet)",
+    "point_usd_m": 5.517,
+    "lo80_usd_m": 0.441,
+    "hi80_usd_m": 9.541
+   },
+   {
+    "period": "2026-11",
+    "model": "S1",
+    "basis": "trailing-12m total (no partner returns yet)",
+    "point_usd_m": 5.517,
+    "lo80_usd_m": 0.441,
+    "hi80_usd_m": 9.541
+   }
+  ],
+  "scorecard": {
+   "horizon_3m_rmse_usd_m": {
+    "S4_AIS_blend": 6.435,
+    "S2_partner_completion": 6.527,
+    "S3_AIS_only": 7.017,
+    "S1_trailing12_total": 8.284,
+    "S0_seasonal_naive": 10.852
+   },
+   "gate": {
+    "rule": "AIS-augmented model must beat partner-completion on 3-month RMSE with Diebold-Mariano p<0.10",
+    "result": "FAIL",
+    "dm_S2_vs_S4": 0.26,
+    "note": "AIS port arrivals are essentially uncorrelated with Thai-reported value (r 0.05-0.18); AIS stays context for the agents, not an input to the baseline."
+   }
+  },
+  "meta": {
+   "generated_at": "2026-10-20T21:59:58Z",
+   "last_thai_month_published": "2026-05",
+   "thai_trailing12_mean_usd_m": 3.635,
+   "non_thai_trailing12_mean_usd_m": 1.883,
+   "backtest_months": 86,
+   "interval": "empirical 10th-90th percentile of out-of-sample residuals",
+   "residual_q_S2": [
+    -4.261,
+    3.416
+   ],
+   "residual_q_S1": [
+    -5.076,
+    4.023
+   ]
+  }
+ },
+ "ensemble": {
+  "n_accepted": 30,
+  "n_rejected": 0,
+  "months": [
+   {
+    "period": "2026-06",
+    "total": {
+     "mean": 5.07,
+     "sd": 0.301,
+     "p10": 4.79,
+     "p50": 5.0,
+     "p90": 5.42
+    },
+    "component_a": {
+     "mean": 1.195,
+     "sd": 0.221,
+     "p10": 0.956,
+     "p50": 1.24,
+     "p90": 1.407
+    },
+    "component_b": {
+     "mean": 3.875,
+     "sd": 0.283,
+     "p10": 3.655,
+     "p50": 3.87,
+     "p90": 4.256
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.264
+    },
+    "own_lo80_mean": 2.28,
+    "own_hi80_mean": 8.913
+   },
+   {
+    "period": "2026-07",
+    "total": {
+     "mean": 4.79,
+     "sd": 0.305,
+     "p10": 4.49,
+     "p50": 4.8,
+     "p90": 5.21
+    },
+    "component_a": {
+     "mean": 1.129,
+     "sd": 0.215,
+     "p10": 0.894,
+     "p50": 1.175,
+     "p90": 1.331
+    },
+    "component_b": {
+     "mean": 3.661,
+     "sd": 0.272,
+     "p10": 3.36,
+     "p50": 3.62,
+     "p90": 4.005
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.265
+    },
+    "own_lo80_mean": 1.95,
+    "own_hi80_mean": 8.61
+   },
+   {
+    "period": "2026-08",
+    "total": {
+     "mean": 4.683,
+     "sd": 0.219,
+     "p10": 4.5,
+     "p50": 4.6,
+     "p90": 4.91
+    },
+    "component_a": {
+     "mean": 1.101,
+     "sd": 0.197,
+     "p10": 0.878,
+     "p50": 1.135,
+     "p90": 1.35
+    },
+    "component_b": {
+     "mean": 3.582,
+     "sd": 0.234,
+     "p10": 3.372,
+     "p50": 3.52,
+     "p90": 3.922
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.256
+    },
+    "own_lo80_mean": 1.087,
+    "own_hi80_mean": 9.02
+   },
+   {
+    "period": "2026-09",
+    "total": {
+     "mean": 4.707,
+     "sd": 0.219,
+     "p10": 4.5,
+     "p50": 4.7,
+     "p90": 5.0
+    },
+    "component_a": {
+     "mean": 1.107,
+     "sd": 0.199,
+     "p10": 0.878,
+     "p50": 1.15,
+     "p90": 1.35
+    },
+    "component_b": {
+     "mean": 3.6,
+     "sd": 0.234,
+     "p10": 3.372,
+     "p50": 3.52,
+     "p90": 3.922
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.256
+    },
+    "own_lo80_mean": 1.087,
+    "own_hi80_mean": 9.047
+   },
+   {
+    "period": "2026-10",
+    "total": {
+     "mean": 4.697,
+     "sd": 0.223,
+     "p10": 4.5,
+     "p50": 4.6,
+     "p90": 5.0
+    },
+    "component_a": {
+     "mean": 1.104,
+     "sd": 0.198,
+     "p10": 0.878,
+     "p50": 1.15,
+     "p90": 1.35
+    },
+    "component_b": {
+     "mean": 3.593,
+     "sd": 0.238,
+     "p10": 3.372,
+     "p50": 3.52,
+     "p90": 3.922
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.256
+    },
+    "own_lo80_mean": 1.08,
+    "own_hi80_mean": 9.047
+   },
+   {
+    "period": "2026-11",
+    "total": {
+     "mean": 4.687,
+     "sd": 0.228,
+     "p10": 4.5,
+     "p50": 4.6,
+     "p90": 5.0
+    },
+    "component_a": {
+     "mean": 1.101,
+     "sd": 0.198,
+     "p10": 0.878,
+     "p50": 1.12,
+     "p90": 1.35
+    },
+    "component_b": {
+     "mean": 3.586,
+     "sd": 0.242,
+     "p10": 3.372,
+     "p50": 3.52,
+     "p90": 3.922
+    },
+    "share_a": {
+     "mean": 0.235,
+     "p10": 0.198,
+     "p90": 0.256
+    },
+    "own_lo80_mean": 1.027,
+    "own_hi80_mean": 9.14
+   }
+  ],
+  "principles": [
+   {
+    "statement": "The partner trade series records tuna by the catching vessel's flag, following importers' origin rules, so it measures flag-state catch rather than who operates or owns the vessel or fish.",
+    "n_agents": 30
+   },
+   {
+    "statement": "A goods export under the balance-of-payments manual requires a change of economic ownership from a resident to a nonresident, such as resident-operated vessels selling catch directly abroad.",
+    "n_agents": 30
+   },
+   {
+    "statement": "The resident-operator share of the flag-based total is only weakly indicated by sparse register address hints and rising fishing hours, so it is set as a moderate minority share, held constant across months.",
+    "n_agents": 30
+   },
+   {
+    "statement": "Residence of the operator, not flag or registration, determines whether catch is a national export; catch by flagged vessels run by nonresident operators is not a goods export and falls in the residual component.",
+    "n_agents": 28
+   },
+   {
+    "statement": "Access and licence fees paid by foreign fleets are services or income, not goods, so they are outside both the partner series and the goods-export components.",
+    "n_agents": 22
+   },
+   {
+    "statement": "Monthly values are volatile and recent months run below the trailing mean, so estimates stay near a shaded recent level, revert toward the longer-run mean, and carry wide ranges, especially where no partner data exist.",
+    "n_agents": 19
+   },
+   {
+    "statement": "Partner reporting is lagged and incomplete for the latest months, with the main buyer's figures unpublished and others partial, so recent totals must be completed from trailing levels.",
+    "n_agents": 16
+   },
+   {
+    "statement": "Most catch reaches the main buyer through carriers after roughly six weeks, but vessel-tracking and port-call data failed to predict partner values and serve only as context, not forecasting inputs.",
+    "n_agents": 16
+   },
+   {
+    "statement": "Goods for processing without ownership change, merchanting, and at-sea transfers raise classification and timing issues that cannot be verified from the available evidence, so no adjustment is made.",
+    "n_agents": 10
+   }
+  ]
+ },
+ "note": {
+  "date": "20 October 2026",
+  "title": "Nowcast for June to November 2026",
+  "paragraphs": [
+   "Kiribati tuna nowcast, 20 October 2026. This note covers the six months June to November 2026. The quantity nowcast is partner-reported tuna trade, attributed by the flag of the catching vessel, in millions of US dollars. Thirty agent draws were run, each given the same evidence, and all thirty were accepted. The mean total is 5.07 for June, 4.79 for July, 4.683 for August, 4.707 for September, 4.697 for October and 4.687 for November. Between agents, the 10th to 90th percentile range is 4.79 to 5.42 in June and 4.5 to 5.0 in November.",
+   "The baseline model gives higher figures. Its point estimates are 6.171 for June, 5.836 for July and 5.517 for each of August to November, with 80 percent bands running from 1.909 to 9.587 in June and 0.441 to 9.541 for the months with no partner returns yet. The agents sit below the baseline in every month. The gap is widest in June, where the agent mean is 5.07 against 6.171. Agents also disagree with each other most in June and July, where the standard deviation is about 0.30, against about 0.22 from August on. Three-month out-of-sample error for the baseline's partner-completion model is 6.527. An alternative using vessel-tracking arrivals scored 6.435 but did not pass the pre-set test against it (Diebold-Mariano statistic 0.26, not significant), so tracking data is context for the agents and not a model input.",
+   "The split into Component A and Component B rests mainly on three principles. First, all thirty agents note that the partner series follows the vessel's flag, so it measures flag-state catch, not who operates the vessel or owns the fish. Second, all thirty note that a goods export requires a change of ownership from a resident to a nonresident. Third, all thirty set the resident-operator share as a moderate minority, held constant across months, because the register address hints and fishing-hours trend are only weak signals. Component A, the resident-operator part, averages 1.195 in June and about 1.1 thereafter, a share of 0.235 of the total. Component B, the remainder, averages 3.875 in June and about 3.6 afterwards.",
+   "What the evidence cannot tell us matters. The spread between agents is disagreement given identical evidence. It is not a standard error and should not be read as a confidence interval. The split between Component A and Component B rests on an assumed share and is not measured in the evidence. Partner reporting is lagged and incomplete for recent months, and the main buyer's figures are unpublished. Processing arrangements and at-sea transfers cannot be checked from the available evidence, so no adjustment is made for them."
+  ],
+  "review": {
+   "pass": true,
+   "history": "A separate reviewer agent flagged 3 issues on the first draft and 1 on the second; each was edited out before publication."
+  }
+ },
+ "archive": []
+}

@@ -1,0 +1,1 @@
+You audit a draft public note against the statistics it was written from. List every sentence whose number or claim is not in the statistics, any use of a name, any claim that the estimate is validated, accurate, or an error bar, and any mention of official Kiribati figures. Return JSON: {"pass": true|false, "issues": ["..."]}. Be strict.
