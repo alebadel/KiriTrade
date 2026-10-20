@@ -17,6 +17,7 @@
     <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Tracker</a>
+      <a href="fleet.html">Fleet activity (AIS)</a>
       <a href="methods.html" aria-current="page">How the numbers are made</a>
       <a href="literature.html">Research</a>
     </nav>
@@ -87,6 +88,46 @@
     </div>
   </div>
 </section>
+
+<!-- Kept outside #methods-body on purpose: that block is rewritten from data/text.json when the page loads. -->
+<!-- FLEET-METHODS-START -->
+<section class="block methods" id="fleet-methods">
+  <div class="wrap--text">
+    <h2>Fleet activity (AIS): how it is made</h2>
+    <p>The <a href="fleet.html">Fleet activity page</a> adds a second, faster view of the tuna fleet: where Kiribati-flagged vessels were seen fishing and which ports they called at. This section explains where those numbers come from and what they cannot tell you.</p>
+
+    <h3 id="f1">Where the signals come from</h3>
+    <p>Most large ships broadcast their identity and position using AIS (Automatic Identification System). Global Fishing Watch receives these broadcasts and publishes detections through its public interfaces. The tracker uses three kinds of detection from the Events API (version 3): fishing events, port visits, and encounters, which are two vessels seen close together at sea for long enough to transfer cargo. Vessel identities come from the Global Fishing Watch Vessels API.</p>
+
+    <h3 id="f2">Which vessels are counted</h3>
+    <p>The list of vessels comes from the Western and Central Pacific Fisheries Commission (WCPFC) Record of Fishing Vessels, for the Kiribati, Nauru and Tuvalu registers. Each register entry is matched to a Global Fishing Watch identity first by radio call sign, then by IMO number. In the 20 October 2026 build, 116 register entries were current and 83 were matched to an identity with AIS history. "Kiribati-flagged" means the vessel's flag as reported by Global Fishing Watch, or, where that is not one of the three flags, the flag on the WCPFC register.</p>
+    <p>A flag says where a ship is registered. It does not say where its operator is based. The tracker makes no statement about ownership or residence.</p>
+
+    <h3 id="f3">Registration windows</h3>
+    <p>A vessel's identity in Global Fishing Watch covers the whole life of the hull, including years before it joined the Kiribati register or after it left. Counting all of it would credit the flag with fishing it did under other flags. Each event is therefore kept only if it falls within a period when the vessel's own AIS reported the Kiribati, Nauru or Tuvalu flag. Where that is not available, the authorisation dates on the WCPFC register are used instead. This trimmed about 64,000 hours of earlier history, mostly in Russian waters, and only 145 hours (0.2%) inside Kiribati's waters.</p>
+
+    <h3 id="f4">What fishing hours measure, and what they do not</h3>
+    <p>Fishing hours are the time during which a vessel's movement pattern looks like fishing. They measure effort. They do not measure fish caught: in a poor month a boat may fish longer for less. AIS reception also improves over time and differs by sea area, so part of a rise in hours can be better detection rather than more fishing. Vessels that switch off AIS are not seen.</p>
+
+    <h3 id="f5">What port calls measure, and what they do not</h3>
+    <p>A port call is a visit detected from AIS, assigned to the country in which the port lies. A call does not mean that fish was unloaded, and the count says nothing about tonnage. The category "Other countries" includes ports whose country could not be identified.</p>
+
+    <h3 id="f6">At-sea transfers and the Thai port call</h3>
+    <p>For each encounter between a fishing vessel and a carrier, the tracker follows the carrier's next port calls and notes the first call at a Thai port within 120 days. The share of transfers followed by such a call, and the median number of days between the transfer and that call, are reported on the Fleet page. They show where carriers went next. They do not show what a particular carrier held, and they are not a measure of the time between a catch and a customs record.</p>
+
+    <h3 id="f7">Why no estimate of tuna value is drawn from the hours</h3>
+    <p>The tracker tested whether monthly fishing hours of Kiribati-flagged vessels predict the monthly value of tuna that importers record as coming from Kiribati. They do not. In levels the two series trend in opposite directions, so the relationship is dominated by trend. In 12-month changes, which remove trend and season, the fit is negligible (R² about 0.02). Hours alone therefore do not predict monthly value; a usable estimate would also need catch per hour and the tuna price. The Fleet page shows the two series side by side and does not draw an estimate from either.</p>
+    <p>Months in which fewer than three partners have published fish data are drawn lighter and are kept out of any such comparison. The 2026 partner figures are provisional and will be revised as partners publish.</p>
+
+    <h3 id="f8">Freshness and refresh</h3>
+    <p>The stamp at the top of the Fleet page shows the last day covered by the AIS data and the date of the register export. The register has to be exported by hand from the WCPFC website, so it is refreshed about monthly; an older register export lowers coverage of new vessels but does not break the page.</p>
+
+    <h3 id="f9">Sources and attribution</h3>
+    <p><a href="https://globalfishingwatch.org" rel="noopener">Powered by Global Fishing Watch.</a> Global Fishing Watch. 2026, updated daily. Fishing events, port-visit events, encounter events and vessel identity data (public-global datasets, version latest). Data set accessed at https://globalfishingwatch.org/our-apis/. The data are used here for non-commercial purposes under the CC BY-NC 4.0 licence.</p>
+    <p>Western and Central Pacific Fisheries Commission. Record of Fishing Vessels (RFV). <a href="https://vessels.wcpfc.int" rel="noopener">vessels.wcpfc.int</a>. Exported on the date shown on the Fleet page.</p>
+  </div>
+</section>
+<!-- FLEET-METHODS-END -->
 </main>
 
 <footer class="site">
@@ -99,6 +140,7 @@
       <p><strong>More</strong></p>
       <ul>
         <li><a href="index.html">Back to the tracker</a></li>
+        <li><a href="fleet.html">Fleet activity (AIS)</a></li>
         <li><a href="literature.html">Research behind the tracker</a></li>
         <li><a href="data/manifest.json">Data files (JSON)</a></li>
       </ul>
@@ -139,6 +181,7 @@
       body.appendChild(el('h2', m.title || '', { id }));
       (m.paragraphs || []).forEach(p => body.appendChild(el('p', p)));
     });
+    { const li = el('li'); li.appendChild(el('a', 'Fleet activity (AIS): how it is made', { href: '#fleet-methods' })); ol.appendChild(li); }
     toc.appendChild(ol);
   });
 })();

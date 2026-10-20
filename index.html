@@ -21,6 +21,10 @@
 <div class="viewbar" id="viewbar">
   <div class="wrap">
     <a class="brand" href="#top">Kiribati trade tracker <span>· partner data</span></a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="fleet.html">Fleet activity (AIS)</a>
+      <a href="methods.html">How the numbers are made</a>
+    </nav>
     <span class="updated" id="updated-badge" data-updated-badge><span class="dot" aria-hidden="true"></span><span>Loading data…</span></span>
     <div class="seg" role="group" aria-label="Choose the time unit for every chart">
       <button type="button" data-view="annual" aria-pressed="false">Annual</button>
@@ -80,6 +84,10 @@
     <a class="link-card" href="literature.html" id="lit-card">
       <strong>Read the research behind this tracker →</strong>
       <span id="lit-blurb"></span>
+    </a>
+    <a class="link-card" href="fleet.html" id="fleet-card">
+      <strong>See where Kiribati-flagged vessels were seen fishing and calling in port →</strong>
+      <span>A companion page built from ship-tracking (AIS) signals: observed fishing hours, port calls by country, and how they sit beside the partner-reported tuna series.</span>
     </a>
     <div class="callout" id="sensitivity"></div>
     <details class="glossary" id="glossary">
@@ -257,6 +265,7 @@
       <p><strong>More</strong></p>
       <ul>
         <li><a href="methods.html">How the numbers are made</a></li>
+        <li><a href="fleet.html">Fleet activity (AIS)</a></li>
         <li><a href="literature.html">Research behind the tracker</a></li>
         <li><a href="https://github.com/" id="github-link" rel="noopener">Source code and data on GitHub</a></li>
         <li><a href="data/manifest.json">Data files (JSON)</a></li>

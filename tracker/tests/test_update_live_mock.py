@@ -1,12 +1,26 @@
 """Live path of update.py against a fake Comtrade (no network, no real key)."""
+import datetime as dt
 import json, shutil, sys
 from pathlib import Path
 import pandas as pd
+import pytest
 
 HERE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE / "tests"))
 import update as U                       # noqa: E402
 from mock_comtrade import FakeComtrade   # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _pin_clock(monkeypatch):
+    """The tests pass --today 2026-10-13; pin update.utc_now() to the same day so the
+    manifest.generated_at-is-today validation does not depend on when the tests run."""
+    monkeypatch.setattr(U, "utc_now", lambda: dt.datetime(2026, 10, 13, 9, 0, 0, tzinfo=dt.timezone.utc))
+    import build_site_data as B, build_products as P     # noqa: E402  (the builders stamp generated_at themselves)
+    monkeypatch.setattr(B, "_now_iso", lambda: "2026-10-13T09:00:00Z")
+    for name in ("_now_iso", "_utc_now_iso", "now_iso"):
+        if hasattr(P, name):
+            monkeypatch.setattr(P, name, lambda: "2026-10-13T09:00:00Z")
 
 
 def _args(tmp, *extra):

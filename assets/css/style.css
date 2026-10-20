@@ -293,3 +293,15 @@ footer.site ul { padding-left: 1.1rem; margin: .25rem 0; }
 .methods dl dd { margin: .15rem 0 0; color: var(--ink-2); }
 .methods table { font-size: .92rem; max-width: 760px; }
 .topnav { display: flex; gap: 1.25rem; font-size: .92rem; }
+
+/* ---------- fleet page (fleet.html) ---------- */
+.stats { display: grid; gap: 1rem; }
+@media (min-width: 820px) { .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.stat { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1.1rem; }
+.stat-n { font-size: 1.9rem; font-weight: 700; line-height: 1.15; margin: 0 0 .35rem; color: var(--ink); }
+.stat-t { margin: 0 0 .5rem; color: var(--ink); }
+.stat-s { margin: 0; font-size: .86rem; color: var(--ink-2); }
+table.annual { width: 100%; max-width: 760px; font-size: .9rem; margin-top: .75rem; }
+table.annual caption { text-align: left; font-weight: 700; padding: .25rem 0; }
+table.annual tfoot td { font-size: .82rem; color: var(--muted); }
+.topnav a[aria-current="page"] { font-weight: 700; }

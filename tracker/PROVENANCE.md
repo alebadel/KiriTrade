@@ -94,3 +94,16 @@ Builder: `tracker/build_site_data.py` (functions `load_inputs`, `build_panel`, `
 - `panel[].typical_lag_months` → Thailand 4 and Japan 2 from the brief/bullets; others = months between latest published month and the pull month (2026-10) minus one: China 21, Korea 9, Singapore 6, Colombia 6, Italy 5, Fiji/Philippines/Spain 3, the rest 2; Taiwan null.
 - `kiribati_own_reporting.months_published` → 70 self-side months in the parquet (= `availability_kiribati.csv`); `missing_recent` = 2024-07, 2024-09, 2025-03, 2025-10; `missing_since_2017` = 45 months (2019, 2021, 2022-01..2023-05 and those four).
 - `data_through` → monthly 2026-07, quarterly 2026Q3, annual 2025 (last year with the annual fish dataset), annual_ytd 2026.
+
+## Fleet (AIS) layer - fleet.json, fleet.html (20 Oct 2026)
+
+Builder: `tracker/build_fleet_data.py`. Inputs: `GPS/out/` CSVs from the five GPS-layer scripts (`fleet/`), not committed.
+Tests: `tracker/tests/test_build_fleet_data.py`. All numbers on the page are computed in `assets/js/fleet.js` from `data/fleet.json` and `data/series.json`.
+
+- `monthly[]` (kir_hours_total / kir_hours_kir_eez / kir_hours_other) -> `fishing_monthly_windowed.csv` (vessel x month x EEZ hours, trimmed to register-flag tenure by `window_events.py`), restricted to vessels whose flag is KIR (GFW flag if KIR/NRU/TUV, else WCPFC register flag code KI), summed by month; "in Kiribati's waters" = EEZ ids 8488 (Gilbert), 8450 (Phoenix), 8441 (Line). Zero-hour months are filled. 2025 = 22,237 h; 2024 = 8,496 h (reconciles to `bridge_panel.csv` hours_KIR, tolerance 0.2 h per month).
+- `port_calls_quarterly[]` -> `events_port_visits.csv`, KIR-flag vessels only, each visit kept only if its start falls inside the vessel's window in `registration_windows.csv` (same rule as `window_events.py`); destination = `port_flag` (KIR, CHN, KOR, THA, else other, including blank). Calls since 2025Q1 in Chinese ports = 44.
+- `chain_facts` -> `shipment_chain_windowed.csv` (285 encounters of vessels on the KIR/NRU/TUV registers). "Followed by a Thai call within 120 days" = rows with `days_to_tha_port` set (194 of 285 = 68.1%). **The GPS status note's 56% counted rows with a non-blank `tha_port_name`; 33 of the 194 have a blank port name, so 56% was an undercount.** Lag from the same 194 rows: median 38, p25 23, p75 53 days (matches the note). `chain_facts_kir` = the 117 encounters of KIR-flag catchers: 67.5%, median 42 days.
+- `meta.ais_through` -> latest event date in `events_fishing.csv` / `events_port_visits.csv` (16 Oct 2026); `meta.rfv_export_date` -> epoch in the file name `Rfv_database_export_<epoch>.csv` (18 Oct 2026).
+- Chart 2 -> `data/series.json` `monthly[].exports_partner_tuna` (USD m) and `n_reporters_fish` (bars lighter when < 3); hours are shifted one month. No fitted or estimated value is drawn: the effort-to-value bridge was rejected (levels corr about -0.2; 12-month differences R2 about 0.02, `GPS/out/bridge_fit.csv`).
+- Open-question box: mainland China's `fish_mirror_annual_by_reporter.csv` rows are 0.0 for 2020-2025 (`tracker/data/out/kiribati/fish/`); port-call count as above.
+- Attribution: Global Fishing Watch API terms (Sec. 3A) - "Powered by Global Fishing Watch." linked to globalfishingwatch.org, plus the citation form; non-commercial use (CC BY-NC 4.0). WCPFC Record of Fishing Vessels cited as the register source.

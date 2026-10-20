@@ -8,3 +8,7 @@ tracker/data/cache/
 __pycache__/
 *.pyc
 .pytest_cache/
+# fleet (AIS) layer: working files hold vessel and company names, so they are never committed
+fleet_work/
+KEY.txt
+GPS/

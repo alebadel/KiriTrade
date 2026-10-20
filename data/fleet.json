@@ -1,0 +1,1344 @@
+{
+ "meta": {
+  "generated_at": "2026-10-20T17:27:12Z",
+  "ais_through": "2026-10-16",
+  "rfv_export_date": "2026-10-18",
+  "partial_month": "2026-10",
+  "n_kir_flag_vessels_with_fishing_hours": 21,
+  "ais_source": "Global Fishing Watch (Events API, Vessels API)",
+  "register_source": "WCPFC Record of Fishing Vessels",
+  "units": {
+   "hours": "fishing hours detected by AIS",
+   "port_calls": "count of port visits"
+  },
+  "notes": [
+   "Hours and port calls are observed from ship-borne AIS transmissions received by Global Fishing Watch; they describe where Kiribati-flagged vessels were seen, not what they caught.",
+   "Only the period during which a vessel was on the Kiribati, Nauru or Tuvalu register is counted (register-flag tenure); earlier and later history of the same hull is left out.",
+   "Port calls are recorded by AIS; a call is not a landing, and the number of calls says nothing about tonnage.",
+   "The latest month is partial and AIS coverage varies by vessel and by sea area."
+  ]
+ },
+ "monthly": [
+  {
+   "period": "2014-12",
+   "kir_hours_total": 4.5,
+   "kir_hours_kir_eez": 0.0,
+   "kir_hours_other": 4.5
+  },
+  {
+   "period": "2015-01",
+   "kir_hours_total": 289.0,
+   "kir_hours_kir_eez": 65.9,
+   "kir_hours_other": 223.0
+  },
+  {
+   "period": "2015-02",
+   "kir_hours_total": 388.8,
+   "kir_hours_kir_eez": 307.1,
+   "kir_hours_other": 81.7
+  },
+  {
+   "period": "2015-03",
+   "kir_hours_total": 598.4,
+   "kir_hours_kir_eez": 471.4,
+   "kir_hours_other": 127.1
+  },
+  {
+   "period": "2015-04",
+   "kir_hours_total": 525.7,
+   "kir_hours_kir_eez": 304.5,
+   "kir_hours_other": 221.2
+  },
+  {
+   "period": "2015-05",
+   "kir_hours_total": 605.1,
+   "kir_hours_kir_eez": 372.8,
+   "kir_hours_other": 232.3
+  },
+  {
+   "period": "2015-06",
+   "kir_hours_total": 228.8,
+   "kir_hours_kir_eez": 119.1,
+   "kir_hours_other": 109.7
+  },
+  {
+   "period": "2015-07",
+   "kir_hours_total": 179.8,
+   "kir_hours_kir_eez": 46.9,
+   "kir_hours_other": 132.8
+  },
+  {
+   "period": "2015-08",
+   "kir_hours_total": 231.4,
+   "kir_hours_kir_eez": 208.9,
+   "kir_hours_other": 22.5
+  },
+  {
+   "period": "2015-09",
+   "kir_hours_total": 240.3,
+   "kir_hours_kir_eez": 174.9,
+   "kir_hours_other": 65.4
+  },
+  {
+   "period": "2015-10",
+   "kir_hours_total": 302.2,
+   "kir_hours_kir_eez": 244.2,
+   "kir_hours_other": 58.0
+  },
+  {
+   "period": "2015-11",
+   "kir_hours_total": 372.8,
+   "kir_hours_kir_eez": 302.4,
+   "kir_hours_other": 70.4
+  },
+  {
+   "period": "2015-12",
+   "kir_hours_total": 288.2,
+   "kir_hours_kir_eez": 146.1,
+   "kir_hours_other": 142.1
+  },
+  {
+   "period": "2016-01",
+   "kir_hours_total": 376.6,
+   "kir_hours_kir_eez": 259.6,
+   "kir_hours_other": 117.1
+  },
+  {
+   "period": "2016-02",
+   "kir_hours_total": 159.2,
+   "kir_hours_kir_eez": 101.3,
+   "kir_hours_other": 57.9
+  },
+  {
+   "period": "2016-03",
+   "kir_hours_total": 307.5,
+   "kir_hours_kir_eez": 127.9,
+   "kir_hours_other": 179.6
+  },
+  {
+   "period": "2016-04",
+   "kir_hours_total": 312.4,
+   "kir_hours_kir_eez": 0.0,
+   "kir_hours_other": 312.4
+  },
+  {
+   "period": "2016-05",
+   "kir_hours_total": 368.9,
+   "kir_hours_kir_eez": 13.7,
+   "kir_hours_other": 355.2
+  },
+  {
+   "period": "2016-06",
+   "kir_hours_total": 209.5,
+   "kir_hours_kir_eez": 48.1,
+   "kir_hours_other": 161.4
+  },
+  {
+   "period": "2016-07",
+   "kir_hours_total": 244.2,
+   "kir_hours_kir_eez": 201.4,
+   "kir_hours_other": 42.8
+  },
+  {
+   "period": "2016-08",
+   "kir_hours_total": 349.2,
+   "kir_hours_kir_eez": 224.3,
+   "kir_hours_other": 124.9
+  },
+  {
+   "period": "2016-09",
+   "kir_hours_total": 602.3,
+   "kir_hours_kir_eez": 411.4,
+   "kir_hours_other": 190.9
+  },
+  {
+   "period": "2016-10",
+   "kir_hours_total": 531.4,
+   "kir_hours_kir_eez": 202.3,
+   "kir_hours_other": 329.1
+  },
+  {
+   "period": "2016-11",
+   "kir_hours_total": 332.4,
+   "kir_hours_kir_eez": 69.1,
+   "kir_hours_other": 263.3
+  },
+  {
+   "period": "2016-12",
+   "kir_hours_total": 347.7,
+   "kir_hours_kir_eez": 30.6,
+   "kir_hours_other": 317.0
+  },
+  {
+   "period": "2017-01",
+   "kir_hours_total": 820.6,
+   "kir_hours_kir_eez": 296.1,
+   "kir_hours_other": 524.5
+  },
+  {
+   "period": "2017-02",
+   "kir_hours_total": 810.8,
+   "kir_hours_kir_eez": 159.8,
+   "kir_hours_other": 651.0
+  },
+  {
+   "period": "2017-03",
+   "kir_hours_total": 819.0,
+   "kir_hours_kir_eez": 349.6,
+   "kir_hours_other": 469.4
+  },
+  {
+   "period": "2017-04",
+   "kir_hours_total": 889.0,
+   "kir_hours_kir_eez": 283.3,
+   "kir_hours_other": 605.7
+  },
+  {
+   "period": "2017-05",
+   "kir_hours_total": 494.4,
+   "kir_hours_kir_eez": 129.4,
+   "kir_hours_other": 365.0
+  },
+  {
+   "period": "2017-06",
+   "kir_hours_total": 757.0,
+   "kir_hours_kir_eez": 136.0,
+   "kir_hours_other": 621.0
+  },
+  {
+   "period": "2017-07",
+   "kir_hours_total": 320.5,
+   "kir_hours_kir_eez": 151.0,
+   "kir_hours_other": 169.5
+  },
+  {
+   "period": "2017-08",
+   "kir_hours_total": 788.1,
+   "kir_hours_kir_eez": 529.9,
+   "kir_hours_other": 258.2
+  },
+  {
+   "period": "2017-09",
+   "kir_hours_total": 769.9,
+   "kir_hours_kir_eez": 542.1,
+   "kir_hours_other": 227.8
+  },
+  {
+   "period": "2017-10",
+   "kir_hours_total": 834.7,
+   "kir_hours_kir_eez": 170.7,
+   "kir_hours_other": 663.9
+  },
+  {
+   "period": "2017-11",
+   "kir_hours_total": 580.7,
+   "kir_hours_kir_eez": 105.8,
+   "kir_hours_other": 474.9
+  },
+  {
+   "period": "2017-12",
+   "kir_hours_total": 995.0,
+   "kir_hours_kir_eez": 253.1,
+   "kir_hours_other": 741.9
+  },
+  {
+   "period": "2018-01",
+   "kir_hours_total": 860.0,
+   "kir_hours_kir_eez": 396.7,
+   "kir_hours_other": 463.3
+  },
+  {
+   "period": "2018-02",
+   "kir_hours_total": 973.2,
+   "kir_hours_kir_eez": 454.7,
+   "kir_hours_other": 518.5
+  },
+  {
+   "period": "2018-03",
+   "kir_hours_total": 1034.3,
+   "kir_hours_kir_eez": 452.0,
+   "kir_hours_other": 582.3
+  },
+  {
+   "period": "2018-04",
+   "kir_hours_total": 948.1,
+   "kir_hours_kir_eez": 462.2,
+   "kir_hours_other": 485.9
+  },
+  {
+   "period": "2018-05",
+   "kir_hours_total": 1120.1,
+   "kir_hours_kir_eez": 391.6,
+   "kir_hours_other": 728.6
+  },
+  {
+   "period": "2018-06",
+   "kir_hours_total": 813.0,
+   "kir_hours_kir_eez": 175.3,
+   "kir_hours_other": 637.7
+  },
+  {
+   "period": "2018-07",
+   "kir_hours_total": 722.2,
+   "kir_hours_kir_eez": 434.4,
+   "kir_hours_other": 287.8
+  },
+  {
+   "period": "2018-08",
+   "kir_hours_total": 707.1,
+   "kir_hours_kir_eez": 485.0,
+   "kir_hours_other": 222.1
+  },
+  {
+   "period": "2018-09",
+   "kir_hours_total": 807.5,
+   "kir_hours_kir_eez": 617.5,
+   "kir_hours_other": 190.0
+  },
+  {
+   "period": "2018-10",
+   "kir_hours_total": 732.4,
+   "kir_hours_kir_eez": 174.1,
+   "kir_hours_other": 558.3
+  },
+  {
+   "period": "2018-11",
+   "kir_hours_total": 767.8,
+   "kir_hours_kir_eez": 107.7,
+   "kir_hours_other": 660.0
+  },
+  {
+   "period": "2018-12",
+   "kir_hours_total": 655.6,
+   "kir_hours_kir_eez": 278.0,
+   "kir_hours_other": 377.5
+  },
+  {
+   "period": "2019-01",
+   "kir_hours_total": 440.4,
+   "kir_hours_kir_eez": 150.4,
+   "kir_hours_other": 290.0
+  },
+  {
+   "period": "2019-02",
+   "kir_hours_total": 654.8,
+   "kir_hours_kir_eez": 276.7,
+   "kir_hours_other": 378.2
+  },
+  {
+   "period": "2019-03",
+   "kir_hours_total": 471.0,
+   "kir_hours_kir_eez": 109.1,
+   "kir_hours_other": 362.0
+  },
+  {
+   "period": "2019-04",
+   "kir_hours_total": 599.2,
+   "kir_hours_kir_eez": 237.1,
+   "kir_hours_other": 362.1
+  },
+  {
+   "period": "2019-05",
+   "kir_hours_total": 571.2,
+   "kir_hours_kir_eez": 224.6,
+   "kir_hours_other": 346.6
+  },
+  {
+   "period": "2019-06",
+   "kir_hours_total": 630.7,
+   "kir_hours_kir_eez": 405.6,
+   "kir_hours_other": 225.2
+  },
+  {
+   "period": "2019-07",
+   "kir_hours_total": 437.9,
+   "kir_hours_kir_eez": 335.6,
+   "kir_hours_other": 102.3
+  },
+  {
+   "period": "2019-08",
+   "kir_hours_total": 570.8,
+   "kir_hours_kir_eez": 342.7,
+   "kir_hours_other": 228.0
+  },
+  {
+   "period": "2019-09",
+   "kir_hours_total": 728.8,
+   "kir_hours_kir_eez": 407.8,
+   "kir_hours_other": 320.9
+  },
+  {
+   "period": "2019-10",
+   "kir_hours_total": 792.5,
+   "kir_hours_kir_eez": 279.1,
+   "kir_hours_other": 513.4
+  },
+  {
+   "period": "2019-11",
+   "kir_hours_total": 946.0,
+   "kir_hours_kir_eez": 108.9,
+   "kir_hours_other": 837.0
+  },
+  {
+   "period": "2019-12",
+   "kir_hours_total": 731.8,
+   "kir_hours_kir_eez": 62.3,
+   "kir_hours_other": 669.5
+  },
+  {
+   "period": "2020-01",
+   "kir_hours_total": 651.9,
+   "kir_hours_kir_eez": 208.2,
+   "kir_hours_other": 443.8
+  },
+  {
+   "period": "2020-02",
+   "kir_hours_total": 294.9,
+   "kir_hours_kir_eez": 57.4,
+   "kir_hours_other": 237.5
+  },
+  {
+   "period": "2020-03",
+   "kir_hours_total": 296.0,
+   "kir_hours_kir_eez": 93.1,
+   "kir_hours_other": 202.9
+  },
+  {
+   "period": "2020-04",
+   "kir_hours_total": 458.8,
+   "kir_hours_kir_eez": 26.8,
+   "kir_hours_other": 432.0
+  },
+  {
+   "period": "2020-05",
+   "kir_hours_total": 569.2,
+   "kir_hours_kir_eez": 23.0,
+   "kir_hours_other": 546.2
+  },
+  {
+   "period": "2020-06",
+   "kir_hours_total": 536.6,
+   "kir_hours_kir_eez": 116.9,
+   "kir_hours_other": 419.8
+  },
+  {
+   "period": "2020-07",
+   "kir_hours_total": 466.2,
+   "kir_hours_kir_eez": 430.0,
+   "kir_hours_other": 36.2
+  },
+  {
+   "period": "2020-08",
+   "kir_hours_total": 480.1,
+   "kir_hours_kir_eez": 407.8,
+   "kir_hours_other": 72.2
+  },
+  {
+   "period": "2020-09",
+   "kir_hours_total": 491.7,
+   "kir_hours_kir_eez": 381.6,
+   "kir_hours_other": 110.1
+  },
+  {
+   "period": "2020-10",
+   "kir_hours_total": 378.1,
+   "kir_hours_kir_eez": 94.8,
+   "kir_hours_other": 283.2
+  },
+  {
+   "period": "2020-11",
+   "kir_hours_total": 688.4,
+   "kir_hours_kir_eez": 156.7,
+   "kir_hours_other": 531.7
+  },
+  {
+   "period": "2020-12",
+   "kir_hours_total": 687.5,
+   "kir_hours_kir_eez": 134.2,
+   "kir_hours_other": 553.3
+  },
+  {
+   "period": "2021-01",
+   "kir_hours_total": 529.0,
+   "kir_hours_kir_eez": 112.6,
+   "kir_hours_other": 416.4
+  },
+  {
+   "period": "2021-02",
+   "kir_hours_total": 481.8,
+   "kir_hours_kir_eez": 246.9,
+   "kir_hours_other": 235.0
+  },
+  {
+   "period": "2021-03",
+   "kir_hours_total": 404.9,
+   "kir_hours_kir_eez": 258.7,
+   "kir_hours_other": 146.2
+  },
+  {
+   "period": "2021-04",
+   "kir_hours_total": 321.6,
+   "kir_hours_kir_eez": 227.6,
+   "kir_hours_other": 94.0
+  },
+  {
+   "period": "2021-05",
+   "kir_hours_total": 221.4,
+   "kir_hours_kir_eez": 166.7,
+   "kir_hours_other": 54.6
+  },
+  {
+   "period": "2021-06",
+   "kir_hours_total": 388.4,
+   "kir_hours_kir_eez": 244.8,
+   "kir_hours_other": 143.6
+  },
+  {
+   "period": "2021-07",
+   "kir_hours_total": 119.9,
+   "kir_hours_kir_eez": 57.0,
+   "kir_hours_other": 63.0
+  },
+  {
+   "period": "2021-08",
+   "kir_hours_total": 84.5,
+   "kir_hours_kir_eez": 18.1,
+   "kir_hours_other": 66.4
+  },
+  {
+   "period": "2021-09",
+   "kir_hours_total": 3.6,
+   "kir_hours_kir_eez": 3.6,
+   "kir_hours_other": 0.0
+  },
+  {
+   "period": "2021-10",
+   "kir_hours_total": 41.3,
+   "kir_hours_kir_eez": 0.0,
+   "kir_hours_other": 41.3
+  },
+  {
+   "period": "2021-11",
+   "kir_hours_total": 247.2,
+   "kir_hours_kir_eez": 9.4,
+   "kir_hours_other": 237.8
+  },
+  {
+   "period": "2021-12",
+   "kir_hours_total": 222.5,
+   "kir_hours_kir_eez": 65.1,
+   "kir_hours_other": 157.4
+  },
+  {
+   "period": "2022-01",
+   "kir_hours_total": 166.9,
+   "kir_hours_kir_eez": 116.1,
+   "kir_hours_other": 50.8
+  },
+  {
+   "period": "2022-02",
+   "kir_hours_total": 317.0,
+   "kir_hours_kir_eez": 127.0,
+   "kir_hours_other": 190.0
+  },
+  {
+   "period": "2022-03",
+   "kir_hours_total": 258.6,
+   "kir_hours_kir_eez": 37.9,
+   "kir_hours_other": 220.6
+  },
+  {
+   "period": "2022-04",
+   "kir_hours_total": 411.5,
+   "kir_hours_kir_eez": 117.5,
+   "kir_hours_other": 294.0
+  },
+  {
+   "period": "2022-05",
+   "kir_hours_total": 111.6,
+   "kir_hours_kir_eez": 103.7,
+   "kir_hours_other": 7.8
+  },
+  {
+   "period": "2022-06",
+   "kir_hours_total": 123.5,
+   "kir_hours_kir_eez": 29.4,
+   "kir_hours_other": 94.1
+  },
+  {
+   "period": "2022-07",
+   "kir_hours_total": 531.6,
+   "kir_hours_kir_eez": 349.0,
+   "kir_hours_other": 182.6
+  },
+  {
+   "period": "2022-08",
+   "kir_hours_total": 109.6,
+   "kir_hours_kir_eez": 90.9,
+   "kir_hours_other": 18.7
+  },
+  {
+   "period": "2022-09",
+   "kir_hours_total": 548.3,
+   "kir_hours_kir_eez": 548.3,
+   "kir_hours_other": 0.0
+  },
+  {
+   "period": "2022-10",
+   "kir_hours_total": 393.1,
+   "kir_hours_kir_eez": 377.7,
+   "kir_hours_other": 15.4
+  },
+  {
+   "period": "2022-11",
+   "kir_hours_total": 600.1,
+   "kir_hours_kir_eez": 558.5,
+   "kir_hours_other": 41.6
+  },
+  {
+   "period": "2022-12",
+   "kir_hours_total": 765.7,
+   "kir_hours_kir_eez": 493.1,
+   "kir_hours_other": 272.5
+  },
+  {
+   "period": "2023-01",
+   "kir_hours_total": 1097.3,
+   "kir_hours_kir_eez": 592.5,
+   "kir_hours_other": 504.7
+  },
+  {
+   "period": "2023-02",
+   "kir_hours_total": 804.7,
+   "kir_hours_kir_eez": 563.2,
+   "kir_hours_other": 241.5
+  },
+  {
+   "period": "2023-03",
+   "kir_hours_total": 1064.3,
+   "kir_hours_kir_eez": 393.7,
+   "kir_hours_other": 670.7
+  },
+  {
+   "period": "2023-04",
+   "kir_hours_total": 925.9,
+   "kir_hours_kir_eez": 291.9,
+   "kir_hours_other": 634.0
+  },
+  {
+   "period": "2023-05",
+   "kir_hours_total": 855.9,
+   "kir_hours_kir_eez": 381.6,
+   "kir_hours_other": 474.3
+  },
+  {
+   "period": "2023-06",
+   "kir_hours_total": 742.3,
+   "kir_hours_kir_eez": 320.0,
+   "kir_hours_other": 422.3
+  },
+  {
+   "period": "2023-07",
+   "kir_hours_total": 322.7,
+   "kir_hours_kir_eez": 297.7,
+   "kir_hours_other": 25.0
+  },
+  {
+   "period": "2023-08",
+   "kir_hours_total": 385.1,
+   "kir_hours_kir_eez": 385.1,
+   "kir_hours_other": 0.0
+  },
+  {
+   "period": "2023-09",
+   "kir_hours_total": 384.9,
+   "kir_hours_kir_eez": 384.9,
+   "kir_hours_other": 0.0
+  },
+  {
+   "period": "2023-10",
+   "kir_hours_total": 228.3,
+   "kir_hours_kir_eez": 168.1,
+   "kir_hours_other": 60.2
+  },
+  {
+   "period": "2023-11",
+   "kir_hours_total": 231.3,
+   "kir_hours_kir_eez": 67.0,
+   "kir_hours_other": 164.3
+  },
+  {
+   "period": "2023-12",
+   "kir_hours_total": 372.1,
+   "kir_hours_kir_eez": 286.1,
+   "kir_hours_other": 85.9
+  },
+  {
+   "period": "2024-01",
+   "kir_hours_total": 420.9,
+   "kir_hours_kir_eez": 401.6,
+   "kir_hours_other": 19.3
+  },
+  {
+   "period": "2024-02",
+   "kir_hours_total": 681.9,
+   "kir_hours_kir_eez": 624.1,
+   "kir_hours_other": 57.8
+  },
+  {
+   "period": "2024-03",
+   "kir_hours_total": 490.9,
+   "kir_hours_kir_eez": 187.1,
+   "kir_hours_other": 303.9
+  },
+  {
+   "period": "2024-04",
+   "kir_hours_total": 954.2,
+   "kir_hours_kir_eez": 526.8,
+   "kir_hours_other": 427.4
+  },
+  {
+   "period": "2024-05",
+   "kir_hours_total": 452.6,
+   "kir_hours_kir_eez": 141.5,
+   "kir_hours_other": 311.1
+  },
+  {
+   "period": "2024-06",
+   "kir_hours_total": 261.9,
+   "kir_hours_kir_eez": 28.7,
+   "kir_hours_other": 233.2
+  },
+  {
+   "period": "2024-07",
+   "kir_hours_total": 503.8,
+   "kir_hours_kir_eez": 503.8,
+   "kir_hours_other": 0.0
+  },
+  {
+   "period": "2024-08",
+   "kir_hours_total": 340.2,
+   "kir_hours_kir_eez": 168.7,
+   "kir_hours_other": 171.6
+  },
+  {
+   "period": "2024-09",
+   "kir_hours_total": 502.3,
+   "kir_hours_kir_eez": 48.4,
+   "kir_hours_other": 453.8
+  },
+  {
+   "period": "2024-10",
+   "kir_hours_total": 636.8,
+   "kir_hours_kir_eez": 402.3,
+   "kir_hours_other": 234.5
+  },
+  {
+   "period": "2024-11",
+   "kir_hours_total": 1495.9,
+   "kir_hours_kir_eez": 1049.8,
+   "kir_hours_other": 446.2
+  },
+  {
+   "period": "2024-12",
+   "kir_hours_total": 1754.7,
+   "kir_hours_kir_eez": 935.2,
+   "kir_hours_other": 819.5
+  },
+  {
+   "period": "2025-01",
+   "kir_hours_total": 2013.5,
+   "kir_hours_kir_eez": 1612.6,
+   "kir_hours_other": 401.0
+  },
+  {
+   "period": "2025-02",
+   "kir_hours_total": 1336.4,
+   "kir_hours_kir_eez": 1224.0,
+   "kir_hours_other": 112.3
+  },
+  {
+   "period": "2025-03",
+   "kir_hours_total": 2062.2,
+   "kir_hours_kir_eez": 1744.1,
+   "kir_hours_other": 318.1
+  },
+  {
+   "period": "2025-04",
+   "kir_hours_total": 1934.8,
+   "kir_hours_kir_eez": 1690.3,
+   "kir_hours_other": 244.5
+  },
+  {
+   "period": "2025-05",
+   "kir_hours_total": 1020.7,
+   "kir_hours_kir_eez": 746.9,
+   "kir_hours_other": 273.8
+  },
+  {
+   "period": "2025-06",
+   "kir_hours_total": 1870.2,
+   "kir_hours_kir_eez": 763.8,
+   "kir_hours_other": 1106.4
+  },
+  {
+   "period": "2025-07",
+   "kir_hours_total": 1884.8,
+   "kir_hours_kir_eez": 609.1,
+   "kir_hours_other": 1275.7
+  },
+  {
+   "period": "2025-08",
+   "kir_hours_total": 1333.1,
+   "kir_hours_kir_eez": 628.0,
+   "kir_hours_other": 705.2
+  },
+  {
+   "period": "2025-09",
+   "kir_hours_total": 1777.7,
+   "kir_hours_kir_eez": 875.5,
+   "kir_hours_other": 902.2
+  },
+  {
+   "period": "2025-10",
+   "kir_hours_total": 2477.6,
+   "kir_hours_kir_eez": 1657.5,
+   "kir_hours_other": 820.1
+  },
+  {
+   "period": "2025-11",
+   "kir_hours_total": 1743.3,
+   "kir_hours_kir_eez": 1334.3,
+   "kir_hours_other": 409.0
+  },
+  {
+   "period": "2025-12",
+   "kir_hours_total": 2782.5,
+   "kir_hours_kir_eez": 2045.3,
+   "kir_hours_other": 737.1
+  },
+  {
+   "period": "2026-01",
+   "kir_hours_total": 2952.3,
+   "kir_hours_kir_eez": 2484.5,
+   "kir_hours_other": 467.8
+  },
+  {
+   "period": "2026-02",
+   "kir_hours_total": 1861.7,
+   "kir_hours_kir_eez": 862.1,
+   "kir_hours_other": 999.5
+  },
+  {
+   "period": "2026-03",
+   "kir_hours_total": 2729.8,
+   "kir_hours_kir_eez": 2257.8,
+   "kir_hours_other": 472.0
+  },
+  {
+   "period": "2026-04",
+   "kir_hours_total": 1636.2,
+   "kir_hours_kir_eez": 1478.6,
+   "kir_hours_other": 157.6
+  },
+  {
+   "period": "2026-05",
+   "kir_hours_total": 2374.0,
+   "kir_hours_kir_eez": 2164.6,
+   "kir_hours_other": 209.4
+  },
+  {
+   "period": "2026-06",
+   "kir_hours_total": 1495.0,
+   "kir_hours_kir_eez": 1253.4,
+   "kir_hours_other": 241.6
+  },
+  {
+   "period": "2026-07",
+   "kir_hours_total": 1480.9,
+   "kir_hours_kir_eez": 1217.5,
+   "kir_hours_other": 263.4
+  },
+  {
+   "period": "2026-08",
+   "kir_hours_total": 1431.5,
+   "kir_hours_kir_eez": 785.8,
+   "kir_hours_other": 645.7
+  },
+  {
+   "period": "2026-09",
+   "kir_hours_total": 1768.0,
+   "kir_hours_kir_eez": 929.3,
+   "kir_hours_other": 838.7
+  },
+  {
+   "period": "2026-10",
+   "kir_hours_total": 1084.7,
+   "kir_hours_kir_eez": 902.2,
+   "kir_hours_other": 182.6
+  }
+ ],
+ "port_calls_quarterly": [
+  {
+   "quarter": "2014Q4",
+   "KIR": 0,
+   "CHN": 1,
+   "KOR": 0,
+   "THA": 0,
+   "other": 2,
+   "total": 3
+  },
+  {
+   "quarter": "2015Q1",
+   "KIR": 4,
+   "CHN": 3,
+   "KOR": 0,
+   "THA": 1,
+   "other": 17,
+   "total": 25
+  },
+  {
+   "quarter": "2015Q2",
+   "KIR": 8,
+   "CHN": 4,
+   "KOR": 10,
+   "THA": 1,
+   "other": 16,
+   "total": 39
+  },
+  {
+   "quarter": "2015Q3",
+   "KIR": 20,
+   "CHN": 2,
+   "KOR": 3,
+   "THA": 1,
+   "other": 10,
+   "total": 36
+  },
+  {
+   "quarter": "2015Q4",
+   "KIR": 25,
+   "CHN": 2,
+   "KOR": 1,
+   "THA": 2,
+   "other": 5,
+   "total": 35
+  },
+  {
+   "quarter": "2016Q1",
+   "KIR": 17,
+   "CHN": 1,
+   "KOR": 0,
+   "THA": 2,
+   "other": 13,
+   "total": 33
+  },
+  {
+   "quarter": "2016Q2",
+   "KIR": 3,
+   "CHN": 4,
+   "KOR": 1,
+   "THA": 0,
+   "other": 19,
+   "total": 27
+  },
+  {
+   "quarter": "2016Q3",
+   "KIR": 13,
+   "CHN": 2,
+   "KOR": 1,
+   "THA": 2,
+   "other": 13,
+   "total": 31
+  },
+  {
+   "quarter": "2016Q4",
+   "KIR": 3,
+   "CHN": 2,
+   "KOR": 0,
+   "THA": 0,
+   "other": 25,
+   "total": 30
+  },
+  {
+   "quarter": "2017Q1",
+   "KIR": 2,
+   "CHN": 0,
+   "KOR": 0,
+   "THA": 3,
+   "other": 19,
+   "total": 24
+  },
+  {
+   "quarter": "2017Q2",
+   "KIR": 3,
+   "CHN": 6,
+   "KOR": 6,
+   "THA": 0,
+   "other": 20,
+   "total": 35
+  },
+  {
+   "quarter": "2017Q3",
+   "KIR": 17,
+   "CHN": 6,
+   "KOR": 6,
+   "THA": 3,
+   "other": 5,
+   "total": 37
+  },
+  {
+   "quarter": "2017Q4",
+   "KIR": 9,
+   "CHN": 3,
+   "KOR": 6,
+   "THA": 1,
+   "other": 17,
+   "total": 36
+  },
+  {
+   "quarter": "2018Q1",
+   "KIR": 2,
+   "CHN": 4,
+   "KOR": 1,
+   "THA": 0,
+   "other": 19,
+   "total": 26
+  },
+  {
+   "quarter": "2018Q2",
+   "KIR": 8,
+   "CHN": 1,
+   "KOR": 2,
+   "THA": 0,
+   "other": 18,
+   "total": 29
+  },
+  {
+   "quarter": "2018Q3",
+   "KIR": 22,
+   "CHN": 4,
+   "KOR": 0,
+   "THA": 0,
+   "other": 10,
+   "total": 36
+  },
+  {
+   "quarter": "2018Q4",
+   "KIR": 20,
+   "CHN": 2,
+   "KOR": 3,
+   "THA": 0,
+   "other": 5,
+   "total": 30
+  },
+  {
+   "quarter": "2019Q1",
+   "KIR": 23,
+   "CHN": 2,
+   "KOR": 1,
+   "THA": 0,
+   "other": 7,
+   "total": 33
+  },
+  {
+   "quarter": "2019Q2",
+   "KIR": 15,
+   "CHN": 4,
+   "KOR": 3,
+   "THA": 0,
+   "other": 8,
+   "total": 30
+  },
+  {
+   "quarter": "2019Q3",
+   "KIR": 19,
+   "CHN": 1,
+   "KOR": 15,
+   "THA": 0,
+   "other": 7,
+   "total": 42
+  },
+  {
+   "quarter": "2019Q4",
+   "KIR": 3,
+   "CHN": 1,
+   "KOR": 0,
+   "THA": 0,
+   "other": 10,
+   "total": 14
+  },
+  {
+   "quarter": "2020Q1",
+   "KIR": 1,
+   "CHN": 2,
+   "KOR": 7,
+   "THA": 0,
+   "other": 10,
+   "total": 20
+  },
+  {
+   "quarter": "2020Q2",
+   "KIR": 6,
+   "CHN": 4,
+   "KOR": 2,
+   "THA": 0,
+   "other": 1,
+   "total": 13
+  },
+  {
+   "quarter": "2020Q3",
+   "KIR": 16,
+   "CHN": 2,
+   "KOR": 0,
+   "THA": 0,
+   "other": 1,
+   "total": 19
+  },
+  {
+   "quarter": "2020Q4",
+   "KIR": 18,
+   "CHN": 2,
+   "KOR": 1,
+   "THA": 0,
+   "other": 0,
+   "total": 21
+  },
+  {
+   "quarter": "2021Q1",
+   "KIR": 9,
+   "CHN": 3,
+   "KOR": 5,
+   "THA": 0,
+   "other": 2,
+   "total": 19
+  },
+  {
+   "quarter": "2021Q2",
+   "KIR": 6,
+   "CHN": 1,
+   "KOR": 2,
+   "THA": 0,
+   "other": 2,
+   "total": 11
+  },
+  {
+   "quarter": "2021Q3",
+   "KIR": 12,
+   "CHN": 2,
+   "KOR": 2,
+   "THA": 0,
+   "other": 1,
+   "total": 17
+  },
+  {
+   "quarter": "2021Q4",
+   "KIR": 3,
+   "CHN": 1,
+   "KOR": 1,
+   "THA": 0,
+   "other": 3,
+   "total": 8
+  },
+  {
+   "quarter": "2022Q1",
+   "KIR": 13,
+   "CHN": 1,
+   "KOR": 5,
+   "THA": 0,
+   "other": 4,
+   "total": 23
+  },
+  {
+   "quarter": "2022Q2",
+   "KIR": 13,
+   "CHN": 6,
+   "KOR": 1,
+   "THA": 0,
+   "other": 5,
+   "total": 25
+  },
+  {
+   "quarter": "2022Q3",
+   "KIR": 14,
+   "CHN": 3,
+   "KOR": 1,
+   "THA": 0,
+   "other": 15,
+   "total": 33
+  },
+  {
+   "quarter": "2022Q4",
+   "KIR": 20,
+   "CHN": 5,
+   "KOR": 4,
+   "THA": 0,
+   "other": 6,
+   "total": 35
+  },
+  {
+   "quarter": "2023Q1",
+   "KIR": 8,
+   "CHN": 1,
+   "KOR": 2,
+   "THA": 0,
+   "other": 7,
+   "total": 18
+  },
+  {
+   "quarter": "2023Q2",
+   "KIR": 17,
+   "CHN": 0,
+   "KOR": 0,
+   "THA": 0,
+   "other": 6,
+   "total": 23
+  },
+  {
+   "quarter": "2023Q3",
+   "KIR": 27,
+   "CHN": 0,
+   "KOR": 0,
+   "THA": 0,
+   "other": 0,
+   "total": 27
+  },
+  {
+   "quarter": "2023Q4",
+   "KIR": 24,
+   "CHN": 0,
+   "KOR": 5,
+   "THA": 0,
+   "other": 8,
+   "total": 37
+  },
+  {
+   "quarter": "2024Q1",
+   "KIR": 12,
+   "CHN": 4,
+   "KOR": 7,
+   "THA": 0,
+   "other": 11,
+   "total": 34
+  },
+  {
+   "quarter": "2024Q2",
+   "KIR": 9,
+   "CHN": 5,
+   "KOR": 2,
+   "THA": 0,
+   "other": 16,
+   "total": 32
+  },
+  {
+   "quarter": "2024Q3",
+   "KIR": 10,
+   "CHN": 7,
+   "KOR": 3,
+   "THA": 0,
+   "other": 16,
+   "total": 36
+  },
+  {
+   "quarter": "2024Q4",
+   "KIR": 12,
+   "CHN": 10,
+   "KOR": 1,
+   "THA": 0,
+   "other": 13,
+   "total": 36
+  },
+  {
+   "quarter": "2025Q1",
+   "KIR": 14,
+   "CHN": 14,
+   "KOR": 5,
+   "THA": 0,
+   "other": 7,
+   "total": 40
+  },
+  {
+   "quarter": "2025Q2",
+   "KIR": 38,
+   "CHN": 3,
+   "KOR": 2,
+   "THA": 0,
+   "other": 7,
+   "total": 50
+  },
+  {
+   "quarter": "2025Q3",
+   "KIR": 34,
+   "CHN": 0,
+   "KOR": 0,
+   "THA": 0,
+   "other": 5,
+   "total": 39
+  },
+  {
+   "quarter": "2025Q4",
+   "KIR": 27,
+   "CHN": 6,
+   "KOR": 5,
+   "THA": 0,
+   "other": 6,
+   "total": 44
+  },
+  {
+   "quarter": "2026Q1",
+   "KIR": 22,
+   "CHN": 2,
+   "KOR": 3,
+   "THA": 0,
+   "other": 4,
+   "total": 31
+  },
+  {
+   "quarter": "2026Q2",
+   "KIR": 31,
+   "CHN": 9,
+   "KOR": 5,
+   "THA": 0,
+   "other": 2,
+   "total": 47
+  },
+  {
+   "quarter": "2026Q3",
+   "KIR": 28,
+   "CHN": 10,
+   "KOR": 5,
+   "THA": 0,
+   "other": 0,
+   "total": 43
+  },
+  {
+   "quarter": "2026Q4",
+   "KIR": 9,
+   "CHN": 0,
+   "KOR": 0,
+   "THA": 0,
+   "other": 2,
+   "total": 11
+  }
+ ],
+ "chain_facts": {
+  "n_encounters": 285,
+  "n_followed_by_tha_call": 194,
+  "tha_share_pct": 68.1,
+  "lag_median_days": 38.0,
+  "lag_p25": 23.0,
+  "lag_p75": 53.0,
+  "tha_window_days": 120,
+  "scope": "Vessels on the Kiribati, Nauru or Tuvalu register, inside register tenure"
+ },
+ "chain_facts_kir": {
+  "n_encounters": 117,
+  "n_followed_by_tha_call": 79,
+  "tha_share_pct": 67.5,
+  "lag_median_days": 42.0,
+  "lag_p25": 22.0,
+  "lag_p75": 53.0,
+  "tha_window_days": 120,
+  "scope": "Vessels on the Kiribati register, inside register tenure"
+ }
+}
