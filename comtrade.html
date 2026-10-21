@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trading-partner records (UN Comtrade) — Kiribati trade tracker</title>
+<title>Partner data (UN Comtrade) — KiriTrade</title>
 <meta name="description" content="Summarize and share trading-partner data to track the performance of the Kiribati economy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +20,14 @@
      The toggle here and the one in the hero are kept in sync by app.js. -->
 <div class="viewbar" id="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html" aria-current="page">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -60,7 +60,7 @@
   <div class="wrap hero-grid">
     <div>
       <h1>Trading-partner records (UN Comtrade)</h1>
-      <p class="purpose">What Kiribati's trading partners declared about their trade with Kiribati: the first of the five inputs on the <a href="index.html">home page</a>.</p>
+      <p class="purpose">What Kiribati's trading partners declared about their trade with Kiribati. Input 1 of 5 on the <a href="index.html">home page</a>, and the starting figure of the <a href="inference.html">inference</a>.</p>
       <p class="updated" data-updated-badge><span class="dot" aria-hidden="true"></span><span>Loading data…</span></p>
       <div class="hero-controls">
         <div class="seg seg--lg" role="group" aria-label="Choose the time unit for every chart">
@@ -87,7 +87,7 @@
     <div class="prose" id="intro-paragraphs"></div>
     <h3>How to use it</h3>
     <ul class="how" id="how-to-use"></ul>
-    <p class="prose">The research behind the use of partner data is on the <a href="literature.html">Research page</a>. The other inputs (ship tracking, the vessel register, official statistics, rules and research) and the inference built on all five are on the <a href="index.html">home page</a>.</p>
+    <p class="prose">The research behind the use of partner data is on the <a href="documents.html#research">the research section</a>. The other inputs (ship tracking, the vessel register, official statistics, rules and research) and the inference built on all five are on the <a href="index.html">home page</a>.</p>
     <div class="callout" id="sensitivity"></div>
     <details class="glossary" id="glossary">
       <summary>Words used on this page</summary>
@@ -250,9 +250,32 @@
   </div>
 </section>
 
+<nav class="pager wrap" aria-label="Reading order"><p class="small">Input 1 of 5 · <a href="fleet.html">Next: Ship tracking →</a></p></nav>
 </main>
 
 <!-- 8. Footer -->
+<section class="block" id="early">
+  <div class="wrap">
+    <h2>Early estimate of the partner series itself</h2>
+    <p class="section-lede">A different, smaller question: what will importers record for months they have not yet published? Thailand, the main buyer, publishes with a lag of several months. A statistical baseline fills the gap from what has been published, and the agents of an earlier run gave their own view of the same total. This is an estimate of the flag-basis figure, not of true exports.</p>
+    <figure class="fig" id="fig-nowcast">
+      <div class="fig-head"><div>
+        <h3>Partner-reported tuna by month: published, baseline, agents' view</h3>
+        <p class="sub">USD millions per month</p>
+        <p class="how">Bars are published partner figures (lighter where fewer partners have reported). The dashed line is the baseline. The solid line is the agents' average, with the band from the 10th to the 90th percentile of their answers.</p>
+      </div></div>
+      <div class="legend" id="legend-nowcast"></div>
+      <div class="plot tall"><canvas id="chart-nowcast" role="img" aria-label="Published partner-reported tuna by month with the baseline and the agents' estimate for coming months"></canvas></div>
+      <figcaption>
+        
+        <p class="caveat">In a pseudo-real-time test over 86 months, the baseline cut the three-month error of repeating the same month of the previous year by about 40% (6.5 against 10.9, USD millions). Ship-tracking arrivals were not significant and are excluded.</p>
+        <p class="src" id="src-nowcast"></p>
+      </figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-nowcast"></div></details>
+    </figure>
+  </div>
+</section>
+
 <footer class="site">
   <div class="wrap cols">
     <div>
@@ -265,7 +288,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="methods.html">Methods</a></li>
-        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="documents.html#research">Rules, standards and research</a></li>
         <li><a href="https://github.com/alebadel/KiriTrade" id="github-link" rel="noopener">Source code and data on GitHub</a></li>
         <li><a href="data/manifest.json">Data files (JSON)</a></li>
       </ul>
@@ -275,5 +298,6 @@
 
 <script src="assets/js/charts.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/early.js"></script>
 </body>
 </html>

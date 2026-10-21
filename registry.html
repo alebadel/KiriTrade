@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vessel register (WCPFC) — Kiribati trade tracker</title>
+<title>Vessel register (WCPFC) — KiriTrade</title>
 <meta name="description" content="The public register of vessels authorised to fish under the Kiribati, Nauru and Tuvalu flags: counts by type, status, owner-address hint, build decade and previous flag. No names.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,14 @@
 
 <div class="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html" aria-current="page">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -43,8 +43,8 @@
   <div class="wrap hero-grid">
     <div>
       <h1>Vessel register (WCPFC)</h1>
-      <p class="purpose">The public list of vessels that the Kiribati, Nauru and Tuvalu flag states have authorised to fish for tuna. The third of the five inputs on the <a href="index.html">home page</a>.</p>
-      <p class="hint small muted">Counts only. The register carries vessel, owner and master names; none appears on this site.</p>
+      <p class="purpose">The public list of vessels that the Kiribati, Nauru and Tuvalu flag states have authorised to fish for tuna. Input 3 of 5 on the <a href="index.html">home page</a>.</p>
+      <p class="hint small muted">Counts only; no vessel, owner or master names. In the <a href="inference.html">inference</a>, the address and previous-flag hints feed the layer "Less: catch of non-resident operators".</p>
     </div>
     <aside class="strip" aria-labelledby="rg-strip-h">
       <h3 id="rg-strip-h">Register export</h3>
@@ -57,8 +57,8 @@
   <div class="wrap--text">
     <h2>What this page shows, and why it matters</h2>
     <div class="prose">
-      <p>The Western and Central Pacific Fisheries Commission (WCPFC) keeps a public Record of Fishing Vessels. Each member state submits the vessels it authorises to fish in the Commission's area, with the vessel's type, size, build year, previous flag, and the name and address of its owner. The tracker reads the entries for the Kiribati, Nauru and Tuvalu flags. Nauru and Tuvalu are included because the ship-tracking source sometimes reports a vessel under a neighbouring flag.</p>
-      <p>The register matters for two reasons. First, it says which hulls the flag can be credited with, so the ship-tracking page counts only vessels on it and only during their time on it. Second, the owner's address is the only public hint about where a vessel's operator is based. That is the hinge of the whole question: importers credit a fish to the vessel's flag, while the balance of payments credits a sale to the operator's country of residence. An address is not residence. A company with a Kiribati address can be run from abroad, and a foreign address can belong to a resident's agent. The tracker treats the address as a hint and the agents treat residence as a condition, never as a fact.</p>
+      <p>The Western and Central Pacific Fisheries Commission (WCPFC) keeps a public Record of Fishing Vessels. Each member state submits the vessels it authorises to fish, with type, size, build year, previous flag and the owner's name and address. The tracker reads the Kiribati, Nauru and Tuvalu entries; the two neighbours are included because ship tracking sometimes reports a vessel under a neighbouring flag.</p>
+      <p>The register matters for two reasons. It says which hulls the flag can be credited with, so the ship-tracking page counts only vessels on it, only while on it. And it holds the two public clues to where a vessel's operator is based: the owner's address and the previous flag. That is the hinge of the question: importers credit a fish to the vessel's flag, while the balance of payments credits a sale to the operator's country of residence. A clue is not residence. A Kiribati address can belong to a registration agent of a company run from abroad; a foreign address can belong to a resident's agent.</p>
     </div>
   </div>
 </section>
@@ -96,7 +96,7 @@
         <figcaption><p class="caveat">The pattern match is coarse. An address in the capital of a flag state can belong to a registration agent rather than an operator.</p><p class="src" id="src-3"></p></figcaption>
       </figure>
       <figure class="fig" id="fig-prev">
-        <div class="fig-head"><div><h3>Previous flag</h3><p class="sub">Number of register entries by the flag the vessel flew before</p><p class="how">A vessel that moved onto the register from another flag kept its owner. The previous flag is a second hint about where the operator comes from.</p></div></div>
+        <div class="fig-head"><div><h3>Previous flag</h3><p class="sub">Number of register entries by the flag the vessel flew before</p><p class="how">The flag a vessel flew before joining the register. The register does not say whether the owner changed with the flag, so this is a second clue about where the operator comes from, not a record.</p></div></div>
         <div class="legend" id="legend-prev"></div>
         <div class="plot short"><canvas id="chart-prev" role="img" aria-label="Previous flag of vessels on the register"></canvas></div>
         <figcaption><p class="src" id="src-4"></p></figcaption>
@@ -115,7 +115,7 @@
         <figcaption><p class="src" id="src-5"></p></figcaption>
       </figure>
       <figure class="fig" id="fig-ais">
-        <div class="fig-head"><div><h3>Matched to a ship-tracking identity</h3><p class="sub">Number of register entries</p><p class="how">A register entry is tied to a Global Fishing Watch identity by its radio call sign or IMO number. Unmatched vessels still fish; they are not seen on the <a href="fleet.html">ship-tracking page</a>.</p></div></div>
+        <div class="fig-head"><div><h3>Matched to a ship-tracking identity</h3><p class="sub">Number of register entries</p><p class="how">A register entry is tied to a Global Fishing Watch identity by its radio call sign or IMO number. Unmatched vessels may be fishing; they are not seen on the <a href="fleet.html">ship-tracking page</a>.</p></div></div>
         <div class="plot short"><canvas id="chart-ais" role="img" aria-label="Vessels matched or not matched to an AIS identity"></canvas></div>
         <figcaption><p class="src" id="src-6"></p></figcaption>
       </figure>
@@ -128,11 +128,12 @@
   <div class="wrap--text">
     <h2>What the register does not tell</h2>
     <div class="prose">
-      <p>It does not record who operates the vessel day to day, who owns the catch when it is sold, or where the operator is resident. It does not record catch, landings or value. It is maintained by the flag states, so an entry reflects what the state submitted and when; vessels can be on the register without fishing and can fish without a current entry. The tracker makes no statement about any vessel's ownership or residence; it counts what the register says.</p>
+      <p>It names an owner and sometimes an operator or charterer, but it does not say who runs the vessel day to day, who owns the catch when it is sold, or where the operator is resident. It does not record catch, landings or value. It is maintained by the flag states, so an entry reflects what the state submitted and when; vessels can be on the register without fishing and can fish without a current entry. The tracker makes no statement about any vessel's ownership or residence; it counts what the register says.</p>
     </div>
   </div>
 </section>
 
+<nav class="pager wrap" aria-label="Reading order"><p class="small"><a href="fleet.html">← Ship tracking</a> · Input 3 of 5 · <a href="official.html">Next: Official statistics →</a></p></nav>
 </main>
 
 <footer class="site">

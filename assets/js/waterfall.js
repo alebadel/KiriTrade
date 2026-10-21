@@ -60,10 +60,10 @@
           });
           if (!o.compact) {
             ctx.fillStyle = t.muted;
-            ctx.font = '11px ' + fontFamily;
+            ctx.font = '13px ' + fontFamily;
             ctx.textAlign = 'center';
-            ctx.fillText('one dot', dx, yScale.getPixelForValue(Math.max.apply(null, it.dots)) - 22);
-            ctx.fillText('per agent', dx, yScale.getPixelForValue(Math.max.apply(null, it.dots)) - 10);
+            ctx.textAlign = 'right';
+            ctx.fillText('one dot = one agent', chart.chartArea.right, yScale.getPixelForValue(Math.max.apply(null, it.dots)) - 12);
           }
         }
         // value label
@@ -84,10 +84,20 @@
   function waterfall(canvasId, bridge, opts) {
     const o = Object.assign({ unit: 'USD m', labelSize: 15, compact: false, decimals: 1 }, opts || {});
     const t = KT.tokens();
-    const labels = [bridge.start.label].concat(bridge.steps.map(s => s.label), [bridge.end.label]);
+    const fullLabels = [bridge.start.label].concat(bridge.steps.map(s => s.label), [bridge.end.label]);
+    /* On narrow screens eight multi-line labels collide: number the bars and write the key under the plot. */
+    const cv = document.getElementById(canvasId);
+    const narrow = !!(cv && cv.parentElement && cv.parentElement.clientWidth > 0 && cv.parentElement.clientWidth < 600);
+    const labels = narrow ? fullLabels.map((l, i) => String(i + 1)) : fullLabels;
+    if (cv && cv.parentElement) {
+      let key = cv.parentElement.nextElementSibling;
+      if (!(key && key.classList && key.classList.contains('wf-key'))) { key = document.createElement('p'); key.className = 'wf-key small muted'; cv.parentElement.after(key); }
+      key.textContent = narrow ? fullLabels.map((l, i) => (i + 1) + ' ' + String(l).replace(/\n/g, ' ')).join(' · ') : '';
+      key.hidden = !narrow;
+    }
     const data = [], colors = [], items = [];
     let level = bridge.start.value;
-    data.push([0, level]); colors.push(t.kir);
+    data.push([0, level]); colors.push(t.ink2);
     items.push({ label: level, text: level.toFixed(o.decimals), top: level });
     bridge.steps.forEach(s => {
       const a = level, b = level + s.mean;
@@ -99,8 +109,8 @@
       });
       level = b;
     });
-    data.push([0, bridge.end.mean]); colors.push(t.kir);
-    items.push({ lo: bridge.end.p10, hi: bridge.end.p90, whiskerColor: t.partner, dots: bridge.end.values || [], label: bridge.end.mean, text: bridge.end.mean.toFixed(o.decimals), top: Math.max(bridge.end.mean, bridge.end.p90 || 0) });
+    data.push([0, bridge.end.mean]); colors.push(t.ink2);
+    items.push({ lo: bridge.end.p10, hi: bridge.end.p90, whiskerColor: t.ink, dots: bridge.end.values || [], label: bridge.end.mean, text: bridge.end.mean.toFixed(o.decimals), top: Math.max(bridge.end.mean, bridge.end.p90 || 0) });
 
     const maxY = Math.ceil(Math.max(bridge.start.value, bridge.end.mean) * 1.15 / 10) * 10;
     return KT.make(canvasId, {
@@ -110,7 +120,7 @@
         plugins: {
           ktWhiskers: { items, labelSize: o.labelSize, compact: o.compact },
           tooltip: { callbacks: {
-            title: (ctx) => labels[ctx[0].dataIndex],
+            title: (ctx) => String(fullLabels[ctx[0].dataIndex]).replace(/\n/g, ' '),
             label: (ctx) => {
               const i = ctx.dataIndex, it = items[i];
               if (i === 0) return ' ' + bridge.start.value.toFixed(2) + ' ' + o.unit;
@@ -120,9 +130,9 @@
             } } }
         },
         scales: {
-          x: { grid: { display: false }, border: { color: t.axis }, ticks: { autoSkip: false, maxRotation: 0, font: { size: o.compact ? 10 : 13 }, callback: function (v) { return String(labels[v]).split('\n'); } } },
+          x: { grid: { display: false }, border: { color: t.axis }, ticks: { autoSkip: false, maxRotation: 0, font: { size: o.compact ? 12 : 15 }, callback: function (v) { return String(labels[v]).split('\n'); } } },
           y: { beginAtZero: true, max: maxY, grid: { color: t.grid, drawTicks: false }, border: { display: false },
-            ticks: { padding: 6, maxTicksLimit: 6, precision: 0, font: { size: o.compact ? 10 : 13 } }, title: { display: !o.compact, text: 'USD millions', color: t.muted, font: { size: 12 } } }
+            ticks: { padding: 6, maxTicksLimit: 6, precision: 0, font: { size: o.compact ? 12 : 15 } }, title: { display: !o.compact, text: 'USD millions', color: t.muted, font: { size: 14 } } }
         },
         layout: { padding: { top: o.compact ? 8 : 18, right: o.compact ? 8 : 24 } }
       }

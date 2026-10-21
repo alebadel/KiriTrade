@@ -13,7 +13,7 @@
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const nf0 = new Intl.NumberFormat('en', { maximumFractionDigits: 0 });
   const nf1 = new Intl.NumberFormat('en', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-  const DEST = [['KIR', 'Kiribati'], ['CHN', 'China'], ['KOR', 'Korea'], ['THA', 'Thailand'], ['other', 'Other countries']];
+  const DEST = [['KIR', 'Kiribati'], ['CHN', 'China'], ['KOR', 'South Korea'], ['THA', 'Thailand'], ['other', 'Other countries']];
 
   function el(tag, text, attrs) {
     const e = document.createElement(tag);
@@ -85,13 +85,14 @@
       if (sub) d.appendChild(el('p', sub, { class: 'stat-s' }));
       box.appendChild(d);
     };
+    const chg = KT.isNum(ys[prevY]) && ys[prevY] > 0 ? Math.round(100 * (ys[lastY] - ys[prevY]) / ys[prevY]) : null;
     add(nf0.format(ys[lastY]) + ' hours',
-      'of observed fishing activity by Kiribati-flagged vessels in ' + lastY + ', against ' + nf0.format(ys[prevY]) + ' in ' + prevY + '.',
-      'The rise came while joint-venture vessels were added to the register. Part of it can be better AIS detection.');
+      'of observed fishing activity by Kiribati-flagged vessels in ' + lastY + ', against ' + nf0.format(ys[prevY]) + ' in ' + prevY + (KT.isNum(chg) ? ' (' + (chg > 0 ? 'up ' : chg < 0 ? 'down ' : 'unchanged, ') + Math.abs(chg) + '%)' : '') + '.',
+      'Hours are effort, not catch. Part of any change can be better AIS detection.');
     const c = f.chain_facts;
     add(nf0.format(c.tha_share_pct) + '%',
-      'of ' + nf0.format(c.n_encounters) + ' at-sea transfers were followed by a call at a Thai port within ' + c.tha_window_days + ' days; the median wait was ' + nf0.format(c.lag_median_days) + ' days (middle half: ' + nf0.format(c.lag_p25) + ' to ' + nf0.format(c.lag_p75) + ').',
-      'Covers vessels on the Kiribati, Nauru or Tuvalu registers while registered. A call at a Thai port shows where a carrier went next, not what it carried.');
+      'of ' + nf0.format(c.n_encounters) + ' encounters at sea were followed by a carrier call at a Thai port within ' + c.tha_window_days + ' days; the median wait was ' + nf0.format(c.lag_median_days) + ' days (middle half: ' + nf0.format(c.lag_p25) + ' to ' + nf0.format(c.lag_p75) + ').',
+      'This fact alone covers vessels on the Kiribati, Nauru or Tuvalu registers, while registered; the other charts are Kiribati-flagged only. A call at a Thai port shows where a carrier went next, not what it carried.');
     const t = callsSince(f.port_calls_quarterly, '2025Q1');
     add(nf0.format(t.total) + ' port calls',
       'recorded by AIS for Kiribati-flagged catching vessels since January 2025: ' + nf0.format(t.KIR) + ' in Kiribati and ' + nf0.format(t.total - t.KIR) + ' in ports of other countries.',
@@ -163,45 +164,34 @@
     const isProv = (p) => { const r = tunaBy[p]; return !!r && KT.isNum(r.n_reporters_fish) && r.n_reporters_fish < 3; };
     const barData = labels.map((p) => (tunaBy[p] && KT.isNum(tunaBy[p].exports_partner_tuna) ? tunaBy[p].exports_partner_tuna : null));
     const lineData = labels.map((p) => { const q = prev(p); return (q in hrs && q !== partialM) ? hrs[q] / 1000 : null; });
-    const ax = KT.axes({ unit: 'USD m', monthlyDense: true, dense: true });
-    ax.y.title.text = 'USD millions, partner-reported tuna';
-    ax.x.ticks.callback = function (v) { const p = this.getLabelForValue(v); return /-01$/.test(p) ? p.slice(0, 4) : ''; };
-    ax.y1 = {
-      position: 'right', beginAtZero: true, grid: { drawOnChartArea: false }, border: { display: false },
-      ticks: { padding: 6, maxTicksLimit: 6, callback: (v) => nf0.format(v) },
-      title: { display: true, text: 'thousand fishing hours, previous month', color: tk.muted, font: { size: 11 } }
-    };
+    const xTicks = function (v) { const p = this.getLabelForValue(v); return /-01$/.test(p) ? p.slice(0, 4) : ''; };
+    const axT = KT.axes({ unit: 'USD m', monthlyDense: true, dense: true });
+    axT.y.title.text = 'USD millions'; axT.x.ticks.callback = xTicks;
     KT.make('chart-mirror', {
       type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          { type: 'bar', label: 'Partner-reported tuna', data: barData, yAxisID: 'y', order: 2,
-            backgroundColor: labels.map((p) => (isProv(p) ? KT.withAlpha(tk.partner, tk.prelimAlpha) : tk.partner)) },
-          { type: 'line', label: 'Fishing hours, previous month', data: lineData, yAxisID: 'y1', order: 1,
-            borderColor: tk.kir, backgroundColor: tk.kir, pointRadius: 0, pointHoverRadius: 4, spanGaps: false, borderWidth: 2 }
-        ]
-      },
-      options: {
-        scales: ax,
-        interaction: { mode: 'index', intersect: false },
-        plugins: {
-          tooltip: {
-            callbacks: {
-              title: (items) => KT.fmtPeriod(items[0].label),
-              label: (c) => {
-                if (c.dataset.yAxisID === 'y1') return ' Fishing hours, previous month: ' + (KT.isNum(c.parsed.y) ? nf0.format(c.parsed.y * 1000) : 'not available');
-                return ' Partner-reported tuna: ' + KT.fmtM(c.parsed.y) + (isProv(c.label) ? ' (provisional)' : '');
-              }
-            }
-          }
-        }
-      }
+      data: { labels, datasets: [
+        { type: 'bar', label: 'Partner-reported tuna', data: barData, backgroundColor: labels.map((p) => (isProv(p) ? KT.withAlpha(tk.partner, tk.prelimAlpha) : tk.partner)) }
+      ] },
+      options: { scales: axT, interaction: { mode: 'index', intersect: false },
+        plugins: { tooltip: { callbacks: { title: (items) => KT.fmtPeriod(items[0].label),
+          label: (c) => ' Partner-reported tuna: ' + KT.fmtM(c.parsed.y) + (isProv(c.label) ? ' (provisional)' : ''),
+          footer: (items) => { const h = lineData[items[0].dataIndex]; return KT.isNum(h) ? 'Fishing hours, previous month: ' + nf0.format(h * 1000) : ''; } } } } }
+    });
+    const axH = KT.axes({ unit: 'hours', monthlyDense: true, dense: true });
+    axH.y.title.text = 'thousand fishing hours'; axH.x.ticks.callback = xTicks; axH.y.ticks.callback = (v) => nf0.format(v);
+    KT.make('chart-mirror-hours', {
+      type: 'bar',
+      data: { labels, datasets: [
+        { type: 'bar', label: 'Fishing hours, previous month', data: lineData, backgroundColor: tk.kir }
+      ] },
+      options: { scales: axH, interaction: { mode: 'index', intersect: false },
+        plugins: { tooltip: { callbacks: { title: (items) => KT.fmtPeriod(items[0].label) + ' (hours of the month before)',
+          label: (c) => ' Fishing hours: ' + (KT.isNum(c.parsed.y) ? nf0.format(c.parsed.y * 1000) : 'not available') } } } }
     });
     KT.legend('legend-mirror', [
-      { label: 'Partner-reported tuna (USD m, left axis)', color: tk.partner },
+      { label: 'Top: partner-reported tuna, USD millions', color: tk.partner },
       { label: 'Lighter bar: provisional (fewer than 3 partners published)', color: tk.partner, kind: 'light' },
-      { label: 'Fishing hours of the previous month (right axis)', color: tk.kir, kind: 'line' }
+      { label: 'Bottom: fishing hours of the previous month, thousands', color: tk.kir }
     ]);
     const rows = labels.map((p) => ({
       period: p,
@@ -255,7 +245,8 @@
     const labels = q.map((r) => r.quarter);
     const last = labels[labels.length - 1];
     const partialQ = f.meta.partial_month ? (f.meta.partial_month.slice(0, 4) + 'Q' + Math.ceil(+f.meta.partial_month.slice(5, 7) / 3)) : null;
-    const colour = { KIR: tk.kir, CHN: tk.partner, KOR: tk.fish, THA: tk.copra, other: tk.other };
+    /* A country palette of its own: the site's series colours (tuna orange, copra yellow) would mislead here. */
+    const colour = { KIR: tk.kir, CHN: '#8e3b46', KOR: '#5b7f3b', THA: '#a66f1e', other: tk.other };
     const lightIf = (c) => labels.map((l) => (l === partialQ ? KT.withAlpha(c, tk.prelimAlpha) : c));
     const ax = KT.axes({ stacked: true, unit: 'calls', dense: true });
     ax.y.title.text = 'port calls per quarter';
@@ -292,7 +283,7 @@
     const set = (key, text) => { document.querySelectorAll('[data-fill="' + key + '"]').forEach((n) => { n.textContent = text; }); };
     set('hours', nf0.format(ys[last]) + ' hours spent fishing in ' + last);
     set('encounters', nf0.format(c.n_encounters) + ' vessel pairs seen together at sea');
-    set('lag', nf0.format(c.tha_share_pct) + '% of hand-overs were followed by a carrier call at a Thai port within ' + c.tha_window_days + ' days (median ' + nf0.format(c.lag_median_days) + ' days)');
+    set('lag', nf0.format(c.tha_share_pct) + '% of encounters were followed by a carrier call at a Thai port within ' + c.tha_window_days + ' days (median ' + nf0.format(c.lag_median_days) + ' days)');
   }
 
   /* ---------- 7. footer text ---------- */

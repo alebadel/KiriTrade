@@ -27,17 +27,17 @@ import sys
 from pathlib import Path
 
 LAYERS = [
-    {"id": "L1_valuation", "label": "Freight and insurance (CIF to FOB)", "short": "Freight and\ninsurance\n(CIF→FOB)",
+    {"id": "L1_valuation", "label": "Less: freight and insurance (CIF to FOB)", "short": "Less:\nfreight and\ninsurance",
      "description": "Importers value goods at their own border, including freight and insurance. Exports are valued at the exporter's border. The layer removes the difference."},
-    {"id": "L2_nonresident_operated", "label": "Catch of vessels run by non-resident operators", "short": "Catch of\nnon-resident\noperators",
+    {"id": "L2_nonresident_operated", "label": "Less: catch by vessels run by non-resident operators", "short": "Less: catch of\nnon-resident\noperators",
      "description": "Fish caught by a Kiribati-flagged vessel whose operator is resident elsewhere is not a Kiribati export: the sale is between two non-residents. The layer removes it. Access fees such operators pay are income, not goods, and are not part of the bridge."},
-    {"id": "L3_other_origin_coding", "label": "Resident catch coded to another origin", "short": "Resident catch\ncoded to\nanother origin",
+    {"id": "L3_other_origin_coding", "label": "Add: resident catch coded to another origin", "short": "Add: resident\ncatch coded to\nanother origin",
      "description": "Fish caught by Kiribati-resident operators that importers did not code as Kiribati-origin, for example from vessels under another flag or coded to the country of landing or processing. The layer adds it."},
-    {"id": "L4_unrecorded_routes", "label": "Resident sales by routes the partner series does not capture", "short": "Resident sales\nby routes\nnot recorded",
+    {"id": "L4_unrecorded_routes", "label": "Add: resident sales by routes the partner series does not capture", "short": "Add: resident\nsales by routes\nnot recorded",
      "description": "Fish sold by residents to non-residents at sea, to partners that do not report, landed in third countries, or under product codes outside the tuna series. The layer adds it."},
-    {"id": "L5_treatment", "label": "Treatment: processing, merchanting, re-exports", "short": "Treatment\n(processing,\nre-exports)",
+    {"id": "L5_treatment", "label": "Adjust: processing, merchanting, re-exports", "short": "Adjust:\nprocessing,\nre-exports",
      "description": "Goods sent for processing without a change of ownership, merchanting, fish consumed at home and re-exports change what counts as a good. The layer adds or removes accordingly."},
-    {"id": "L6_other", "label": "Other adjustments named by the agent", "short": "Other",
+    {"id": "L6_other", "label": "Other: adjustments named by the agent", "short": "Other",
      "description": "Anything else the agent judged material, named in its rationale; zero when nothing."},
 ]
 LAYER_IDS = [l["id"] for l in LAYERS]

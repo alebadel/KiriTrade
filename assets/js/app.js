@@ -24,7 +24,7 @@
 
   /* Fallback wording. Agent D's text.json overrides any key present there. */
   const DEFAULT_TEXT = {
-    site_title: 'Import and Export Performance Tracker using Comtrade Trade-Partner Data',
+    site_title: 'KiriTrade: Tuna Exports Now with AI',
     purpose: 'Summarize and share trading-partner data to track the performance of the Kiribati economy.',
     intro: [
       'Kiribati is a Pacific island nation. Like every country it records the goods it sells abroad (exports) and buys from abroad (imports). This page adds a second view of the same trade: what Kiribati\'s trading partners recorded on their side.',
@@ -174,9 +174,7 @@
   /* ---- 0. header: badge, strip ---- */
   function renderHeader() {
     const m = D.manifest;
-    setText('site-title', T('site_title'));
-    setText('purpose', T('purpose'));
-    document.title = T('site_title');
+    /* The page's own <title> and <h1> are kept; text.json site_title/purpose are no longer applied here (the home page is index.html). */
     document.querySelectorAll('[data-updated-badge]').forEach(badge => {
       badge.textContent = '';
       badge.appendChild(el('span', { class: 'dot', 'aria-hidden': 'true' }));
@@ -352,7 +350,7 @@
       { label: 'Tuna (by vessel flag)', color: t.partner }, { label: 'Other fish and seafood', color: t.fish }, { label: 'Copra oil', color: t.copra }, { label: 'Other goods (excluding ships and aircraft)', color: t.other },
       { label: 'Kiribati-reported exports', color: t.kir, kind: 'line' }, { label: 'Preliminary (* on the axis)', color: t.partner, kind: 'light' }
     ]);
-    setText('note-exports', T('notes.exports') + (rows.some(fishOnly) ? ' For periods where Kiribati\'s own return is not published, partner data were collected for fish only, so those bars show tuna and other fish but not copra oil or other goods.' : ''));
+    setText('note-exports', T('notes.exports') + (rows.some(fishOnly) ? ' Where Kiribati\'s own return is not published, partner data were collected for fish only, so those bars show tuna and other fish but not copra oil or other goods.' : '') + (rows.some(r => KT.isNum(r.months_with_partner_data) && KT.isNum(r.months_with_fish_data) && r.months_with_partner_data < r.months_with_fish_data) ? ' Fish bars cover every month; copra oil and other goods cover only the months Kiribati published, so the stack is not an all-goods total for those years (hover a bar for both figures).' : ''));
     if (!rows.length) { KT.empty('chart-exports'); clear('table-exports'); return; }
     const other = rows.map(r => {
       const copra = r.exports_partner_copra_oil || 0;
@@ -374,7 +372,9 @@
         scales: (() => { const s = KT.axes({ stacked: true, dense, monthlyDense: view === 'monthly' }); s.x.ticks.callback = prelimTick(rows, dense, view === 'monthly'); return s; })(),
         interaction: { mode: 'index', intersect: false },
         plugins: { tooltip: { callbacks: { title: items => KT.fmtPeriod(items[0].label), label: KT.moneyLabel, footer: pctFooter(rows),
-          afterBody: items => { const r = rows[items[0].dataIndex]; return KT.isNum(r.exports_partner) ? ['Partner-reported total: ' + KT.fmtM(r.exports_partner)] : []; } } } }
+          afterBody: items => { const r = rows[items[0].dataIndex]; if (!KT.isNum(r.exports_partner)) return [];
+            const mixed = KT.isNum(r.months_with_partner_data) && KT.isNum(r.months_with_fish_data) && r.months_with_partner_data < r.months_with_fish_data;
+            return mixed ? ['Fish bars: all ' + r.months_with_fish_data + ' months. Other bars and this total: the ' + r.months_with_partner_data + ' months Kiribati published.', 'All goods, ' + r.months_with_partner_data + ' months: ' + KT.fmtM(r.exports_partner)] : ['Partner-reported total: ' + KT.fmtM(r.exports_partner)]; } } } }
       }
     });
     KT.table('table-exports', [
@@ -468,13 +468,14 @@
     const src = covLast ? { pct: covLast.share_count, period: String(lastY.year) } : null;
     figChrome('fig-na-exports', 'national_accounts', src, { title: 'Exports: official figures next to partner records' });
     figChrome('fig-na-imports', 'national_accounts', src, { title: 'Imports: official figures next to partner records', how_to_read: '', caveat: txt.caveat });
-    KT.legend('legend-na-exports', [{ label: 'Balance of payments, goods exports (official)', color: t.kir }, { label: 'Kiribati customs, scaled to 12 months', color: t.kir, kind: 'hatch' }, { label: 'Partner-reported, excluding tuna', color: t.partner, kind: 'hatch' }, { label: 'Partner-reported, all goods', color: t.partner }]);
-    KT.legend('legend-na-imports', [{ label: 'Balance of payments, goods imports (official)', color: t.kir }, { label: 'Kiribati customs, scaled to 12 months', color: t.kir, kind: 'hatch' }, { label: 'Partner-reported, excluding ships and aircraft', color: t.partner, kind: 'hatch' }, { label: 'Partner-reported, all goods', color: t.partner }]);
+    KT.legend('legend-na-exports', [{ label: 'Balance of payments, goods exports (official)', color: t.kir }, { label: 'Kiribati customs, scaled to 12 months', color: t.kir, kind: 'hatch' }, { label: 'Partner-reported, full year: tuna (by vessel flag)', color: t.partner }, { label: 'Partner-reported, full year: other goods', color: t.partner, kind: 'hatch' }]);
+    KT.legend('legend-na-imports', [{ label: 'Balance of payments, goods imports (official)', color: t.kir }, { label: 'Kiribati customs, scaled to 12 months', color: t.kir, kind: 'hatch' }, { label: 'Partner-reported, full year: excluding ships and aircraft', color: t.partner }, { label: 'Partner-reported, full year: ships and aircraft', color: t.partner, kind: 'hatch' }]);
     if (!rows.length) { KT.empty('chart-na-exports'); KT.empty('chart-na-imports'); return; }
     const partial = r => KT.isNum(r.months_kiribati_reported) && r.months_kiribati_reported < 12;
     const labels = rows.map(r => String(r.year) + (partial(r) ? '*' : ''));
     ['fig-na-exports', 'fig-na-imports'].forEach(id => { const fig = document.getElementById(id); let n = fig.querySelector('.note'); if (!n) { n = el('p', { class: 'note' }); fig.querySelector('figcaption').before(n); }
-      const pys = rows.filter(partial).map(r => r.year + ' (' + r.months_kiribati_reported + ' months)'); n.textContent = pys.length ? '* Kiribati published fewer than 12 months: ' + pys.join(', ') + '. For these years the customs bar is scaled to 12 months and the partner bars cover only the published months.' : ''; });
+      const some = rows.filter(r => partial(r) && r.months_kiribati_reported > 0).map(r => r.year + ' (' + r.months_kiribati_reported + ' months)'); const none = rows.filter(r => KT.isNum(r.months_kiribati_reported) && r.months_kiribati_reported === 0).map(r => String(r.year));
+      n.textContent = (some.length ? '* Kiribati published fewer than 12 months: ' + some.join(', ') + '; for these years the customs bar is scaled to 12 months. ' : '') + (none.length ? 'No Kiribati return for ' + none.join(', ') + '. ' : '') + 'Partner bars are full-year figures from partners\u2019 annual returns (all reporters); the months-published figures are in the table.'; });
     const gdpLine = (key) => (ctx) => { const r = rows[ctx.dataIndex]; const v = ctx.parsed.y; if (!KT.isNum(v)) return null;
       const pg = r.pct_gdp && KT.isNum(r.pct_gdp[key]) ? r.pct_gdp[key] : (KT.isNum(r.gdp_usd) && r.gdp_usd > 0 ? v / r.gdp_usd * 100 : null);
       return ' ' + ctx.dataset.label + ': ' + KT.fmtM(v) + (KT.isNum(pg) ? ' (' + KT.fmtNum1(pg) + '% of GDP)' : ''); };
@@ -484,23 +485,27 @@
         label: ctx => gdpLine(keys[ctx.datasetIndex])(ctx),
         footer: items => { const r = rows[items[0].dataIndex]; const out = []; if (KT.isNum(r.months_kiribati_reported) && r.months_kiribati_reported < 12) out.push('Kiribati published ' + r.months_kiribati_reported + ' of 12 months'); const c = covA.find(x => String(x.period) === String(r.year)); if (c) out.push('Percent complete: ' + KT.fmtPct(c.share_count)); return out; } } } }
     });
-    const bar = (label, data, color, hatched) => ({ label, data, backgroundColor: hatched ? KT.hatch(color) : color, borderColor: color, borderWidth: hatched ? 1 : 0, maxBarThickness: 22 });
-    const ek = ['bop_goods_exports', 'customs_exports_kiribati_scaled12', 'partner_exports_ex_tuna', 'partner_exports'];
+    const bar = (label, data, color, hatched, stack) => ({ label, data, backgroundColor: hatched ? KT.hatch(color) : color, borderColor: color, borderWidth: hatched ? 1 : 0, maxBarThickness: 22, stack: stack || label });
+    const diff = (a, b) => (KT.isNum(a) && KT.isNum(b)) ? Math.max(0, a - b) : null;
+    const ek = ['bop_goods_exports', 'customs_exports_kiribati_scaled12', 'partner_exports_tuna_annual_basis', 'partner_exports_annual_basis'];
+    const stackTotal = (totalKey, label) => items => { const r = rows[items[0].dataIndex]; return KT.isNum(r[totalKey]) ? [label + ': ' + KT.fmtM(r[totalKey])] : []; };
+    const optsE = common(ek); optsE.scales = KT.axes({ stacked: true }); optsE.plugins.tooltip.callbacks.afterBody = stackTotal('partner_exports_annual_basis', 'Partner-reported, all goods, full year');
     KT.make('chart-na-exports', { type: 'bar', data: { labels, datasets: [
       bar('Balance of payments (official)', rows.map(r => nz(r.bop_goods_exports)), t.kir, false),
       bar('Kiribati customs, scaled to 12 months', rows.map(r => nz(r.customs_exports_kiribati_scaled12)), t.kir, true),
-      bar('Partner-reported, excluding tuna', rows.map(r => nz(r.partner_exports_ex_tuna)), t.partner, true),
-      bar('Partner-reported, all goods', rows.map(r => nz(r.partner_exports)), t.partner, false)
-    ] }, options: common(ek) });
-    const ik = ['bop_goods_imports', 'customs_imports_kiribati_scaled12', 'partner_imports_ex_ships_aircraft', 'partner_imports'];
+      bar('Partner-reported: tuna, full year', rows.map(r => nz(r.partner_exports_tuna_annual_basis)), t.partner, false, 'partner'),
+      bar('Partner-reported: other goods, full year', rows.map(r => diff(r.partner_exports_annual_basis, r.partner_exports_tuna_annual_basis)), t.partner, true, 'partner')
+    ] }, options: optsE });
+    const ik = ['bop_goods_imports', 'customs_imports_kiribati_scaled12', 'partner_imports_ex_ships_aircraft_annual_basis', 'partner_imports_ships_aircraft_annual_basis'];
+    const optsI = common(ik); optsI.scales = KT.axes({ stacked: true }); optsI.plugins.tooltip.callbacks.afterBody = stackTotal('partner_imports_annual_basis', 'Partner-reported, all goods, full year');
     KT.make('chart-na-imports', { type: 'bar', data: { labels, datasets: [
       bar('Balance of payments (official)', rows.map(r => nz(r.bop_goods_imports)), t.kir, false),
       bar('Kiribati customs, scaled to 12 months', rows.map(r => nz(r.customs_imports_kiribati_scaled12)), t.kir, true),
-      bar('Partner-reported, excluding ships and aircraft', rows.map(r => nz(r.partner_imports_ex_ships_aircraft)), t.partner, true),
-      bar('Partner-reported, all goods', rows.map(r => nz(r.partner_imports)), t.partner, false)
-    ] }, options: common(ik) });
-    KT.table('table-na-exports', [{ key: 'year', label: 'Year' }, { key: 'months_kiribati_reported', label: 'Months Kiribati published', num: true }, { key: 'bop_goods_exports', label: 'BOP exports', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati', label: 'Customs (as published)', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati_scaled12', label: 'Customs, 12-month basis', num: true, fmt: KT.fmtNum1 }, { key: 'partner_exports_ex_tuna', label: 'Partner ex tuna', num: true, fmt: KT.fmtNum1 }, { key: 'partner_exports', label: 'Partner all', num: true, fmt: KT.fmtNum1 }, { key: 'gdp_usd', label: 'GDP', num: true, fmt: KT.fmtNum1 }], allRows.slice().reverse());
-    KT.table('table-na-imports', [{ key: 'year', label: 'Year' }, { key: 'months_kiribati_reported', label: 'Months Kiribati published', num: true }, { key: 'bop_goods_imports', label: 'BOP imports', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati', label: 'Customs (as published)', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati_scaled12', label: 'Customs, 12-month basis', num: true, fmt: KT.fmtNum1 }, { key: 'partner_imports_ex_ships_aircraft', label: 'Partner ex ships & aircraft', num: true, fmt: KT.fmtNum1 }, { key: 'partner_imports', label: 'Partner all', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati_as_published', label: 'Customs, as published', num: true, fmt: (v, r) => KT.isNum(v) ? KT.fmtNum1(v) : KT.fmtNum1(r.customs_imports_kiribati) }], allRows.slice().reverse());
+      bar('Partner-reported: excluding ships and aircraft, full year', rows.map(r => nz(r.partner_imports_ex_ships_aircraft_annual_basis)), t.partner, false, 'partner'),
+      bar('Partner-reported: ships and aircraft, full year', rows.map(r => nz(r.partner_imports_ships_aircraft_annual_basis)), t.partner, true, 'partner')
+    ] }, options: optsI });
+    KT.table('table-na-exports', [{ key: 'year', label: 'Year' }, { key: 'months_kiribati_reported', label: 'Months Kiribati published', num: true }, { key: 'bop_goods_exports', label: 'BOP exports', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati', label: 'Customs (as published)', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati_scaled12', label: 'Customs, 12-month basis', num: true, fmt: KT.fmtNum1 }, { key: 'partner_exports_tuna_annual_basis', label: 'Partner tuna, full year', num: true, fmt: KT.fmtNum1 }, { key: 'partner_exports_annual_basis', label: 'Partner all goods, full year', num: true, fmt: KT.fmtNum1 }, { key: 'partner_exports', label: 'Partner all goods, months published', num: true, fmt: KT.fmtNum1 }, { key: 'gdp_usd', label: 'GDP', num: true, fmt: KT.fmtNum1 }], allRows.slice().reverse());
+    KT.table('table-na-imports', [{ key: 'year', label: 'Year' }, { key: 'months_kiribati_reported', label: 'Months Kiribati published', num: true }, { key: 'bop_goods_imports', label: 'BOP imports', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati', label: 'Customs (as published)', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati_scaled12', label: 'Customs, 12-month basis', num: true, fmt: KT.fmtNum1 }, { key: 'partner_imports_ex_ships_aircraft_annual_basis', label: 'Partner ex ships & aircraft, full year', num: true, fmt: KT.fmtNum1 }, { key: 'partner_imports_annual_basis', label: 'Partner all goods, full year', num: true, fmt: KT.fmtNum1 }, { key: 'partner_imports', label: 'Partner all goods, months published', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati_as_published', label: 'Customs, as published', num: true, fmt: (v, r) => KT.isNum(v) ? KT.fmtNum1(v) : KT.fmtNum1(r.customs_imports_kiribati) }], allRows.slice().reverse());
     const excl = NA && NA.meta && Array.isArray(NA.meta.excluded_lines) ? NA.meta.excluded_lines : [];
     if (excl.length) { const fig = document.getElementById('fig-na-imports'); const n = fig.querySelector('.note'); if (n) n.textContent = (n.textContent ? n.textContent + ' ' : '') + 'Set aside from the customs bars: ' + excl.map(e => KT.fmtPeriod(e.period) + ', ' + e.description + ' (USD ' + KT.fmtNum1(e.kiribati_value_usd_m) + ' m)').join('; ') + '. The as-published total is in the table.'; }
   }
@@ -517,6 +522,10 @@
     const kir = countries.find(x => x.is_subject); const others = countries.filter(x => !x.is_subject);
     KT.legend('legend-peers-tuna', [{ label: 'Kiribati', color: t.kir, kind: 'line' }].concat(others.map((o, i) => ({ label: o.name, color: PEER_GREYS_LIGHT[i % PEER_GREYS_LIGHT.length], kind: 'line' }))));
     if (!countries.length) { KT.empty('chart-peers-tuna'); return; }
+    /* Basis note: this chart uses partners' annual returns (all reporters), the rest of the site the monthly returns. */
+    (function () { const fig = document.getElementById('fig-peers-tuna'); if (!fig || !kir) return; let n = fig.querySelector('.note'); if (!n) { n = el('p', { class: 'note' }); const fc = fig.querySelector('figcaption'); if (fc) fc.before(n); }
+      const i = years.indexOf(lastY); const here = kir.values[i]; const ann = D.series && D.series.annual ? D.series.annual.find(r => String(r.period) === String(lastY) && r.months_with_fish_data === 12) : null;
+      n.textContent = 'Basis: partners\u2019 annual returns to UN Comtrade, all reporters, so every country is on the same footing. The rest of this site uses monthly returns, which exclude annual-only reporters' + (ann && KT.isNum(here) && KT.isNum(ann.exports_partner_tuna) ? ' (Kiribati ' + lastY + ': ' + KT.fmtM(here) + ' here, ' + KT.fmtM(ann.exports_partner_tuna) + ' in the monthly series).' : '.'); })();
     const ds = others.map((o, i) => ({ label: o.name, shortLabel: o.name.replace('Papua New Guinea', 'PNG').replace('Micronesia (FS)', 'Micronesia').replace('Solomon Islands', 'Solomon Is.').replace('Marshall Islands', 'Marshall Is.'), data: o.values.map(nz), borderColor: PEER_GREYS_LIGHT[i % PEER_GREYS_LIGHT.length], backgroundColor: PEER_GREYS_LIGHT[i % PEER_GREYS_LIGHT.length], borderWidth: 1.5, pointRadius: 0, pointHitRadius: 10 }));
     if (kir) ds.push({ label: kir.name, shortLabel: 'Kiribati', isSubject: true, data: kir.values.map(nz), borderColor: t.kir, backgroundColor: t.kir, borderWidth: 3, pointRadius: 3, pointHitRadius: 10 });
     KT.make('chart-peers-tuna', {

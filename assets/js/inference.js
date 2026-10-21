@@ -2,6 +2,7 @@
 (function () {
   'use strict';
   const $ = (id) => document.getElementById(id);
+  const nf0 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
   const nf1 = new Intl.NumberFormat('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const nf2 = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   function setText(id, t) { const e = $(id); if (e) e.textContent = t == null ? '' : String(t); }
@@ -17,31 +18,49 @@
 
   function renderMethod(inf) {
     const m = inf.meta;
-    setText('in-strip', 'Run ' + m.run_id + ' of ' + KT.fmtDate(m.run_date + 'T00:00:00Z') + ': ' + m.n_agents + ' agent answers accepted' + (m.n_rejected ? ', ' + m.n_rejected + ' rejected by the checks' : '') + '. Years: ' + inf.periods.map(p => p.period).join(', ') + '. Evidence: ' + m.evidence.join('; ') + '.');
+    const ans = $('in-answer');
+    if (ans && inf.periods.length) {
+      const parts = inf.periods.map(p => p.period + ': about USD ' + Math.round(p.end.mean) + ' million (middle 80% of agents ' + Math.round(p.end.p10) + ' to ' + Math.round(p.end.p90) + ')');
+      ans.textContent = 'Tuna sold abroad by Kiribati residents, as ' + m.n_agents + ' AI agents estimate it from the five inputs. ' + parts.join('; ') + '. Importers recorded ' + inf.periods.map(p => Math.round(p.start.value)).join(', ') + ' for the same years on the flag basis.';
+    }
+    setText('in-strip', 'Run ' + m.run_id + ' of ' + KT.fmtDate(m.run_date + 'T00:00:00Z') + ': ' + m.n_agents + ' agent answers accepted' + (m.n_rejected ? ', ' + m.n_rejected + ' rejected by the checks' : '') + '. Years: ' + inf.periods.map(p => p.period).join(', ') + '. Evidence: partner returns, ship-tracking summaries, vessel-register hints, statistical standards and Kiribati official statistics.');
     const ol = $('layer-list'); ol.textContent = '';
     inf.layers.forEach(l => ol.appendChild(el('li', null, [el('strong', { text: l.label + '. ' }), l.description])));
   }
 
+  function thinNote(p) {
+    const thin = p.layers.filter(l => Math.abs(l.mean) < 0.01 * p.start.value).map(l => inf_layer_short(l.id));
+    return thin.length ? (thin.length === 1 ? 'One layer (' + thin[0] + ') is under 1% of the start and too thin to see; read its label.' : thin.length + ' layers (' + thin.join('; ') + ') are under 1% of the start and too thin to see; read their labels.') : '';
+  }
+  let inf_layer_short = id => id;
   function renderBridges(inf) {
     const t = KT.tokens();
+    inf_layer_short = id => { const d = inf.layers.find(x => x.id === id); return d ? d.label.replace(/^(Less|Add|Adjust|Other):\s*/, '') : id; };
     const box = $('bridge-figures'); box.textContent = '';
-    inf.periods.slice().reverse().forEach(p => {
+    inf.periods.slice().forEach(p => {
       const id = 'chart-bridge-' + p.period;
       const fig = el('figure', { class: 'fig' }, [
         el('div', { class: 'fig-head' }, [el('div', null, [el('h3', { text: 'Calendar ' + p.period }), el('p', { class: 'sub', text: 'From ' + nf2.format(p.start.value) + ' recorded by importers to an estimated ' + nf2.format(p.end.mean) + ' (agents’ 10th to 90th percentile ' + nf1.format(p.end.p10) + ' to ' + nf1.format(p.end.p90) + '), USD millions' })])]),
         el('div', { class: 'legend', id: 'legend-' + id }),
         el('div', { class: 'plot tall' }, [el('canvas', { id, role: 'img', 'aria-label': 'Waterfall from the raw partner figure to the agents’ estimate for ' + p.period })]),
-        el('figcaption', null, [el('p', { class: 'src', text: 'Source: UN Comtrade partner returns (start value); the tracker’s agent run ' + inf.meta.run_id + '. ' + (p.official && KT.isNum(p.official.bop_goods_exports) ? 'For reference, the official balance-of-payments goods exports (all goods) for ' + p.period + ' were USD ' + nf1.format(p.official.bop_goods_exports) + ' m.' : '') })]),
+        el('figcaption', null, [
+          el('p', { class: 'how', text: 'Each bar is the average step across the ' + inf.meta.n_agents + ' agents; the whisker is where the middle 80% of agents fall; each dot beside the last bar is one agent’s total. ' + thinNote(p) }),
+          el('p', { class: 'src', text: 'Source: UN Comtrade partner returns (start value); the tracker’s agent run ' + inf.meta.run_id + '. ' + (p.official && KT.isNum(p.official.bop_goods_exports) ? 'For reference, the official balance-of-payments goods exports (all goods) for ' + p.period + ' were USD ' + nf1.format(p.official.bop_goods_exports) + ' m.' : '') })]),
+        el('details', { class: 'tbl' }, [el('summary', { text: 'Show this year as a table' }), el('div', { class: 'scroll', id: 'table-bridge-' + p.period })]),
         el('details', { class: 'narr' }, [el('summary', { text: 'The experts\u2019 narrative for ' + p.period + ': five points, then the arguments layer by layer' }), el('div', { class: 'narr-body', id: 'narr-' + p.period })])
       ]);
       box.appendChild(fig);
-      KT.legend('legend-' + id, [{ label: 'Removed', color: t.partner }, { label: 'Added', color: t.fish }, { label: 'Start and end', color: t.kir }, { label: 'Agents, 10th to 90th percentile', color: t.ink, kind: 'line' }]);
+      KT.legend('legend-' + id, [{ label: 'Removed', color: t.partner }, { label: 'Added', color: t.fish }, { label: 'Start and end', color: t.ink2 }, { label: 'Whisker: 10th to 90th percentile across agents', color: t.ink, kind: 'line' }, { label: 'Dot: one agent’s estimate', color: t.ink2 }]);
       KT.waterfall(id, {
         start: { label: 'Raw partner\nfigure (CIF)', value: p.start.value },
         steps: p.layers.map(l => { const d = inf.layers.find(x => x.id === l.id); return { label: d.short, mean: l.mean, p10: l.p10, p90: l.p90 }; }),
         end: { label: 'Estimated\ntrue exports', mean: p.end.mean, p10: p.end.p10, p90: p.end.p90, values: p.end.values }
       }, { labelSize: 14 });
       KT.bridgeNarrative('narr-' + p.period, inf, p.period);
+      KT.table('table-bridge-' + p.period, [{ key: 'label', label: 'Step' }, { key: 'mean', label: 'Mean', num: true, fmt: v => KT.isNum(v) ? nf1.format(v) : '—' }, { key: 'range', label: '10th to 90th percentile', num: true }],
+        [{ label: 'Raw partner figure (CIF)', mean: p.start.value, range: '' }]
+          .concat(p.layers.map(l => ({ label: inf.layers.find(x => x.id === l.id).label, mean: l.mean, range: sgn(l.p10) + ' to ' + sgn(l.p90) })))
+          .concat([{ label: 'Estimated true exports', mean: p.end.mean, range: nf1.format(p.end.p10) + ' to ' + nf1.format(p.end.p90) }]));
     });
     // table
     const cols = [{ key: 'label', label: 'Step' }];
@@ -51,9 +70,22 @@
     row('Raw partner figure (CIF)', p => ({ mean: p.start.value }), false, 1);
     inf.layers.forEach((l, i) => row(l.label, p => p.layers[i], true));
     row('Estimated true exports', p => p.end, false, 1);
-    row('Estimate as a share of the partner figure', p => ({ mean: p.share_of_start.mean, p10: p.share_of_start.p10, p90: p.share_of_start.p90 }), false, 2);
+    row('Estimate as a share of the partner figure (%)', p => ({ mean: 100 * p.share_of_start.mean, p10: 100 * p.share_of_start.p10, p90: 100 * p.share_of_start.p90 }), false, 1);
     KT.table('table-layers', cols, rows);
     setText('src-layers', 'Source: data/inference.json, run ' + inf.meta.run_id + '. Layer ranges are the 10th and 90th percentiles of the signed layer across agents.');
+  }
+
+  /* ---------- run log ---------- */
+  function renderRuns(runsData) {
+    const t = KT.tokens();
+    const runs = (runsData && runsData.runs) || [];
+    if (!runs.length) { KT.empty('chart-runs', 'No runs recorded yet.'); return; }
+    const labels = runs.map(r => KT.fmtDate(r.date + 'T00:00:00Z') + (runs.filter(x => x.date === r.date).length > 1 ? ' (' + r.id + ')' : ''));
+    KT.make('chart-runs', { type: 'bar', data: { labels, datasets: [{ label: 'Agents', data: runs.map(r => r.n_agents), backgroundColor: runs.map(r => r.superseded ? KT.withAlpha(t.count, t.prelimAlpha) : t.kir), maxBarThickness: 48 }] },
+      options: { plugins: { tooltip: { callbacks: { title: items => runs[items[0].dataIndex].label, label: ctx => ' ' + ctx.parsed.y + ' agents', footer: items => { const r = runs[items[0].dataIndex]; return [r.question, 'Inputs: ' + r.inputs.join(', '), r.superseded ? 'Superseded by a later run' : 'Current'].join('\n'); } } } },
+        scales: { x: { grid: { display: false }, border: { color: t.axis }, ticks: { autoSkip: false, maxRotation: 0, font: { size: 11 } } }, y: { beginAtZero: true, grid: { color: t.grid, drawTicks: false }, border: { display: false }, ticks: { maxTicksLimit: 5, precision: 0 }, title: { display: true, text: 'agents', color: t.muted, font: { size: 11 } } } } } });
+    setText('runs-src', 'Source: the tracker’s run log (data/runs.json). Lighter bars: runs superseded by a later run on the same question.');
+    KT.table('table-runs', [{ key: 'date', label: 'Date' }, { key: 'id', label: 'Run' }, { key: 'label', label: 'What' }, { key: 'n_agents', label: 'Agents', num: true }, { key: 'inputs', label: 'Inputs', fmt: v => v.join(', ') }, { key: 'status', label: 'Status' }], runs);
   }
 
   function renderNotes(inf) {
@@ -69,42 +101,12 @@
     inf.principles.forEach(p => pl.appendChild(el('li', null, [el('strong', { text: p.agent.replace('draw_', 'Agent ') + ', ' + p.id + '. ' }), p.statement + ' ', el('span', { class: 'meta', text: 'Source: ' + (p.source || '') + '. Uncertainty: ' + (p.uncertainty || '') })])));
   }
 
-  function renderNowcast(nc, series) {
-    const tk = KT.tokens();
-    const lastPub = series.monthly.filter(r => KT.isNum(r.exports_partner_tuna) && r.pct_complete_w_exports >= 0.85).slice(-1)[0];
-    const cut = lastPub ? lastPub.period : '2026-05';
-    const hist = series.monthly.filter(r => r.period >= '2023-01');
-    const fut = nc.ensemble.months.map(r => r.period);
-    const labels = hist.map(r => r.period).concat(fut.filter(p => !hist.some(h => h.period === p)));
-    const pub = labels.map(p => { const r = hist.find(h => h.period === p); return r && KT.isNum(r.exports_partner_tuna) && p <= cut ? r.exports_partner_tuna : null; });
-    const partial = labels.map(p => { const r = hist.find(h => h.period === p); return r && p > cut && KT.isNum(r.exports_partner_tuna) ? r.exports_partner_tuna : null; });
-    const base = labels.map(p => { const r = nc.baseline.nowcast.find(b => b.period === p); return r ? r.point_usd_m : null; });
-    const ag = labels.map(p => { const r = nc.ensemble.months.find(b => b.period === p); return r ? r.total.mean : null; });
-    const p10 = labels.map(p => { const r = nc.ensemble.months.find(b => b.period === p); return r ? r.total.p10 : null; });
-    const p90 = labels.map(p => { const r = nc.ensemble.months.find(b => b.period === p); return r ? r.total.p90 : null; });
-    const ax = KT.axes({ monthlyDense: true, dense: true });
-    ax.x.ticks.callback = function (v) { const p = this.getLabelForValue(v); return /-01$/.test(p) ? p.slice(0, 4) : ''; };
-    KT.make('chart-nowcast', { type: 'bar', data: { labels, datasets: [
-      { type: 'bar', label: 'Published', data: pub, backgroundColor: tk.partner, order: 3 },
-      { type: 'bar', label: 'Partial (still being reported)', data: partial, backgroundColor: KT.withAlpha(tk.partner, tk.prelimAlpha), order: 3 },
-      { type: 'line', label: 'Agents, 90th percentile', data: p90, borderColor: 'transparent', backgroundColor: KT.withAlpha(tk.kir, 0.18), pointRadius: 0, fill: '+1', order: 2, spanGaps: false },
-      { type: 'line', label: 'Agents, 10th percentile', data: p10, borderColor: 'transparent', backgroundColor: 'transparent', pointRadius: 0, fill: false, order: 2, spanGaps: false },
-      { type: 'line', label: 'Baseline', data: base, borderColor: tk.copra, backgroundColor: tk.copra, borderWidth: 2, borderDash: [5, 4], pointRadius: 3, order: 1, spanGaps: false },
-      { type: 'line', label: 'Agents, average', data: ag, borderColor: tk.kir, backgroundColor: tk.kir, borderWidth: 2, pointRadius: 3, order: 0, spanGaps: false }
-    ] }, options: { scales: ax, interaction: { mode: 'index', intersect: false }, plugins: { tooltip: { callbacks: { title: it => KT.fmtPeriod(it[0].label), label: c => (c.parsed.y == null ? null : ' ' + c.dataset.label + ': ' + KT.fmtM(c.parsed.y)) } } } } });
-    KT.legend('legend-nowcast', [{ label: 'Published partner figures', color: tk.partner }, { label: 'Partial months', color: tk.partner, kind: 'light' }, { label: 'Baseline', color: tk.copra, kind: 'dash' }, { label: 'Agents: average and 10th–90th percentile', color: tk.kir, kind: 'line' }]);
-    setText('src-nowcast', 'Source: UN Comtrade partner returns; the tracker’s baseline (tracker/README.md) and agent run of ' + nc.meta.run_date + ' (' + nc.ensemble.n_accepted + ' agents, flag-basis total only).');
-    KT.table('table-nowcast', [{ key: 'period', label: 'Month', fmt: v => KT.fmtPeriod(v) }, { key: 'base', label: 'Baseline', num: true, fmt: v => KT.isNum(v) ? nf1.format(v) : '—' }, { key: 'mean', label: 'Agents, average', num: true, fmt: nf1.format }, { key: 'p10', label: '10th pct', num: true, fmt: nf1.format }, { key: 'p90', label: '90th pct', num: true, fmt: nf1.format }],
-      nc.ensemble.months.map(r => ({ period: r.period, base: (nc.baseline.nowcast.find(b => b.period === r.period) || {}).point_usd_m, mean: r.total.mean, p10: r.total.p10, p90: r.total.p90 })));
-  }
-
   function start() {
     if (location.protocol === 'file:') { show('file-notice', true); return; }
-    Promise.all([getJSON('inference'), getJSON('nowcast').catch(() => null), getJSON('series'), getJSON('text').catch(() => null)]).then(([inf, nc, series, text]) => {
+    Promise.all([getJSON('inference'), getJSON('text').catch(() => null), getJSON('runs').catch(() => null)]).then(([inf, text, runs]) => {
       KT.applyDefaults();
       if (text && text.footer) { setText('footer-credit', text.footer.credit); setText('footer-disclaimer', text.footer.disclaimer); }
-      renderMethod(inf); renderBridges(inf); renderNotes(inf);
-      if (nc) renderNowcast(nc, series); else { KT.empty('chart-nowcast', 'No early estimate has been published for this run.'); }
+      renderMethod(inf); renderBridges(inf); renderRuns(runs); renderNotes(inf);
     }).catch(err => { setText('load-error-text', 'The inference data could not be loaded (' + err.message + ').'); show('load-error', true); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();

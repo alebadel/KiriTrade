@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Methods — Kiribati trade tracker</title>
+<title>Methods — KiriTrade</title>
 <meta name="description" content="Plain-language notes on how the Import and Export Performance Tracker builds its figures from UN Comtrade partner data.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,14 @@
 
 <div class="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html" aria-current="page">Methods</a>
     </nav>
@@ -32,149 +32,126 @@
 <header class="hero">
   <div class="wrap--text">
     <h1>Methods: how the numbers are made</h1>
-    <p class="purpose">Plain-language notes on every number in the tracker: where it comes from, how it is added up, and what it can and cannot be compared with.</p>
+    <p class="purpose">Where every number on the site comes from, how it is added up, and what it can be compared with. The estimate first; the five inputs after.</p>
     <p class="small muted" id="methods-updated"></p>
   </div>
 </header>
 
 <section class="block methods">
   <div class="wrap--text">
-    <!-- Filled from data/text.json "methods" when available; otherwise the
-         fallback text below stays visible. -->
-    <nav class="contents" aria-label="Sections" id="methods-toc"></nav>
-    <div id="methods-body">
-
-      <h2 id="m1">What partner data are</h2>
-      <p>Every shipment that crosses a border is recorded twice: once by the country it leaves, as an export, and once by the country it enters, as an import. Both records are sent to UN Comtrade, the United Nations trade database.</p>
-      <p>Kiribati's own customs returns are the official record. "Partner-reported" data are the other side of the same shipments: what Thailand recorded as imports from Kiribati, what Australia recorded as exports to Kiribati, and so on. Economists call this "mirror" data.</p>
-      <p>The two records of one shipment differ even when both are right. Importers add freight and insurance to the value. The two sides can book the shipment in different months, under different product codes, or to different partners (for example when goods pass through a third country, or when fish is coded to the flag of the vessel that caught it).</p>
-
-      <h2 id="m2">The partner panel</h2>
-      <p>The tracker watches a fixed list of partners, called the partner panel. A partner joins the panel if it accounted for at least half of one percent of Kiribati's partner-reported exports or imports over the reference window (2023 to 2025). Sixteen main regional and global partners are always included.</p>
-      <p>Each partner carries two weights: its share of partner-reported Kiribati exports and its share of partner-reported Kiribati imports over the same window. The panel and the weights are published in <code>tracker/panel.json</code>.</p>
-      <p>Keeping the panel fixed means that a change in a total reflects a change in trade, not a change in who is being counted.</p>
-
-      <h2 id="m3">Percent complete: count-based and trade-weighted</h2>
-      <p>For a month, the count-based percent complete is the number of panel partners that have published that month, divided by the number of partners in the panel. For a quarter, it is the number of partner-months published divided by the number possible (three per partner). For a year, it is based on annual datasets where they exist and on twelve monthly datasets otherwise.</p>
-      <p>The trade-weighted version counts each partner by its weight. A month in which Thailand has published scores high on the export side even if several small partners have not, because Thailand buys most of the tuna.</p>
-      <p>A quarter that has not ended still counts three months as possible, so the reader can watch it fill up. Periods below 60 percent complete are drawn lighter and marked as preliminary.</p>
-
-      <h2 id="m4">Publication lags</h2>
-      <p>Partner data are usable about four months after the reference month. Some large partners publish much later: China's latest monthly data are for December 2024 (annual only since), Korea's for December 2025, and Singapore's for March 2026. Thailand, the main tuna buyer, publishes within about four months.</p>
-      <p>Kiribati's own monthly returns are missing for 2019, 2021, January 2022 to May 2023, July and September 2024, and March and October 2025. Where Kiribati's figure is not published, the line on the charts has a gap; it is never drawn as zero.</p>
-
-      <h2 id="m5">How products are grouped</h2>
-      <p>Goods are classified with the Harmonized System (HS), an international numbering scheme. Six-digit codes (HS6) are the finest level shared by all countries; four-digit codes (HS4) name product groups.</p>
-      <dl>
-        <dt>Tuna</dt><dd>HS6 030341 to 030349 (frozen tunas), 030487 (frozen tuna fillets) and 160414 (prepared or preserved tuna).</dd>
-        <dt>Fish and seafood</dt><dd>HS chapter 03 plus heading 1604.</dd>
-        <dt>Copra oil</dt><dd>HS6 151311 and 151319 (coconut oil).</dd>
-        <dt>Ships and aircraft</dt><dd>HS chapters 88 and 89.</dd>
-        <dt>Fuel</dt><dd>HS chapter 27.</dd>
-        <dt>Food</dt><dd>HS chapters 01 to 24, excluding chapter 03.</dd>
-      </dl>
-
-      <h2 id="m6">What is and is not comparable</h2>
-      <p>Years in which Kiribati published all twelve months can be compared directly with the official balance-of-payments goods lines. For years with missing months, the customs figure is also shown scaled to twelve months; that is an estimate, and it is labelled as one.</p>
-      <p>Partner-reported exports are nearly complete: 96 to 99 percent of Kiribati's exports go to partners that publish promptly. Partner-reported imports are partial: partners record roughly 30 to 50 percent of what Kiribati records in most categories, and about 8 percent for fuel.</p>
-      <p>Comparisons at the exact month, partner and product level create false alarms. About three-quarters of apparent mismatches disappear when the same product is compared across all partners, or by quarter instead of by month. Read product comparisons for full years.</p>
-      <p>Differences are quoted in US dollars. Ratios (partner figure divided by Kiribati figure) are read only for full years, because a monthly ratio balloons when the figure in the denominator is close to zero.</p>
-
-      <h2 id="m7">Why no trade balance is shown</h2>
-      <p>A trade balance is exports minus imports. Because partner data cover only part of Kiribati's imports, a balance built from them would be misleading. The tracker never computes one.</p>
-
-      <h2 id="m8">How the two sources are compared</h2>
-      <p>Partner-reported exports are the sum of what each partner recorded as imports from Kiribati; partner-reported imports are the sum of what each partner recorded as exports to Kiribati. Kiribati-reported figures are Kiribati's own returns as published on Comtrade, in the same months. Both are shown in millions of US dollars to one decimal place. A blank means not published, never zero.</p>
-      <p>Ships and aircraft are rare, very large items, so every total is shown with and without them.</p>
-
-      <h2 id="m9">How the daily update works</h2>
-      <p>A scheduled job runs once a day, asks UN Comtrade for any newly published partner data, rebuilds the data files and republishes the page. The time of the last run and the latest period covered are shown at the top of the tracker. If Comtrade cannot be reached, the previous data files stay in place.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Kept outside #methods-body on purpose: that block is rewritten from data/text.json when the page loads. -->
-<!-- NOWCAST-METHODS-START -->
-<section class="block methods" id="registry-methods">
-  <div class="wrap--text">
-    <h2>Vessel register: how the counts are made</h2>
-    <p>The <a href="registry.html">Vessel register page</a> counts the entries that the Kiribati, Nauru and Tuvalu flag states have submitted to the WCPFC Record of Fishing Vessels, as exported from the public register on the date shown on the page. The export includes vessels since deleted, with the reason the flag state gave; they are counted as "deleted". Vessel types are grouped from the register's own codes (FAO classification): purse seiners, longliners, pole-and-line and other fishing vessels, fish carriers, bunker vessels.</p>
-    <p>The owner-address hint is a text pattern applied to the owner, operator and charterer fields: an address in Kiribati, Nauru or Tuvalu counts as "at home", an address elsewhere as "abroad", both as "mixed", none as "no usable address". It is a hint about where the operator is based and nothing more. The AIS match ties a register entry to a Global Fishing Watch identity by radio call sign, then by IMO number. Only counts leave the working files; names, registration numbers and identifiers never do (tracker/build_registry_data.py; the test suite scans the published file for names).</p>
-  </div>
-</section>
-
-<section class="block methods" id="documents-methods">
-  <div class="wrap--text">
-    <h2>Rules, standards and research: how the inventory is made</h2>
-    <p>The <a href="documents.html">Rules and research page</a> counts the documents in the tracker's knowledge base by type and by the country they are about. Types: statistical manuals and standards; customs rules and regulations; data documentation; academic papers; IMF and other official reports; the author's project briefs; news. Words are counted in the text extracted from each file (PDF, HTML or Word); pages without a text layer count as zero. Country is assigned from the publishing body or the subject of the document; material that applies to every country is "general". Titles come from the knowledge-base indexes; Thai-language attachments extracted from notification archives are labelled by the notification they belong to. No document text is published (tracker/build_corpus_data.py).</p>
+    <nav class="contents" aria-label="Sections" id="methods-toc"><strong>Sections</strong>
+      <ol>
+        <li><a href="#inference-methods">The estimate of true exports</a></li>
+        <li><a href="#glossary">Terms used on the site</a></li>
+        <li><a href="#m1">Partner data: what they are and what is comparable</a></li>
+        <li><a href="#m3">The partner panel, percent complete and lags</a></li>
+        <li><a href="#m5">How products are grouped</a></li>
+        <li><a href="#early-methods">The early estimate of the partner series</a></li>
+        <li><a href="#fleet-methods">Ship tracking (AIS)</a></li>
+        <li><a href="#registry-methods">Vessel register</a></li>
+        <li><a href="#documents-methods">Knowledge base</a></li>
+        <li><a href="#validation-methods">Validation</a></li>
+        <li><a href="#m6">The daily update</a></li>
+      </ol>
+    </nav>
   </div>
 </section>
 
 <section class="block methods" id="inference-methods">
   <div class="wrap--text">
-    <h2>Inference: how the estimate of true exports is made</h2>
-    <p>The <a href="inference.html">Inference page</a> estimates the FOB value of tuna that Kiribati-resident operators sold to non-residents in a calendar year. The procedure has five parts.</p>
-    <h3>1. The evidence pack</h3>
-    <p>Every agent receives the same files: the monthly partner-reported tuna series (UN Comtrade, importers' records coded to Kiribati by vessel flag); fleet aggregates (fishing hours by register address pattern, the share of at-sea transfers followed by a carrier call at a Thai port and the median lag); annual partner-reported tuna by flag state for seven Pacific states; extracts from the statistical standards (BPM6 on residence and change of ownership, IMTS 2010 and the Kyoto Convention on origin, Thai customs origin rules); and Kiribati's official statistics (balance-of-payments goods exports and imports, customs returns with the months published). The pack holds no vessel, company or personal names and no news.</p>
-    <h3>2. The instructions</h3>
-    <p>The agent is told what "true exports" means and that the official figures are evidence of what the compiler recorded, not the target. It writes four to eight numbered principles with a source and an uncertainty each, freezes them, and then builds one bridge per year from the raw partner figure to its estimate in six signed layers, in a fixed order: valuation (CIF to FOB); catch of vessels run by non-resident operators (removed); resident catch coded to another origin (added); resident sales by routes the partner series does not capture (added); treatment issues such as processing and re-exports; other. Each layer carries an 80% range, a confidence tag and a rationale that cites principles and evidence files. The agent then audits its own answer. The instructions ban any word that imputes dishonest intent to a reporter or a compiler, require residence to be stated as a condition, and forbid any comparison with licence fees (tracker/agents/bridge_prompt.md).</p>
-    <h3>3. The run</h3>
-    <p>Thirty agents run in separate contexts with the same model and the same prompt (run of 20 October 2026: Claude Sonnet 5.5 at its default reasoning effort; the model and setting are recorded in data/inference.json for every run). Each writes a JSON file. A program validates every file: six layers in order, start plus layers equal to the estimate within one cent, ranges ordered, no banned words, at least three principles. Rejected files are listed with the reason and are not replaced.</p>
-    <h3>4. Aggregation</h3>
-    <p>For each year and each layer the program computes the mean, standard deviation, median, 10th and 90th percentiles, minimum and maximum across accepted agents, and the same for the end value; it also records the average of the agents' own 80% ranges. The waterfall shows the means and the 10th to 90th percentiles. The agents do no arithmetic that is published (tracker/build_inference_data.py).</p>
-    <h3>5. What the spread means, and what it does not</h3>
-    <p>The spread across agents is disagreement given identical evidence and one underlying model. It is not a standard error and not a confidence interval; blind spots that all agents share do not appear in it. The agents' own 80% ranges, shown in the data file, are wider. The estimate is not scored against the official figure: the Kiribati National Statistics Office measures the same quantity from its own returns, and the two readings rest on different evidence, so neither is the test of the other. The credibility of the estimate rests on the written principles and on the validation test described below.</p>
-    <h3>The early estimate of the partner series</h3>
-    <p>The same page carries a different and smaller product: an early estimate of the flag-basis partner figure for months not yet published. For a month with some partner returns, the baseline adds the non-Thai returns already published to the average of Thailand's last twelve published months; for months with no returns it uses the trailing twelve-month total. Its range is the 10th to 90th percentile of its own errors in a pseudo-real-time test over 86 months (March 2019 to May 2026), in which each month was forecast using only what had been published at the time. In that test the baseline roughly halved the three-month error of repeating the same month of the previous year (6.5 against 10.9, USD millions). A version that also used carrier arrivals at Thai ports from ship-tracking did slightly better in raw error (6.4) but not significantly, and port arrivals are essentially uncorrelated with the value Thailand reports; the pre-set rule was that ship-tracking must beat the baseline significantly to be included, so it is not. The agents' average and spread for the same months come from an earlier run (20 October 2026) that estimated the flag-basis total only.</p>
+    <h2>The estimate of true exports</h2>
+    <p>The <a href="inference.html">Inference page</a> estimates the FOB value of tuna sold to non-residents in a calendar year by vessel operators resident in Kiribati. Five steps.</p>
+    <ol>
+      <li><strong>Evidence pack.</strong> Every agent receives the same files: the monthly partner-reported tuna series (UN Comtrade, importers' records coded to Kiribati by vessel flag); fleet aggregates (fishing hours by register address pattern, the share of encounters followed by a carrier call at a Thai port, the median lag); annual partner-reported tuna for seven Pacific flag states; extracts from the statistical standards (BPM6 on residence and change of ownership, IMTS 2010 and the Kyoto Convention on origin, Thai customs origin rules); and Kiribati's official statistics. No vessel, company or personal names; no news.</li>
+      <li><strong>Instructions.</strong> The agent is told what true exports means and that the official figures are evidence of what the compiler recorded, not the target. It writes four to eight numbered principles, each with a source and an uncertainty, freezes them, then builds one bridge per year from the raw partner figure in six signed layers in a fixed order (the layers are listed on the Inference page). Each layer carries an 80% range and a rationale that cites principles and evidence files. The agent then audits its own answer. Words that impute dishonest intent to a reporter or compiler are banned, residence must be stated as a condition, and fishing licence fees may not be compared with the tuna series, because fees are income for access, not payment for fish (tracker/agents/bridge_prompt.md).</li>
+      <li><strong>Run.</strong> Thirty agents run in separate sessions with the same model and prompt (run of 20 October 2026: Claude Sonnet 5.5 at its default reasoning effort; recorded in data/inference.json for every run). A program checks every answer: six layers in order, start plus layers equal to the estimate within one cent, ranges ordered, no banned words, at least three principles. Rejected answers are listed with the reason and not replaced.</li>
+      <li><strong>Aggregation.</strong> For each year and layer the program computes the mean, standard deviation, median, 10th and 90th percentiles, minimum and maximum across accepted agents, and the same for the end value. The waterfall shows means and the 10th to 90th percentiles. The agents do no arithmetic that is published (tracker/build_inference_data.py).</li>
+      <li><strong>What the spread means.</strong> It is disagreement given identical evidence and one underlying model: not a standard error, not a confidence interval. Blind spots all agents share do not appear in it. The estimate is not scored against the official figure, which the Kiribati National Statistics Office compiles from its own returns on different evidence; its credibility rests on the written principles and on the <a href="#validation-methods">validation test</a>.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="block methods" id="glossary">
+  <div class="wrap--text">
+    <h2>Terms used on the site</h2>
+    <dl>
+      <dt>True exports</dt><dd>The FOB value of tuna sold to non-residents by vessel operators resident in Kiribati, whatever the vessel's flag or the route.</dd>
+      <dt>Balance of payments (BOP), BPM6</dt><dd>The official account of a country's transactions with the rest of the world, compiled under the IMF's Balance of Payments Manual, sixth edition. A good is an export when its ownership passes from a resident to a non-resident.</dd>
+      <dt>Residence versus flag</dt><dd>The flag is the country whose register a vessel is on. Residence is where the vessel's operator has its centre of economic interest. Importers credit fish to the flag; the balance of payments credits the sale to the operator's residence.</dd>
+      <dt>FOB, CIF</dt><dd>FOB values a good at the port of loading; CIF adds freight and insurance to the importer's port. Importers' records are CIF; the estimate is FOB.</dd>
+      <dt>Partner-reported, mirror data</dt><dd>The other side's record of the same shipments: what Kiribati's trading partners declared to UN Comtrade.</dd>
+      <dt>Flag basis</dt><dd>Tuna credited to Kiribati because the catching vessel flew the Kiribati flag, as importers record it.</dd>
+      <dt>AIS</dt><dd>The position beacon ships broadcast, collected by Global Fishing Watch.</dd>
+      <dt>WCPFC</dt><dd>The Western and Central Pacific Fisheries Commission, which keeps the public Record of Fishing Vessels.</dd>
+      <dt>HS codes</dt><dd>The Harmonized System, the product codes every customs service uses; six digits are the finest level shared by all countries.</dd>
+      <dt>Agents</dt><dd>The thirty separate sessions of a large language model that produce the estimate; the home page calls them the experts.</dd>
+      <dt>10th to 90th percentile</dt><dd>The range that holds the middle 80% of the agents' answers.</dd>
+      <dt>Baseline, pseudo-real-time test</dt><dd>A simple statistical forecast, tested by forecasting each past month with only the data published at the time.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="block methods">
+  <div class="wrap--text">
+    <!-- Filled from data/text.json "methods" when available; otherwise the fallback text below stays visible. -->
+    <div id="methods-body">
+      <h2 id="m1">Partner data: what they are</h2>
+      <p>Every shipment is recorded twice: by the country it leaves and by the country it enters. Both records go to UN Comtrade. Partner-reported ("mirror") data are the other side of Kiribati's shipments: what Thailand recorded as imports from Kiribati, what Australia recorded as exports to Kiribati. The two records differ even when both are right: importers add freight and insurance, the sides can book a shipment in different months or product codes, and fish is coded to the flag of the catching vessel.</p>
+      <h2 id="m2">What is and is not comparable</h2>
+      <p>Comparable: annual totals by broad product group once percent complete is high; fish exports over twelve-month windows. With care: quarters, and any period below about 70 percent complete. Not comparable: single products in single months, and monthly ratios, which balloon when the Kiribati figure is near zero. Partner-reported imports cover only part of what Kiribati buys, so no trade balance is computed from partner data. Fishing licence fees are income, a separate flow, and are never compared with the tuna series.</p>
+      <h2 id="m3">The partner panel, percent complete and lags</h2>
+      <p>The tracker watches a fixed panel of partners: any partner with at least half a percent of Kiribati's partner-reported exports or imports over 2023 to 2025, plus sixteen regional and global partners always included (tracker/panel.json). Percent complete is the share of panel partners that have published a period, by count and weighted by each partner's trade share. Most partners publish within about four months; some publish only annually. Kiribati's own returns are missing for some months; a missing month is never drawn as zero.</p>
+      <h2 id="m5">How products are grouped</h2>
+      <p>Tuna: HS6 030341 to 030349, 030487 and 160414. Fish: HS chapter 03 plus heading 1604. Copra oil: 151311 and 151319. Ships and aircraft: chapters 88 and 89. Fuel: chapter 27. Food: chapters 01 to 24 excluding 03.</p>
+      <h2 id="m6">The daily update</h2>
+      <p>Once a day an automated job asks UN Comtrade for newly published months, rebuilds the partner-data files and republishes the site. If Comtrade is unavailable the previous files stay. The register, the knowledge base and the agent runs are refreshed by hand (tracker/README.md).</p>
+    </div>
+  </div>
+</section>
+
+<section class="block methods" id="early-methods">
+  <div class="wrap--text">
+    <h2>The early estimate of the partner series</h2>
+    <p>The <a href="comtrade.html#early">Partner data page</a> carries a smaller product: an early estimate of the flag-basis partner figure for months not yet published. For a month with some returns, the baseline adds the non-Thai returns already published to the average of Thailand's last twelve published months; for months with none it uses the trailing twelve-month total. Its range is the 10th to 90th percentile of its own errors in a pseudo-real-time test over 86 months (March 2019 to May 2026). In that test the baseline cut the three-month error of repeating the same month of the previous year by about 40% (6.5 against 10.9, USD millions). A version that added carrier arrivals at Thai ports gave 6.4, not a significant gain, and the pre-set rule was that ship tracking must beat the baseline significantly to be included; it is not. The agents' average and spread for the same months come from an earlier run of 20 October 2026 that estimated the flag-basis total only (tracker/README.md).</p>
+  </div>
+</section>
+
+<section class="block methods" id="fleet-methods">
+  <div class="wrap--text">
+    <h2>Ship tracking (AIS): how it is made</h2>
+    <h3 id="f1">Signals and vessels</h3>
+    <p>Global Fishing Watch receives ships' AIS broadcasts and publishes fishing events, port visits and encounters (two vessels close together at sea) through its Events API; identities come from its Vessels API. The vessel list is the WCPFC Record of Fishing Vessels for the Kiribati, Nauru and Tuvalu flags, matched to a Global Fishing Watch identity by radio call sign, then IMO number (20 October 2026 build: 116 entries, 83 matched). "Kiribati-flagged" is the flag Global Fishing Watch reports, or, where that is not one of the three, the register flag.</p>
+    <h3 id="f3">Registration windows</h3>
+    <p>A Global Fishing Watch identity covers the whole life of a hull. Each event is kept only if it falls inside a period when the vessel's own AIS reported one of the three flags, or, failing that, inside its authorisation dates on the register. This trimmed earlier history under other flags, mostly in Russian waters, and only 0.2% of hours inside Kiribati's waters (tracker/PROVENANCE.md).</p>
+    <h3 id="f4">What the counts measure</h3>
+    <p>Fishing hours are time in which a vessel's movement looks like fishing: effort, not catch. AIS reception improves over time and differs by sea area, so part of a rise can be better detection. A port call is a detected visit, assigned to the country of the port; not an unloading, and silent on tonnage. For each encounter between a catcher and a carrier the tracker follows the carrier's next port calls and notes the first at a Thai port within 120 days; the share and the median lag show where carriers went, not what they held.</p>
+    <h3 id="f7">Why no value is drawn from the hours</h3>
+    <p>Monthly fishing hours do not predict the monthly value importers record: in levels the series trend in opposite directions, and in 12-month changes the fit is negligible (R² about 0.02; tracker/PROVENANCE.md, GPS/out/bridge_fit.csv). The fleet page shows the two side by side and draws no estimate from either. Months with fewer than three partners published are drawn lighter and kept out of such comparisons.</p>
+    <h3 id="f9">Freshness, sources and attribution</h3>
+    <p>The fleet page shows the last day of AIS data and the register export date; the register is exported by hand about monthly. <a href="https://globalfishingwatch.org" rel="noopener">Powered by Global Fishing Watch.</a> Global Fishing Watch. 2026, updated daily. Fishing events, port-visit events, encounter events and vessel identity data (public-global datasets, version latest), https://globalfishingwatch.org/our-apis/, used for non-commercial purposes under CC BY-NC 4.0. Western and Central Pacific Fisheries Commission, Record of Fishing Vessels, <a href="https://vessels.wcpfc.int" rel="noopener">vessels.wcpfc.int</a>.</p>
+  </div>
+</section>
+
+<section class="block methods" id="registry-methods">
+  <div class="wrap--text">
+    <h2>Vessel register: how the counts are made</h2>
+    <p>The <a href="registry.html">Vessel register page</a> counts the entries the Kiribati, Nauru and Tuvalu flag states submitted to the WCPFC Record of Fishing Vessels, as exported on the date shown. Deleted vessels stay in the export with the flag state's reason and are counted as deleted. Types are grouped from the register's FAO codes. The address hint is a text pattern on the owner, operator and charterer fields: an address in one of the three states counts as "at home", elsewhere as "abroad", both as "mixed", none as "no usable address". Only counts leave the working files; names and identifiers never do (tracker/build_registry_data.py; the tests scan the published file).</p>
+  </div>
+</section>
+
+<section class="block methods" id="documents-methods">
+  <div class="wrap--text">
+    <h2>Knowledge base: how the inventory is made</h2>
+    <p>The <a href="documents.html">Knowledge base page</a> counts the documents the agents can read, by type and by the country they are about: statistical manuals and standards; customs rules; data documentation; academic papers; IMF and other official reports; the author's project briefs; news. Words are counted in the text extracted from each file; pages without a text layer count as zero. "General" holds material that applies to every country. The date a document was added is the date of its converted text file. No document text is published (tracker/build_corpus_data.py).</p>
   </div>
 </section>
 
 <section class="block methods" id="validation-methods">
   <div class="wrap--text">
     <h2>Validation: how the agents will be tested</h2>
-    <p>The <a href="validation.html">Validation page</a> describes a hold-out test. For island economies with tuna fleets and a published balance of payments, the agent receives everything except the published goods-export figure for one year and predicts it from its principles and the other evidence; a program scores the prediction against the published figure. Principles may be revised for at most three logged rounds; a reserved set of country-years is revealed only after the principles are frozen; the frozen principles are the ones applied to Kiribati. The panel is empty at present and no score is shown. Published figures of panel countries are cited by vintage and are not assumed to be right.</p>
+    <p>The <a href="validation.html">Validation page</a> describes a hold-out test. For island economies with tuna fleets and a published balance of payments, an agent receives everything except the published goods-export figure for one year and predicts it from its principles and the other evidence; a program scores the prediction against the published figure. Principles may be revised for at most three logged rounds; a reserved set of country-years is revealed only after the principles are frozen; the frozen principles are the ones applied to Kiribati. The panel is empty and the success measure is not yet set. Published figures of panel countries are cited by vintage and not assumed to be right.</p>
   </div>
 </section>
-<!-- NOWCAST-METHODS-END -->
-
-<!-- FLEET-METHODS-START -->
-<section class="block methods" id="fleet-methods">
-  <div class="wrap--text">
-    <h2>Ship tracking (AIS): how it is made</h2>
-    <p>The <a href="fleet.html">Ship tracking page</a> adds a second, faster view of the tuna fleet: where Kiribati-flagged vessels were seen fishing and which ports they called at. This section explains where those numbers come from and what they cannot tell you.</p>
-
-    <h3 id="f1">Where the signals come from</h3>
-    <p>Most large ships broadcast their identity and position using AIS (Automatic Identification System). Global Fishing Watch receives these broadcasts and publishes detections through its public interfaces. The tracker uses three kinds of detection from the Events API (version 3): fishing events, port visits, and encounters, which are two vessels seen close together at sea for long enough to transfer cargo. Vessel identities come from the Global Fishing Watch Vessels API.</p>
-
-    <h3 id="f2">Which vessels are counted</h3>
-    <p>The list of vessels comes from the Western and Central Pacific Fisheries Commission (WCPFC) Record of Fishing Vessels, for the Kiribati, Nauru and Tuvalu registers. Each register entry is matched to a Global Fishing Watch identity first by radio call sign, then by IMO number. In the 20 October 2026 build, 116 register entries were current and 83 were matched to an identity with AIS history. "Kiribati-flagged" means the vessel's flag as reported by Global Fishing Watch, or, where that is not one of the three flags, the flag on the WCPFC register.</p>
-    <p>A flag says where a ship is registered. It does not say where its operator is based. The tracker makes no statement about ownership or residence.</p>
-
-    <h3 id="f3">Registration windows</h3>
-    <p>A vessel's identity in Global Fishing Watch covers the whole life of the hull, including years before it joined the Kiribati register or after it left. Counting all of it would credit the flag with fishing it did under other flags. Each event is therefore kept only if it falls within a period when the vessel's own AIS reported the Kiribati, Nauru or Tuvalu flag. Where that is not available, the authorisation dates on the WCPFC register are used instead. This trimmed about 64,000 hours of earlier history, mostly in Russian waters, and only 145 hours (0.2%) inside Kiribati's waters.</p>
-
-    <h3 id="f4">What fishing hours measure, and what they do not</h3>
-    <p>Fishing hours are the time during which a vessel's movement pattern looks like fishing. They measure effort. They do not measure fish caught: in a poor month a boat may fish longer for less. AIS reception also improves over time and differs by sea area, so part of a rise in hours can be better detection rather than more fishing. Vessels that switch off AIS are not seen.</p>
-
-    <h3 id="f5">What port calls measure, and what they do not</h3>
-    <p>A port call is a visit detected from AIS, assigned to the country in which the port lies. A call does not mean that fish was unloaded, and the count says nothing about tonnage. The category "Other countries" includes ports whose country could not be identified.</p>
-
-    <h3 id="f6">At-sea transfers and the Thai port call</h3>
-    <p>For each encounter between a fishing vessel and a carrier, the tracker follows the carrier's next port calls and notes the first call at a Thai port within 120 days. The share of transfers followed by such a call, and the median number of days between the transfer and that call, are reported on the Fleet page. They show where carriers went next. They do not show what a particular carrier held, and they are not a measure of the time between a catch and a customs record.</p>
-
-    <h3 id="f7">Why no estimate of tuna value is drawn from the hours</h3>
-    <p>The tracker tested whether monthly fishing hours of Kiribati-flagged vessels predict the monthly value of tuna that importers record as coming from Kiribati. They do not. In levels the two series trend in opposite directions, so the relationship is dominated by trend. In 12-month changes, which remove trend and season, the fit is negligible (R² about 0.02). Hours alone therefore do not predict monthly value; a usable estimate would also need catch per hour and the tuna price. The Fleet page shows the two series side by side and does not draw an estimate from either.</p>
-    <p>Months in which fewer than three partners have published fish data are drawn lighter and are kept out of any such comparison. The 2026 partner figures are provisional and will be revised as partners publish.</p>
-
-    <h3 id="f8">Freshness and refresh</h3>
-    <p>The stamp at the top of the Fleet page shows the last day covered by the AIS data and the date of the register export. The register has to be exported by hand from the WCPFC website, so it is refreshed about monthly; an older register export lowers coverage of new vessels but does not break the page.</p>
-
-    <h3 id="f9">Sources and attribution</h3>
-    <p><a href="https://globalfishingwatch.org" rel="noopener">Powered by Global Fishing Watch.</a> Global Fishing Watch. 2026, updated daily. Fishing events, port-visit events, encounter events and vessel identity data (public-global datasets, version latest). Data set accessed at https://globalfishingwatch.org/our-apis/. The data are used here for non-commercial purposes under the CC BY-NC 4.0 licence.</p>
-    <p>Western and Central Pacific Fisheries Commission. Record of Fishing Vessels (RFV). <a href="https://vessels.wcpfc.int" rel="noopener">vessels.wcpfc.int</a>. Exported on the date shown on the Fleet page.</p>
-  </div>
-</section>
-<!-- FLEET-METHODS-END -->
 </main>
 
 <footer class="site">
@@ -189,7 +166,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="inference.html">Inference</a></li>
         <li><a href="validation.html">Validation</a></li>
-        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="documents.html#research">Rules, standards and research</a></li>
         <li><a href="data/manifest.json">Data files (JSON)</a></li>
       </ul>
     </div>
@@ -220,17 +197,11 @@
     }
     if (!text || !Array.isArray(text.methods) || !text.methods.length) return;
     const body = document.getElementById('methods-body'); body.textContent = '';
-    const toc = document.getElementById('methods-toc'); toc.textContent = '';
-    toc.appendChild(el('strong', 'Sections'));
-    const ol = el('ol');
     text.methods.forEach((m, i) => {
       const id = m.id || ('m' + (i + 1));
-      const li = el('li'); const a = el('a', m.title || ('Section ' + (i + 1)), { href: '#' + id }); li.appendChild(a); ol.appendChild(li);
       body.appendChild(el('h2', m.title || '', { id }));
       (m.paragraphs || []).forEach(p => body.appendChild(el('p', p)));
     });
-    [['Vessel register: how the counts are made', '#registry-methods'], ['Rules, standards and research: how the inventory is made', '#documents-methods'], ['Inference: how the estimate of true exports is made', '#inference-methods'], ['Validation: how the agents will be tested', '#validation-methods'], ['Ship tracking (AIS): how it is made', '#fleet-methods']].forEach(([t, h]) => { const li = el('li'); li.appendChild(el('a', t, { href: h })); ol.appendChild(li); });
-    toc.appendChild(ol);
   });
 })();
 </script>

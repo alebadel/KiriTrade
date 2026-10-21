@@ -1,6 +1,6 @@
 /* =====================================================================
    home.js — renders index.html: the two headline numbers, the five input
-   cards, the run log, the waterfall and the three-records chart.
+   cards, the waterfall and the three-records chart.
    Reads data/*.json only; writes numbers into the page with textContent.
    Needs charts.js (KT) and waterfall.js (KT.waterfall).
    ===================================================================== */
@@ -9,7 +9,7 @@
   const $ = (id) => document.getElementById(id);
   const nf0 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
   const nf1 = new Intl.NumberFormat('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-  const FILES = ['manifest', 'series', 'fleet', 'registry', 'national_accounts', 'corpus', 'inference', 'runs', 'text'];
+  const FILES = ['manifest', 'series', 'fleet', 'registry', 'national_accounts', 'corpus', 'inference', 'text'];
   const D = {};
 
   function getJSON(name) {
@@ -43,7 +43,7 @@
     const lastNa = last ? na.find(r => String(r.year) === String(last.period)) || na[na.length - 1] : na[na.length - 1];
     if (lastNa) {
       setText('n-bop', nf1.format(lastNa.bop_goods_exports)); setText('n-bop-year', lastNa.year);
-      setText('n-bop-est', lastNa.gdp_is_estimate || (D.national_accounts.meta && /2025 BOP/.test((D.national_accounts.meta.notes || []).join(' ')) && lastNa.year === 2025) ? ' (compiler’s estimate)' : '');
+      setText('n-bop-est', lastNa.gdp_is_estimate === true ? ' (compiler’s estimate)' : '');
     }
     if (D.text && D.text.footer) { setText('footer-credit', D.text.footer.credit); setText('footer-disclaimer', D.text.footer.disclaimer); }
     setText('footer-release', when ? 'Data files generated ' + KT.fmtDate(when) + '.' : '');
@@ -105,7 +105,7 @@
   function cardOfficial() {
     const t = KT.tokens();
     const rows = (D.national_accounts.annual || []).filter(r => r.year >= 2010 && KT.isNum(r.bop_goods_exports));
-    const isEst = r => r.gdp_is_estimate === true || r.year === 2025;
+    const isEst = r => r.gdp_is_estimate === true;
     KT.legend('legend-card-official', [{ label: 'Balance of payments: goods exports, all goods', color: t.kir }, { label: 'Latest year: compiler’s estimate', color: t.kir, kind: 'hatch' }]);
     KT.make('chart-card-official', { type: 'bar', data: { labels: rows.map(r => String(r.year)), datasets: [{ label: 'BOP goods exports', data: rows.map(r => r.bop_goods_exports), backgroundColor: rows.map(r => isEst(r) ? KT.hatch(t.kir) : t.kir), borderColor: t.kir, borderWidth: rows.map(r => isEst(r) ? 1 : 0), maxBarThickness: 28 }] },
       options: { plugins: { tooltip: { callbacks: { label: KT.moneyLabel } } }, scales: KT.axes({ unit: 'USD m' }) } });
@@ -123,27 +123,12 @@
     if (!g.length) { KT.empty('chart-card-documents', 'No dated documents yet.'); return; }
     // extend the last point to today so the chart reads as a level that persists
     const rows = g.slice();
-    const today = new Date().toISOString().slice(0, 10);
-    if (rows[rows.length - 1].date < today) rows.push(Object.assign({}, rows[rows.length - 1], { date: today, extended: true }));
     const labels = rows.map(r => KT.fmtDate(r.date + 'T00:00:00Z'));
-    const used = order.filter(k => rows.some(r => r[k] > 0) || k === 'news');
+    const used = order.filter(k => rows.some(r => r[k] > 0));
     KT.legend('legend-card-documents', used.map(k => ({ label: SHORT[k], color: colors[k] })));
     KT.make('chart-card-documents', { type: 'bar', data: { labels, datasets: used.map(k => ({ label: SHORT[k], data: rows.map(r => r[k]), backgroundColor: colors[k], stack: 'w', maxBarThickness: 34 })) },
-      options: { plugins: { tooltip: { callbacks: { title: items => (rows[items[0].dataIndex].extended ? 'Today: ' : 'Added by ') + items[0].label, label: ctx => ' ' + ctx.dataset.label + ': ' + nf0.format(ctx.parsed.y) + ' words (' + rows[ctx.dataIndex][order.find(k => SHORT[k] === ctx.dataset.label) + '_docs'] + ' documents)' } } },
+      options: { plugins: { tooltip: { callbacks: { title: items => 'Added by ' + items[0].label, label: ctx => ' ' + ctx.dataset.label + ': ' + nf0.format(ctx.parsed.y) + ' words (' + rows[ctx.dataIndex][order.find(k => SHORT[k] === ctx.dataset.label) + '_docs'] + ' documents)' } } },
         scales: { x: { stacked: true, grid: { display: false }, border: { color: t.axis }, ticks: { maxRotation: 0, autoSkip: true, font: { size: 10 } } }, y: { stacked: true, beginAtZero: true, grid: { color: t.grid, drawTicks: false }, border: { display: false }, ticks: { maxTicksLimit: 5, callback: v => v >= 1e6 ? (v / 1e6) + ' m' : v >= 1000 ? (v / 1000) + ' k' : v }, title: { display: true, text: 'words held (cumulative)', color: t.muted, font: { size: 11 } } } } } });
-  }
-
-  /* ---------- run log ---------- */
-  function renderRuns() {
-    const t = KT.tokens();
-    const runs = (D.runs && D.runs.runs) || [];
-    if (!runs.length) { KT.empty('chart-runs', 'No runs recorded yet.'); return; }
-    const labels = runs.map(r => KT.fmtDate(r.date + 'T00:00:00Z') + (runs.filter(x => x.date === r.date).length > 1 ? ' (' + r.id + ')' : ''));
-    KT.make('chart-runs', { type: 'bar', data: { labels, datasets: [{ label: 'Agents', data: runs.map(r => r.n_agents), backgroundColor: runs.map(r => r.superseded ? KT.withAlpha(t.count, t.prelimAlpha) : t.kir), maxBarThickness: 48 }] },
-      options: { plugins: { tooltip: { callbacks: { title: items => runs[items[0].dataIndex].label, label: ctx => ' ' + ctx.parsed.y + ' agents', footer: items => { const r = runs[items[0].dataIndex]; return [r.question, 'Inputs: ' + r.inputs.join(', '), r.superseded ? 'Superseded by a later run' : 'Current'].join('\n'); } } } },
-        scales: { x: { grid: { display: false }, border: { color: t.axis }, ticks: { autoSkip: false, maxRotation: 0, font: { size: 11 } } }, y: { beginAtZero: true, grid: { color: t.grid, drawTicks: false }, border: { display: false }, ticks: { maxTicksLimit: 5, precision: 0 }, title: { display: true, text: 'agents', color: t.muted, font: { size: 11 } } } } } });
-    setText('runs-src', 'Source: the tracker’s run log (data/runs.json). Lighter bars: runs superseded by a later run on the same question.');
-    KT.table('table-runs', [{ key: 'date', label: 'Date' }, { key: 'id', label: 'Run' }, { key: 'label', label: 'What' }, { key: 'n_agents', label: 'Agents', num: true }, { key: 'inputs', label: 'Inputs', fmt: v => v.join(', ') }, { key: 'status', label: 'Status' }], runs);
   }
 
   /* ---------- waterfall with period selector ---------- */
@@ -165,7 +150,7 @@
     sel.textContent = '';
     inf.periods.forEach(p => sel.appendChild(el('option', { value: p.period, text: p.period })));
     sel.value = inf.periods[inf.periods.length - 1].period;
-    KT.legend('legend-waterfall', [{ label: 'Removed from the partner figure', color: t.partner }, { label: 'Added to it', color: t.fish }, { label: 'Start and end', color: t.kir }, { label: 'Agents, 10th to 90th percentile', color: t.ink, kind: 'line' }]);
+    KT.legend('legend-waterfall', [{ label: 'Removed from the partner figure', color: t.partner }, { label: 'Added to it', color: t.fish }, { label: 'Start and end', color: t.ink2 }, { label: 'Whisker: 10th to 90th percentile across agents', color: t.ink, kind: 'line' }, { label: 'Dot: one agent’s estimate', color: t.ink2 }]);
     if (inf.meta.agent && inf.meta.agent.model) fill('agent-def', 'Each agent is one fresh session of a large language model (' + inf.meta.agent.model + ', ' + inf.meta.agent.effort + '), with no memory of the other sessions, given the evidence files and the instructions and allowed to read nothing else.');
     const draw = () => {
       const period = sel.value;
@@ -223,7 +208,6 @@
       if (D.registry) cardRegistry();
       if (D.national_accounts) cardOfficial();
       if (D.corpus) cardDocuments();
-      renderRuns();
       renderWaterfall();
       if (D.series && D.national_accounts) renderSeries();
       renderValidation();

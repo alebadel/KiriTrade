@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ship tracking (AIS) — Kiribati trade tracker</title>
+<title>Ship tracking (AIS) — KiriTrade</title>
 <meta name="description" content="Observed fishing activity and port calls of Kiribati-flagged vessels from ship-tracking (AIS) signals, shown beside the partner-reported tuna series.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,14 @@
 
 <div class="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker <span>· partner data</span></a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html" aria-current="page">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -50,8 +50,8 @@
   <div class="wrap hero-grid">
     <div>
       <h1>Ship tracking (AIS)</h1>
-      <p class="purpose">Where Kiribati-flagged fishing vessels were seen at sea and in port, read from ship-tracking signals. These signals arrive within days, long before partner trade figures are published. The second of the five inputs on the <a href="index.html">home page</a>.</p>
-      <p class="hint small muted">This is a companion to the partner-reported trade figures on the <a href="comtrade.html">Partner data page</a>. It describes activity. It does not estimate catch, exports or any official statistic.</p>
+      <p class="purpose">Where Kiribati-flagged fishing vessels were seen at sea and in port, from the position signals ships broadcast (AIS). The signals arrive within days, long before partner trade figures. Input 2 of 5 on the <a href="index.html">home page</a>.</p>
+      <p class="hint small muted">Activity only: hours, meetings at sea, port calls. No catch, exports or value. In the <a href="inference.html">inference</a>, the agents read these as evidence on how much of the Kiribati-flag catch belongs to resident operators (layer "Less: catch of non-resident operators").</p>
     </div>
     <aside class="strip" id="fleet-strip" aria-labelledby="fleet-strip-h">
       <h3 id="fleet-strip-h">AIS data through …</h3>
@@ -65,18 +65,21 @@
   <div class="wrap--text">
     <h2>What this page shows</h2>
     <div class="prose">
-      <p>Most large ships carry a transponder that broadcasts the ship's identity and position, called AIS (Automatic Identification System). Global Fishing Watch collects these signals and uses them to detect when a vessel is fishing, when it meets another vessel at sea, and when it visits a port.</p>
-      <p>This page counts those detections for vessels that were on the Kiribati flag, and only for the period each vessel was registered under it. The <a href="index.html#cycle">diagram on the home page</a> follows one tuna from the sea to the statistics and marks where each step is, and is not, measured. The charts here show how many hours the fleet was seen fishing, how those hours sit beside the tuna that importers record as coming from Kiribati, and which countries' ports the catching vessels called at.</p>
-      <p>Every number here is an observation of where vessels were. None is an estimate of how much fish was caught, sold or earned.</p>
+      <p>Large ships broadcast their identity and position (AIS). Global Fishing Watch collects the signals and detects when a vessel is fishing, meets another vessel at sea, or visits a port.</p>
+      <p>This page counts those detections for vessels on the Kiribati flag, only while each was on the register. One fact, the at-sea chain, also covers the Nauru and Tuvalu flags, which share operators with Kiribati's; it says so. The <a href="index.html#cycle">diagram on the home page</a> shows where each step of a fish's path is, and is not, measured.</p>
+      <p>Every number is an observation of where vessels were, not of what they caught, sold or earned.</p>
     </div>
     <details class="glossary">
       <summary>Words used on this page</summary>
       <dl>
-        <dt>Kiribati-flagged vessel</dt><dd>A vessel entered on the Kiribati register of fishing vessels. A flag says where a ship is registered. It does not say where its operator is based or where its profits go.</dd>
-        <dt>Fishing hours</dt><dd>Time during which AIS signals show a vessel behaving as it does when fishing. Hours measure effort, not fish caught.</dd>
-        <dt>Port call</dt><dd>A visit to a port detected from AIS. A call does not mean fish was unloaded.</dd>
-        <dt>At-sea transfer</dt><dd>Two vessels detected close together for long enough to transfer cargo, typically a fishing vessel and a carrier. Also called a transhipment.</dd>
-        <dt>Partner-reported</dt><dd>What importing countries record in UN Comtrade about goods they bring in from Kiribati. See the <a href="comtrade.html">Partner data page</a>.</dd>
+        <dt>AIS</dt><dd>The position beacon ships broadcast, picked up by satellite and collected by Global Fishing Watch.</dd>
+        <dt>Flag, Kiribati-flagged</dt><dd>The country whose register a ship is on and whose rules it sails under. Not where its operator lives.</dd>
+        <dt>Register</dt><dd>The flag state's list of vessels it authorises to fish, kept by the WCPFC (Western and Central Pacific Fisheries Commission).</dd>
+        <dt>Fishing hours (effort, not catch)</dt><dd>Hours in which AIS shows a vessel moving as it does when fishing. More hours need not mean more fish.</dd>
+        <dt>Encounter</dt><dd>Two ships seen close together at sea, typically a catcher and a refrigerated carrier. AIS cannot show whether fish moved between them.</dd>
+        <dt>Port call</dt><dd>A port stop seen by AIS. Not an unloading.</dd>
+        <dt>Median, middle half</dt><dd>The median is the middle value; the middle half runs from the 25th to the 75th percentile.</dd>
+        <dt>Partner-reported</dt><dd>What importing countries record in UN Comtrade about goods from Kiribati. See the <a href="comtrade.html">Partner data page</a>.</dd>
       </dl>
     </details>
   </div>
@@ -113,14 +116,15 @@
     <figure class="fig" id="fig-mirror">
       <div class="fig-head"><div>
         <h3>Partner-reported tuna and fishing activity, side by side</h3>
-        <p class="sub">Tuna that importers record as coming from Kiribati (bars, left axis) and the previous month's fishing hours (line, right axis)</p>
-        <p class="how">The line is shifted one month so that it sits beside the month in which the fish would first show up in a partner's records. The chart puts the two series next to each other. It does not claim that one explains the other.</p>
+        <p class="sub">Top panel: tuna that importers record as coming from Kiribati, by month. Bottom panel: fishing hours of Kiribati-flagged vessels in the month before.</p>
+        <p class="how">The hours are shifted one month, on the working assumption that fish caught in one month reaches partner records the next. The panels share the time axis; no relationship between them is estimated.</p>
       </div></div>
       <div class="legend" id="legend-mirror"></div>
-      <div class="plot tall"><canvas id="chart-mirror" role="img" aria-label="Partner-reported tuna by month with the previous month's fishing hours"></canvas></div>
+      <div class="plot short"><canvas id="chart-mirror" role="img" aria-label="Partner-reported tuna by month"></canvas></div>
+      <div class="plot short"><canvas id="chart-mirror-hours" role="img" aria-label="Fishing hours of Kiribati-flagged vessels, previous month"></canvas></div>
       <figcaption>
         <p class="caveat">The 2026 partner figures are provisional and will be revised as partners publish. Lighter bars: fewer than three partners have published fish data for that month.</p>
-        <p class="src">Source: UN Comtrade partner returns (tuna, HS 030341–030349, 030487, 160414), as on the main tracker; Global Fishing Watch. The two are not measured in the same units and no relationship between them is estimated here (see <a href="methods.html#fleet-methods">how the numbers are made</a>).</p>
+        <p class="src">Source: UN Comtrade partner returns (tuna, HS 030341–030349, 030487, 160414), as on the main tracker; Global Fishing Watch. Different units; see <a href="methods.html#fleet-methods">how the numbers are made</a>.</p>
       </figcaption>
       <div class="scroll-x"><table id="annual-table" class="annual" aria-label="Annual comparison"></table></div>
       <details class="tbl"><summary>Show monthly values as a table</summary><div class="scroll" id="table-mirror"></div></details>
@@ -160,12 +164,13 @@
 <section class="block" id="sources">
   <div class="wrap--text">
     <h2>Data sources</h2>
-    <p><a href="https://globalfishingwatch.org" rel="noopener">Powered by Global Fishing Watch.</a> Fishing, port-visit and at-sea transfer detections and vessel identities come from the Global Fishing Watch APIs, used here for non-commercial purposes under the CC BY-NC 4.0 licence.</p>
+    <p><a href="https://globalfishingwatch.org" rel="noopener">Powered by Global Fishing Watch.</a> Fishing, port-visit and encounter detections and vessel identities come from the Global Fishing Watch APIs, used here for non-commercial purposes under the CC BY-NC 4.0 licence.</p>
     <p class="small" id="gfw-citation">Global Fishing Watch. 2026, updated daily. Fishing events, port-visit events, encounter events and vessel identity data (public-global datasets, version latest). Data set accessed at https://globalfishingwatch.org/our-apis/.</p>
     <p>The list of vessels entered on the Kiribati, Nauru and Tuvalu registers comes from the Western and Central Pacific Fisheries Commission (WCPFC) Record of Fishing Vessels, <a href="https://vessels.wcpfc.int" rel="noopener">vessels.wcpfc.int</a>.</p>
   </div>
 </section>
 
+<nav class="pager wrap" aria-label="Reading order"><p class="small"><a href="comtrade.html">← Partner data</a> · Input 2 of 5 · <a href="registry.html">Next: Vessel register →</a></p></nav>
 </main>
 
 <footer class="site">
@@ -179,7 +184,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="methods.html#fleet-methods">How the fleet numbers are made</a></li>
-        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="documents.html#research">Rules, standards and research</a></li>
         <li><a href="data/fleet.json">Fleet data (JSON)</a></li>
       </ul>
     </div>

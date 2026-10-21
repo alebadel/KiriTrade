@@ -11,13 +11,15 @@
     const t = KT.tokens();
     const rows = (na.annual || []).filter(r => KT.isNum(r.bop_goods_exports) || KT.isNum(r.customs_exports_kiribati));
     const bop = rows.filter(r => KT.isNum(r.bop_goods_exports));
-    const lastY = Math.max.apply(null, bop.map(r => r.year));
-    const isEst = r => r.year === lastY;   // the latest BOP year is the compiler's estimate (see national_accounts.json notes)
+    const lastY = bop.length ? Math.max.apply(null, bop.map(r => r.year)) : null;
+    const isEst = r => r.gdp_is_estimate === true;   // flagged by the builder from the workbook's 'Est.' marks
     const last = bop.find(r => r.year === lastY);
-    setText('of-strip', lastY + ': goods exports ' + KT.fmtM(last.bop_goods_exports) + ', goods imports ' + KT.fmtM(last.bop_goods_imports) + ' (compiler’s estimates). Source: IMF balance of payments for Kiribati.');
-    const src = 'Source: ' + (na.meta.sources ? na.meta.sources[0] : na.meta.source) + '.';
-    setText('src-bop-x', src); setText('src-bop-m', src);
-    setText('src-customs', 'Source: UN Comtrade, Kiribati-reported monthly returns (' + (na.meta.sources ? na.meta.sources[2] : '') + ').');
+    if (last) setText('of-strip', lastY + ': goods exports ' + KT.fmtM(last.bop_goods_exports) + ', goods imports ' + KT.fmtM(last.bop_goods_imports) + (isEst(last) ? ' (compiler’s estimates)' : '') + '. Source: IMF balance of payments for Kiribati.');
+    const srcs = Array.isArray(na.meta.sources) ? na.meta.sources : [na.meta.source || ''];
+    const pick = (re, fallback) => { const s = srcs.find(x => re.test(x)); return s ? s.replace(/:\s*\/\S+/g, '') : fallback; };
+    setText('src-bop-x', 'Source: IMF Statistics Department, balance of payments for Kiribati (' + pick(/BOP/i, 'balance of payments') + ').');
+    setText('src-bop-m', 'Same source as goods exports.');
+    setText('src-customs', 'Source: UN Comtrade, Kiribati-reported monthly returns, months Kiribati published; scaled to 12 months here.');
 
     const labels = bop.map(r => String(r.year));
     const mk = (id, key, label) => KT.make(id, { type: 'bar', data: { labels, datasets: [{ label, data: bop.map(r => r[key]), backgroundColor: bop.map(r => isEst(r) ? KT.hatch(t.kir) : t.kir), borderColor: t.kir, borderWidth: bop.map(r => isEst(r) ? 1 : 0), maxBarThickness: 26 }] },
@@ -28,13 +30,16 @@
     mk('chart-bop-m', 'bop_goods_imports', 'Goods imports');
 
     const cu = rows.filter(r => r.year >= 2017);
-    KT.legend('legend-customs', [{ label: 'Kiribati-reported exports, all goods (months published)', color: t.kir }, { label: 'of which tuna', color: t.fish }]);
-    KT.make('chart-customs', { type: 'bar', data: { labels: cu.map(r => String(r.year) + (r.months_kiribati_reported ? ' (' + r.months_kiribati_reported + ' mo)' : ' (none)')), datasets: [
-      { label: 'All goods', data: cu.map(r => KT.isNum(r.customs_exports_kiribati) ? r.customs_exports_kiribati : null), backgroundColor: t.kir, maxBarThickness: 30 },
-      { label: 'Tuna', data: cu.map(r => KT.isNum(r.customs_exports_kiribati_tuna) ? r.customs_exports_kiribati_tuna : null), backgroundColor: t.fish, maxBarThickness: 30 }] },
-      options: { plugins: { tooltip: { callbacks: { label: KT.moneyLabel, footer: items => 'months published: ' + (cu[items[0].dataIndex].months_kiribati_reported || 0) } } }, scales: KT.axes({ unit: 'USD m' }) } });
+    const scale = r => (r.months_kiribati_reported ? 12 / r.months_kiribati_reported : null);
+    const s12 = (r, v) => (KT.isNum(v) && scale(r)) ? v * scale(r) : null;
+    const ax = KT.axes({ unit: 'USD m' }); ax.x.stacked = true; ax.y.stacked = true;
+    KT.legend('legend-customs', [{ label: 'Tuna', color: t.fish }, { label: 'Other goods', color: t.kir }, { label: 'Fewer than 12 months published, scaled to 12', color: t.kir, kind: 'light' }]);
+    KT.make('chart-customs', { type: 'bar', data: { labels: cu.map(r => String(r.year) + (r.months_kiribati_reported ? (r.months_kiribati_reported < 12 ? '*' : '') : ' (none)')), datasets: [
+      { label: 'Tuna', data: cu.map(r => s12(r, r.customs_exports_kiribati_tuna)), backgroundColor: cu.map(r => r.months_kiribati_reported < 12 ? KT.withAlpha(t.fish, t.prelimAlpha) : t.fish), stack: 'c', maxBarThickness: 30 },
+      { label: 'Other goods', data: cu.map(r => KT.isNum(r.customs_exports_kiribati) ? s12(r, Math.max(0, r.customs_exports_kiribati - (r.customs_exports_kiribati_tuna || 0))) : null), backgroundColor: cu.map(r => r.months_kiribati_reported < 12 ? KT.withAlpha(t.kir, t.prelimAlpha) : t.kir), stack: 'c', maxBarThickness: 30 }] },
+      options: { plugins: { tooltip: { callbacks: { label: KT.moneyLabel, footer: items => { const r = cu[items[0].dataIndex]; return ['All goods, 12-month basis: ' + (KT.isNum(r.customs_exports_kiribati_scaled12) ? KT.fmtM(r.customs_exports_kiribati_scaled12) : KT.fmtM(s12(r, r.customs_exports_kiribati))), 'As published (' + (r.months_kiribati_reported || 0) + ' months): ' + (KT.isNum(r.customs_exports_kiribati) ? KT.fmtM(r.customs_exports_kiribati) : '—')]; } } } }, scales: ax } });
 
-    KT.table('table-official', [{ key: 'year', label: 'Year' }, { key: 'bop_goods_exports', label: 'BOP goods exports', num: true, fmt: KT.fmtNum1 }, { key: 'bop_goods_imports', label: 'BOP goods imports', num: true, fmt: KT.fmtNum1 }, { key: 'months_kiribati_reported', label: 'Months published', num: true }, { key: 'customs_exports_kiribati', label: 'Customs exports (months published)', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati_tuna', label: 'of which tuna', num: true, fmt: KT.fmtNum1 }, { key: 'customs_imports_kiribati', label: 'Customs imports (months published)', num: true, fmt: KT.fmtNum1 }], rows.slice().reverse());
+    KT.table('table-official', [{ key: 'year', label: 'Year' }, { key: 'bop_goods_exports', label: 'BOP goods exports', num: true, fmt: KT.fmtNum1 }, { key: 'bop_goods_imports', label: 'BOP goods imports', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati', label: 'Customs exports, as published', num: true, fmt: (v, r) => KT.isNum(v) ? KT.fmtNum1(v) + ' (' + (r.months_kiribati_reported || 0) + ' mo)' : '—' }, { key: 'customs_exports_kiribati_tuna', label: 'of which tuna', num: true, fmt: KT.fmtNum1 }, { key: 'customs_exports_kiribati_scaled12', label: 'Customs exports, 12-month basis', num: true, fmt: KT.fmtNum1 }], rows.slice().reverse());
 
     if (text && text.footer) { setText('footer-credit', text.footer.credit); setText('footer-disclaimer', text.footer.disclaimer); }
   }

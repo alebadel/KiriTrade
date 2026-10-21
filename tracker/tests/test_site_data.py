@@ -19,7 +19,9 @@ DATA = ROOT / "data"
 BANNED_FRAMING = re.compile(r"\b(misreport\w*|under-?report\w*|evasion|fraud\w*|nowcast(?:ed|ing)? of true)\b", re.I)
 # literature.html and corpus.json quote the titles of published papers (some are about tariff evasion); they are
 # not the tracker's own framing and are left out of the scan.
-PUBLIC_FILES = [p for p in ROOT.glob("*.html") if p.name != "literature.html"] + [p for p in (ROOT / "assets" / "js").glob("*.js")] + \
+PUBLIC_FILES = [p for p in ROOT.glob("*.html") if p.name not in ("literature.html", "documents.html")]
+# documents.html carries the research list (quoting paper titles) below id="research", rendered by research.js; both are exempt there, as literature.html was
+PUBLIC_FILES += [ROOT / "documents.html"] + [p for p in (ROOT / "assets" / "js").glob("*.js") if p.name != "research.js"] + \
                [DATA / n for n in ("inference.json", "runs.json", "registry.json")]
 
 
@@ -135,6 +137,8 @@ def test_no_banned_framing_in_public_files():
         if not p.exists():
             continue
         txt = p.read_text(encoding="utf-8", errors="replace")
+        if p.name == "documents.html":
+            txt = txt.split('id="research"')[0]  # research list is exempt, as literature.html was
         m = BANNED_FRAMING.search(txt)
         assert not m, f"{p.name}: {m.group(0)!r}"
 

@@ -1,122 +1,122 @@
 {
- "meta": {
-  "generated_at": "2026-10-20T23:38:18Z",
-  "builder": "tracker/build_registry_data.py",
-  "source": "WCPFC Record of Fishing Vessels (public register, vessels.wcpfc.int), export of 2026-10-18, flags Kiribati, Nauru and Tuvalu; AIS identity match by fleet/vessel_master.py",
-  "register_export_date": "2026-10-18",
-  "n_vessels": 116,
-  "what": "Counts of vessels on the register by flag, type, status, owner-address hint, build decade, previous flag and AIS match. No vessel, owner or master names.",
-  "notes": [
-   "The export lists every vessel the three flag states have submitted, including vessels since deleted; 'deleted' rows carry the reason the flag state gave.",
-   "Vessel types follow the register's own codes (FAO classification): purse seiners (SP, SPT), longliners (LL, LLT), pole-and-line (LP), fish carriers (FO), bunker vessels (VOB), other (FX).",
-   "The owner-address hint is a text pattern on the owner, operator and charterer fields. It is a hint about where the operator is based, not a finding about residence. Residence is the condition that decides whether a vessel's catch is a Kiribati export under balance-of-payments rules.",
-   "AIS match: whether the register row could be tied to a ship-tracking identity by call sign or IMO number; unmatched vessels still fish, they are simply not seen in the fleet page."
-  ],
-  "vessel_type_codes": {
-   "SP": "Purse seiner",
-   "SPT": "Tuna purse seiner",
-   "LL": "Longliner",
-   "LLT": "Tuna longliner",
-   "LP": "Pole-and-line vessel",
-   "FO": "Fish carrier",
-   "VOB": "Bunker (fuel supply) vessel",
-   "FX": "Other fishing vessel"
-  }
- },
- "by_flag_status": {
-  "Nauru": {
-   "active": 23,
-   "deleted": 3
+  "meta": {
+    "generated_at": "2026-10-20T23:38:18Z",
+    "builder": "tracker/build_registry_data.py",
+    "source": "WCPFC Record of Fishing Vessels (public register, vessels.wcpfc.int), export of 2026-10-18, flags Kiribati, Nauru and Tuvalu; AIS identity match by fleet/vessel_master.py",
+    "register_export_date": "2026-10-18",
+    "n_vessels": 116,
+    "what": "Counts of vessels on the register by flag, type, status, owner-address hint, build decade, previous flag and AIS match. No vessel, owner or master names.",
+    "notes": [
+      "The export lists every vessel the three flag states have submitted, including vessels since deleted; 'deleted' rows carry the reason the flag state gave.",
+      "Vessel types follow the register's own codes (FAO classification): purse seiners (SP, SPT), longliners (LL, LLT), pole-and-line (LP), fish carriers (FO), bunker vessels (VOB), other (FX).",
+      "The owner-address hint is a text pattern on the owner, operator and charterer fields. It is a hint about where the operator is based, not a finding about residence. Residence is the condition that decides whether a vessel's catch is a Kiribati export under balance-of-payments rules.",
+      "AIS match: whether the register row could be tied to a ship-tracking identity by call sign or IMO number; unmatched vessels still fish, they are simply not seen in the fleet page."
+    ],
+    "vessel_type_codes": {
+      "SP": "Purse seiner",
+      "SPT": "Tuna purse seiner",
+      "LL": "Longliner",
+      "LLT": "Tuna longliner",
+      "LP": "Pole-and-line vessel",
+      "FO": "Fish carrier",
+      "VOB": "Bunker (fuel supply) vessel",
+      "FX": "Other fishing vessel"
+    }
   },
-  "Tuvalu": {
-   "active": 8,
-   "deleted": 6
+  "by_flag_status": {
+    "Nauru": {
+      "active": 23,
+      "deleted": 3
+    },
+    "Tuvalu": {
+      "active": 8,
+      "deleted": 6
+    },
+    "Kiribati": {
+      "active": 46,
+      "deleted": 30
+    }
   },
-  "Kiribati": {
-   "active": 46,
-   "deleted": 30
-  }
- },
- "by_flag_type_group": {
-  "Nauru": {
-   "Purse seiners": 23,
-   "Carriers": 2,
-   "Bunkers": 1
+  "by_flag_type_group": {
+    "Nauru": {
+      "Purse seiners": 23,
+      "Carriers": 2,
+      "Bunkers": 1
+    },
+    "Tuvalu": {
+      "Purse seiners": 5,
+      "Longliners": 6,
+      "Bunkers": 3
+    },
+    "Kiribati": {
+      "Purse seiners": 24,
+      "Carriers": 22,
+      "Longliners": 15,
+      "Bunkers": 13,
+      "Other fishing vessels": 2
+    }
   },
-  "Tuvalu": {
-   "Purse seiners": 5,
-   "Longliners": 6,
-   "Bunkers": 3
+  "by_flag_address_hint": {
+    "Nauru": {
+      "Owner or operator address abroad": 2,
+      "No usable address on the register": 19,
+      "Owner or operator address in Kiribati, Nauru or Tuvalu": 5
+    },
+    "Tuvalu": {
+      "No usable address on the register": 12,
+      "Owner or operator address abroad": 2
+    },
+    "Kiribati": {
+      "Owner or operator address in Kiribati, Nauru or Tuvalu": 33,
+      "No usable address on the register": 30,
+      "Owner or operator address abroad": 13
+    }
   },
-  "Kiribati": {
-   "Purse seiners": 24,
-   "Carriers": 22,
-   "Longliners": 15,
-   "Bunkers": 13,
-   "Other fishing vessels": 2
-  }
- },
- "by_flag_address_hint": {
-  "Nauru": {
-   "Owner or operator address abroad": 2,
-   "No usable address on the register": 19,
-   "Owner or operator address in Kiribati, Nauru or Tuvalu": 5
+  "by_vessel_type": {
+    "Purse seiner": 33,
+    "Fish carrier": 24,
+    "Tuna purse seiner": 19,
+    "Bunker (fuel supply) vessel": 17,
+    "Longliner": 11,
+    "Tuna longliner": 10,
+    "Pole-and-line vessel": 1,
+    "Other fishing vessel": 1
   },
-  "Tuvalu": {
-   "No usable address on the register": 12,
-   "Owner or operator address abroad": 2
+  "deletion_reasons": {
+    "On the register (not deleted)": 77,
+    "No longer entitled to fly flag": 20,
+    "Withdrawal": 11,
+    "Scrapping, decommissioning or loss of the fishing vessel concerned": 7,
+    "Voluntary relinquishment or non-renewal": 1
   },
-  "Kiribati": {
-   "Owner or operator address in Kiribati, Nauru or Tuvalu": 33,
-   "No usable address on the register": 30,
-   "Owner or operator address abroad": 13
-  }
- },
- "by_vessel_type": {
-  "Purse seiner": 33,
-  "Fish carrier": 24,
-  "Tuna purse seiner": 19,
-  "Bunker (fuel supply) vessel": 17,
-  "Longliner": 11,
-  "Tuna longliner": 10,
-  "Pole-and-line vessel": 1,
-  "Other fishing vessel": 1
- },
- "deletion_reasons": {
-  "On the register (not deleted)": 77,
-  "No longer entitled to fly flag": 20,
-  "Withdrawal": 11,
-  "Scrapping, decommissioning or loss of the fishing vessel concerned": 7,
-  "Voluntary relinquishment or non-renewal": 1
- },
- "previous_flag": {
-  "Other country": 41,
-  "No previous flag": 24,
-  "Panama": 13,
-  "Korea": 9,
-  "Not stated": 8,
-  "United States": 7,
-  "Papua New Guinea": 5,
-  "Belize": 5,
-  "Japan": 4
- },
- "built_decade": {
-  "1970s": 13,
-  "1980s": 33,
-  "1990s": 19,
-  "2000s": 22,
-  "2010s": 9,
-  "2020s": 18,
-  "Not stated": 2
- },
- "ais_match": {
-  "Matched to an AIS identity": 83,
-  "No AIS identity found": 33
- },
- "authorized_to_tranship_high_seas": {
-  "No": 74,
-  "Not stated": 39,
-  "Yes": 3
- },
- "n_with_charterer_recorded": 5
+  "previous_flag": {
+    "Other country": 41,
+    "No previous flag": 24,
+    "Panama": 13,
+    "Not stated": 8,
+    "United States": 7,
+    "Papua New Guinea": 5,
+    "Belize": 5,
+    "Japan": 4,
+    "South Korea": 9
+  },
+  "built_decade": {
+    "1970s": 13,
+    "1980s": 33,
+    "1990s": 19,
+    "2000s": 22,
+    "2010s": 9,
+    "2020s": 18,
+    "Not stated": 2
+  },
+  "ais_match": {
+    "Matched to an AIS identity": 83,
+    "No AIS identity found": 33
+  },
+  "authorized_to_tranship_high_seas": {
+    "No": 74,
+    "Not stated": 39,
+    "Yes": 3
+  },
+  "n_with_charterer_recorded": 5
 }

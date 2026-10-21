@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inference — Kiribati trade tracker</title>
+<title>Inference — KiriTrade</title>
 <meta name="description" content="Thirty AI agents walk from the raw partner-reported tuna figure to an estimate of Kiribati's true tuna exports in six layers; the layers, the spread across agents, their principles and how they used the official figures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,14 @@
 
 <div class="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html" aria-current="page">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -43,7 +43,8 @@
   <div class="wrap hero-grid">
     <div>
       <h1>Inference: from the partner figure to true exports</h1>
-      <p class="purpose">What thirty AI agents conclude, from the five inputs, about the value of the tuna that Kiribati residents sell abroad. Estimates built from public evidence under stated conditions; not an official figure.</p>
+      <p class="purpose" id="in-answer">What thirty AI agents conclude, from the five inputs, about the value of the tuna that Kiribati residents sell abroad.</p>
+      <p class="hint small muted">Estimates from public evidence under stated conditions; not an official figure.</p>
     </div>
     <aside class="strip" aria-labelledby="in-strip-h">
       <h3 id="in-strip-h">Latest run</h3>
@@ -56,9 +57,14 @@
   <div class="wrap--text">
     <h2>The question and the method</h2>
     <div class="prose">
-      <p>Importing countries record tuna as Kiribati-origin by the flag of the catching vessel. The balance of payments counts a sale as a Kiribati export only if the vessel's operator is resident in Kiribati. The question is the value of <strong>true exports</strong>: the FOB value of fish that Kiribati residents caught and sold to non-residents, whatever the flag, whatever the route, and whether or not any statistic recorded it. The Kiribati National Statistics Office measures it under the balance-of-payments rule from the returns it receives; the estimate here is a second reading of the same quantity, built from partner data and public evidence, offered to help that work.</p>
-      <p>The tracker asks thirty AI agents, the "experts". <span data-fill="agent-def">Each agent is one fresh session of a large language model, with no memory of the other sessions.</span> Each receives the same evidence pack (the partner series, fleet and register aggregates, the statistical standards, Kiribati's official figures) and the same instructions, and works alone. Each first writes numbered principles that connect the evidence to the question, then freezes them, then walks from the raw partner figure to its estimate in six signed layers, each with a range and a reason, then audits its own answer. A program checks every answer (the layers reconcile, the ranges are ordered, no banned words) and computes the statistics shown here. The agents do no arithmetic that is published.</p>
-      <p>The spread across the thirty is the room for judgment that the evidence leaves. It is not a standard error: the agents share one evidence pack and one underlying model, so what none of them knows does not show.</p>
+      <p>Importers record tuna as Kiribati-origin by the <strong>flag</strong> of the catching vessel. The balance of payments counts a sale as a Kiribati export only if the vessel's operator is <strong>resident</strong> in Kiribati. <strong>True exports</strong> are the FOB value (at the port of loading, without freight and insurance) of tuna sold to non-residents by operators resident in Kiribati, whatever the flag or the route, whether or not any statistic recorded it. A catch by a vessel run from abroad is not a Kiribati export. The Kiribati National Statistics Office measures this quantity inside its goods-exports line; the estimate here is a second reading from different evidence, offered to help that work.</p>
+      <p>Thirty AI agents (the "experts") work alone on the same evidence pack and instructions. <span data-fill="agent-def">Each agent is one fresh session of a large language model, with no memory of the other sessions.</span> In order, each:</p>
+      <ol>
+        <li>writes numbered principles that connect the evidence to the question, and freezes them;</li>
+        <li>walks from the raw partner figure to its estimate in six signed layers, each with a range and a reason;</li>
+        <li>audits its own answer.</li>
+      </ol>
+      <p>A program checks every answer (layers reconcile, ranges ordered, no banned words) and computes the statistics shown here; the agents do no arithmetic that is published. The spread across the thirty is the room for judgment the evidence leaves. It is not a standard error: the agents share one evidence pack and one model, so what none of them knows does not show. Terms are defined in the <a href="methods.html#glossary">glossary</a>.</p>
     </div>
     <h3>The six layers</h3>
     <ol class="layer-list prose" id="layer-list"></ol>
@@ -68,8 +74,18 @@
 <section class="block" id="bridges">
   <div class="wrap">
     <h2>The bridge, year by year</h2>
-    <p class="section-lede">Each chart starts from what importers recorded for that year and ends at the agents' estimate. Bars are the mean of the thirty agents; whiskers the 10th to 90th percentile across agents for that layer; the dots beside the last bar are the thirty individual estimates. Under each chart, the experts' narrative: five points computed from the answers, then the arguments layer by layer in the agents' own words.</p>
+    <p class="section-lede">Each chart starts from what importers recorded and ends at the agents' estimate, oldest year first. Under each chart: the experts' narrative, five points computed from the answers, then the arguments layer by layer in the agents' own words.</p>
     <div id="bridge-figures"></div>
+    <figure class="fig" id="fig-runs">
+      <div class="fig-head"><div>
+        <h3>Runs so far</h3>
+        <p class="sub">Each bar is one run: the date, how many agents, and what they were asked</p>
+        <p class="how">The log grows with each run. Hover a bar for what changed. Later runs supersede earlier ones for the same question.</p>
+      </div></div>
+      <div class="plot short"><canvas id="chart-runs" role="img" aria-label="Number of agents deployed in each run, by date"></canvas></div>
+      <figcaption><p class="src" id="runs-src"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-runs"></div></details>
+    </figure>
     <figure class="fig" id="fig-layer-table">
       <div class="fig-head"><div><h3>All layers, all years</h3><p class="sub">USD millions; mean across agents, with the 10th and 90th percentiles</p></div></div>
       <div class="scroll" id="table-layers"></div>
@@ -95,34 +111,14 @@
   </div>
 </section>
 
-<section class="block" id="early">
-  <div class="wrap">
-    <h2>Early estimate of the partner series itself</h2>
-    <p class="section-lede">A different, smaller question: what will importers record for months they have not yet published? Thailand, the main buyer, publishes with a lag of several months. A statistical baseline fills the gap from what has been published, and the agents of an earlier run gave their own view of the same total. This is an estimate of the flag-basis figure, not of true exports.</p>
-    <figure class="fig" id="fig-nowcast">
-      <div class="fig-head"><div>
-        <h3>Partner-reported tuna by month: published, baseline, agents' view</h3>
-        <p class="sub">USD millions per month</p>
-        <p class="how">Bars are published partner figures (lighter where fewer partners have reported). The dashed line is the baseline. The solid line is the agents' average, with the band from the 10th to the 90th percentile of their answers.</p>
-      </div></div>
-      <div class="legend" id="legend-nowcast"></div>
-      <div class="plot tall"><canvas id="chart-nowcast" role="img" aria-label="Published partner-reported tuna by month with the baseline and the agents' estimate for coming months"></canvas></div>
-      <figcaption>
-        <p class="caveat">On a pseudo-real-time test over 86 months the baseline roughly halves the error of repeating the same month of the previous year. Ship-tracking arrivals did not improve it and are not part of it.</p>
-        <p class="src" id="src-nowcast"></p>
-      </figcaption>
-      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-nowcast"></div></details>
-    </figure>
-  </div>
-</section>
 
 <section class="block" id="what">
   <div class="wrap--text">
     <h2>What this is, and is not</h2>
     <div class="prose">
       <p><strong>It is</strong> a stated theory, written down before the numbers, applied without exception to the evidence by thirty independent readers, with the disagreement shown. Every layer has a reason, and every reason cites the evidence it rests on.</p>
-      <p><strong>It is not</strong> an official estimate, and it is not scored against the official figure: the two answer the same question from different evidence, and the estimate can sit above or below the published figure without either being wrong. Whether the agents understand how a published figure is built is a separate test, under construction on the <a href="validation.html">Validation page</a>.</p>
-      <p>The method is in <a href="methods.html#inference-methods">Methods</a>. Comments and corrections: <a href="https://github.com/alebadel/KiriTrade/issues/new?title=Inference%20comment">open an issue</a>.</p>
+      <p><strong>It is not</strong> an official estimate, and the official figure is not used to score it: the two answer the same question from different evidence, and the estimate can sit above or below the published figure without either being wrong. Whether the agents understand how a published figure is built is a separate test, designed but not yet run, on the <a href="validation.html">Validation page</a>.</p>
+      <p>The method is in <a href="methods.html#inference-methods">Methods</a>. The test that would score the agents is on the <a href="validation.html">Validation page</a>. Comments and corrections: <a href="https://github.com/alebadel/KiriTrade/issues/new?title=Inference%20comment">open an issue</a>.</p>
     </div>
   </div>
 </section>

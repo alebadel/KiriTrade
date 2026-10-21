@@ -35,7 +35,7 @@ HINTS = {
     "": "No usable address on the register",
 }
 PREV_FLAG_GROUPS = {
-    "NONE": "No previous flag", "": "Not stated", "PANAMA": "Panama", "KOREA": "Korea", "REPUBLIC OF KOREA": "Korea",
+    "NONE": "No previous flag", "": "Not stated", "PANAMA": "Panama", "KOREA": "South Korea", "REPUBLIC OF KOREA": "South Korea",
     "PAPUA NEW GUINEA": "Papua New Guinea", "BELIZE": "Belize", "UNITED STATES OF AMERICA": "United States",
     "USA": "United States", "JAPAN": "Japan",
 }

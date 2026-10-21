@@ -82,6 +82,8 @@ and, where `GPS/out` is available, a reconciliation against the CSVs.
 
 ## Site structure (20 Oct 2026) and the three new data files
 
+Pages, in reading order: `index.html` (question, answer so far, fish cycle, five input cards, inference box, validation box) → `comtrade.html` (partner data; also the early estimate `#early`, `assets/js/early.js`) → `fleet.html` → `registry.html` → `official.html` → `documents.html` (knowledge base inventory and the research list `#research`, `assets/js/research.js`) → `inference.html` (answer, method, bridges by year with narrative and table, run log, principles) → `validation.html` (design set, no scores) → `methods.html` (estimate method first, glossary `#glossary`, partner data, early estimate, ship tracking, register, knowledge base, validation). `literature.html` only redirects. Every page shares one nav; the five input pages carry an "Input n of 5 · Next" pager.
+
 The site is a story in four parts. `index.html` (home): the question, the fish-cycle diagram, five input cards, the
 AI-based inference (run log, waterfall, three-records chart) and the validation design. One detail page per input:
 `comtrade.html` (the former home page: coverage, partner series, comparison with official figures, peers, products),

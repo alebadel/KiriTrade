@@ -16,7 +16,7 @@
   function render(r, text) {
     const t = KT.tokens();
     const src = 'Source: ' + r.meta.source + '. Counts of ' + r.meta.n_vessels + ' register entries.';
-    ['src-1', 'src-2', 'src-3', 'src-4', 'src-5', 'src-6'].forEach(id => setText(id, src));
+    setText('src-1', src); ['src-2', 'src-3', 'src-4', 'src-5', 'src-6'].forEach(id => setText(id, 'Same source and counts as the first chart.'));
     setText('rg-strip', r.meta.n_vessels + ' entries for the Kiribati, Nauru and Tuvalu flags, exported ' + KT.fmtDate(r.meta.register_export_date + 'T00:00:00Z') + '.');
     const flags = Object.keys(r.by_flag_status);
 
@@ -24,7 +24,7 @@
     KT.legend('legend-status', [{ label: 'On the register', color: t.kir }, { label: 'Deleted by the flag state', color: t.other }]);
     KT.make('chart-status', { type: 'bar', data: { labels: flags, datasets: [
       { label: 'On the register', data: flags.map(f => r.by_flag_status[f].active), backgroundColor: t.kir, maxBarThickness: 40 },
-      { label: 'Deleted', data: flags.map(f => r.by_flag_status[f].deleted), backgroundColor: t.other, maxBarThickness: 40 }] },
+      { label: 'Deleted by the flag state', data: flags.map(f => r.by_flag_status[f].deleted), backgroundColor: t.other, maxBarThickness: 40 }] },
       options: { indexAxis: 'y', plugins: { tooltip: { callbacks: { label: countLabel } } }, scales: barAxes(t, 'vessels', true) } });
 
     // type
@@ -43,9 +43,11 @@
       options: { indexAxis: 'y', plugins: { tooltip: { callbacks: { label: countLabel } } }, scales: barAxes(t, 'vessels', true) } });
 
     // previous flag
-    const pf = Object.entries(r.previous_flag);
-    KT.legend('legend-prev', [{ label: 'Vessels', color: t.count }]);
-    KT.make('chart-prev', { type: 'bar', data: { labels: pf.map(x => x[0]), datasets: [{ label: 'Vessels', data: pf.map(x => x[1]), backgroundColor: t.count, maxBarThickness: 22 }] },
+    const isNonFlag = k => /^(No previous flag|Other countr|Not stated|Not recorded|Unknown)/i.test(k);
+    const flagName = k => k === 'Korea' ? 'South Korea' : k;
+    const pf = Object.entries(r.previous_flag).filter(x => !isNonFlag(x[0])).sort((a, b) => b[1] - a[1]).concat(Object.entries(r.previous_flag).filter(x => isNonFlag(x[0])));
+    KT.legend('legend-prev', [{ label: 'Previous flag', color: t.count }, { label: 'No previous flag, or other', color: t.other }]);
+    KT.make('chart-prev', { type: 'bar', data: { labels: pf.map(x => flagName(x[0])), datasets: [{ label: 'Vessels', data: pf.map(x => x[1]), backgroundColor: pf.map(x => isNonFlag(x[0]) ? t.other : t.count), maxBarThickness: 22 }] },
       options: { indexAxis: 'y', plugins: { tooltip: { callbacks: { label: countLabel } } }, scales: barAxes(t, 'vessels', true) } });
 
     // built decade
@@ -55,8 +57,11 @@
 
     // AIS match
     const am = Object.entries(r.ais_match);
-    KT.make('chart-ais', { type: 'bar', data: { labels: am.map(x => x[0]), datasets: [{ label: 'Vessels', data: am.map(x => x[1]), backgroundColor: [t.kir, t.other], maxBarThickness: 60 }] },
-      options: { indexAxis: 'y', plugins: { tooltip: { callbacks: { label: countLabel } } }, scales: barAxes(t, 'vessels', true) } });
+    const matched = am.filter(x => /^Matched/i.test(x[0])).reduce((s, x) => s + x[1], 0), unmatched = am.filter(x => !/^Matched/i.test(x[0])).reduce((s, x) => s + x[1], 0);
+    KT.make('chart-ais', { type: 'bar', data: { labels: ['Register entries'], datasets: [
+      { label: 'Matched to a ship-tracking identity', data: [matched], backgroundColor: t.kir, stack: 'a', maxBarThickness: 60 },
+      { label: 'Not matched', data: [unmatched], backgroundColor: t.other, stack: 'a', maxBarThickness: 60 }] },
+      options: { indexAxis: 'y', plugins: { tooltip: { callbacks: { label: countLabel, footer: () => matched + ' of ' + (matched + unmatched) + ' matched' } } }, scales: (() => { const s = barAxes(t, 'vessels', true); s.x.stacked = true; s.y.stacked = true; return s; })() } });
 
     // facts
     const dl = $('rg-facts'); dl.textContent = '';

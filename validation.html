@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Validation — Kiribati trade tracker</title>
+<title>Validation — KiriTrade</title>
 <meta name="description" content="How the tracker tests whether its AI agents understand how a published goods-export figure is built: predict other countries' published figures from the other evidence, with the figure withheld. Under construction.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,14 @@
 
 <div class="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -33,8 +33,8 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1>Validation <span class="tag">under construction</span></h1>
-      <p class="purpose">How the tracker will test whether its AI agents understand how a published goods-export figure is built. The design is set; the panel of test countries is empty, so there are no scores yet.</p>
+      <h1>Validation <span class="tag">design set, no scores yet</span></h1>
+      <p class="purpose">How the tracker will test whether its AI agents understand how a published goods-export figure is built. The design is set; the panel of test countries is empty; there are no scores yet.</p>
     </div>
   </div>
 </header>
@@ -43,7 +43,7 @@
   <div class="wrap--text">
     <h2>What can and cannot be tested</h2>
     <div class="prose">
-      <p>The <a href="inference.html">inference</a> estimates the value of the tuna that Kiribati residents sell abroad, a quantity the Kiribati National Statistics Office measures under the balance-of-payments rule from the returns it receives. The estimate is a second reading from different evidence, so it is not scored against the official figure: neither is the test of the other. What can be scored is the agents' understanding of the machinery: how a statistics office turns catch, flags, ownership, transshipment and importers' records into the goods-export figure it publishes. If the agents can reproduce other countries' published figures from the other evidence, their principles are doing real work; if they cannot, the Kiribati estimate rests on principles that fail where they can be checked.</p>
+      <p>The <a href="inference.html">inference</a> estimates the value of the tuna that Kiribati residents sell abroad, a quantity the Kiribati National Statistics Office measures inside its goods-exports line from the returns it receives. The estimate is a second reading from different evidence, so the official figure is not used to score it. What can be scored is the agents' understanding of the machinery: how a statistics office turns catch, flags, ownership, transshipment and importers' records into the goods-export figure it publishes. If the agents can reproduce other countries' published figures from the other evidence, their principles are doing real work; if not, the Kiribati estimate rests on principles that fail where they can be checked.</p>
     </div>
   </div>
 </section>
@@ -53,9 +53,9 @@
     <h2>The test</h2>
     <div class="construction prose">
       <ol>
-        <li><strong>Panel.</strong> Island economies with tuna fleets and a published balance of payments: first the Pacific states (Solomon Islands, Papua New Guinea, Micronesia, Marshall Islands, Tuvalu, Nauru, Fiji), then Indian Ocean and Caribbean states where national statistics and partner reporting are better. Each country enters the panel with its partner series, its register where one exists, its documented compilation practice and the vintage of its official figures.</li>
+        <li><strong>Panel (candidates, not yet screened).</strong> Island economies with tuna fleets and a published balance of payments: first the Pacific states (Solomon Islands, Papua New Guinea, Micronesia, Marshall Islands, Tuvalu, Nauru, Fiji), then Indian Ocean states, and Caribbean states where national statistics and partner reporting are better. Each enters with its partner series, its register where one exists, its documented compilation practice and the vintage of its official figures.</li>
         <li><strong>Hold-out.</strong> For each country-year, the agent receives everything except the published goods-export figure for that year. Nothing about that year's figure is in its evidence. It predicts the figure, with a written derivation that uses only its stated principles and the pack.</li>
-        <li><strong>Score.</strong> A program compares the prediction with the published figure and records the error. The agent may revise its principles for at most three rounds, each logged; a set of country-years is kept back and revealed only after the principles are frozen.</li>
+        <li><strong>Score.</strong> A program compares the prediction with the published figure and records the error. The success measure is not yet set; it will be fixed before the first panel run. The agent may revise its principles for at most three rounds, each logged; a set of country-years is kept back and revealed only after the principles are frozen.</li>
         <li><strong>Carry over.</strong> The frozen principles are the ones applied to Kiribati. A principle that fails on the panel is not rescued for Kiribati.</li>
       </ol>
       <p>Two limits are stated now. The published figures of panel countries are not assumed to be right; they are what their compilers produced, cited by vintage. And a good score on the panel shows that the agents can reproduce compilers' practice, not that the practice equals the true value; the Kiribati question remains an estimate under stated conditions.</p>
@@ -69,8 +69,9 @@
     <dl class="kv">
       <dt>Panel countries</dt><dd>0. The screening of candidate countries (own monthly reporting, prompt counterparts, materiality of fish exports) has not been run.</dd>
       <dt>Hold-out cases scored</dt><dd>0.</dd>
-      <dt>Principles frozen</dt><dd>Per run, before the Kiribati step (see the <a href="inference.html">Inference page</a>); not yet tested on a panel.</dd>
-      <dt>What would change the Kiribati estimate</dt><dd>A panel result that contradicts a principle used in the Kiribati bridge, above all on the share of catch that belongs to non-resident operators.</dd>
+      <dt>Principles tested on a panel</dt><dd>None. The Kiribati estimate rests on principles that are written and frozen per run (see the <a href="inference.html">Inference page</a>) but untested.</dd>
+      <dt>Success measure</dt><dd>Not yet set.</dd>
+      <dt>Limit</dt><dd>A panel result that contradicts a principle used in the Kiribati bridge, above all on the share of catch that belongs to non-resident operators, would change the Kiribati estimate.</dd>
     </dl>
   </div>
 </section>

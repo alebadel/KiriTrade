@@ -26,7 +26,7 @@
     const countries = ['ALL'].concat(Object.keys(c.by_country_type));
     countries.forEach(iso => sel.appendChild(el('option', { value: iso, text: cname(iso) })));
     sel.value = 'ALL';
-    KT.legend('legend-corpus', [{ label: 'Words of text held', color: t.other }, { label: 'Number of documents (in the tooltip)', color: t.count, kind: 'line' }]);
+    KT.legend('legend-corpus', [{ label: 'Words of text held (hover for the number of documents)', color: t.other }]);
 
     const draw = () => {
       const iso = sel.value;

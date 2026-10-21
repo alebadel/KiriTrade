@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Import and Export Performance Tracker using Comtrade Trade-Partner Data</title>
-<meta name="description" content="Summarize and share trading-partner data to track the performance of the Kiribati economy.">
+<title>KiriTrade: Tuna Exports Now with AI</title>
+<meta name="description" content="What the tuna that Kiribati residents sell abroad is worth, estimated from partner trade data, ship tracking, the vessel register, official statistics and a knowledge base, with thirty AI agents.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
@@ -18,14 +18,14 @@
 
 <div class="viewbar" id="viewbar">
   <div class="wrap">
-    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <a class="brand" href="index.html">KiriTrade</a>
     <nav class="topnav" aria-label="Pages">
       <a href="index.html" aria-current="page">Home</a>
       <a href="comtrade.html">Partner data</a>
       <a href="fleet.html">Ship tracking</a>
       <a href="registry.html">Vessel register</a>
       <a href="official.html">Official statistics</a>
-      <a href="documents.html">Rules and research</a>
+      <a href="documents.html">Knowledge base</a>
       <a href="inference.html">Inference</a>
       <a href="methods.html">Methods</a>
     </nav>
@@ -52,17 +52,17 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1 id="site-title">Import and Export Performance Tracker using Comtrade Trade-Partner Data</h1>
-      <p class="purpose" id="purpose">Summarize and share trading-partner data to track the performance of the Kiribati economy.</p>
+      <h1 id="site-title">KiriTrade: Tuna Exports Now with AI</h1>
+      <p class="purpose" id="purpose">What is the value of the tuna that Kiribati residents sell abroad? Partner records, ship tracking and official statistics, read by thirty AI agents.</p>
       <p class="updated"><span class="dot" aria-hidden="true"></span><span id="updated-hero">Loading data…</span></p>
     </div>
     <aside class="strip" aria-labelledby="strip-h">
       <h3 id="strip-h">The question in two numbers</h3>
       <div class="two-numbers">
         <div><p class="stat-n" id="n-mirror">…</p><p class="stat-s">USD million of tuna that importing countries recorded as coming from Kiribati in <span id="n-mirror-year">…</span>. Source: UN Comtrade, partner returns.</p></div>
-        <div><p class="stat-n" id="n-bop">…</p><p class="stat-s">USD million of goods exports in Kiribati's balance of payments in <span id="n-bop-year">…</span><span id="n-bop-est"></span>. Source: IMF.</p></div>
+        <div><p class="stat-n" id="n-bop">…</p><p class="stat-s">USD million of all goods exports in Kiribati's balance of payments in <span id="n-bop-year">…</span><span id="n-bop-est"></span>, not tuna alone. Source: IMF.</p></div>
       </div>
-      <p class="legend">Both figures are correct records of different things. The tracker explains the difference and estimates what lies behind it.</p>
+      <p class="legend">Two correct records of different things: the first counts tuna by the flag of the catching vessel; the second counts all goods sold by Kiribati residents. The tracker estimates the tuna part of the second.</p>
     </aside>
   </div>
 </header>
@@ -72,10 +72,34 @@
   <div class="wrap--text">
     <h2>The question</h2>
     <div class="prose">
-      <p>Every shipment is recorded twice: once by the country it leaves and once by the country it enters. Kiribati's own records are the official ones. This tracker reads the other record, what Kiribati's trading partners declared to UN Comtrade, the United Nations trade database, and uses it to say something about Kiribati's economy earlier and from a second angle.</p>
-      <p>For tuna the two records differ by a large multiple, and the difference is a matter of definition. Importing countries credit a fish to the country whose flag the catching vessel flies. The balance of payments credits a sale to the country where the vessel's operator is resident. A purse seiner on the Kiribati register run from abroad produces "Kiribati" tuna in the first record and none in the second. The public vessel register gives a usable owner address for <span data-fill="addr-share">fewer than half</span> of the vessels on the Kiribati, Nauru and Tuvalu flags, so neither record settles how much of the catch belongs to Kiribati residents.</p>
-      <p>The question the tracker asks is therefore: <strong>what is the true value of the tuna that Kiribati residents sell abroad?</strong> The Kiribati National Statistics Office measures it under the balance-of-payments rule, from the returns it receives. The tracker offers a second reading of the same quantity, built from partner data and public evidence, to help that work: it gathers five kinds of evidence, shows what each can and cannot see, and asks thirty AI agents to reason from the evidence to an estimate, one layer at a time. The page is built in the same order: the path of a fish, the five inputs, the inference, and how it will be tested.</p>
+      <p>Every shipment is recorded twice: by the country it leaves and by the country it enters. Kiribati's own records are the official ones. This tracker reads the other record, what Kiribati's trading partners declared to UN Comtrade (the United Nations trade database), to read Kiribati's tuna trade before the official figures are published.</p>
+      <p>For tuna the two records differ by a large multiple, because they answer different questions. Importers credit a fish to the <strong>flag</strong> of the catching vessel. The balance of payments (the official account of a country's dealings with the rest of the world) credits a sale to the country where the vessel's operator is <strong>resident</strong>. A purse seiner on the Kiribati register but run from abroad is "Kiribati" tuna in the first record and none in the second. The public vessel register gives a usable owner address for <span data-fill="addr-share">fewer than half</span> of the vessels on the Kiribati, Nauru and Tuvalu flags, so neither record settles how much of the catch belongs to Kiribati residents.</p>
+      <p>The question is therefore: <strong>what is the true value of the tuna that Kiribati residents sell abroad?</strong> The Kiribati National Statistics Office measures it under the balance-of-payments rule, inside its goods-exports line, from the returns it receives; it does not publish a tuna line. The tracker offers a second reading of the same quantity from different evidence, to help that work: five inputs, and thirty AI agents who reason from them to an estimate one layer at a time. The page follows that order: the answer so far, the path of a fish, the five inputs, the inference, and how it will be tested.</p>
     </div>
+  </div>
+</section>
+
+
+<!-- 1b. The answer -->
+<section class="block" id="answer">
+  <div class="wrap">
+    <h2>The answer so far</h2>
+    <p class="section-lede">Three records of the same tuna, by year. The estimate is the middle line; its band is where the thirty agents' answers fall.</p>
+
+    <figure class="fig" id="fig-series">
+      <div class="fig-head"><div>
+        <h3>The three records of Kiribati's tuna, by year</h3>
+        <p class="sub">USD millions: what importers recorded, what the agents estimate, what the balance of payments records</p>
+        <p class="how">Orange: what importers recorded, flag basis. Blue with band: the agents' estimate of true exports, mean and middle 80%. Dark dashes: balance-of-payments goods exports, all goods, for reference only.</p>
+      </div></div>
+      <div class="legend" id="legend-series"></div>
+      <div class="plot"><canvas id="chart-series" role="img" aria-label="Raw partner-reported tuna, agents' estimate of true exports and official goods exports by year"></canvas></div>
+      <figcaption>
+        <p class="caveat">The estimate exists only for the years the agents were run on. The official line covers all goods, not tuna alone; its latest year is the compiler's estimate. No gap or ratio between the two is drawn.</p>
+        <p class="src">Sources: UN Comtrade partner returns; IMF balance of payments for Kiribati; the tracker's agent runs (inference.json).</p>
+      </figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-series"></div></details>
+    </figure>
   </div>
 </section>
 
@@ -83,7 +107,7 @@
 <section class="block" id="cycle">
   <div class="wrap">
     <h2>How a fish becomes a statistic</h2>
-    <p class="section-lede">Follow one tuna from the sea to the published figures. Each step leaves a trace somewhere, but no single source sees the whole path. The marks show what the tracker can and cannot observe at each step.</p>
+    <p class="section-lede">Follow one tuna from the sea to the published figures. No single source sees the whole path; the marks show what the tracker can and cannot observe at each step. Steps follow the fish; the six layers of the inference are the arithmetic from the partner figure to the estimate.</p>
     <div class="legend cycle-key" aria-label="Key">
       <span><i class="k k-ais" aria-hidden="true"></i>Seen by ship-tracking (AIS), Global Fishing Watch</span>
       <span><i class="k k-rec" aria-hidden="true"></i>Recorded in official trade or customs data</span>
@@ -151,7 +175,7 @@
       </div>
       <div class="ledger">
         <h3>What the inputs add to one another</h3>
-        <p>The AIS steps (1 to 3) arrive within days. The import record (step 4) arrives months later and the official figures (step 5) later still. Read together, they show where activity is happening before the trade figures are in, and which steps have no measurement at all. The inference section below starts from step 4 and reasons toward the value that step 5 is meant to capture.</p>
+        <p>The AIS steps (1 to 3) arrive within days, the import record (step 4) about four months later, the official figures (step 5) later still. Together they show where activity is before the trade figures are in, and which steps nobody measures. The inference starts from step 4 and reasons toward the quantity that step 5 records: the sales of resident operators.</p>
       </div>
     </div>
   </div>
@@ -168,7 +192,7 @@
         <h3><a href="comtrade.html">Trading-partner records (UN Comtrade) →</a></h3>
         <div class="plot small"><canvas id="chart-card-comtrade" role="img" aria-label="Partner-reported tuna by year and Kiribati's own reported exports"></canvas></div>
         <div class="legend" id="legend-card-comtrade"></div>
-        <p>What importing countries declared they bought from Kiribati, by product and month, published about four months after the fact. Tuna is credited to Kiribati by the flag of the catching vessel. It tells when, to whom and what. It does not tell who operated the vessel.</p>
+        <p>What importing countries declared they bought from Kiribati, by product and month, about four months after the fact. Tuna is credited to Kiribati by the flag of the catching vessel, valued at the importer's border (CIF). It tells when, to whom and what; not who operated the vessel.</p>
         <a class="more" href="comtrade.html">Open the partner-data page →</a>
         <p class="src">Source: UN Comtrade, partner returns and Kiribati's returns, tuna HS 030341–030349, 030487, 160414.</p>
       </article>
@@ -177,7 +201,7 @@
         <h3><a href="fleet.html">Ship tracking (AIS): Kiribati-flagged vessels →</a></h3>
         <div class="plot small"><canvas id="chart-card-fleet" role="img" aria-label="Fishing hours of Kiribati-flagged vessels by year"></canvas></div>
         <div class="legend" id="legend-card-fleet"></div>
-        <p>Positions that vessels broadcast, collected by Global Fishing Watch. The chart counts the hours that vessels on the Kiribati flag were seen fishing, by year. The full page adds when they met carrier vessels at sea and which ports the carriers visited, within days of the event. None of it shows tonnes caught or value sold.</p>
+        <p>Positions that vessels broadcast (AIS), collected by Global Fishing Watch. The chart counts the hours that Kiribati-flagged vessels were seen fishing, by year. The page adds their meetings with carrier vessels at sea and the carriers' port calls, within days of the event. None of it shows tonnes caught or value sold.</p>
         <a class="more" href="fleet.html">Open the ship-tracking page →</a>
         <p class="src">Source: Global Fishing Watch, fishing events for Kiribati-flagged vessels on the WCPFC register, counted only inside each vessel's time on the register.</p>
       </article>
@@ -186,7 +210,7 @@
         <h3><a href="registry.html">Vessel register (WCPFC) →</a></h3>
         <div class="plot small"><canvas id="chart-card-registry" role="img" aria-label="Vessels on the register by flag and type"></canvas></div>
         <div class="legend" id="legend-card-registry"></div>
-        <p>The public list of vessels the Kiribati, Nauru and Tuvalu flag states have authorised to fish, with vessel type, build year, previous flag and an owner address. The address is a hint about where the operator is based. Residence, the condition that decides whether a catch is a Kiribati export, is not on the register.</p>
+        <p>The public list of vessels the Kiribati, Nauru and Tuvalu flag states have authorised to fish, with type, build year, previous flag and an owner address. The address and the previous flag are clues to where the operator is based. Residence itself is not on the register.</p>
         <a class="more" href="registry.html">Open the vessel-register page →</a>
         <p class="src">Source: WCPFC Record of Fishing Vessels, export of <span data-fill="rfv-date">…</span>. Counts only; no names are published.</p>
       </article>
@@ -195,16 +219,16 @@
         <h3><a href="official.html">Official statistics (Kiribati) →</a></h3>
         <div class="plot small"><canvas id="chart-card-official" role="img" aria-label="Kiribati balance of payments goods exports by year"></canvas></div>
         <div class="legend" id="legend-card-official"></div>
-        <p>Kiribati's balance of payments, compiled with the IMF, and its customs returns on UN Comtrade. They are the reference for the country's accounts. Goods exports follow the residence rule. The agents may read these figures as evidence of what the compiler recorded; they are not the target of the estimate.</p>
+        <p>Kiribati's balance of payments, compiled with the IMF, and its customs returns on UN Comtrade. Goods exports follow the residence rule and cover all goods, not tuna alone. The agents read these figures as evidence of what the compiler recorded; the estimate is not fitted to them.</p>
         <a class="more" href="official.html">Open the official-statistics page →</a>
         <p class="src">Source: IMF Statistics Department, balance of payments for Kiribati, goods exports; the latest year is the compiler's estimate.</p>
       </article>
 
       <article class="card" id="card-documents">
-        <h3><a href="documents.html">Rules, standards and research: Kiribati's knowledge base →</a></h3>
+        <h3><a href="documents.html">Knowledge base: rules, standards and research →</a></h3>
         <div class="plot small"><canvas id="chart-card-documents" role="img" aria-label="Words of text held in the knowledge base, by document type and date added"></canvas></div>
         <div class="legend" id="legend-card-documents"></div>
-        <p>The texts the agents reason with, assembled for Kiribati: the statistical manuals that define an export, the customs rules that assign origin to fish, the documentation of the trade database, and the research on partner data. The chart shows the collection growing as documents are added. <span data-fill="corpus-count">…</span> No news items and no Kiribati fisheries regulations have been collected yet; both are next.</p>
+        <p>The texts the agents reason with, assembled for Kiribati: the statistical manuals that define an export, the customs rules that assign origin to fish, the trade database's documentation, and the research on partner data. The chart shows the collection growing. <span data-fill="corpus-count">…</span> News and Kiribati's fisheries regulations are not yet collected; both are next.</p>
         <a class="more" href="documents.html">Open the knowledge-base page →</a>
         <p class="src">Source: the tracker's document inventory (words by document type and date added; no document text is published).</p>
       </article>
@@ -217,25 +241,15 @@
 <section class="block" id="inference">
   <div class="wrap">
     <h2>AI-based inference: from the partner figure to true exports</h2>
-    <p class="section-lede">Thirty AI agents, the "experts", receive the same evidence and the same instructions and work alone. <span data-fill="agent-def">Each agent is one fresh session of a large language model, with no memory of the other sessions.</span> Each writes down its principles, then walks from the raw partner figure to its own estimate of true exports in six steps, then checks itself. A program, not an agent, aggregates the thirty answers. The spread across agents shows how much room for judgment the evidence leaves; it is not a standard error.</p>
+    <p class="section-lede">Thirty AI agents (the "experts") receive the same evidence and instructions and work alone. <span data-fill="agent-def">Each agent is one fresh session of a large language model, with no memory of the other sessions.</span> Each writes its principles, walks from the raw partner figure to its own estimate in six layers, then checks itself. A program combines the thirty answers. The spread across agents is the room for judgment the evidence leaves; it is not a standard error.</p>
 
-    <figure class="fig" id="fig-runs">
-      <div class="fig-head"><div>
-        <h3>Runs so far</h3>
-        <p class="sub">Each bar is one run: the date, how many agents, and what they were asked</p>
-        <p class="how">The log grows with each run. Hover a bar for what changed. Later runs supersede earlier ones for the same question.</p>
-      </div></div>
-      <div class="plot short"><canvas id="chart-runs" role="img" aria-label="Number of agents deployed in each run, by date"></canvas></div>
-      <figcaption><p class="src" id="runs-src"></p></figcaption>
-      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-runs"></div></details>
-    </figure>
 
     <figure class="fig" id="fig-waterfall">
       <div class="fig-head">
         <div>
           <h3>The experts' layers and narratives</h3>
           <p class="sub" id="wf-sub">From the raw partner figure to estimated true exports, USD millions, calendar year</p>
-          <p class="how">Start at the left with what importers recorded. Each step adds or removes one layer, in the order the agents were asked to reason. The bar is the mean of the thirty agents; the whisker is the 10th to 90th percentile of their answers for that step. The last bar is the estimate; the dots beside it are the thirty individual answers. The narrative below the chart gives the arguments, in the agents' own words.</p>
+          <p class="how">Read left to right. Each bar adds or removes one layer, in the order the agents reasoned. Bars are means of the thirty agents; whiskers hold the middle 80% of their answers. The last bar is the estimate; the dots beside it are the thirty individual answers. The narrative below gives the arguments in the agents' own words.</p>
         </div>
         <div class="fig-tools">
           <label class="visually-hidden" for="wf-period">Year</label>
@@ -245,37 +259,23 @@
       <div class="legend" id="legend-waterfall"></div>
       <div class="plot tall"><canvas id="chart-waterfall" role="img" aria-label="Waterfall from the raw partner-reported tuna figure to the agents' estimate of true exports"></canvas></div>
       <figcaption>
-        <p class="caveat">The agents share one evidence pack and one underlying model, so their spread understates the uncertainty. Almost all of the disagreement sits in one layer, the catch of vessels run by non-residents, which no public source measures.</p>
+        <p class="caveat">The agents share one evidence pack and one model, so their spread understates the uncertainty. Almost all the disagreement sits in one layer, the catch of vessels run by non-residents, which the public sources measure only by clues.</p>
         <p class="src" id="wf-src"></p>
       </figcaption>
       <details class="narr" id="wf-narr"><summary>The experts' narrative for this year: five points, then the arguments layer by layer</summary><div class="narr-body" id="wf-narrative"></div></details>
     </figure>
 
-    <figure class="fig" id="fig-series">
-      <div class="fig-head"><div>
-        <h3>The three records of Kiribati's tuna, by year</h3>
-        <p class="sub">USD millions: what importers recorded, what the agents estimate, what the balance of payments records</p>
-        <p class="how">The orange line is the raw partner figure (flag basis). The blue line with its band is the agents' estimate of true exports (mean, 10th to 90th percentile across agents). The dark line is the official balance-of-payments figure for goods exports, all goods. The official line is shown for reference; the tracker draws no gap or ratio between it and the estimate.</p>
-      </div></div>
-      <div class="legend" id="legend-series"></div>
-      <div class="plot"><canvas id="chart-series" role="img" aria-label="Raw partner-reported tuna, agents' estimate of true exports and official goods exports by year"></canvas></div>
-      <figcaption>
-        <p class="caveat">The agents' estimate exists only for the years they were run on. The official figure covers all goods, not tuna alone, and the latest year is the compiler's estimate.</p>
-        <p class="src">Sources: UN Comtrade partner returns; IMF balance of payments for Kiribati; the tracker's agent runs (inference.json).</p>
-      </figcaption>
-      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-series"></div></details>
-    </figure>
 
     <figure class="fig" id="fig-validation">
       <div class="fig-head"><div>
-        <h3>Validation: can the experts reproduce published figures? <span class="tag">under construction</span></h3>
+        <h3>Validation: can the experts reproduce published figures? <span class="tag">design set, no scores yet</span></h3>
         <p class="sub">Predicted against published goods exports, by country and year, with the published figure withheld from the agent</p>
-        <p class="how">Each point will be one country-year: what the agents predicted on the horizontal axis, what the statistics office published on the vertical axis. Points on the diagonal mean the agents understand how the published figure is built. The test gives an agent everything about a country except the published figure for the year in question; nothing about that year's figure is in its evidence.</p>
+        <p class="how">Each point will be one country-year: the agents' prediction across, the published goods-export figure up. Points on the diagonal mean the agents reproduce how the figure is built. Each agent sees everything about the country except that year's figure.</p>
       </div></div>
       <div class="legend" id="legend-validation"></div>
       <div class="plot short"><canvas id="chart-validation" role="img" aria-label="Predicted against published goods exports by country and year; empty until the panel is built"></canvas></div>
       <figcaption>
-        <p class="construction-note">The panel of comparison countries (island economies with tuna fleets and a published balance of payments) is empty today, so there are no points yet. Principles that fail on the panel are not carried over to Kiribati. The design, the scoring rule and the status are on the <a href="validation.html">Validation page</a>.</p>
+        <p class="construction-note">The panel (island economies with tuna fleets and a published balance of payments) is empty today, so there are no points. Principles that fail on the panel are not carried over to Kiribati. Design and status: <a href="validation.html">Validation page</a>.</p>
         <p class="src">Source: the tracker's validation panel (none yet). Published figures of panel countries will be cited by vintage and are not assumed to be right.</p>
       </figcaption>
     </figure>
@@ -298,7 +298,7 @@
       <ul>
         <li><a href="methods.html">Methods</a></li>
         <li><a href="validation.html">Validation</a></li>
-        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="documents.html#research">Rules, standards and research</a></li>
         <li><a href="https://github.com/alebadel/KiriTrade" id="github-link" rel="noopener">Source code and data on GitHub</a></li>
         <li><a href="data/manifest.json">Data files (JSON)</a></li>
       </ul>

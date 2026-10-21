@@ -378,3 +378,11 @@ ul.quotes q { quotes: "“" "”"; }
 .card .more { display: inline-block; margin-top: .6rem; font-weight: 700; text-decoration: none; }
 .card .more:hover { text-decoration: underline; }
 .fig .construction-note { font-size: .92rem; color: var(--ink-2); max-width: 80ch; margin: .5rem 0 0; }
+
+/* reading-order pager on the five input pages */
+nav.pager { margin: 1.5rem auto 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+nav.pager p { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; margin: 0; }
+
+/* waterfall key shown on narrow screens when bars are numbered */
+p.wf-key { margin: .4rem 0 0; line-height: 1.45; }
+p.wf-key[hidden] { display: none; }

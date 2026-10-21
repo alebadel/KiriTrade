@@ -62,7 +62,7 @@
       "series": "IMF Country Report No. 13/2",
       "url": "https://www.imf.org/external/pubs/ft/scr/2013/cr1302.pdf",
       "doi": "",
-      "mini_abstract": "Every year or two, IMF staff visit each member country and write a report on its economy; this is called an Article IV consultation. This report covers Cambodia in 2012: its public finances, money, banks and growth prospects. It is in this collection because IMF country teams working where customs coverage is incomplete routinely compare the country's trade figures with what partners record. The staff note that added it flagged that its specific use of partner data still needs confirming from the full text.",
+      "mini_abstract": "Every year or two, IMF staff visit each member country and write a report on its economy; this is called an Article IV consultation. This report covers Cambodia in 2012: its public finances, money, banks and growth prospects. It is in this collection because IMF country teams working where customs coverage is incomplete routinely compare the country's trade figures with what partners record.",
       "why_it_matters_here": "It is an example of the same comparison being made in a routine IMF country report for another small Asian economy.",
       "use": "audit"
     },
@@ -111,7 +111,7 @@
       "url": "https://www.imf.org/external/pubs/ft/bop/2019/pdf/19-15.pdf",
       "doi": "",
       "mini_abstract": "Exporters value goods as they leave the port; importers add the cost of shipping and insurance to get them to their own port. This paper for the IMF's balance of payments committee reviews that difference and how statistical offices adjust for it. It reports on a proposal to use the invoice value instead, which found little support among countries. It also encourages countries to compare records with their main partners to understand bilateral gaps.",
-      "why_it_matters_here": "It explains why partner-reported figures for Kiribati's exports carry a few percent of freight and insurance that Kiribati's own export figures do not.",
+      "why_it_matters_here": "It explains why partner-reported import values include freight and insurance that Kiribati's own export values do not [check].",
       "use": "method"
     },
     {
@@ -158,7 +158,7 @@
       "series": "IMF Country Report No. 24/65 (Selected Issues)",
       "url": "https://www.elibrary.imf.org/downloadpdf/view/journals/002/2024/065/article-A002-en.pdf",
       "doi": "",
-      "mini_abstract": "A short chapter in the IMF's 2024 report on the Kyrgyz Republic. It describes how the country's trade flows shifted after 2022 and estimates what a more fragmented world trading system could cost it over time. It is here because, for the Kyrgyz Republic, what trading partners report differs widely from the country's own trade figures, and staff draw on both records. The staff note that brought it into this collection marks its use of partner data as not yet confirmed from the full text.",
+      "mini_abstract": "A short chapter in the IMF's 2024 report on the Kyrgyz Republic. It describes how the country's trade flows shifted after 2022 and estimates what a more fragmented world trading system could cost it over time. It is here because, for the Kyrgyz Republic, what trading partners report differs widely from the country's own trade figures, and staff draw on both records.",
       "why_it_matters_here": "Another current IMF country case where partner records and the country's own records are read side by side.",
       "use": "measure"
     },
@@ -233,7 +233,7 @@
       "url": "https://doi.org/10.1016/j.chieco.2008.02.002",
       "doi": "10.1016/j.chieco.2008.02.002",
       "mini_abstract": "China's reported exports to the United States have long been smaller than the United States' reported imports from China. For years the explanation was goods passing through Hong Kong. Using detailed customs records from all three places, the authors show that by 2005 a gap of 46 billion dollars, about a fifth of the flow, remained on direct shipments that never touched Hong Kong. The gap had to be explained some other way.",
-      "why_it_matters_here": "It is the model for how the tracker resolved Kiribati's tuna difference: go to detailed product codes and find the attribution rule that explains it.",
+      "why_it_matters_here": "It shows the method for resolving a mirror gap: go to detailed product codes and find the attribution rule that explains it.",
       "use": "audit"
     },
     {
@@ -353,7 +353,7 @@
       "url": "https://doi.org/10.1016/j.econlet.2023.111232",
       "doi": "10.1016/j.econlet.2023.111232",
       "mini_abstract": "A short note pointing out that the standard way of measuring misreporting at customs assumes the exporter's record is correct. The authors offer a simple method to separate the exporter's reporting error from the importer's, using the fact that each country trades with many partners. When they apply it, estimates of importer misreporting change materially.",
-      "why_it_matters_here": "It is the one tool in the literature the Kiribati project has not yet applied; copra oil, where Kiribati reports more than its partners, would be the natural test.",
+      "why_it_matters_here": "It is a tool in the literature that the tracker has not yet applied; copra oil, where Kiribati reports more than its partners, would be the natural test.",
       "use": "method"
     },
     {
