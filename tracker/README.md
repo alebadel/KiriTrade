@@ -79,3 +79,34 @@ The job commits `data/fleet.json` only. The first full pull has not been timed o
 `python -m pytest tracker/tests -q` - the fleet tests include a synthetic-data test of the builder, a schema
 test, an aggregates-only test (key whitelist; no vessel/company names, MMSI, IMO or GFW ids on the fleet files)
 and, where `GPS/out` is available, a reconciliation against the CSVs.
+
+## Site structure (20 Oct 2026) and the three new data files
+
+The site is a story in four parts. `index.html` (home): the question, the fish-cycle diagram, five input cards, the
+AI-based inference (run log, waterfall, three-records chart) and the validation design. One detail page per input:
+`comtrade.html` (the former home page: coverage, partner series, comparison with official figures, peers, products),
+`fleet.html` (ship tracking), `registry.html` (vessel register), `official.html` (official statistics),
+`documents.html` (rules, standards and research). Then `inference.html` (the bridges year by year, the agents'
+principles and their notes on the official figures, the early estimate of the partner series), `validation.html`
+(design only, no scores yet), `methods.html`, `literature.html`.
+
+Data files added, all aggregates only:
+- `data/registry.json` <- `python tracker/build_registry_data.py --master "<...>\GPS\out\vessel_master.csv" --out data/registry.json --export-date YYYY-MM-DD`.
+  Counts by flag, status, type, owner-address hint, build decade, previous flag, AIS match. No names or identifiers (tested).
+- `data/corpus.json` <- `python tracker/build_corpus_data.py --root "<KiriTrade folder>" --out data/corpus.json`.
+  Inventory of the knowledge base: standards_docs/_KB (INDEX.md + md/*.md), mirror_papers/_KB/INDEX_ALL.md, the author's
+  briefs listed in the script, and any files dropped in `country_docs/<ISO3>/<type>/`. Titles and counts only.
+- `data/inference.json` <- `python tracker/build_inference_data.py --draws <folder of draw_*.json> --out data/inference.json --run-id <id> --run-date YYYY-MM-DD --prompt tracker/agents/bridge_prompt.md --official <official.json>`.
+  Aggregates of the agents' bridges (mean, sd, p10/p50/p90, min, max per layer and per end value), their principles,
+  their notes on the official figures and their audits. Draws live in `GPS/ensemble/<run>/` (never committed).
+- `data/runs.json` - the run log shown on the home page; edit by hand when a run is added or superseded.
+
+### Running the agents (manual, from the KiriTrade folder)
+1. Build the evidence pack: the six files in `GPS/ensemble/bridge_<date>/pack/` (00_README.md, 01 partner series, 02 fleet
+   aggregates, 03 partner imports by flag state, 05 standards extracts, 06 Kiribati official statistics). `build_evidence_pack.py`
+   makes 01-05; 06 is drawn from `data/national_accounts.json` (BOP goods lines, customs returns, months published; no licence fees).
+2. Run 30 agents, one fresh context each, with `tracker/agents/bridge_prompt.md`; each writes `draw_NN.json` into the run folder.
+3. `python tracker/build_inference_data.py ...` (step above). Then one summariser agent reads `principles[]` (exported to a
+   `principles.json`) with `tracker/agents/themes_prompt.md` and writes `themes.json`; `python tracker/build_themes.py --themes
+   themes.json --inference data/inference.json` recounts the members and stores `principle_themes`.
+4. Add the run to `data/runs.json`; write `notes/<date>-<run>.md`; run `python -m pytest tracker/tests -q`.

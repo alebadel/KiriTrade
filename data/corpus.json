@@ -1,0 +1,1950 @@
+{
+ "growth": [
+  {
+   "date": "2026-09-08",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 0,
+   "academic_docs": 0,
+   "imf": 0,
+   "imf_docs": 0,
+   "notes": 5026,
+   "notes_docs": 1,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-09-20",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 0,
+   "academic_docs": 0,
+   "imf": 0,
+   "imf_docs": 0,
+   "notes": 10328,
+   "notes_docs": 3,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-09-21",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 0,
+   "academic_docs": 0,
+   "imf": 0,
+   "imf_docs": 0,
+   "notes": 13847,
+   "notes_docs": 4,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-09-24",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 0,
+   "academic_docs": 0,
+   "imf": 0,
+   "imf_docs": 0,
+   "notes": 16257,
+   "notes_docs": 6,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-10-06",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 0,
+   "academic_docs": 0,
+   "imf": 0,
+   "imf_docs": 0,
+   "notes": 17317,
+   "notes_docs": 7,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-10-07",
+   "standards": 0,
+   "standards_docs": 0,
+   "customs": 0,
+   "customs_docs": 0,
+   "datadoc": 0,
+   "datadoc_docs": 0,
+   "academic": 155120,
+   "academic_docs": 16,
+   "imf": 91343,
+   "imf_docs": 15,
+   "notes": 17317,
+   "notes_docs": 7,
+   "news": 0,
+   "news_docs": 0
+  },
+  {
+   "date": "2026-10-13",
+   "standards": 1341010,
+   "standards_docs": 11,
+   "customs": 218169,
+   "customs_docs": 27,
+   "datadoc": 27111,
+   "datadoc_docs": 12,
+   "academic": 155120,
+   "academic_docs": 16,
+   "imf": 91343,
+   "imf_docs": 15,
+   "notes": 17317,
+   "notes_docs": 7,
+   "news": 0,
+   "news_docs": 0
+  }
+ ],
+ "meta": {
+  "generated_at": "2026-10-21T01:22:11Z",
+  "builder": "tracker/build_corpus_data.py",
+  "what": "Inventory of the documents available to the tracker's AI agents: counts of documents and words by type and by the country the document is about. No document text is published.",
+  "types": {
+   "standards": "Statistical manuals and standards",
+   "customs": "Customs rules and regulations",
+   "datadoc": "Data documentation",
+   "academic": "Academic papers",
+   "imf": "IMF and other official reports",
+   "notes": "Project briefs and drafts",
+   "news": "News"
+  },
+  "type_order": [
+   "standards",
+   "customs",
+   "datadoc",
+   "academic",
+   "imf",
+   "notes",
+   "news"
+  ],
+  "country_names": {
+   "GEN": "General (all countries)",
+   "KIR": "Kiribati",
+   "THA": "Thailand",
+   "JPN": "Japan",
+   "KOR": "Korea",
+   "PHL": "Philippines",
+   "IDN": "Indonesia",
+   "ECU": "Ecuador",
+   "COL": "Colombia",
+   "CHN": "China",
+   "KHM": "Cambodia",
+   "LAO": "Lao P.D.R.",
+   "KGZ": "Kyrgyz Republic",
+   "NPL": "Nepal",
+   "IND": "India",
+   "USA": "United States",
+   "VNM": "Viet Nam",
+   "PRK": "North Korea"
+  },
+  "n_documents": 89,
+  "n_words": 1850070,
+  "notes": [
+   "added = the date the document's text entered the knowledge base (modification date of the converted text file); the growth chart on the site is cumulative by this date.",
+   "Words are counted in the text the knowledge base holds (converted from PDF, HTML or Word files); scanned pages with no text layer count as zero.",
+   "GEN marks material that is not about one country: statistical manuals, the Kyoto Convention, methods papers.",
+   "News: no news items have been collected yet. The type is listed so the gap is visible."
+  ]
+ },
+ "by_country_type": {
+  "GEN": {
+   "standards": {
+    "documents": 11,
+    "words": 1341010,
+    "pages": 1907
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 5,
+    "words": 3457,
+    "pages": 5
+   },
+   "academic": {
+    "documents": 10,
+    "words": 97952,
+    "pages": 193
+   },
+   "imf": {
+    "documents": 10,
+    "words": 58735,
+    "pages": 224
+   },
+   "notes": {
+    "documents": 1,
+    "words": 1060,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "KIR": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 6,
+    "words": 16257,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "CHN": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 4,
+    "words": 41588,
+    "pages": 65
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "COL": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3803,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "ECU": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 2882,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "IDN": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3528,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "IND": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 1,
+    "words": 3196,
+    "pages": 18
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "JPN": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3110,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "KGZ": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 1,
+    "words": 1770,
+    "pages": 9
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "KHM": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 1,
+    "words": 17431,
+    "pages": 69
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "KOR": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3747,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "LAO": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 1,
+    "words": 4512,
+    "pages": 26
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "NPL": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 1,
+    "words": 5699,
+    "pages": 18
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "PHL": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3371,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "PRK": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "datadoc": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "academic": {
+    "documents": 2,
+    "words": 15580,
+    "pages": 22
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  },
+  "THA": {
+   "standards": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "customs": {
+    "documents": 28,
+    "words": 218169,
+    "pages": 1706
+   },
+   "datadoc": {
+    "documents": 1,
+    "words": 3213,
+    "pages": 1
+   },
+   "academic": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "imf": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "notes": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   },
+   "news": {
+    "documents": 0,
+    "words": 0,
+    "pages": 0
+   }
+  }
+ },
+ "totals_by_type": {
+  "standards": {
+   "documents": 11,
+   "words": 1341010
+  },
+  "customs": {
+   "documents": 28,
+   "words": 218169
+  },
+  "datadoc": {
+   "documents": 12,
+   "words": 27111
+  },
+  "academic": {
+   "documents": 16,
+   "words": 155120
+  },
+  "imf": {
+   "documents": 15,
+   "words": 91343
+  },
+  "notes": {
+   "documents": 7,
+   "words": 17317
+  },
+  "news": {
+   "documents": 0,
+   "words": 0
+  }
+ },
+ "documents": [
+  {
+   "id": "std-01",
+   "title": "BPM6 Compilation Guide, Chapter 5: Goods",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2014,
+   "pages": 9,
+   "words": 10771,
+   "source": "IMF",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-02",
+   "title": "Balance of Payments and International Investment Position Compilation Guide (BPM6 Compilation Guide)",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2014,
+   "pages": 635,
+   "words": 411810,
+   "source": "IMF",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-03",
+   "title": "BPM6, Chapter 4: Economic Territory, Units, Institutional Sectors, and Residence",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2009,
+   "pages": 30,
+   "words": 42389,
+   "source": "IMF",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-04",
+   "title": "BPM6, Chapter 10: Goods and Services Account",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2009,
+   "pages": 43,
+   "words": 60732,
+   "source": "IMF",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-05",
+   "title": "Balance of Payments and International Investment Position Manual, sixth edition (BPM6)",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2009,
+   "pages": 371,
+   "words": 363371,
+   "source": "IMF",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-06",
+   "title": "UN Comtrade Labs Data Explorer: About",
+   "type": "datadoc",
+   "country": "GEN",
+   "year": 2026,
+   "pages": 1,
+   "words": 1271,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-07",
+   "title": "UN Comtrade docs: Why exports of a country do not coincide with imports of its partner",
+   "type": "datadoc",
+   "country": "GEN",
+   "year": 2026,
+   "pages": 1,
+   "words": 332,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-08",
+   "title": "UN Comtrade docs: Distinction between exports and re-exports, imports and re-imports",
+   "type": "datadoc",
+   "country": "GEN",
+   "year": 2026,
+   "pages": 1,
+   "words": 346,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-09",
+   "title": "UN Comtrade docs: Second partner country",
+   "type": "datadoc",
+   "country": "GEN",
+   "year": 2026,
+   "pages": 1,
+   "words": 1093,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-10",
+   "title": "UN Comtrade docs: Reporters and partners",
+   "type": "datadoc",
+   "country": "GEN",
+   "year": 2026,
+   "pages": 1,
+   "words": 415,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-11",
+   "title": "UN Comtrade publication metadata: Colombia (reporter 170), annual HS datasets",
+   "type": "datadoc",
+   "country": "COL",
+   "year": 2026,
+   "pages": 1,
+   "words": 3803,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-12",
+   "title": "UN Comtrade publication metadata: Ecuador (reporter 218), annual HS datasets",
+   "type": "datadoc",
+   "country": "ECU",
+   "year": 2026,
+   "pages": 1,
+   "words": 2882,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-13",
+   "title": "UN Comtrade publication metadata: Indonesia (reporter 360), annual HS datasets",
+   "type": "datadoc",
+   "country": "IDN",
+   "year": 2026,
+   "pages": 1,
+   "words": 3528,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-14",
+   "title": "UN Comtrade publication metadata: Japan (reporter 392), annual HS datasets",
+   "type": "datadoc",
+   "country": "JPN",
+   "year": 2026,
+   "pages": 1,
+   "words": 3110,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-15",
+   "title": "UN Comtrade publication metadata: Rep. of Korea (reporter 410), annual HS datasets",
+   "type": "datadoc",
+   "country": "KOR",
+   "year": 2026,
+   "pages": 1,
+   "words": 3747,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-16",
+   "title": "UN Comtrade publication metadata: Philippines (reporter 608), annual HS datasets",
+   "type": "datadoc",
+   "country": "PHL",
+   "year": 2026,
+   "pages": 1,
+   "words": 3371,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-17",
+   "title": "UN Comtrade publication metadata: Thailand (reporter 764), annual HS datasets",
+   "type": "datadoc",
+   "country": "THA",
+   "year": 2026,
+   "pages": 1,
+   "words": 3213,
+   "source": "UN Comtrade",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-18",
+   "title": "International Merchandise Trade Statistics: Compilers Manual, Revision 1 (IMTS 2010-CM)",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2013,
+   "pages": 380,
+   "words": 286026,
+   "source": "UNSD",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-19",
+   "title": "International Merchandise Trade Statistics: Concepts and Definitions 2010 (IMTS 2010), Series M No. 52, Rev. 3",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2011,
+   "pages": 123,
+   "words": 100963,
+   "source": "UNSD",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-20",
+   "title": "Partner country and mode of transport (UNSD workshop, Vilnius 2011)",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2011,
+   "pages": 7,
+   "words": 913,
+   "source": "UNSD",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-21",
+   "title": "Revised Kyoto Convention: Body, General Annex and Specific Annexes",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2006,
+   "pages": 272,
+   "words": 39737,
+   "source": "WCO",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-22",
+   "title": "Revised Kyoto Convention, Specific Annex K: Origin (Chapters 1-3)",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2006,
+   "pages": 1,
+   "words": 7833,
+   "source": "WCO",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-23",
+   "title": "Technical Committee on Rules of Origin, doc. OC0066E1: Practical guidance on the implementation of the WTO Agreement on Rules of Origin",
+   "type": "standards",
+   "country": "GEN",
+   "year": 2001,
+   "pages": 36,
+   "words": 16465,
+   "source": "WCO",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-25",
+   "title": "Thailand Customs: ACFTA Rules of Origin (wholly-obtained provisions), Thai and English",
+   "type": "customs",
+   "country": "THA",
+   "year": 2019,
+   "pages": 10,
+   "words": 4367,
+   "source": "Thailand Customs Department",
+   "language": "th+en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-26",
+   "title": "Thailand Customs: ASEAN Operational Certification Procedures for Rules of Origin",
+   "type": "customs",
+   "country": "THA",
+   "year": 2020,
+   "pages": 33,
+   "words": 13903,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-27",
+   "title": "Thailand Customs: DFQF Additional Certificate of Origin",
+   "type": "customs",
+   "country": "THA",
+   "year": 2015,
+   "pages": 2,
+   "words": 906,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-28",
+   "title": "Thailand Customs: DFQF Certificate of Origin (Form DFQF)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2015,
+   "pages": 2,
+   "words": 1013,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-29",
+   "title": "Thailand Customs: DFQF Operational Certification Procedures",
+   "type": "customs",
+   "country": "THA",
+   "year": 2015,
+   "pages": 9,
+   "words": 4889,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-30",
+   "title": "Thailand Customs: Duty-Free Quota-Free (DFQF) scheme for Least Developed Countries - Rules of Origin",
+   "type": "customs",
+   "country": "THA",
+   "year": 2015,
+   "pages": 6,
+   "words": 4445,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-31",
+   "title": "Thailand Customs Department Notification No. 166/2560: attachment 1 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 8,
+   "words": 84,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-32",
+   "title": "Thailand Customs Department Notification No. 166/2560: attachment 2 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 12,
+   "words": 6101,
+   "source": "Thailand Customs Department",
+   "language": "th+en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-33",
+   "title": "Thailand Customs Department Notification No. 166/2560: attachment 3 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 11,
+   "words": 6222,
+   "source": "Thailand Customs Department",
+   "language": "th+en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-34",
+   "title": "Thailand Customs Department Notification No. 226/2559: attachment 1 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 8,
+   "words": 88,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-35",
+   "title": "Thailand Customs Department Notification No. 236/2564: attachment 1 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 12,
+   "words": 6539,
+   "source": "Thailand Customs Department",
+   "language": "th+en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-36",
+   "title": "Thailand Customs Department Notification No. 236/2564: attachment 2 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 2,
+   "words": null,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": null,
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-37",
+   "title": "Thailand Customs Department Notification No. 236/2564: attachment 3 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 2,
+   "words": 897,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-38",
+   "title": "Thailand Customs Department Notification No. 236/2564: attachment 4 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 10,
+   "words": 88,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-39",
+   "title": "Thailand Customs Department Notification No. 74/2558: attachment 1 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 12,
+   "words": 87,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-40",
+   "title": "Thailand Customs Department Notification No. 74/2558: attachment 2 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 15,
+   "words": 87,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-41",
+   "title": "Thailand Customs Department Notification No. 74/2558: attachment 3 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 6,
+   "words": 87,
+   "source": "Thailand Customs Department",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-42",
+   "title": "Thailand Ministry of Finance Notification dated 30 March 2015: attachment 1 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 1,
+   "words": 70,
+   "source": "Thailand Ministry of Finance",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-43",
+   "title": "Thailand Ministry of Finance Notification dated 30 March 2015: attachment 2 (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": null,
+   "pages": 263,
+   "words": 14859,
+   "source": "Thailand Ministry of Finance",
+   "language": "th",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-44",
+   "title": "Notification of the Ministry of Finance dated 30 December 2016 (DFQF)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2016,
+   "pages": 214,
+   "words": 18596,
+   "source": "Thailand Ministry of Finance",
+   "language": "th",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-45",
+   "title": "Notification of the Ministry of Finance dated 10 November 2017 (DFQF), first of two",
+   "type": "customs",
+   "country": "THA",
+   "year": 2017,
+   "pages": 306,
+   "words": 19638,
+   "source": "Thailand Ministry of Finance",
+   "language": "th",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-46",
+   "title": "Notification of the Ministry of Finance dated 10 November 2017 (DFQF), second of two",
+   "type": "customs",
+   "country": "THA",
+   "year": 2017,
+   "pages": 214,
+   "words": 18601,
+   "source": "Thailand Ministry of Finance",
+   "language": "th",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-47",
+   "title": "Thailand Customs: RCEP Rules of Origin chapter (Chapter 3 and annexes)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2022,
+   "pages": 510,
+   "words": 92253,
+   "source": "Thailand Customs Department",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-48",
+   "title": "Thailand Customs: Rules of Origin explainer (Thai language)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2020,
+   "pages": 9,
+   "words": 1015,
+   "source": "Thailand Customs Department",
+   "language": "th",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-49",
+   "title": "Notification of the Customs Tariff Bureau No. 9/2563 dated 30 September 2020",
+   "type": "customs",
+   "country": "THA",
+   "year": 2020,
+   "pages": 1,
+   "words": 107,
+   "source": "Thailand Customs Tariff Bureau",
+   "language": "unknown",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-50",
+   "title": "Management and control of fish and fishery product imports and exports (Thailand Department of Fisheries)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2026,
+   "pages": 21,
+   "words": 2064,
+   "source": "Thailand DOF / SEAFDEC",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-51",
+   "title": "Thailand: Import procedures (goods declaration), DITP one-stop service",
+   "type": "customs",
+   "country": "THA",
+   "year": 2020,
+   "pages": 4,
+   "words": 849,
+   "source": "Thailand DITP",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "id": "std-52",
+   "title": "UN list of Least Developed Countries (DFQF beneficiaries)",
+   "type": "customs",
+   "country": "THA",
+   "year": 2024,
+   "pages": 3,
+   "words": 314,
+   "source": "United Nations",
+   "language": "en",
+   "added": "2026-10-13",
+   "collection": "standards_docs"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-01",
+   "title": "On the Accuracy of Foreign Trade Statistics (1909-l 935): Morgenstern Revisited",
+   "type": "academic",
+   "country": "GEN",
+   "year": 1991,
+   "pages": 15,
+   "words": 3396,
+   "source": "EXPLORATIONS IN ECONOMIC HISTORY",
+   "authors": "Federico",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-02",
+   "title": "A Guide to Direction of Trade Statistics",
+   "type": "imf",
+   "country": "GEN",
+   "year": 1993,
+   "pages": 34,
+   "words": 12317,
+   "source": "IMF Statistics Department",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-03",
+   "title": "On the (in)accuracy of economic observations: An assessment of trends in the reliability of international trade statistics",
+   "type": "academic",
+   "country": "GEN",
+   "year": 1994,
+   "pages": 28,
+   "words": 6875,
+   "source": "ECONOMICS ELSEVIER Journal of Development Economics",
+   "authors": "Rozanski",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-04",
+   "title": "Differences in the Mirror Statistics in INTRASTAT",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2000,
+   "pages": 4,
+   "words": 1225,
+   "source": "IMF BOP Committee paper BOPCOM-00/36",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-05",
+   "title": "Accounting for discrepancies in bilateral trade: The case of China, Hong Kong, and the United States☆",
+   "type": "academic",
+   "country": "CHN",
+   "year": 2008,
+   "pages": 19,
+   "words": 9677,
+   "source": "China Economic Review",
+   "authors": "Ferrantino",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-06",
+   "title": "Allocation of Merchandise Trade Data to Partner Country",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2008,
+   "pages": 15,
+   "words": 2827,
+   "source": "IMF BOP Committee paper BOPCOM-08/14",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-07",
+   "title": "A globally consistent framework for reliability-based trade statistics reconciliation in the presence of an entrepôt",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2010,
+   "pages": 29,
+   "words": 17061,
+   "source": "China Economic Review",
+   "authors": "Zhi Wang, Mark Gehlhar, Shunli Yao",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-08",
+   "title": "Evasion behaviors of exporters and importers: Evidence from the U.S.–China trade data discrepancy",
+   "type": "academic",
+   "country": "CHN",
+   "year": 2012,
+   "pages": 17,
+   "words": 15269,
+   "source": "Journal of International Economics",
+   "authors": "Ferrantino",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-09",
+   "title": "Cambodia: 2012 Article IV (Country Report 13/2)",
+   "type": "imf",
+   "country": "KHM",
+   "year": 2013,
+   "pages": 69,
+   "words": 17431,
+   "source": "IMF Country Report No. 13/2",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-10",
+   "title": "Illegal trade in natural resources: Evidence from missing exports",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2015,
+   "pages": 9,
+   "words": 2512,
+   "source": "International Economics",
+   "authors": "Vezina",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-11",
+   "title": "LAO P.D.R.: Assessing the Quality of Trade Statistics",
+   "type": "imf",
+   "country": "LAO",
+   "year": 2017,
+   "pages": 26,
+   "words": 4512,
+   "source": "IMF Working Paper WP/17/251",
+   "authors": "Geoffrey Bannister, Manuk Ghazanchyan, Theodore Pierre Bikoi",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-12",
+   "title": "New Estimates for Direction of Trade Statistics",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2018,
+   "pages": 37,
+   "words": 6955,
+   "source": "IMF Working Paper WP/18/16",
+   "authors": "Marco Marini, Robert Dippelsman, Michael Stanger",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-13",
+   "title": "BOP Committee paper 19/15 (bilateral asymmetries)",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2019,
+   "pages": 23,
+   "words": 5382,
+   "source": "IMF BOP Committee paper BOPCOM-19/15",
+   "authors": "IMF",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-14",
+   "title": "Misinvoicing Trade & Informal Capital Movements: The USA - India Case",
+   "type": "imf",
+   "country": "IND",
+   "year": 2019,
+   "pages": 18,
+   "words": 3196,
+   "source": "7th IMF Statistical Forum (2019)",
+   "authors": "Sugata Marjit",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-15",
+   "title": "Tax Evasion from Cross-Border Fraud: Does Digitalization Make a Difference?",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2020,
+   "pages": 16,
+   "words": 3606,
+   "source": "IMF Working Paper WP/20/245",
+   "authors": "Emmanouil Kitsios, Joao Tovar Jalles, Genevieve Verdier",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-16",
+   "title": "Is China fudging its GDP figures? Evidence from trading partner",
+   "type": "academic",
+   "country": "CHN",
+   "year": 2021,
+   "pages": 16,
+   "words": 10700,
+   "source": "Journal of International Money and Finance",
+   "authors": "Fernald",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-17",
+   "title": "North Korea's trade and the integration of Northeast Asia",
+   "type": "academic",
+   "country": "PRK",
+   "year": 2021,
+   "pages": 6,
+   "words": 3579,
+   "source": "Asia and the Global Economy",
+   "authors": "Kiril Tochkov",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-18",
+   "title": "FDI Mismatch, trade Mis-reporting, and hidden capital Movements: The USA - China case",
+   "type": "academic",
+   "country": "CHN",
+   "year": 2022,
+   "pages": 13,
+   "words": 5942,
+   "source": "Journal of International Money and Finance",
+   "authors": "Biswas",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-19",
+   "title": "Is it me or you? A deeper insight into profile of misreporting economies",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2022,
+   "pages": 16,
+   "words": 9028,
+   "source": "The Quarterly Review of Economics and Finance",
+   "authors": "Dujava",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-20",
+   "title": "Reducing tariff evasion: The role of trade facilitation",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2022,
+   "pages": 21,
+   "words": 10935,
+   "source": "Journal of Comparative Economics",
+   "authors": "Cosimo Beverelli",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-21",
+   "title": "Background Paper I: Macroeconomic Impact of Illicit Financial Flows (IFF)",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2023,
+   "pages": 14,
+   "words": 5272,
+   "source": "IMF Policy Paper 2023/053",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-22",
+   "title": "Corporate tax evasion: Evidence from international trade",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2023,
+   "pages": 19,
+   "words": 12067,
+   "source": "European Economic Review",
+   "authors": "Adrien Bussy",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-23",
+   "title": "Measuring misreporting at customs",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2023,
+   "pages": 3,
+   "words": 1608,
+   "source": "Economics Letters",
+   "authors": "Wazzan",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-24",
+   "title": "The Use of Mirror Data by Customs Administrations",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2023,
+   "pages": 37,
+   "words": 10524,
+   "source": "IMF Technical Notes and Manuals 2023/005",
+   "authors": "Anne-Marie Geourjon, Bertrand Laporte, Gilles Montagnat-Rentier",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-25",
+   "title": "Does export underreporting contribute to the resource curse?",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2024,
+   "pages": 17,
+   "words": 12449,
+   "source": "World Development",
+   "authors": "Thorsten Janus",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-26",
+   "title": "New Trade Patterns and the Cost of Fragmentation in the Kyrgyz Republic",
+   "type": "imf",
+   "country": "KGZ",
+   "year": 2024,
+   "pages": 9,
+   "words": 1770,
+   "source": "IMF Country Report No. 24/65",
+   "authors": "",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-27",
+   "title": "Bilateral Trade Asymmetries Between Nepal and India: Evidence from Mirror Data",
+   "type": "imf",
+   "country": "NPL",
+   "year": 2025,
+   "pages": 18,
+   "words": 5699,
+   "source": "13th IMF Statistical Forum (2025)",
+   "authors": "Mohan Pudasaini",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-28",
+   "title": "Detecting Illicit Financial Flows",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2025,
+   "pages": 12,
+   "words": 510,
+   "source": "13th IMF Statistical Forum (2025)",
+   "authors": "Maksym Markevych",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-29",
+   "title": "Mind the Gap: Analysing Asymmetries in the Bilateral Euro Area-US Current Account",
+   "type": "imf",
+   "country": "GEN",
+   "year": 2025,
+   "pages": 32,
+   "words": 10117,
+   "source": "13th IMF Statistical Forum (2025)",
+   "authors": "Fausto Pastoris, Martin Schmitz",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-30",
+   "title": "Pains or gains: Trade war, trade deficit, and tariff evasion",
+   "type": "academic",
+   "country": "GEN",
+   "year": 2025,
+   "pages": 36,
+   "words": 22021,
+   "source": "Journal of International Economics",
+   "authors": "Yi Che",
+   "collection": "mirror_papers"
+  },
+  {
+   "added": "2026-10-07",
+   "id": "pap-31",
+   "title": "Studying economic black holes: Lessons from North Korea",
+   "type": "academic",
+   "country": "PRK",
+   "year": 2026,
+   "pages": 16,
+   "words": 12001,
+   "source": "World Development",
+   "authors": "Stephan Haggard",
+   "collection": "mirror_papers"
+  },
+  {
+   "id": "note-01",
+   "title": "Mirror-trade paper, part 1: what partner data say about Kiribati's trade",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 5026,
+   "source": "Author's working files",
+   "added": "2026-09-08",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-02",
+   "title": "Mirror-trade paper, part 2: fishing fees and the tuna series",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 3519,
+   "source": "Author's working files",
+   "added": "2026-09-21",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-03",
+   "title": "Two flows of fish: flag-based and residence-based records",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 2697,
+   "source": "Author's working files",
+   "added": "2026-09-20",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-04",
+   "title": "Fishing fees and partner-reported tuna: why they are different flows",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 2605,
+   "source": "Author's working files",
+   "added": "2026-09-20",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-05",
+   "title": "Brief: partner-reported fish exports to May 2026",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 794,
+   "source": "Author's working files",
+   "added": "2026-09-24",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-06",
+   "title": "Brief: rice and sugar imports in partner data",
+   "type": "notes",
+   "country": "KIR",
+   "year": 2026,
+   "pages": null,
+   "words": 1616,
+   "source": "Author's working files",
+   "added": "2026-09-24",
+   "collection": "project_notes"
+  },
+  {
+   "id": "note-07",
+   "title": "Reading notes on the mirror-data literature",
+   "type": "notes",
+   "country": "GEN",
+   "year": 2026,
+   "pages": null,
+   "words": 1060,
+   "source": "Author's working files",
+   "added": "2026-10-06",
+   "collection": "project_notes"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Official statistics (Kiribati) — Kiribati trade tracker</title>
+<meta name="description" content="Kiribati's balance of payments goods exports and imports and its customs returns, as published: the reference figures for the country's accounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>if (!window.Chart) { document.write('<script src="assets/vendor/chart.umd.js"><\/script>'); }</script>
+</head>
+<body>
+
+<div class="viewbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="comtrade.html">Partner data</a>
+      <a href="fleet.html">Ship tracking</a>
+      <a href="registry.html">Vessel register</a>
+      <a href="official.html" aria-current="page">Official statistics</a>
+      <a href="documents.html">Rules and research</a>
+      <a href="inference.html">Inference</a>
+      <a href="methods.html">Methods</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="wrap" id="file-notice" hidden>
+  <div class="notice" role="alert"><h2>This page needs to be opened from its web address</h2><p>You opened the file directly from your computer, so the browser blocks it from loading the data files. Open the published address of the tracker instead, or serve the folder locally.</p></div>
+</div>
+<div class="wrap" id="load-error" hidden>
+  <div class="notice" role="alert"><h2>Some data could not be loaded</h2><p id="load-error-text"></p></div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Official statistics (Kiribati)</h1>
+      <p class="purpose">Kiribati's balance of payments and its customs returns, as published. The reference for the country's accounts, and the fourth of the five inputs on the <a href="index.html">home page</a>.</p>
+    </div>
+    <aside class="strip" aria-labelledby="of-strip-h">
+      <h3 id="of-strip-h">Latest year</h3>
+      <p class="legend" id="of-strip"></p>
+    </aside>
+  </div>
+</header>
+
+<section class="block" id="intro">
+  <div class="wrap--text">
+    <h2>What these figures are</h2>
+    <div class="prose">
+      <p>Two official sources describe Kiribati's trade. The <strong>balance of payments</strong> records the country's transactions with the rest of the world by the rules of the IMF's Balance of Payments Manual, sixth edition (BPM6). Its goods-exports line counts goods whose ownership passed from a Kiribati resident to a non-resident, valued at the border (FOB). It is annual and compiled by the Kiribati authorities with the IMF. <strong>Customs returns</strong> are what Kiribati's customs office records as leaving and entering the country, by product and month, published to UN Comtrade for the months the office has processed.</p>
+      <p>For fish caught at sea the balance of payments follows the residence of the vessel's operator, not the vessel's flag. Fish caught by a Kiribati-flagged vessel run by a non-resident operator is not a Kiribati export under this rule, and the goods-exports line is built on that basis. Importing countries follow the flag. That is why the goods-exports line here is small next to the tuna that partners record as Kiribati-origin on the <a href="comtrade.html">Partner data page</a>: the two series answer different questions.</p>
+      <p>Fishing access fees that foreign fleets pay Kiribati are recorded in the balance of payments as income, a separate flow from goods. They are not shown on this page and are never compared with the tuna series on this site, because one does not explain the other.</p>
+      <p><strong>How the tracker uses these figures.</strong> They are shown beside the partner data and the agents' estimates for reference. The agents may read them as evidence of what the compiler recorded and of the compiler's coverage. They are not the target of the estimate: the question on the home page is the true value of resident tuna exports, which can sit above or below any published figure.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="bop">
+  <div class="wrap">
+    <h2>Balance of payments: goods exports and imports</h2>
+    <div class="two-col">
+      <figure class="fig" id="fig-bop-x">
+        <div class="fig-head"><div><h3>Goods exports</h3><p class="sub">USD millions, all goods, FOB</p><p class="how">The hatched bar is the compiler's estimate for the latest year.</p></div></div>
+        <div class="legend" id="legend-bop-x"></div>
+        <div class="plot short"><canvas id="chart-bop-x" role="img" aria-label="Balance of payments goods exports by year"></canvas></div>
+        <figcaption><p class="src" id="src-bop-x"></p></figcaption>
+      </figure>
+      <figure class="fig" id="fig-bop-m">
+        <div class="fig-head"><div><h3>Goods imports</h3><p class="sub">USD millions, all goods</p><p class="how">The hatched bar is the compiler's estimate for the latest year.</p></div></div>
+        <div class="legend" id="legend-bop-m"></div>
+        <div class="plot short"><canvas id="chart-bop-m" role="img" aria-label="Balance of payments goods imports by year"></canvas></div>
+        <figcaption><p class="src" id="src-bop-m"></p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="customs">
+  <div class="wrap">
+    <h2>Customs returns published to UN Comtrade</h2>
+    <p class="section-lede">Kiribati's own monthly returns, summed over the months published in each year. The number of months differs by year, so the bars are not comparable with the annual balance-of-payments figures without allowing for the missing months.</p>
+    <figure class="fig" id="fig-customs">
+      <div class="fig-head"><div><h3>Kiribati-reported exports, total and tuna</h3><p class="sub">USD millions, sum of the months published; the label gives the number of months</p><p class="how">The tuna bar is the part of the total under the tuna product codes. Years with no bar have no published monthly return.</p></div></div>
+      <div class="legend" id="legend-customs"></div>
+      <div class="plot"><canvas id="chart-customs" role="img" aria-label="Kiribati-reported exports and tuna exports by year, with months published"></canvas></div>
+      <figcaption><p class="caveat">A return covers only the months the customs office has processed. A year with seven months published shows seven months of trade.</p><p class="src" id="src-customs"></p></figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-official"></div></details>
+    </figure>
+    <p class="prose">The full comparison of official figures with partner records, including imports and the months each year covers, is in the <a href="comtrade.html#national">Comparison with the official figures</a> section of the Partner data page.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methods.html#m8">How the two sources are compared</a></li>
+        <li><a href="data/national_accounts.json">Official data as used here (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/official.js"></script>
+</body>
+</html>

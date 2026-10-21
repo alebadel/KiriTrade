@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inference — Kiribati trade tracker</title>
+<meta name="description" content="Thirty AI agents walk from the raw partner-reported tuna figure to an estimate of Kiribati's true tuna exports in six layers; the layers, the spread across agents, their principles and how they used the official figures.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>if (!window.Chart) { document.write('<script src="assets/vendor/chart.umd.js"><\/script>'); }</script>
+</head>
+<body>
+
+<div class="viewbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="comtrade.html">Partner data</a>
+      <a href="fleet.html">Ship tracking</a>
+      <a href="registry.html">Vessel register</a>
+      <a href="official.html">Official statistics</a>
+      <a href="documents.html">Rules and research</a>
+      <a href="inference.html" aria-current="page">Inference</a>
+      <a href="methods.html">Methods</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="wrap" id="file-notice" hidden>
+  <div class="notice" role="alert"><h2>This page needs to be opened from its web address</h2><p>You opened the file directly from your computer, so the browser blocks it from loading the data files. Open the published address of the tracker instead, or serve the folder locally.</p></div>
+</div>
+<div class="wrap" id="load-error" hidden>
+  <div class="notice" role="alert"><h2>Some data could not be loaded</h2><p id="load-error-text"></p></div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Inference: from the partner figure to true exports</h1>
+      <p class="purpose">What thirty AI agents conclude, from the five inputs, about the value of the tuna that Kiribati residents sell abroad. Estimates built from public evidence under stated conditions; not an official figure.</p>
+    </div>
+    <aside class="strip" aria-labelledby="in-strip-h">
+      <h3 id="in-strip-h">Latest run</h3>
+      <p class="legend" id="in-strip">Loading…</p>
+    </aside>
+  </div>
+</header>
+
+<section class="block" id="method">
+  <div class="wrap--text">
+    <h2>The question and the method</h2>
+    <div class="prose">
+      <p>Importing countries record tuna as Kiribati-origin by the flag of the catching vessel. The balance of payments counts a sale as a Kiribati export only if the vessel's operator is resident in Kiribati. The question is the value of <strong>true exports</strong>: the FOB value of fish that Kiribati residents caught and sold to non-residents, whatever the flag, whatever the route, and whether or not any statistic recorded it. The Kiribati National Statistics Office measures it under the balance-of-payments rule from the returns it receives; the estimate here is a second reading of the same quantity, built from partner data and public evidence, offered to help that work.</p>
+      <p>The tracker asks thirty AI agents, the "experts". <span data-fill="agent-def">Each agent is one fresh session of a large language model, with no memory of the other sessions.</span> Each receives the same evidence pack (the partner series, fleet and register aggregates, the statistical standards, Kiribati's official figures) and the same instructions, and works alone. Each first writes numbered principles that connect the evidence to the question, then freezes them, then walks from the raw partner figure to its estimate in six signed layers, each with a range and a reason, then audits its own answer. A program checks every answer (the layers reconcile, the ranges are ordered, no banned words) and computes the statistics shown here. The agents do no arithmetic that is published.</p>
+      <p>The spread across the thirty is the room for judgment that the evidence leaves. It is not a standard error: the agents share one evidence pack and one underlying model, so what none of them knows does not show.</p>
+    </div>
+    <h3>The six layers</h3>
+    <ol class="layer-list prose" id="layer-list"></ol>
+  </div>
+</section>
+
+<section class="block" id="bridges">
+  <div class="wrap">
+    <h2>The bridge, year by year</h2>
+    <p class="section-lede">Each chart starts from what importers recorded for that year and ends at the agents' estimate. Bars are the mean of the thirty agents; whiskers the 10th to 90th percentile across agents for that layer; the dots beside the last bar are the thirty individual estimates. Under each chart, the experts' narrative: five points computed from the answers, then the arguments layer by layer in the agents' own words.</p>
+    <div id="bridge-figures"></div>
+    <figure class="fig" id="fig-layer-table">
+      <div class="fig-head"><div><h3>All layers, all years</h3><p class="sub">USD millions; mean across agents, with the 10th and 90th percentiles</p></div></div>
+      <div class="scroll" id="table-layers"></div>
+      <figcaption><p class="src" id="src-layers"></p></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="official-use">
+  <div class="wrap--text">
+    <h2>How the agents used the official figures</h2>
+    <p class="section-lede">The pack held Kiribati's balance-of-payments goods exports and customs returns. The agents were told these are evidence of what the compiler recorded, not the target. Each wrote one note on how it used them.</p>
+    <details class="glossary"><summary>Read the thirty notes</summary><ol class="principles" id="official-use-list"></ol></details>
+  </div>
+</section>
+
+<section class="block" id="principles">
+  <div class="wrap--text">
+    <h2>The principles the agents wrote</h2>
+    <p class="section-lede">Each agent wrote its principles before it saw any result and could not change them afterwards. The themes below group the principles by what they say; the count is the number of agents whose principles carry that theme.</p>
+    <ol class="principles" id="theme-list"></ol>
+    <details class="glossary"><summary>Read every principle, agent by agent</summary><ol class="principles" id="principle-list"></ol></details>
+  </div>
+</section>
+
+<section class="block" id="early">
+  <div class="wrap">
+    <h2>Early estimate of the partner series itself</h2>
+    <p class="section-lede">A different, smaller question: what will importers record for months they have not yet published? Thailand, the main buyer, publishes with a lag of several months. A statistical baseline fills the gap from what has been published, and the agents of an earlier run gave their own view of the same total. This is an estimate of the flag-basis figure, not of true exports.</p>
+    <figure class="fig" id="fig-nowcast">
+      <div class="fig-head"><div>
+        <h3>Partner-reported tuna by month: published, baseline, agents' view</h3>
+        <p class="sub">USD millions per month</p>
+        <p class="how">Bars are published partner figures (lighter where fewer partners have reported). The dashed line is the baseline. The solid line is the agents' average, with the band from the 10th to the 90th percentile of their answers.</p>
+      </div></div>
+      <div class="legend" id="legend-nowcast"></div>
+      <div class="plot tall"><canvas id="chart-nowcast" role="img" aria-label="Published partner-reported tuna by month with the baseline and the agents' estimate for coming months"></canvas></div>
+      <figcaption>
+        <p class="caveat">On a pseudo-real-time test over 86 months the baseline roughly halves the error of repeating the same month of the previous year. Ship-tracking arrivals did not improve it and are not part of it.</p>
+        <p class="src" id="src-nowcast"></p>
+      </figcaption>
+      <details class="tbl"><summary>Show as a table</summary><div class="scroll" id="table-nowcast"></div></details>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="what">
+  <div class="wrap--text">
+    <h2>What this is, and is not</h2>
+    <div class="prose">
+      <p><strong>It is</strong> a stated theory, written down before the numbers, applied without exception to the evidence by thirty independent readers, with the disagreement shown. Every layer has a reason, and every reason cites the evidence it rests on.</p>
+      <p><strong>It is not</strong> an official estimate, and it is not scored against the official figure: the two answer the same question from different evidence, and the estimate can sit above or below the published figure without either being wrong. Whether the agents understand how a published figure is built is a separate test, under construction on the <a href="validation.html">Validation page</a>.</p>
+      <p>The method is in <a href="methods.html#inference-methods">Methods</a>. Comments and corrections: <a href="https://github.com/alebadel/KiriTrade/issues/new?title=Inference%20comment">open an issue</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="methods.html#inference-methods">How the inference is made</a></li>
+        <li><a href="validation.html">Validation</a></li>
+        <li><a href="data/inference.json">Inference data (JSON)</a></li>
+        <li><a href="data/runs.json">Run log (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/waterfall.js"></script>
+<script src="assets/js/inference.js"></script>
+</body>
+</html>

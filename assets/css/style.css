@@ -332,3 +332,49 @@ ul.pts { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
 .ledger h3 { margin: 0 0 .4rem; font-size: 1.02rem; }
 .ledger p { margin: 0 0 .5rem; font-size: .93rem; }
 .ledger p:last-child { margin-bottom: 0; }
+
+/* ---------- home page: question strip, input cards, tags ---------- */
+.two-numbers { display: grid; gap: .75rem 1.25rem; grid-template-columns: 1fr 1fr; margin: .4rem 0 .6rem; }
+.two-numbers .stat-n { font-size: 1.7rem; margin-bottom: .2rem; }
+.two-numbers .stat-s { font-size: .8rem; }
+.cards { display: grid; gap: 1.25rem; }
+@media (min-width: 760px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--kir); border-radius: 10px; padding: 1rem 1.1rem .9rem; min-width: 0; display: flex; flex-direction: column; }
+.card h3 { font-size: 1.05rem; margin-bottom: .6rem; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.card p { font-size: .92rem; color: var(--ink-2); margin-bottom: .6rem; }
+.card p.src { font-size: .78rem; color: var(--muted); margin: auto 0 0; }
+.card .legend { font-size: .78rem; margin: .2rem 0 .5rem; }
+.plot.small { position: relative; width: 100%; height: 190px; }
+.tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--surface); background: var(--copra); border-radius: 4px; padding: .1rem .45rem; vertical-align: middle; margin-left: .4rem; }
+.topnav { flex-wrap: wrap; row-gap: .2rem; }
+section.block h2 .tag { font-size: .68rem; }
+.kv { display: grid; gap: .35rem 1.25rem; grid-template-columns: max-content minmax(0, 1fr); font-size: .95rem; margin: 0 0 1rem; }
+.kv dt { font-weight: 700; } .kv dd { margin: 0; color: var(--ink-2); }
+ol.principles li { margin-bottom: .6rem; }
+ol.principles .meta { font-size: .82rem; color: var(--muted); }
+.layer-list li { margin-bottom: .5rem; }
+table.docs { font-size: .86rem; }
+table.docs td:first-child { max-width: 48ch; }
+.construction { border: 2px dashed var(--copra); border-radius: 10px; padding: 1rem 1.2rem; background: var(--surface); }
+
+/* ---------- experts' narrative (under the waterfall) ---------- */
+details.narr { margin-top: .75rem; border-top: 1px solid var(--rule); }
+details.narr summary { cursor: pointer; font-weight: 700; color: var(--kir); padding: .7rem 0; list-style: none; display: flex; align-items: center; gap: .6rem; }
+details.narr summary::-webkit-details-marker { display: none; }
+details.narr summary::before { content: ""; width: 9px; height: 9px; border-right: 2px solid var(--kir); border-bottom: 2px solid var(--kir); transform: rotate(-45deg); transition: transform .15s; margin-left: 2px; }
+details[open].narr summary::before { transform: rotate(45deg); }
+.narr-body h4 { font-size: 1rem; margin: .9rem 0 .4rem; }
+.narr-body h5 { font-size: .95rem; margin: .9rem 0 .2rem; }
+ol.narrative { padding-left: 1.3rem; max-width: 80ch; }
+ol.narrative li { margin-bottom: .45rem; }
+.layer-block { border-left: 3px solid var(--rule-strong); padding-left: .9rem; margin: .6rem 0 .9rem; max-width: 84ch; }
+ul.quotes { list-style: none; padding: 0; margin: .3rem 0 0; }
+ul.quotes li { font-size: .88rem; color: var(--ink-2); margin-bottom: .35rem; }
+ul.quotes .who { font-weight: 700; color: var(--ink); }
+ul.quotes q { quotes: "“" "”"; }
+.card .more { display: inline-block; margin-top: .6rem; font-weight: 700; text-decoration: none; }
+.card .more:hover { text-decoration: underline; }
+.fig .construction-note { font-size: .92rem; color: var(--ink-2); max-width: 80ch; margin: .5rem 0 0; }

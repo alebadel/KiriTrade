@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rules, standards and research — Kiribati trade tracker</title>
+<meta name="description" content="The documents the tracker's AI agents can read: statistical manuals, customs rules of origin, data documentation, academic papers and official reports, counted by type and by country.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>if (!window.Chart) { document.write('<script src="assets/vendor/chart.umd.js"><\/script>'); }</script>
+</head>
+<body>
+
+<div class="viewbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Kiribati trade tracker</a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="comtrade.html">Partner data</a>
+      <a href="fleet.html">Ship tracking</a>
+      <a href="registry.html">Vessel register</a>
+      <a href="official.html">Official statistics</a>
+      <a href="documents.html" aria-current="page">Rules and research</a>
+      <a href="inference.html">Inference</a>
+      <a href="methods.html">Methods</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="wrap" id="file-notice" hidden>
+  <div class="notice" role="alert"><h2>This page needs to be opened from its web address</h2><p>You opened the file directly from your computer, so the browser blocks it from loading the data files. Open the published address of the tracker instead, or serve the folder locally.</p></div>
+</div>
+<div class="wrap" id="load-error" hidden>
+  <div class="notice" role="alert"><h2>Some data could not be loaded</h2><p id="load-error-text"></p></div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Rules, standards and research</h1>
+      <p class="purpose">The texts the tracker's AI agents reason with, counted by type and by the country they are about. The fifth of the five inputs on the <a href="index.html">home page</a>.</p>
+      <p class="hint small muted">Counts and titles only. No document text is published here.</p>
+    </div>
+    <aside class="strip" aria-labelledby="dc-strip-h">
+      <h3 id="dc-strip-h">The collection</h3>
+      <p class="legend" id="dc-strip"></p>
+    </aside>
+  </div>
+</header>
+
+<section class="block" id="intro">
+  <div class="wrap--text">
+    <h2>Why the agents need these texts</h2>
+    <div class="prose">
+      <p>The difference between the partner figure and the official figure is a difference of rules. The agents must therefore know the rules before they can reason about the numbers. Four kinds of text carry them. The <strong>statistical manuals</strong> (the IMF's Balance of Payments Manual and its compilation guide, the United Nations' International Merchandise Trade Statistics manuals) define what an export is and whose it is. The <strong>customs rules</strong> (the Kyoto Convention's annex on origin, the World Customs Organization's guidance on fish, Thailand's notifications and certificates of origin) say which country an importer credits a fish to. The <strong>data documentation</strong> from UN Comtrade says how each reporting country records its partners. The <strong>research</strong>, academic papers and IMF reports on partner ("mirror") data, says what has been learnt from comparing the two records elsewhere.</p>
+      <p>Two kinds of text are missing and the chart shows the gap. No <strong>news</strong> has been collected, so changes in fleets, licences or buyers reach the agents only through the data. And apart from the author's own briefs, there is no country document for Kiribati itself: no fisheries law, licensing rule or compiler's note. Adding either does not change the method; it changes what the agents know.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="inventory">
+  <div class="wrap">
+    <h2>What the collection holds</h2>
+    <figure class="fig" id="fig-corpus">
+      <div class="fig-head">
+        <div><h3 id="corpus-title">Words of text by document type</h3><p class="sub" id="corpus-sub">All countries</p><p class="how">Choose a country to see the texts that are about it. "General" holds the manuals, conventions and methods papers that apply to every country.</p></div>
+        <div class="fig-tools">
+          <label class="visually-hidden" for="corpus-country">Country</label>
+          <select class="chip" id="corpus-country"></select>
+        </div>
+      </div>
+      <div class="legend" id="legend-corpus"></div>
+      <div class="plot"><canvas id="chart-corpus" role="img" aria-label="Words of text by document type for the selected country"></canvas></div>
+      <figcaption><p class="caveat">Words are counted in the text the knowledge base holds, converted from PDF, HTML or Word files. Pages without a text layer count as zero, so scanned Thai-language notifications are under-counted.</p><p class="src" id="src-corpus"></p></figcaption>
+    </figure>
+    <h3>Documents</h3>
+    <p class="section-lede" id="docs-lede"></p>
+    <div class="scroll-x"><table class="docs sortable" id="docs-table"></table></div>
+    <p class="prose">The research is summarised, paper by paper, on the <a href="literature.html">Research page</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <p id="footer-credit"></p>
+      <p id="footer-disclaimer"></p>
+    </div>
+    <div>
+      <p><strong>More</strong></p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="literature.html">Research behind the tracker</a></li>
+        <li><a href="methods.html#documents-methods">How the inventory is made</a></li>
+        <li><a href="data/corpus.json">Inventory data (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/documents.js"></script>
+</body>
+</html>

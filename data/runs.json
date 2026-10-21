@@ -1,0 +1,50 @@
+{
+ "meta": {
+  "what": "Log of the tracker's AI-agent runs: when, how many agents, what they were asked, which inputs they saw and what became of the result. Each firing of the agents is one row.",
+  "generated_at": "2026-10-20T00:00:00Z"
+ },
+ "runs": [
+  {
+   "id": "A/B-split",
+   "date": "2026-10-20",
+   "label": "Monthly nowcast of the partner figure with a two-component split",
+   "question": "Estimate the flag-basis partner-reported tuna figure for June to November 2026 and split it into a balance-of-payments component and a remainder.",
+   "n_agents": 30,
+   "accepted": 30,
+   "inputs": ["partner series", "fleet aggregates", "partner imports by flag state", "standards extracts"],
+   "official_data_in_pack": false,
+   "status": "superseded for the split; the flag-basis total is still shown as the early estimate",
+   "superseded": true,
+   "prompt": "tracker/agents/draw_prompt.md",
+   "output": "data/nowcast.json"
+  },
+  {
+   "id": "bridge-v1",
+   "date": "2026-10-20",
+   "label": "Bridge from the raw partner figure to true exports, 2025, without official figures",
+   "question": "Walk from the 2025 partner-reported tuna figure to an estimate of true exports in six layers.",
+   "n_agents": 30,
+   "accepted": 30,
+   "inputs": ["partner series", "fleet aggregates", "partner imports by flag state", "standards extracts"],
+   "official_data_in_pack": false,
+   "status": "superseded by bridge-v2 (same question, official figures added to the evidence, three years)",
+   "superseded": true,
+   "prompt": "tracker/agents/bridge_prompt_v1.md (internal)",
+   "output": "internal only; mean estimate for 2025 was USD 36.4 m (agents' 10th to 90th percentile 28.1 to 45.7)"
+  },
+  {
+   "id": "bridge-v2",
+   "date": "2026-10-20",
+   "label": "Bridge from the raw partner figure to true exports, 2023 to 2025, with official figures in the evidence",
+   "question": "Walk from each year's partner-reported tuna figure to an estimate of true exports in six layers, reading Kiribati's official statistics as evidence of what the compiler recorded.",
+   "n_agents": 30,
+   "accepted": 30,
+   "inputs": ["partner series", "fleet aggregates", "partner imports by flag state", "standards extracts", "Kiribati official statistics"],
+   "official_data_in_pack": true,
+   "status": "current",
+   "superseded": false,
+   "prompt": "tracker/agents/bridge_prompt.md",
+   "output": "data/inference.json"
+  }
+ ]
+}
